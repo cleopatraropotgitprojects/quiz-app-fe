@@ -14,7 +14,7 @@ const quizzesByCategory: Record<
       icon: "📜",
     }, // 20th-century-history
     { id: 5, title: "What do you know about space and planets?", icon: "🪐" }, // space-planets
-    { id: 6, title: "Romanian grammar test", icon: "📘" }, // romanian-grammar
+    { id: 6, title: "English grammar test", icon: "📘" }, // romanian-grammar
   ],
   entertainment: [
     { id: 7, title: "Which Harry Potter character are you?", icon: "🧙‍♂️" }, // hp-character

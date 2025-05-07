@@ -1,30 +1,6 @@
 import { useLocation, useParams } from "react-router-dom";
 import { useState } from "react";
-
-// Mock questions for quiz ID 1 (europe-geo)
-const mockQuestions: Record<
-  number,
-  { question: string; options: string[]; correct: number }[]
-> = {
-  1: [
-    {
-      question: "Which country does the city of Prague belong to?",
-      options: ["Poland", "Austria", "Czech Republic", "Slovakia"],
-      correct: 2,
-    },
-
-    {
-      question: "Which sea borders Greece to the west?",
-      options: ["Black Sea", "Adriatic Sea", "Ionian Sea", "Baltic Sea"],
-      correct: 2,
-    },
-    {
-      question: "Which of the following is NOT part of Scandinavia?",
-      options: ["Sweden", "Norway", "Denmark", "Germany"],
-      correct: 3,
-    },
-  ],
-};
+import { mockQuestions } from "../data/mockQuestions";
 
 const Quiz = () => {
   const { id } = useParams();
@@ -35,36 +11,106 @@ const Quiz = () => {
   const questions = mockQuestions[quizId] || [];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
+  const [selectedOptions, setSelectedOptions] = useState<number[]>([]);
   const [score, setScore] = useState(0);
+  const [scoreMap, setScoreMap] = useState<Record<string, number>>({});
   const [finished, setFinished] = useState(false);
 
   const currentQuestion = questions[currentIndex];
 
+  const quizType =
+    (
+      {
+        1: "knowledge",
+        2: "knowledge",
+        3: "knowledge",
+        4: "knowledge",
+        5: "knowledge",
+        6: "knowledge",
+        7: "personality",
+        8: "personality",
+        9: "personality",
+        10: "personality",
+        11: "personality",
+        12: "psychological",
+        13: "psychological",
+        14: "psychological",
+        15: "psychological",
+        16: "psychological",
+        17: "psychological",
+        18: "psychological",
+        19: "psychological",
+      } as Record<number, "knowledge" | "personality" | "psychological">
+    )[quizId] || "knowledge";
+
+  const quizTitles: Record<number, string> = {
+    1: "How well do you know European geography?",
+    2: "Which country is this capital from?",
+    3: "General knowledge: quick edition",
+    4: "History test: key events of the 20th century",
+    5: "What do you know about space and planets?",
+    6: "English grammar test",
+    7: "Which Harry Potter character are you?",
+    8: "Which Disney character matches your personality?",
+    9: "Which Marvel superhero are you?",
+    10: "What’s your ideal vacation?",
+    11: "Which Netflix character would you be?",
+    12: "Are you more logical or creative?",
+    13: "What’s your mental age?",
+    14: "How empathetic are you?",
+    15: "Are you more introverted or extroverted?",
+    16: "What kind of leader are you?",
+    17: "What’s your communication style?",
+    18: "How do you react under stress?",
+    19: "What’s your love language?",
+  };
+
+  const quizTitle = quizTitles[quizId] || "Quiz";
+
+  const topCharacter =
+    quizType === "personality" || quizType === "psychological"
+      ? Object.entries(scoreMap).reduce(
+          (top, [key, val]) => (val > top[1] ? [key, val] : top),
+          ["None", -Infinity],
+        )[0]
+      : null;
+
   const handleNext = () => {
-    if (selectedOption === currentQuestion.correct) {
-      setScore((prev) => prev + 1);
+    if (currentQuestion.type === "knowledge") {
+      if (selectedOption === currentQuestion.correct) {
+        setScore((prev) => prev + 1);
+      }
+    } else if (currentQuestion.type === "personality") {
+      const option = currentQuestion.options[selectedOption!];
+      const selectedScores = option.scores;
+      for (const character in selectedScores) {
+        setScoreMap((prev) => ({
+          ...prev,
+          [character]: (prev[character] || 0) + selectedScores[character],
+        }));
+      }
+    } else if (currentQuestion.type === "psychological") {
+      selectedOptions.forEach((index) => {
+        const traits = currentQuestion.options[index].traits;
+        for (const key in traits) {
+          setScoreMap((prev) => ({
+            ...prev,
+            [key]: (prev[key] || 0) + traits[key],
+          }));
+        }
+      });
     }
 
     if (currentIndex + 1 < questions.length) {
       setCurrentIndex((prev) => prev + 1);
       setSelectedOption(null);
+      setSelectedOptions([]);
     } else {
       setFinished(true);
     }
   };
 
   const progress = ((currentIndex + Number(finished)) / questions.length) * 100;
-
-  const quizTitles: Record<number, string> = {
-    1: "How well do you know European geography?", // europe-geo
-    2: "Which country is this capital from?", // capital-quiz
-    3: "General knowledge: quick edition", // general-quick
-    4: "History test: key events of the 20th century", // 20th-century-history
-    5: "What do you know about space and planets?", // space-planets
-    6: "Romanian grammar test", // romanian-grammar
-  };
-
-  const quizTitle = quizTitles[quizId] || "Quiz";
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-100 via-yellow-100 to-blue-100 px-6 py-10 flex flex-col items-center">
@@ -95,26 +141,51 @@ const Quiz = () => {
             </h2>
 
             <div className="grid gap-4 mb-6">
-              {currentQuestion.options.map((option, index) => (
-                <button
-                  key={index}
-                  onClick={() => setSelectedOption(index)}
-                  className={`w-full py-3 px-6 rounded-full border-2 transition-all font-medium ${
-                    selectedOption === index
-                      ? "bg-indigo-500 text-white border-indigo-500 scale-105"
-                      : "bg-white border-gray-300 hover:border-indigo-400"
-                  }`}
-                >
-                  {option}
-                </button>
-              ))}
+              {currentQuestion.options.map((option, index) => {
+                const isSelected =
+                  quizType === "psychological"
+                    ? selectedOptions.includes(index)
+                    : selectedOption === index;
+
+                return (
+                  <button
+                    key={index}
+                    onClick={() => {
+                      if (quizType === "psychological") {
+                        setSelectedOptions((prev) =>
+                          prev.includes(index)
+                            ? prev.filter((i) => i !== index)
+                            : [...prev, index],
+                        );
+                      } else {
+                        setSelectedOption(index);
+                      }
+                    }}
+                    className={`w-full py-3 px-6 rounded-full border-2 transition-all font-medium ${
+                      isSelected
+                        ? "bg-indigo-500 text-white border-indigo-500 scale-105"
+                        : "bg-white border-gray-300 hover:border-indigo-400"
+                    }`}
+                  >
+                    {typeof option === "string" ? option : option.text}
+                  </button>
+                );
+              })}
             </div>
 
             <button
               onClick={handleNext}
-              disabled={selectedOption === null}
+              disabled={
+                quizType === "psychological"
+                  ? selectedOptions.length === 0
+                  : selectedOption === null
+              }
               className={`px-6 py-3 rounded-full text-white font-semibold transition-all ${
-                selectedOption === null
+                (
+                  quizType === "psychological"
+                    ? selectedOptions.length === 0
+                    : selectedOption === null
+                )
                   ? "bg-gray-400 cursor-not-allowed"
                   : "bg-gradient-to-r from-pink-500 to-indigo-500 hover:brightness-110"
               }`}
@@ -124,45 +195,102 @@ const Quiz = () => {
           </>
         ) : (
           <div className="flex flex-col items-center gap-4">
-            {score === 0 && (
+            {quizType === "knowledge" ? (
               <>
-                <div className="text-4xl">😅📚</div>
-                <h2 className="text-2xl font-extrabold text-red-500">
-                  You didn’t score this time, {name}!
-                </h2>
-                <p className="text-sm text-gray-500">
-                  Try again and keep learning 🚀
-                </p>
+                {score === 0 && (
+                  <>
+                    <div className="text-4xl">😅📚</div>
+                    <h2 className="text-2xl font-extrabold text-red-500">
+                      You didn’t score this time, {name}!
+                    </h2>
+                    <p className="text-sm text-gray-500">
+                      Try again and keep learning 🚀
+                    </p>
+                  </>
+                )}
+
+                {score > 0 && score < questions.length && (
+                  <>
+                    <div className="text-4xl">🎉👏</div>
+                    <h2 className="text-2xl font-extrabold text-green-600">
+                      You’ve completed the quiz, {name}!
+                    </h2>
+                    <p className="text-sm text-gray-500">
+                      Great job! You’re one step smarter today 🧠✨
+                    </p>
+                  </>
+                )}
+
+                {score === questions.length && (
+                  <>
+                    <div className="text-4xl">👑🏆</div>
+                    <h2 className="text-2xl font-extrabold text-yellow-600">
+                      Outstanding, {name}!
+                    </h2>
+                    <p className="text-sm text-gray-500">
+                      Perfect score! You nailed it 💯🔥
+                    </p>
+                  </>
+                )}
+
+                <div className="text-xl font-bold bg-green-100 text-green-800 px-8 py-2 rounded-full shadow-inner">
+                  Score: {score} / {questions.length}
+                </div>
+              </>
+            ) : (
+              <>
+                {quizType === "psychological" ? (
+                  <>
+                    <div className="text-4xl">🧠💫</div>
+                    <h2 className="text-2xl font-extrabold text-indigo-600 text-center">
+                      Your strongest trait is{" "}
+                      <span className="text-pink-600">{topCharacter}</span>!
+                    </h2>
+                    <p className="text-sm text-gray-500 text-center">
+                      Self-awareness is power. Well done, {name}!
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <div className="text-4xl">🦸‍♀️✨</div>
+                    {quizId === 7 && (
+                      <h2 className="text-2xl font-extrabold text-purple-600 text-center">
+                        You’re most like{" "}
+                        <span className="text-indigo-600">{topCharacter}</span>{" "}
+                        from Harry Potter!
+                      </h2>
+                    )}
+                    {quizId === 8 && (
+                      <h2 className="text-2xl font-extrabold text-purple-600 text-center">
+                        <span className="text-pink-600">{topCharacter}</span> is
+                        your Disney twin!
+                      </h2>
+                    )}
+                    {quizId === 9 && (
+                      <h2 className="text-2xl font-extrabold text-purple-600 text-center">
+                        Your inner hero is{" "}
+                        <span className="text-red-600">{topCharacter}</span>!
+                      </h2>
+                    )}
+                    {quizId === 10 && (
+                      <h2 className="text-2xl font-extrabold text-purple-600 text-center">
+                        Your dream vacation vibe is:{" "}
+                        <span className="text-orange-500">{topCharacter}</span>!
+                      </h2>
+                    )}
+                    {quizId === 11 && (
+                      <h2 className="text-2xl font-extrabold text-purple-600 text-center">
+                        If you lived on Netflix, you’d be{" "}
+                        <span className="text-rose-500">{topCharacter}</span>!
+                      </h2>
+                    )}
+                    <p className="text-sm text-gray-500 text-center">
+                      Thanks for playing, {name}!
+                    </p>
+                  </>
+                )}
               </>
             )}
-
-            {score > 0 && score < questions.length && (
-              <>
-                <div className="text-4xl">🎉👏</div>
-                <h2 className="text-2xl font-extrabold text-green-600">
-                  You’ve completed the quiz, {name}!
-                </h2>
-                <p className="text-sm text-gray-500">
-                  Great job! You’re one step smarter today 🧠✨
-                </p>
-              </>
-            )}
-
-            {score === questions.length && (
-              <>
-                <div className="text-4xl">👑🏆</div>
-                <h2 className="text-2xl font-extrabold text-yellow-600">
-                  Outstanding, {name}!
-                </h2>
-                <p className="text-sm text-gray-500">
-                  Perfect score! You nailed it 💯🔥
-                </p>
-              </>
-            )}
-
-            <div className="text-xl font-bold bg-green-100 text-green-800 px-8 py-2 rounded-full shadow-inner">
-              Score: {score} / {questions.length}
-            </div>
 
             <button
               onClick={() => (window.location.href = "/select-quiz")}
