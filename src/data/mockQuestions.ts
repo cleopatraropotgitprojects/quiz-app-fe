@@ -1,3 +1,5 @@
+import { useLanguage } from "../contexts/LanguageContext";
+
 export type QuizQuestion =
   | {
       type?: "knowledge";
@@ -7,8 +9,8 @@ export type QuizQuestion =
     }
   | {
       type?: "personality";
-      question: string;
-      options: { text: string; scores: Record<string, number> }[];
+      questionKey: string;
+      options: { key: string; scores: Record<string, number> }[];
     }
   | {
       type?: "psychological";
@@ -716,961 +718,1531 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
   // Which Harry Potter character are you?
   7: [
     {
-      question: "What quality describes you best?",
+      questionKey: "personality_quiz1_question1",
       options: [
-        { text: "Smart", scores: { Hermione: 1 } },
-        { text: "Loyal", scores: { Ron: 1 } },
-        { text: "Brave", scores: { Harry: 1 } },
-        { text: "Ambitious", scores: { Draco: 1 } },
-      ],
-    },
-    {
-      question: "What would be your favorite subject at Hogwarts?",
-      options: [
-        { text: "Charms", scores: { Draco: 1 } },
-        { text: "Defense Against the Dark Arts", scores: { Harry: 1 } },
-        { text: "Potions", scores: { Hermione: 1 } },
-        { text: "Care of Magical Creatures", scores: { Luna: 1 } },
-      ],
-    },
-    {
-      question: "How do you handle conflict?",
-      options: [
-        { text: "Manipulate behind the scenes", scores: { Draco: 1 } },
-        { text: "Avoid it if possible", scores: { Ron: 1 } },
-        { text: "Use logic to win", scores: { Hermione: 1 } },
-        { text: "Face it head-on", scores: { Harry: 1 } },
-      ],
-    },
-    {
-      question: "Choose a magical creature:",
-      options: [
-        { text: "Hippogriff", scores: { Harry: 1 } },
-        { text: "Phoenix", scores: { Dumbledore: 1 } },
-        { text: "Niffler", scores: { Ron: 1 } },
-        { text: "Thestral", scores: { Luna: 1 } },
-      ],
-    },
-    {
-      question: "What would you see in the Mirror of Erised?",
-      options: [
-        { text: "Knowledge and books", scores: { Hermione: 1 } },
-        { text: "Your family safe and happy", scores: { Ron: 1 } },
-        { text: "Adventure and excitement", scores: { Harry: 1 } },
-        { text: "Power and control", scores: { Draco: 1 } },
-      ],
-    },
-    {
-      question: "Pick a Hogwarts house:",
-      options: [
-        { text: "Slytherin", scores: { Draco: 1 } },
-        { text: "Ravenclaw", scores: { Luna: 1 } },
-        { text: "Gryffindor", scores: { Harry: 1 } },
-        { text: "Hufflepuff", scores: { Ron: 1 } },
-      ],
-    },
-    {
-      question: "What’s your biggest flaw?",
-      options: [
-        { text: "Stubbornness", scores: { Hermione: 1 } },
-        { text: "Insecurity", scores: { Ron: 1 } },
-        { text: "Impulsiveness", scores: { Harry: 1 } },
-        { text: "Arrogance", scores: { Draco: 1 } },
-      ],
-    },
-    {
-      question: "Choose a drink from The Three Broomsticks:",
-      options: [
-        { text: "Firewhisky", scores: { Draco: 1 } },
-        { text: "Butterbeer", scores: { Ron: 1 } },
-        { text: "Pumpkin Juice", scores: { Hermione: 1 } },
-        { text: "Gillywater", scores: { Luna: 1 } },
-      ],
-    },
-    {
-      question: "In a group project, you’re the one who...",
-      options: [
-        { text: "Organizes everything", scores: { Hermione: 1 } },
-        { text: "Goes with the flow", scores: { Ron: 1 } },
-        { text: "Takes the lead", scores: { Harry: 1 } },
-        { text: "Makes sarcastic comments", scores: { Draco: 1 } },
-      ],
-    },
-    {
-      question: "What scares you the most?",
-      options: [
-        { text: "Being ignored", scores: { Luna: 1 } },
-        { text: "Failure", scores: { Hermione: 1 } },
-        { text: "Losing loved ones", scores: { Harry: 1 } },
-        { text: "Being underestimated", scores: { Draco: 1 } },
-      ],
-    },
-    {
-      question: "Your dream job in the wizarding world?",
-      options: [
-        { text: "Professor", scores: { Hermione: 1 } },
-        { text: "Auror", scores: { Harry: 1 } },
-        { text: "Minister of Magic", scores: { Draco: 1 } },
-        { text: "Shop owner", scores: { Ron: 1 } },
-      ],
-    },
-    {
-      question: "Pick a spell:",
-      options: [
-        { text: "Lumos", scores: { Luna: 1 } },
-        { text: "Alohomora", scores: { Hermione: 1 } },
-        { text: "Sectumsempra", scores: { Draco: 1 } },
-        { text: "Expelliarmus", scores: { Harry: 1 } },
-      ],
-    },
-    {
-      question: "You’re most likely to be found...",
-      options: [
-        { text: "Eating in the Great Hall", scores: { Ron: 1 } },
-        { text: "Plotting in the common room", scores: { Draco: 1 } },
-        { text: "Reading in the library", scores: { Hermione: 1 } },
-        { text: "Practicing spells", scores: { Harry: 1 } },
-      ],
-    },
-    {
-      question: "Pick a magical object:",
-      options: [
-        { text: "Invisibility Cloak", scores: { Harry: 1 } },
-        { text: "Time Turner", scores: { Hermione: 1 } },
-        { text: "Elder Wand", scores: { Draco: 1 } },
-        { text: "Marauder’s Map", scores: { Ron: 1 } },
-      ],
-    },
-    {
-      question: "Your friend is in trouble. You...",
-      options: [
-        { text: "Run to help immediately", scores: { Harry: 1 } },
-        { text: "See if it's worth your time", scores: { Draco: 1 } },
-        { text: "Come up with a smart plan", scores: { Hermione: 1 } },
-        { text: "Support them emotionally", scores: { Ron: 1 } },
-      ],
-    },
-    {
-      question: "What’s your Hogwarts aesthetic?",
-      options: [
-        { text: "Laughter and snacks", scores: { Ron: 1 } },
-        { text: "Books and scrolls", scores: { Hermione: 1 } },
-        { text: "Dark corridors", scores: { Draco: 1 } },
-        { text: "Capes and candles", scores: { Harry: 1 } },
-      ],
-    },
-    {
-      question: "What would others say about you?",
-      options: [
-        { text: "Cunning", scores: { Draco: 1 } },
-        { text: "Intelligent", scores: { Hermione: 1 } },
-        { text: "Courageous", scores: { Harry: 1 } },
-        { text: "Funny", scores: { Ron: 1 } },
-      ],
-    },
-    {
-      question: "Choose a quote:",
-      options: [
-        { text: "My father will hear about this!", scores: { Draco: 1 } },
         {
-          text: "You're going to suffer, but you're going to be happy about it.",
-          scores: { Luna: 1 },
+          key: "personality_quiz1_question1_option1",
+          scores: { Hermione: 1 },
         },
-        { text: "It takes a great deal of bravery...", scores: { Harry: 1 } },
-        { text: "Books! And cleverness!", scores: { Hermione: 1 } },
+        { key: "personality_quiz1_question1_option2", scores: { Ron: 1 } },
+        {
+          key: "personality_quiz1_question1_option3",
+          scores: { Harry: 1 },
+        },
+        {
+          key: "personality_quiz1_question1_option4",
+          scores: { Draco: 1 },
+        },
       ],
     },
     {
-      question: "Which word resonates most with you?",
+      questionKey: "personality_quiz1_question2",
       options: [
-        { text: "Wisdom", scores: { Hermione: 1 } },
-        { text: "Kindness", scores: { Ron: 1 } },
-        { text: "Bravery", scores: { Harry: 1 } },
-        { text: "Ambition", scores: { Draco: 1 } },
+        { key: "personality_quiz1_question2_option1", scores: { Draco: 1 } },
+        { key: "personality_quiz1_question2_option2", scores: { Harry: 1 } },
+        { key: "personality_quiz1_question2_option3", scores: { Hermione: 1 } },
+        { key: "personality_quiz1_question2_option4", scores: { Luna: 1 } },
       ],
     },
     {
-      question: "Pick a magical item to keep forever:",
+      questionKey: "personality_quiz1_question3",
       options: [
-        { text: "A Firebolt", scores: { Harry: 1 } },
-        { text: "Felix Felicis", scores: { Hermione: 1 } },
-        { text: "A Pensieve", scores: { Ron: 1 } },
-        { text: "A Horcrux (if you dare)", scores: { Draco: 1 } },
+        { key: "personality_quiz1_question3_option1", scores: { Draco: 1 } },
+        { key: "personality_quiz1_question3_option2", scores: { Ron: 1 } },
+        { key: "personality_quiz1_question3_option3", scores: { Hermione: 1 } },
+        { key: "personality_quiz1_question3_option4", scores: { Harry: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question4",
+      options: [
+        { key: "personality_quiz1_question4_option1", scores: { Harry: 1 } },
+        {
+          key: "personality_quiz1_question4_option2",
+          scores: { Dumbledore: 1 },
+        },
+        { key: "personality_quiz1_question4_option3", scores: { Ron: 1 } },
+        { key: "personality_quiz1_question4_option4", scores: { Luna: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question5",
+      options: [
+        { key: "personality_quiz1_question5_option1", scores: { Hermione: 1 } },
+        { key: "personality_quiz1_question5_option2", scores: { Ron: 1 } },
+        { key: "personality_quiz1_question5_option3", scores: { Harry: 1 } },
+        { key: "personality_quiz1_question5_option4", scores: { Draco: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question6",
+      options: [
+        { key: "personality_quiz1_question6_option1", scores: { Draco: 1 } },
+        { key: "personality_quiz1_question6_option2", scores: { Luna: 1 } },
+        { key: "personality_quiz1_question6_option3", scores: { Harry: 1 } },
+        { key: "personality_quiz1_question6_option4", scores: { Ron: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question7",
+      options: [
+        { key: "personality_quiz1_question7_option1", scores: { Hermione: 1 } },
+        { key: "personality_quiz1_question7_option2", scores: { Ron: 1 } },
+        { key: "personality_quiz1_question7_option3", scores: { Harry: 1 } },
+        { key: "personality_quiz1_question7_option4", scores: { Draco: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question8",
+      options: [
+        { key: "personality_quiz1_question8_option1", scores: { Draco: 1 } },
+        { key: "personality_quiz1_question8_option2", scores: { Ron: 1 } },
+        { key: "personality_quiz1_question8_option3", scores: { Hermione: 1 } },
+        { key: "personality_quiz1_question8_option4", scores: { Luna: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question9",
+      options: [
+        { key: "personality_quiz1_question9_option1", scores: { Hermione: 1 } },
+        { key: "personality_quiz1_question9_option2", scores: { Ron: 1 } },
+        { key: "personality_quiz1_question9_option3", scores: { Harry: 1 } },
+        { key: "personality_quiz1_question9_option4", scores: { Draco: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question10",
+      options: [
+        { key: "personality_quiz1_question10_option1", scores: { Luna: 1 } },
+        {
+          key: "personality_quiz1_question10_option2",
+          scores: { Hermione: 1 },
+        },
+        { key: "personality_quiz1_question10_option3", scores: { Harry: 1 } },
+        { key: "personality_quiz1_question10_option4", scores: { Draco: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question11",
+      options: [
+        {
+          key: "personality_quiz1_question11_option1",
+          scores: { Hermione: 1 },
+        },
+        { key: "personality_quiz1_question11_option2", scores: { Harry: 1 } },
+        { key: "personality_quiz1_question11_option3", scores: { Draco: 1 } },
+        { key: "personality_quiz1_question11_option4", scores: { Ron: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question12",
+      options: [
+        { key: "personality_quiz1_question12_option1", scores: { Luna: 1 } },
+        {
+          key: "personality_quiz1_question12_option2",
+          scores: { Hermione: 1 },
+        },
+        { key: "personality_quiz1_question12_option3", scores: { Draco: 1 } },
+        { key: "personality_quiz1_question12_option4", scores: { Harry: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question13",
+      options: [
+        { key: "personality_quiz1_question13_option1", scores: { Ron: 1 } },
+        { key: "personality_quiz1_question13_option2", scores: { Draco: 1 } },
+        {
+          key: "personality_quiz1_question13_option3",
+          scores: { Hermione: 1 },
+        },
+        { key: "personality_quiz1_question13_option4", scores: { Harry: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question14",
+      options: [
+        { key: "personality_quiz1_question14_option1", scores: { Harry: 1 } },
+        {
+          key: "personality_quiz1_question14_option2",
+          scores: { Hermione: 1 },
+        },
+        { key: "personality_quiz1_question14_option3", scores: { Draco: 1 } },
+        { key: "personality_quiz1_question14_option4", scores: { Ron: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question15",
+      options: [
+        { key: "personality_quiz1_question15_option1", scores: { Harry: 1 } },
+        { key: "personality_quiz1_question15_option2", scores: { Draco: 1 } },
+        {
+          key: "personality_quiz1_question15_option3",
+          scores: { Hermione: 1 },
+        },
+        { key: "personality_quiz1_question15_option4", scores: { Ron: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question16",
+      options: [
+        { key: "personality_quiz1_question16_option1", scores: { Ron: 1 } },
+        {
+          key: "personality_quiz1_question16_option2",
+          scores: { Hermione: 1 },
+        },
+        { key: "personality_quiz1_question16_option3", scores: { Draco: 1 } },
+        { key: "personality_quiz1_question16_option4", scores: { Harry: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question17",
+      options: [
+        { key: "personality_quiz1_question17_option1", scores: { Draco: 1 } },
+        {
+          key: "personality_quiz1_question17_option2",
+          scores: { Hermione: 1 },
+        },
+        { key: "personality_quiz1_question17_option3", scores: { Harry: 1 } },
+        { key: "personality_quiz1_question17_option4", scores: { Ron: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question18",
+      options: [
+        { key: "personality_quiz1_question18_option1", scores: { Draco: 1 } },
+        { key: "personality_quiz1_question18_option2", scores: { Luna: 1 } },
+        { key: "personality_quiz1_question18_option3", scores: { Harry: 1 } },
+        {
+          key: "personality_quiz1_question18_option4",
+          scores: { Hermione: 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question19",
+      options: [
+        {
+          key: "personality_quiz1_question19_option1",
+          scores: { Hermione: 1 },
+        },
+        { key: "personality_quiz1_question19_option2", scores: { Ron: 1 } },
+        { key: "personality_quiz1_question19_option3", scores: { Harry: 1 } },
+        { key: "personality_quiz1_question19_option4", scores: { Draco: 1 } },
+      ],
+    },
+    {
+      questionKey: "personality_quiz1_question20",
+      options: [
+        { key: "personality_quiz1_question20_option1", scores: { Harry: 1 } },
+        {
+          key: "personality_quiz1_question20_option2",
+          scores: { Hermione: 1 },
+        },
+        { key: "personality_quiz1_question20_option3", scores: { Ron: 1 } },
+        { key: "personality_quiz1_question20_option4", scores: { Draco: 1 } },
       ],
     },
   ],
   // Which Disney character matches your personality?
   8: [
     {
-      question: "What's your ideal weekend?",
+      questionKey: "personality_quiz2_question1",
       options: [
-        { text: "Swimming and collecting treasures", scores: { Ariel: 1 } },
-        { text: "Exploring nature alone", scores: { Elsa: 1 } },
-        { text: "Reading a book in a cozy spot", scores: { Belle: 1 } },
-        { text: "Training or learning new skills", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question1_option1", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question1_option2", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question1_option3", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question1_option4", scores: { Mulan: 1 } },
       ],
     },
     {
-      question: "Pick a favorite element:",
+      questionKey: "personality_quiz2_question2",
       options: [
-        { text: "Fire", scores: { Mulan: 1 } },
-        { text: "Earth", scores: { Belle: 1 } },
-        { text: "Water", scores: { Ariel: 1 } },
-        { text: "Ice", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question2_option1", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question2_option2", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question2_option3", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question2_option4", scores: { Elsa: 1 } },
       ],
     },
     {
-      question: "How do you handle conflict?",
+      questionKey: "personality_quiz2_question3",
       options: [
-        { text: "Stay calm and distant", scores: { Elsa: 1 } },
-        { text: "Act quickly and take charge", scores: { Mulan: 1 } },
-        { text: "Speak your mind", scores: { Ariel: 1 } },
-        { text: "Use reason and empathy", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question3_option1", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question3_option2", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question3_option3", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question3_option4", scores: { Belle: 1 } },
       ],
     },
     {
-      question: "Choose a companion animal:",
+      questionKey: "personality_quiz2_question4",
       options: [
-        { text: "Golden Retriever", scores: { Belle: 1 } },
-        { text: "Arctic Wolf", scores: { Elsa: 1 } },
-        { text: "Clownfish", scores: { Ariel: 1 } },
-        { text: "Siberian Tiger", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question4_option1", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question4_option2", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question4_option3", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question4_option4", scores: { Mulan: 1 } },
       ],
     },
     {
-      question: "What motivates you the most?",
+      questionKey: "personality_quiz2_question5",
       options: [
-        { text: "Honor and duty", scores: { Mulan: 1 } },
-        { text: "Adventure and curiosity", scores: { Ariel: 1 } },
-        { text: "Knowledge and understanding", scores: { Belle: 1 } },
-        { text: "Freedom to be yourself", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question5_option1", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question5_option2", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question5_option3", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question5_option4", scores: { Elsa: 1 } },
       ],
     },
     {
-      question: "How do others describe you?",
+      questionKey: "personality_quiz2_question6",
       options: [
-        { text: "Free-spirited and daring", scores: { Ariel: 1 } },
-        { text: "Brave and strategic", scores: { Mulan: 1 } },
-        { text: "Reserved but powerful", scores: { Elsa: 1 } },
-        { text: "Kind and intelligent", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question6_option1", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question6_option2", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question6_option3", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question6_option4", scores: { Belle: 1 } },
       ],
     },
     {
-      question: "Pick a favorite place:",
+      questionKey: "personality_quiz2_question7",
       options: [
-        { text: "A battlefield of honor", scores: { Mulan: 1 } },
-        { text: "The ocean floor", scores: { Ariel: 1 } },
-        { text: "A cozy library", scores: { Belle: 1 } },
-        { text: "A quiet snowy mountain", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question7_option1", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question7_option2", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question7_option3", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question7_option4", scores: { Elsa: 1 } },
       ],
     },
     {
-      question: "Your best strength is...",
+      questionKey: "personality_quiz2_question8",
       options: [
-        { text: "Inner power", scores: { Elsa: 1 } },
-        { text: "Fearlessness", scores: { Ariel: 1 } },
-        { text: "Empathy", scores: { Belle: 1 } },
-        { text: "Discipline", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question8_option1", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question8_option2", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question8_option3", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question8_option4", scores: { Mulan: 1 } },
       ],
     },
     {
-      question: "What's your weakness?",
+      questionKey: "personality_quiz2_question9",
       options: [
-        { text: "Breaking rules", scores: { Mulan: 1 } },
-        { text: "Overthinking", scores: { Belle: 1 } },
-        { text: "Shutting people out", scores: { Elsa: 1 } },
-        { text: "Being impulsive", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question9_option1", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question9_option2", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question9_option3", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question9_option4", scores: { Ariel: 1 } },
       ],
     },
     {
-      question: "Pick a quote:",
+      questionKey: "personality_quiz2_question10",
       options: [
-        {
-          text: "The flower that blooms in adversity is the most rare and beautiful of all.",
-          scores: { Mulan: 1 },
-        },
-        { text: "I want to be where the people are.", scores: { Ariel: 1 } },
-        { text: "Let it go.", scores: { Elsa: 1 } },
-        {
-          text: "I want adventure in the great wide somewhere.",
-          scores: { Belle: 1 },
-        },
+        { key: "personality_quiz2_question10_option1", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question10_option2", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question10_option3", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question10_option4", scores: { Belle: 1 } },
       ],
     },
     {
-      question: "What kind of music do you like?",
+      questionKey: "personality_quiz2_question11",
       options: [
-        { text: "Epic soundtracks", scores: { Mulan: 1 } },
-        { text: "Dreamy pop", scores: { Ariel: 1 } },
-        { text: "Instrumental and dramatic", scores: { Elsa: 1 } },
-        { text: "Soft classical", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question11_option1", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question11_option2", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question11_option3", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question11_option4", scores: { Belle: 1 } },
       ],
     },
     {
-      question: "If you had a power, it would be...",
+      questionKey: "personality_quiz2_question12",
       options: [
-        { text: "Breathing underwater", scores: { Ariel: 1 } },
-        { text: "Ice and snow", scores: { Elsa: 1 } },
-        { text: "Martial arts mastery", scores: { Mulan: 1 } },
-        { text: "Talking to books (magically)", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question12_option1", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question12_option2", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question12_option3", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question12_option4", scores: { Belle: 1 } },
       ],
     },
     {
-      question: "Your fashion style is:",
+      questionKey: "personality_quiz2_question13",
       options: [
-        { text: "Classic and bookish", scores: { Belle: 1 } },
-        { text: "Minimal and practical", scores: { Mulan: 1 } },
-        { text: "Whimsical and beachy", scores: { Ariel: 1 } },
-        { text: "Elegant and icy", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question13_option1", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question13_option2", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question13_option3", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question13_option4", scores: { Elsa: 1 } },
       ],
     },
     {
-      question: "Which word resonates most with you?",
+      questionKey: "personality_quiz2_question14",
       options: [
-        { text: "Independence", scores: { Elsa: 1 } },
-        { text: "Wisdom", scores: { Belle: 1 } },
-        { text: "Courage", scores: { Mulan: 1 } },
-        { text: "Wonder", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question14_option1", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question14_option2", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question14_option3", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question14_option4", scores: { Ariel: 1 } },
       ],
     },
     {
-      question: "Which of these do you value most?",
+      questionKey: "personality_quiz2_question15",
       options: [
-        { text: "Freedom", scores: { Ariel: 1 } },
-        { text: "Self-control", scores: { Elsa: 1 } },
-        { text: "Protecting those you love", scores: { Mulan: 1 } },
-        { text: "Understanding others", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question15_option1", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question15_option2", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question15_option3", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question15_option4", scores: { Belle: 1 } },
       ],
     },
     {
-      question: "How do you make decisions?",
+      questionKey: "personality_quiz2_question16",
       options: [
-        { text: "From the heart", scores: { Ariel: 1 } },
-        { text: "With thought and care", scores: { Belle: 1 } },
-        { text: "Quickly under pressure", scores: { Mulan: 1 } },
-        { text: "Quietly and alone", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question16_option1", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question16_option2", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question16_option3", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question16_option4", scores: { Belle: 1 } },
       ],
     },
     {
-      question: "Pick a favorite food:",
+      questionKey: "personality_quiz2_question17",
       options: [
-        { text: "Snowflake cupcakes", scores: { Elsa: 1 } },
-        { text: "Rice and noodles", scores: { Mulan: 1 } },
-        { text: "French pastries", scores: { Belle: 1 } },
-        { text: "Seaweed salad", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question17_option1", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question17_option2", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question17_option3", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question17_option4", scores: { Elsa: 1 } },
       ],
     },
     {
-      question: "Your best friend would describe you as:",
+      questionKey: "personality_quiz2_question18",
       options: [
-        { text: "Thoughtful", scores: { Belle: 1 } },
-        { text: "Protective", scores: { Elsa: 1 } },
-        { text: "Curious", scores: { Ariel: 1 } },
-        { text: "Loyal", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question18_option1", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question18_option2", scores: { Mulan: 1 } },
+        { key: "personality_quiz2_question18_option3", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question18_option4", scores: { Ariel: 1 } },
       ],
     },
     {
-      question: "What gives you peace?",
+      questionKey: "personality_quiz2_question19",
       options: [
-        { text: "Exploration", scores: { Ariel: 1 } },
-        { text: "Solitude", scores: { Elsa: 1 } },
-        { text: "Knowing you did the right thing", scores: { Mulan: 1 } },
-        { text: "A good story", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question19_option1", scores: { Belle: 1 } },
+        { key: "personality_quiz2_question19_option2", scores: { Elsa: 1 } },
+        { key: "personality_quiz2_question19_option3", scores: { Ariel: 1 } },
+        { key: "personality_quiz2_question19_option4", scores: { Mulan: 1 } },
       ],
     },
   ],
   // Which Marvel superhero are you?
   9: [
     {
-      question: "How do you solve problems?",
+      questionKey: "personality_quiz3_question1",
       options: [
-        { text: "Invent tech to fix it", scores: { "Iron Man": 1 } },
-        { text: "Using emotion and instinct", scores: { "Scarlet Witch": 1 } },
-        { text: "Strategically and calmly", scores: { "Black Widow": 1 } },
-        { text: "With quick thinking and humor", scores: { "Spider-Man": 1 } },
-      ],
-    },
-    {
-      question: "What’s your biggest strength?",
-      options: [
-        { text: "Power", scores: { "Scarlet Witch": 1 } },
-        { text: "Intelligence", scores: { "Iron Man": 1 } },
-        { text: "Precision", scores: { "Black Widow": 1 } },
-        { text: "Empathy", scores: { "Spider-Man": 1 } },
-      ],
-    },
-    {
-      question: "Pick your favorite gadget:",
-      options: [
-        { text: "Web shooters", scores: { "Spider-Man": 1 } },
-        { text: "Iron suit", scores: { "Iron Man": 1 } },
-        { text: "Magic energy", scores: { "Scarlet Witch": 1 } },
-        { text: "Batons", scores: { "Black Widow": 1 } },
-      ],
-    },
-    {
-      question: "Which city feels like home?",
-      options: [
-        { text: "Malibu", scores: { "Iron Man": 1 } },
-        { text: "Budapest", scores: { "Black Widow": 1 } },
-        { text: "Sokovia", scores: { "Scarlet Witch": 1 } },
-        { text: "Queens", scores: { "Spider-Man": 1 } },
-      ],
-    },
-    {
-      question: "What would your friends say about you?",
-      options: [
-        { text: "Brilliant and sarcastic", scores: { "Iron Man": 1 } },
-        { text: "Loyal and kind", scores: { "Spider-Man": 1 } },
-        { text: "Mysterious and reliable", scores: { "Black Widow": 1 } },
-        { text: "Emotional and powerful", scores: { "Scarlet Witch": 1 } },
-      ],
-    },
-    {
-      question: "Choose a motto:",
-      options: [
-        { text: "I get by just fine on my own", scores: { "Black Widow": 1 } },
         {
-          text: "With great power comes great responsibility",
-          scores: { "Spider-Man": 1 },
-        },
-        {
-          text: "Sometimes you gotta run before you can walk",
+          key: "personality_quiz3_question1_option1",
           scores: { "Iron Man": 1 },
         },
         {
-          text: "I can’t control their fear, only mine",
+          key: "personality_quiz3_question1_option2",
+          scores: { "Scarlet Witch": 1 },
+        },
+        {
+          key: "personality_quiz3_question1_option3",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question1_option4",
+          scores: { "Spider-Man": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz3_question2",
+      options: [
+        {
+          key: "personality_quiz3_question2_option1",
+          scores: { "Scarlet Witch": 1 },
+        },
+        {
+          key: "personality_quiz3_question2_option2",
+          scores: { "Iron Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question2_option3",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question2_option4",
+          scores: { "Spider-Man": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz3_question3",
+      options: [
+        {
+          key: "personality_quiz3_question3_option1",
+          scores: { "Spider-Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question3_option2",
+          scores: { "Iron Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question3_option3",
+          scores: { "Scarlet Witch": 1 },
+        },
+        {
+          key: "personality_quiz3_question3_option4",
+          scores: { "Black Widow": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz3_question4",
+      options: [
+        {
+          key: "personality_quiz3_question4_option1",
+          scores: { "Iron Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question4_option2",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question4_option3",
+          scores: { "Scarlet Witch": 1 },
+        },
+        {
+          key: "personality_quiz3_question4_option4",
+          scores: { "Spider-Man": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz3_question5",
+      options: [
+        {
+          key: "personality_quiz3_question5_option1",
+          scores: { "Iron Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question5_option2",
+          scores: { "Spider-Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question5_option3",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question5_option4",
           scores: { "Scarlet Witch": 1 },
         },
       ],
     },
     {
-      question: "Your biggest fear?",
+      questionKey: "personality_quiz3_question6",
       options: [
-        { text: "Losing control", scores: { "Scarlet Witch": 1 } },
-        { text: "Being used or manipulated", scores: { "Black Widow": 1 } },
-        { text: "Failing despite effort", scores: { "Iron Man": 1 } },
-        { text: "Losing loved ones", scores: { "Spider-Man": 1 } },
-      ],
-    },
-    {
-      question: "Pick a battle style:",
-      options: [
-        { text: "High-tech and ranged", scores: { "Iron Man": 1 } },
-        { text: "Agile and reactive", scores: { "Spider-Man": 1 } },
-        { text: "Close combat and stealth", scores: { "Black Widow": 1 } },
-        { text: "Telekinetic and raw", scores: { "Scarlet Witch": 1 } },
-      ],
-    },
-    {
-      question: "How do you relax?",
-      options: [
-        { text: "Skating or video games", scores: { "Spider-Man": 1 } },
-        { text: "Tinkering in the lab", scores: { "Iron Man": 1 } },
-        { text: "Training routines", scores: { "Black Widow": 1 } },
-        { text: "Listening to calming music", scores: { "Scarlet Witch": 1 } },
-      ],
-    },
-    {
-      question: "What color fits you best?",
-      options: [
-        { text: "Red and blue", scores: { "Spider-Man": 1 } },
-        { text: "Scarlet", scores: { "Scarlet Witch": 1 } },
-        { text: "Black", scores: { "Black Widow": 1 } },
-        { text: "Gold and red", scores: { "Iron Man": 1 } },
-      ],
-    },
-    {
-      question: "Your greatest weapon is...",
-      options: [
-        { text: "Your discipline", scores: { "Black Widow": 1 } },
-        { text: "Your heart", scores: { "Spider-Man": 1 } },
-        { text: "Your emotions", scores: { "Scarlet Witch": 1 } },
-        { text: "Your brain", scores: { "Iron Man": 1 } },
-      ],
-    },
-    {
-      question: "How do you handle teamwork?",
-      options: [
-        { text: "Lead with vision", scores: { "Iron Man": 1 } },
-        { text: "Protective and intense", scores: { "Scarlet Witch": 1 } },
-        { text: "Quiet contributor", scores: { "Black Widow": 1 } },
-        { text: "Collaborative and fun", scores: { "Spider-Man": 1 } },
-      ],
-    },
-    {
-      question: "Your favorite activity is...",
-      options: [
-        { text: "Building tech", scores: { "Iron Man": 1 } },
-        { text: "Helping neighbors", scores: { "Spider-Man": 1 } },
-        { text: "Practicing spells", scores: { "Scarlet Witch": 1 } },
-        { text: "Gathering intel", scores: { "Black Widow": 1 } },
-      ],
-    },
-    {
-      question: "If someone betrays you, you...",
-      options: [
-        { text: "Keep calm and strike later", scores: { "Black Widow": 1 } },
-        { text: "Are heartbroken but forgive", scores: { "Spider-Man": 1 } },
         {
-          text: "Never forget and upgrade your defense",
-          scores: { "Iron Man": 1 },
-        },
-        { text: "Lose control but regret it", scores: { "Scarlet Witch": 1 } },
-      ],
-    },
-    {
-      question: "What do you value most?",
-      options: [
-        { text: "Connection", scores: { "Scarlet Witch": 1 } },
-        { text: "Innovation", scores: { "Iron Man": 1 } },
-        { text: "Loyalty", scores: { "Black Widow": 1 } },
-        { text: "Friendship", scores: { "Spider-Man": 1 } },
-      ],
-    },
-    {
-      question: "What’s your vibe?",
-      options: [
-        { text: "Witty and awkward", scores: { "Spider-Man": 1 } },
-        { text: "Quiet and sharp", scores: { "Black Widow": 1 } },
-        { text: "Calm but explosive", scores: { "Scarlet Witch": 1 } },
-        { text: "Confident and loud", scores: { "Iron Man": 1 } },
-      ],
-    },
-    {
-      question: "What motivates you most?",
-      options: [
-        { text: "Leaving a legacy", scores: { "Iron Man": 1 } },
-        { text: "Healing personal loss", scores: { "Scarlet Witch": 1 } },
-        {
-          text: "Protecting others from your past",
+          key: "personality_quiz3_question6_option1",
           scores: { "Black Widow": 1 },
         },
-        { text: "Doing the right thing", scores: { "Spider-Man": 1 } },
+        {
+          key: "personality_quiz3_question6_option2",
+          scores: { "Spider-Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question6_option3",
+          scores: { "Iron Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question6_option4",
+          scores: { "Scarlet Witch": 1 },
+        },
       ],
     },
     {
-      question: "If you had a superpower, it’d be...",
+      questionKey: "personality_quiz3_question7",
       options: [
-        { text: "Technology and flight", scores: { "Iron Man": 1 } },
-        { text: "Agility and senses", scores: { "Spider-Man": 1 } },
-        { text: "Combat mastery", scores: { "Black Widow": 1 } },
-        { text: "Mind manipulation", scores: { "Scarlet Witch": 1 } },
+        {
+          key: "personality_quiz3_question7_option1",
+          scores: { "Scarlet Witch": 1 },
+        },
+        {
+          key: "personality_quiz3_question7_option2",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question7_option3",
+          scores: { "Iron Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question7_option4",
+          scores: { "Spider-Man": 1 },
+        },
       ],
     },
     {
-      question: "What kind of leader are you?",
+      questionKey: "personality_quiz3_question8",
       options: [
-        { text: "Emotional and empathetic", scores: { "Scarlet Witch": 1 } },
-        { text: "Stealthy and balanced", scores: { "Black Widow": 1 } },
-        { text: "Reluctant but inspiring", scores: { "Spider-Man": 1 } },
-        { text: "Visionary and strategic", scores: { "Iron Man": 1 } },
+        {
+          key: "personality_quiz3_question8_option1",
+          scores: { "Iron Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question8_option2",
+          scores: { "Spider-Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question8_option3",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question8_option4",
+          scores: { "Scarlet Witch": 1 },
+        },
       ],
     },
     {
-      question: "What makes you powerful?",
+      questionKey: "personality_quiz3_question9",
       options: [
-        { text: "My emotions", scores: { "Scarlet Witch": 1 } },
-        { text: "My humanity", scores: { "Spider-Man": 1 } },
-        { text: "My training", scores: { "Black Widow": 1 } },
-        { text: "My intellect", scores: { "Iron Man": 1 } },
+        {
+          key: "personality_quiz3_question9_option1",
+          scores: { "Spider-Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question9_option2",
+          scores: { "Iron Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question9_option3",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question9_option4",
+          scores: { "Scarlet Witch": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz3_question10",
+      options: [
+        {
+          key: "personality_quiz3_question10_option1",
+          scores: { "Spider-Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question10_option2",
+          scores: { "Scarlet Witch": 1 },
+        },
+        {
+          key: "personality_quiz3_question10_option3",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question10_option4",
+          scores: { "Iron Man": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz3_question11",
+      options: [
+        {
+          key: "personality_quiz3_question11_option1",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question11_option2",
+          scores: { "Spider-Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question11_option3",
+          scores: { "Scarlet Witch": 1 },
+        },
+        {
+          key: "personality_quiz3_question11_option4",
+          scores: { "Iron Man": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz3_question12",
+      options: [
+        {
+          key: "personality_quiz3_question12_option1",
+          scores: { "Iron Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question12_option2",
+          scores: { "Scarlet Witch": 1 },
+        },
+        {
+          key: "personality_quiz3_question12_option3",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question12_option4",
+          scores: { "Spider-Man": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz3_question13",
+      options: [
+        {
+          key: "personality_quiz3_question13_option1",
+          scores: { "Iron Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question13_option2",
+          scores: { "Spider-Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question13_option3",
+          scores: { "Scarlet Witch": 1 },
+        },
+        {
+          key: "personality_quiz3_question13_option4",
+          scores: { "Black Widow": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz3_question14",
+      options: [
+        {
+          key: "personality_quiz3_question14_option1",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question14_option2",
+          scores: { "Spider-Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question14_option3",
+          scores: { "Iron Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question14_option4",
+          scores: { "Scarlet Witch": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz3_question15",
+      options: [
+        {
+          key: "personality_quiz3_question15_option1",
+          scores: { "Scarlet Witch": 1 },
+        },
+        {
+          key: "personality_quiz3_question15_option2",
+          scores: { "Iron Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question15_option3",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question15_option4",
+          scores: { "Spider-Man": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz3_question16",
+      options: [
+        {
+          key: "personality_quiz3_question16_option1",
+          scores: { "Spider-Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question16_option2",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question16_option3",
+          scores: { "Scarlet Witch": 1 },
+        },
+        {
+          key: "personality_quiz3_question16_option4",
+          scores: { "Iron Man": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz3_question17",
+      options: [
+        {
+          key: "personality_quiz3_question17_option1",
+          scores: { "Iron Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question17_option2",
+          scores: { "Scarlet Witch": 1 },
+        },
+        {
+          key: "personality_quiz3_question17_option3",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question17_option4",
+          scores: { "Spider-Man": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz3_question18",
+      options: [
+        {
+          key: "personality_quiz3_question18_option1",
+          scores: { "Iron Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question18_option2",
+          scores: { "Spider-Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question18_option3",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question18_option4",
+          scores: { "Scarlet Witch": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz3_question19",
+      options: [
+        {
+          key: "personality_quiz3_question19_option1",
+          scores: { "Scarlet Witch": 1 },
+        },
+        {
+          key: "personality_quiz3_question19_option2",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question19_option3",
+          scores: { "Spider-Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question19_option4",
+          scores: { "Iron Man": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz3_question20",
+      options: [
+        {
+          key: "personality_quiz3_question20_option1",
+          scores: { "Scarlet Witch": 1 },
+        },
+        {
+          key: "personality_quiz3_question20_option2",
+          scores: { "Spider-Man": 1 },
+        },
+        {
+          key: "personality_quiz3_question20_option3",
+          scores: { "Black Widow": 1 },
+        },
+        {
+          key: "personality_quiz3_question20_option4",
+          scores: { "Iron Man": 1 },
+        },
       ],
     },
   ],
   //  What's your ideal vacation?
   10: [
     {
-      question: "How do you want to feel during your vacation?",
-      options: [
-        { text: "Relaxed and peaceful", scores: { "Beach Paradise": 1 } },
-        { text: "Excited and challenged", scores: { "Adventure Trek": 1 } },
-        { text: "Inspired and curious", scores: { "Cultural City Trip": 1 } },
-      ],
-    },
-    {
-      question: "Pick your ideal scenery:",
+      questionKey: "personality_quiz4_question1",
       options: [
         {
-          text: "White sand and turquoise water",
+          key: "personality_quiz4_question1_option1",
           scores: { "Beach Paradise": 1 },
         },
-        { text: "Snow-capped mountains", scores: { "Adventure Trek": 1 } },
         {
-          text: "Historical streets and architecture",
+          key: "personality_quiz4_question1_option2",
+          scores: { "Adventure Trek": 1 },
+        },
+        {
+          key: "personality_quiz4_question1_option3",
           scores: { "Cultural City Trip": 1 },
         },
       ],
     },
     {
-      question: "Your travel outfit is:",
-      options: [
-        { text: "Hiking boots and backpack", scores: { "Adventure Trek": 1 } },
-        {
-          text: "Comfortable shoes and a camera",
-          scores: { "Cultural City Trip": 1 },
-        },
-        { text: "Swimsuit and sandals", scores: { "Beach Paradise": 1 } },
-      ],
-    },
-    {
-      question: "You can't travel without...",
-      options: [
-        { text: "Sunscreen and a towel", scores: { "Beach Paradise": 1 } },
-        { text: "Map and water bottle", scores: { "Adventure Trek": 1 } },
-        {
-          text: "Museum pass and notebook",
-          scores: { "Cultural City Trip": 1 },
-        },
-      ],
-    },
-    {
-      question: "Pick your travel snack:",
-      options: [
-        { text: "Energy bar", scores: { "Adventure Trek": 1 } },
-        { text: "Fresh fruit", scores: { "Beach Paradise": 1 } },
-        { text: "Local pastry", scores: { "Cultural City Trip": 1 } },
-      ],
-    },
-    {
-      question: "Favorite vacation activity:",
-      options: [
-        { text: "Climbing or kayaking", scores: { "Adventure Trek": 1 } },
-        { text: "Visiting a museum", scores: { "Cultural City Trip": 1 } },
-        { text: "Sunbathing with a drink", scores: { "Beach Paradise": 1 } },
-      ],
-    },
-    {
-      question: "What soundtrack fits your trip?",
-      options: [
-        { text: "Soft tropical music", scores: { "Beach Paradise": 1 } },
-        { text: "Energetic rock", scores: { "Adventure Trek": 1 } },
-        {
-          text: "Classical or indie jazz",
-          scores: { "Cultural City Trip": 1 },
-        },
-      ],
-    },
-    {
-      question: "Where would you sleep?",
+      questionKey: "personality_quiz4_question2",
       options: [
         {
-          text: "Boutique hotel downtown",
-          scores: { "Cultural City Trip": 1 },
-        },
-        { text: "Tent in the wilderness", scores: { "Adventure Trek": 1 } },
-        { text: "Beachfront bungalow", scores: { "Beach Paradise": 1 } },
-      ],
-    },
-    {
-      question: "What do you pack most of?",
-      options: [
-        { text: "Books and guides", scores: { "Cultural City Trip": 1 } },
-        { text: "Sunglasses and swimsuits", scores: { "Beach Paradise": 1 } },
-        { text: "Gear and gadgets", scores: { "Adventure Trek": 1 } },
-      ],
-    },
-    {
-      question: "Choose a drink:",
-      options: [
-        { text: "Espresso", scores: { "Cultural City Trip": 1 } },
-        { text: "Coconut water", scores: { "Beach Paradise": 1 } },
-        { text: "Energy drink", scores: { "Adventure Trek": 1 } },
-      ],
-    },
-    {
-      question: "Vacation length ideal for you:",
-      options: [
-        {
-          text: "10 days to explore culture",
-          scores: { "Cultural City Trip": 1 },
-        },
-        { text: "One week of sun and sea", scores: { "Beach Paradise": 1 } },
-        { text: "A few intense days", scores: { "Adventure Trek": 1 } },
-      ],
-    },
-    {
-      question: "Travel goal:",
-      options: [
-        { text: "To learn and discover", scores: { "Cultural City Trip": 1 } },
-        { text: "To unwind and rest", scores: { "Beach Paradise": 1 } },
-        { text: "To conquer something new", scores: { "Adventure Trek": 1 } },
-      ],
-    },
-    {
-      question: "Vacation photos are mostly:",
-      options: [
-        { text: "Beach sunsets", scores: { "Beach Paradise": 1 } },
-        { text: "Art and street scenes", scores: { "Cultural City Trip": 1 } },
-        { text: "Cliff views and trails", scores: { "Adventure Trek": 1 } },
-      ],
-    },
-    {
-      question: "Souvenir you’d bring:",
-      options: [
-        { text: "Rock or hiking badge", scores: { "Adventure Trek": 1 } },
-        {
-          text: "Postcards and paintings",
-          scores: { "Cultural City Trip": 1 },
-        },
-        { text: "Seashells or beach towel", scores: { "Beach Paradise": 1 } },
-      ],
-    },
-    {
-      question: "Group or solo travel?",
-      options: [
-        {
-          text: "Small group of curious people",
-          scores: { "Cultural City Trip": 1 },
-        },
-        { text: "Solo or with adventurers", scores: { "Adventure Trek": 1 } },
-        { text: "With friends or partner", scores: { "Beach Paradise": 1 } },
-      ],
-    },
-    {
-      question: "What do you avoid?",
-      options: [
-        { text: "Overplanning", scores: { "Cultural City Trip": 1 } },
-        { text: "Crowds", scores: { "Adventure Trek": 1 } },
-        { text: "Stress and noise", scores: { "Beach Paradise": 1 } },
-      ],
-    },
-    {
-      question: "Ideal footwear:",
-      options: [
-        { text: "Sneakers or loafers", scores: { "Cultural City Trip": 1 } },
-        { text: "Flip-flops", scores: { "Beach Paradise": 1 } },
-        { text: "Hiking boots", scores: { "Adventure Trek": 1 } },
-      ],
-    },
-    {
-      question: "What's in your playlist?",
-      options: [
-        { text: "Local folk and jazz", scores: { "Cultural City Trip": 1 } },
-        { text: "Chill beach vibes", scores: { "Beach Paradise": 1 } },
-        { text: "Upbeat rock", scores: { "Adventure Trek": 1 } },
-      ],
-    },
-    {
-      question: "Pick a weather:",
-      options: [
-        { text: "Sunny and warm", scores: { "Beach Paradise": 1 } },
-        { text: "Mild and varied", scores: { "Cultural City Trip": 1 } },
-        { text: "Cool and breezy", scores: { "Adventure Trek": 1 } },
-      ],
-    },
-    {
-      question: "Perfect end to your day:",
-      options: [
-        {
-          text: "Dinner at a quaint cafe",
-          scores: { "Cultural City Trip": 1 },
-        },
-        {
-          text: "Watching waves with a drink",
+          key: "personality_quiz4_question2_option1",
           scores: { "Beach Paradise": 1 },
         },
-        { text: "Campfire under stars", scores: { "Adventure Trek": 1 } },
+        {
+          key: "personality_quiz4_question2_option2",
+          scores: { "Adventure Trek": 1 },
+        },
+        {
+          key: "personality_quiz4_question2_option3",
+          scores: { "Cultural City Trip": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question3",
+      options: [
+        {
+          key: "personality_quiz4_question3_option1",
+          scores: { "Adventure Trek": 1 },
+        },
+        {
+          key: "personality_quiz4_question3_option2",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
+          key: "personality_quiz4_question3_option3",
+          scores: { "Beach Paradise": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question4",
+      options: [
+        {
+          key: "personality_quiz4_question4_option1",
+          scores: { "Beach Paradise": 1 },
+        },
+        {
+          key: "personality_quiz4_question4_option2",
+          scores: { "Adventure Trek": 1 },
+        },
+        {
+          key: "personality_quiz4_question4_option3",
+          scores: { "Cultural City Trip": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question5",
+      options: [
+        {
+          key: "personality_quiz4_question5_option1",
+          scores: { "Adventure Trek": 1 },
+        },
+        {
+          key: "personality_quiz4_question5_option2",
+          scores: { "Beach Paradise": 1 },
+        },
+        {
+          key: "personality_quiz4_question5_option3",
+          scores: { "Cultural City Trip": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question6",
+      options: [
+        {
+          key: "personality_quiz4_question6_option1",
+          scores: { "Adventure Trek": 1 },
+        },
+        {
+          key: "personality_quiz4_question6_option2",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
+          key: "personality_quiz4_question6_option3",
+          scores: { "Beach Paradise": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question7",
+      options: [
+        {
+          key: "personality_quiz4_question7_option1",
+          scores: { "Beach Paradise": 1 },
+        },
+        {
+          key: "personality_quiz4_question7_option2",
+          scores: { "Adventure Trek": 1 },
+        },
+        {
+          key: "personality_quiz4_question7_option3",
+          scores: { "Cultural City Trip": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question8",
+      options: [
+        {
+          key: "personality_quiz4_question8_option1",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
+          key: "personality_quiz4_question8_option2",
+          scores: { "Adventure Trek": 1 },
+        },
+        {
+          key: "personality_quiz4_question8_option3",
+          scores: { "Beach Paradise": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question9",
+      options: [
+        {
+          key: "personality_quiz4_question9_option1",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
+          key: "personality_quiz4_question9_option2",
+          scores: { "Beach Paradise": 1 },
+        },
+        {
+          key: "personality_quiz4_question9_option3",
+          scores: { "Adventure Trek": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question10",
+      options: [
+        {
+          key: "personality_quiz4_question10_option1",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
+          key: "personality_quiz4_question10_option2",
+          scores: { "Beach Paradise": 1 },
+        },
+        {
+          key: "personality_quiz4_question10_option3",
+          scores: { "Adventure Trek": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question11",
+      options: [
+        {
+          key: "personality_quiz4_question11_option1",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
+          key: "personality_quiz4_question11_option2",
+          scores: { "Beach Paradise": 1 },
+        },
+        {
+          key: "personality_quiz4_question11_option3",
+          scores: { "Adventure Trek": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question12",
+      options: [
+        {
+          key: "personality_quiz4_question12_option1",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
+          key: "personality_quiz4_question12_option2",
+          scores: { "Beach Paradise": 1 },
+        },
+        {
+          key: "personality_quiz4_question12_option3",
+          scores: { "Adventure Trek": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question13",
+      options: [
+        {
+          key: "personality_quiz4_question13_option1",
+          scores: { "Beach Paradise": 1 },
+        },
+        {
+          key: "personality_quiz4_question13_option2",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
+          key: "personality_quiz4_question13_option3",
+          scores: { "Adventure Trek": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question14",
+      options: [
+        {
+          key: "personality_quiz4_question14_option1",
+          scores: { "Adventure Trek": 1 },
+        },
+        {
+          key: "personality_quiz4_question14_option2",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
+          key: "personality_quiz4_question14_option3",
+          scores: { "Beach Paradise": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question15",
+      options: [
+        {
+          key: "personality_quiz4_question15_option1",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
+          key: "personality_quiz4_question15_option2",
+          scores: { "Adventure Trek": 1 },
+        },
+        {
+          key: "personality_quiz4_question15_option3",
+          scores: { "Beach Paradise": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question16",
+      options: [
+        {
+          key: "personality_quiz4_question16_option1",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
+          key: "personality_quiz4_question16_option2",
+          scores: { "Adventure Trek": 1 },
+        },
+        {
+          key: "personality_quiz4_question16_option3",
+          scores: { "Beach Paradise": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question17",
+      options: [
+        {
+          key: "personality_quiz4_question17_option1",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
+          key: "personality_quiz4_question17_option2",
+          scores: { "Beach Paradise": 1 },
+        },
+        {
+          key: "personality_quiz4_question17_option3",
+          scores: { "Adventure Trek": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question18",
+      options: [
+        {
+          key: "personality_quiz4_question18_option1",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
+          key: "personality_quiz4_question18_option2",
+          scores: { "Beach Paradise": 1 },
+        },
+        {
+          key: "personality_quiz4_question18_option3",
+          scores: { "Adventure Trek": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question19",
+      options: [
+        {
+          key: "personality_quiz4_question19_option1",
+          scores: { "Beach Paradise": 1 },
+        },
+        {
+          key: "personality_quiz4_question19_option2",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
+          key: "personality_quiz4_question19_option3",
+          scores: { "Adventure Trek": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz4_question20",
+      options: [
+        {
+          key: "personality_quiz4_question20_option1",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
+          key: "personality_quiz4_question20_option2",
+          scores: { "Beach Paradise": 1 },
+        },
+        {
+          key: "personality_quiz4_question20_option3",
+          scores: { "Adventure Trek": 1 },
+        },
       ],
     },
   ],
   // Which Netflix character would you be?
   11: [
     {
-      question: "What's your ideal way to spend a Friday night?",
+      questionKey: "personality_quiz6_question1",
       options: [
-        { text: "Reading chess theory books", scores: { "Beth Harmon": 1 } },
-        { text: "Hanging out with close friends", scores: { Eleven: 1 } },
-        { text: "Writing dark poetry", scores: { "Wednesday Addams": 1 } },
-        { text: "Watching people from afar", scores: { "Joe Goldberg": 1 } },
-      ],
-    },
-    {
-      question: "Pick a superpower:",
-      options: [
-        { text: "Hyper intelligence", scores: { "Beth Harmon": 1 } },
-        { text: "Telekinesis", scores: { Eleven: 1 } },
-        { text: "Mind control", scores: { "Joe Goldberg": 1 } },
-        { text: "Dark aura", scores: { "Wednesday Addams": 1 } },
-      ],
-    },
-    {
-      question: "How do you handle conflict?",
-      options: [
-        { text: "Defend loved ones fiercely", scores: { Eleven: 1 } },
         {
-          text: "Cold silence and eye rolls",
+          key: "personality_quiz6_question1_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question1_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question1_option3",
           scores: { "Wednesday Addams": 1 },
         },
-        { text: "Outsmart everyone", scores: { "Beth Harmon": 1 } },
-        { text: "Plan a psychological counter", scores: { "Joe Goldberg": 1 } },
-      ],
-    },
-    {
-      question: "Your fashion style is...",
-      options: [
-        { text: "Retro and sharp", scores: { "Beth Harmon": 1 } },
-        { text: "Comfy and casual", scores: { Eleven: 1 } },
-        { text: "Neutral and discreet", scores: { "Joe Goldberg": 1 } },
-        { text: "All black, all day", scores: { "Wednesday Addams": 1 } },
-      ],
-    },
-    {
-      question: "What drives you the most?",
-      options: [
-        { text: "Love and obsession", scores: { "Joe Goldberg": 1 } },
-        { text: "Ambition and focus", scores: { "Beth Harmon": 1 } },
-        { text: "Loyalty and protection", scores: { Eleven: 1 } },
-        { text: "Truth in the darkness", scores: { "Wednesday Addams": 1 } },
-      ],
-    },
-    {
-      question: "Pick a hobby:",
-      options: [
-        { text: "Analyzing people", scores: { "Joe Goldberg": 1 } },
-        { text: "Playing strategic games", scores: { "Beth Harmon": 1 } },
-        { text: "Exploring powers", scores: { Eleven: 1 } },
-        { text: "Investigating mysteries", scores: { "Wednesday Addams": 1 } },
-      ],
-    },
-    {
-      question: "Choose a snack:",
-      options: [
         {
-          text: "Poison berries (just for show)",
-          scores: { "Wednesday Addams": 1 },
-        },
-        { text: "Black coffee", scores: { "Joe Goldberg": 1 } },
-        { text: "Eggo waffles", scores: { Eleven: 1 } },
-        { text: "Whiskey neat", scores: { "Beth Harmon": 1 } },
-      ],
-    },
-    {
-      question: "What's your biggest flaw?",
-      options: [
-        { text: "Addictive personality", scores: { "Beth Harmon": 1 } },
-        { text: "Obsessive", scores: { "Joe Goldberg": 1 } },
-        { text: "Emotionally distant", scores: { "Wednesday Addams": 1 } },
-        { text: "Impulsive", scores: { Eleven: 1 } },
-      ],
-    },
-    {
-      question: "Favorite environment:",
-      options: [
-        { text: "Hidden bookstore", scores: { "Joe Goldberg": 1 } },
-        {
-          text: "Graveyard or foggy forest",
-          scores: { "Wednesday Addams": 1 },
-        },
-        { text: "Basement with fairy lights", scores: { Eleven: 1 } },
-        { text: "Chess tournament hall", scores: { "Beth Harmon": 1 } },
-      ],
-    },
-    {
-      question: "Pick a quote:",
-      options: [
-        {
-          text: "I find social norms limiting",
-          scores: { "Wednesday Addams": 1 },
-        },
-        { text: "Friends don't lie", scores: { Eleven: 1 } },
-        { text: "It's not luck, it's skill", scores: { "Beth Harmon": 1 } },
-        { text: "I do everything for love", scores: { "Joe Goldberg": 1 } },
-      ],
-    },
-    {
-      question: "You’re most likely to win a...",
-      options: [
-        { text: "Fight with a monster", scores: { Eleven: 1 } },
-        { text: "Debate or manipulation game", scores: { "Joe Goldberg": 1 } },
-        { text: "High-stakes tournament", scores: { "Beth Harmon": 1 } },
-        { text: "Spooky costume contest", scores: { "Wednesday Addams": 1 } },
-      ],
-    },
-    {
-      question: "Choose a companion:",
-      options: [
-        {
-          text: "Someone you’re secretly watching",
+          key: "personality_quiz6_question1_option4",
           scores: { "Joe Goldberg": 1 },
         },
-        { text: "A loyal best friend", scores: { Eleven: 1 } },
-        { text: "A pet scorpion", scores: { "Wednesday Addams": 1 } },
-        { text: "No one – I work alone", scores: { "Beth Harmon": 1 } },
       ],
     },
     {
-      question: "Biggest fear:",
+      questionKey: "personality_quiz6_question2",
       options: [
-        { text: "Losing control", scores: { Eleven: 1 } },
-        { text: "Being normal", scores: { "Wednesday Addams": 1 } },
-        { text: "Failure", scores: { "Beth Harmon": 1 } },
-        { text: "Being abandoned", scores: { "Joe Goldberg": 1 } },
-      ],
-    },
-    {
-      question: "Pick a secret weapon:",
-      options: [
-        { text: "A sharp mind", scores: { "Beth Harmon": 1 } },
-        { text: "Manipulation", scores: { "Joe Goldberg": 1 } },
-        { text: "Telekinetic rage", scores: { Eleven: 1 } },
-        { text: "Your wit", scores: { "Wednesday Addams": 1 } },
-      ],
-    },
-    {
-      question: "Social life looks like:",
-      options: [
-        { text: "Tight-knit group", scores: { Eleven: 1 } },
-        { text: "Solitary by choice", scores: { "Wednesday Addams": 1 } },
         {
-          text: "People respect me, but I keep distance",
+          key: "personality_quiz6_question2_option1",
           scores: { "Beth Harmon": 1 },
         },
-        { text: "Pretending to fit in", scores: { "Joe Goldberg": 1 } },
-      ],
-    },
-    {
-      question: "How do you think?",
-      options: [
-        { text: "Logically and ahead", scores: { "Beth Harmon": 1 } },
-        { text: "In twisted stories", scores: { "Joe Goldberg": 1 } },
-        { text: "Emotionally and intuitively", scores: { Eleven: 1 } },
-        { text: "Darkly and deeply", scores: { "Wednesday Addams": 1 } },
-      ],
-    },
-    {
-      question: "Ideal power dynamic:",
-      options: [
-        { text: "Challenge the system", scores: { "Wednesday Addams": 1 } },
-        { text: "Protect the ones I love", scores: { Eleven: 1 } },
-        { text: "Control from the shadows", scores: { "Joe Goldberg": 1 } },
-        { text: "Be the best without help", scores: { "Beth Harmon": 1 } },
-      ],
-    },
-    {
-      question: "Your mental strength comes from...",
-      options: [
+        { key: "personality_quiz6_question2_option2", scores: { Eleven: 1 } },
         {
-          text: "Not caring what others think",
+          key: "personality_quiz6_question2_option3",
           scores: { "Wednesday Addams": 1 },
         },
-        { text: "Survival", scores: { Eleven: 1 } },
-        { text: "Conviction", scores: { "Joe Goldberg": 1 } },
-        { text: "Discipline", scores: { "Beth Harmon": 1 } },
+        {
+          key: "personality_quiz6_question2_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
       ],
     },
     {
-      question: "Choose a theme song:",
+      questionKey: "personality_quiz6_question3",
       options: [
         {
-          text: "White Rabbit – Jefferson Airplane",
+          key: "personality_quiz6_question3_option1",
           scores: { "Beth Harmon": 1 },
         },
+        { key: "personality_quiz6_question3_option2", scores: { Eleven: 1 } },
         {
-          text: "Paint it Black – Rolling Stones",
+          key: "personality_quiz6_question3_option3",
           scores: { "Wednesday Addams": 1 },
         },
-        { text: "Creep – Radiohead", scores: { "Joe Goldberg": 1 } },
-        { text: "Running Up That Hill – Kate Bush", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question3_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question4",
+      options: [
+        {
+          key: "personality_quiz6_question4_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question4_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question4_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question4_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question5",
+      options: [
+        {
+          key: "personality_quiz6_question5_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question5_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question5_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question5_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question6",
+      options: [
+        {
+          key: "personality_quiz6_question6_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question6_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question6_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question6_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question7",
+      options: [
+        {
+          key: "personality_quiz6_question7_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question7_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question7_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question7_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question8",
+      options: [
+        {
+          key: "personality_quiz6_question8_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question8_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question8_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question8_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question9",
+      options: [
+        {
+          key: "personality_quiz6_question9_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question9_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question9_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question9_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question10",
+      options: [
+        {
+          key: "personality_quiz6_question10_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question10_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question10_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question10_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question11",
+      options: [
+        {
+          key: "personality_quiz6_question11_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question11_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question11_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question11_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question12",
+      options: [
+        {
+          key: "personality_quiz6_question12_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question12_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question12_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question12_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question13",
+      options: [
+        {
+          key: "personality_quiz6_question13_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question13_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question13_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question13_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question14",
+      options: [
+        {
+          key: "personality_quiz6_question14_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question14_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question14_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question14_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question15",
+      options: [
+        {
+          key: "personality_quiz6_question15_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question15_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question15_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question15_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question16",
+      options: [
+        {
+          key: "personality_quiz6_question16_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question16_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question16_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question16_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question17",
+      options: [
+        {
+          key: "personality_quiz6_question17_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question17_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question17_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question17_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question18",
+      options: [
+        {
+          key: "personality_quiz6_question18_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question18_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question18_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question18_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question19",
+      options: [
+        {
+          key: "personality_quiz6_question19_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question19_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question19_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question19_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
+      ],
+    },
+    {
+      questionKey: "personality_quiz6_question20",
+      options: [
+        {
+          key: "personality_quiz6_question20_option1",
+          scores: { "Beth Harmon": 1 },
+        },
+        { key: "personality_quiz6_question20_option2", scores: { Eleven: 1 } },
+        {
+          key: "personality_quiz6_question20_option3",
+          scores: { "Wednesday Addams": 1 },
+        },
+        {
+          key: "personality_quiz6_question20_option4",
+          scores: { "Joe Goldberg": 1 },
+        },
       ],
     },
   ],

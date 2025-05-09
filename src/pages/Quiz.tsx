@@ -4,11 +4,13 @@ import { mockQuestions } from "../data/mockQuestions";
 import KnowledgeResult from "../components/results/knowledge/KnowledgeResult";
 import PsychologicalResult from "../components/results/psychological/PsychologicalResult";
 import EntertainmentResult from "../components/results/entertainment/EntertainmentResult";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const Quiz = () => {
   const { id } = useParams();
   const quizId = Number(id);
   const location = useLocation();
+  const { t } = useLanguage();
   const name =
     location.state?.name || localStorage.getItem("quizPlayerName") || "Player";
 
@@ -168,14 +170,35 @@ const Quiz = () => {
 
   const finalTime = formatTime(secondsElapsed);
 
+  const quizTitleKey = `quiz_title_${quizId}` as
+    | "quiz_title_1"
+    | "quiz_title_2"
+    | "quiz_title_3"
+    | "quiz_title_4"
+    | "quiz_title_5"
+    | "quiz_title_6"
+    | "quiz_title_7"
+    | "quiz_title_8"
+    | "quiz_title_9"
+    | "quiz_title_10"
+    | "quiz_title_11"
+    | "quiz_title_12"
+    | "quiz_title_13"
+    | "quiz_title_14"
+    | "quiz_title_15"
+    | "quiz_title_16"
+    | "quiz_title_17"
+    | "quiz_title_18"
+    | "quiz_title_19";
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-100 via-yellow-100 to-blue-100 px-6 py-10 flex flex-col items-center">
       <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-pink-500 to-yellow-500 mb-6 text-center drop-shadow">
-        Quiz Time, {name}!
+        {t("quiz_header", { name })}
       </h1>
 
       <h2 className="text-xl font-semibold text-indigo-700 mb-4 text-center">
-        {quizTitle}
+        {t(quizTitleKey)}
       </h2>
 
       <div className="w-full max-w-2xl bg-white p-6 rounded-3xl shadow-lg text-center">
@@ -188,16 +211,21 @@ const Quiz = () => {
               ></div>
             </div>
             <div className="text-sm text-gray-600 font-semibold mb-2 flex justify-end gap-1">
-              Time Elapsed:
+              {t("quiz_timeElapsed")}
               <span className="font-mono">{formatTime(secondsElapsed)}</span>
             </div>
 
             <p className="text-gray-700 mb-4 font-semibold">
-              Question {currentIndex + 1} of {questions.length}
+              {t("quiz_questionProgress", {
+                current: currentIndex + 1,
+                total: questions.length,
+              })}
             </p>
 
             <h2 className="text-xl font-bold mb-6">
-              {currentQuestion.question}
+              <h2 className="text-xl font-bold mb-6">
+                {t(currentQuestion.questionKey)}
+              </h2>
             </h2>
 
             <div className="grid gap-4 mb-6">
@@ -227,7 +255,11 @@ const Quiz = () => {
                         : "bg-white border-gray-300 hover:border-indigo-400"
                     }`}
                   >
-                    {typeof option === "string" ? option : option.text}
+                    {typeof option === "string"
+                      ? option
+                      : option.key
+                        ? t(option.key)
+                        : option.text}
                   </button>
                 );
               })}
@@ -250,7 +282,7 @@ const Quiz = () => {
                   : "bg-gradient-to-r from-pink-500 to-indigo-500 hover:brightness-110"
               }`}
             >
-              Next
+              {t("quiz_next")}
             </button>
           </>
         ) : (
@@ -298,7 +330,7 @@ const Quiz = () => {
               onClick={() => (window.location.href = "/select-quiz")}
               className="mt-4 bg-gradient-to-r from-pink-500 to-indigo-500 text-white px-6 py-2 rounded-full text-sm font-semibold hover:brightness-110 transition flex items-center gap-2"
             >
-              🔁 Back to Quiz Categories
+              {t("quiz_back")}
             </button>
           </div>
         )}

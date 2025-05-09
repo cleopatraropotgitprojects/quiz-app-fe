@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLanguage } from "../../../contexts/LanguageContext";
 
 type Props = {
   score: number;
@@ -17,6 +18,7 @@ const KnowledgeResult: React.FC<Props> = ({
   questions,
   selectedAnswers,
 }) => {
+  const { t } = useLanguage();
   const [showAll, setShowAll] = useState(false);
   const visibleQuestions = showAll ? questions : questions.slice(0, 2);
 
@@ -26,11 +28,9 @@ const KnowledgeResult: React.FC<Props> = ({
         <>
           <div className="text-4xl">😅📚</div>
           <h2 className="text-2xl font-extrabold text-red-500">
-            You did not score this time, {name}!
+            {t("yourScore_zero", { name })}
           </h2>
-          <p className="text-sm text-gray-500">
-            Try again and keep learning 🚀
-          </p>
+          <p className="text-sm text-gray-500">{t("tryAgain")}</p>
         </>
       )}
 
@@ -38,11 +38,9 @@ const KnowledgeResult: React.FC<Props> = ({
         <>
           <div className="text-4xl">🎉👏</div>
           <h2 className="text-2xl font-extrabold text-green-600">
-            You’ve completed the quiz, {name}!
+            {t("yourScore_partial", { name })}
           </h2>
-          <p className="text-sm text-gray-500">
-            Great job! You’re one step smarter today 🧠✨
-          </p>
+          <p className="text-sm text-gray-500">{t("greatJob")}</p>
         </>
       )}
 
@@ -50,21 +48,21 @@ const KnowledgeResult: React.FC<Props> = ({
         <>
           <div className="text-4xl">👑🏆</div>
           <h2 className="text-2xl font-extrabold text-yellow-600">
-            Outstanding, {name}!
+            {t("yourScore_full", { name })}
           </h2>
-          <p className="text-sm text-gray-500">
-            Perfect score! You nailed it 💯🔥
-          </p>
+          <p className="text-sm text-gray-500">{t("perfectScore")}</p>
         </>
       )}
 
       <div className="text-xl font-bold bg-green-100 text-green-800 px-8 py-2 rounded-full shadow-inner mt-4">
-        Score: {score} / {total}
+        {t("yourScore", { score, total })}
       </div>
-      <p className="text-sm text-gray-600">⏱ Time taken: {time}</p>
+      <p className="text-sm text-gray-600">
+        ⏱ {t("timeTaken")}: {time}
+      </p>
 
       <div className="mt-6 w-full text-left">
-        <h3 className="text-lg font-semibold mb-2">Review your answers:</h3>
+        <h3 className="text-lg font-semibold mb-2">{t("answerReview")}</h3>
         <div className="space-y-4">
           {visibleQuestions.map((q, index) => {
             const actualIndex = showAll ? index : index;
@@ -84,16 +82,16 @@ const KnowledgeResult: React.FC<Props> = ({
                   Q{actualIndex + 1}: {q.question}
                 </p>
                 <p>
-                  Your answer:{" "}
+                  {t("yourAnswer")}{" "}
                   <span
                     className={isCorrect ? "text-green-700" : "text-red-700"}
                   >
-                    {q.options[userAnswer] ?? "No answer"}
+                    {q.options[userAnswer] ?? t("noAnswer")}
                   </span>
                 </p>
                 {!isCorrect && (
                   <p className="text-green-700">
-                    Correct answer: {q.options[q.correct]}
+                    {t("correctAnswer")}: {q.options[q.correct]}
                   </p>
                 )}
               </div>
@@ -107,7 +105,7 @@ const KnowledgeResult: React.FC<Props> = ({
               onClick={() => setShowAll((prev) => !prev)}
               className="text-sm font-semibold text-indigo-600 hover:underline"
             >
-              {showAll ? "Show less ▲" : "Show all answers ▼"}
+              {showAll ? t("showLess") : t("showAll")}
             </button>
           </div>
         )}

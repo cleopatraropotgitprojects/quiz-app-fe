@@ -1,4 +1,5 @@
 import { useLocation, useParams, useNavigate } from "react-router-dom";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const quizzesByCategory: Record<
   string,
@@ -11,143 +12,35 @@ const quizzesByCategory: Record<
   }[]
 > = {
   knowledge: [
-    {
-      id: 1,
-      title: "How well do you know European geography?",
-      icon: "🌍",
-      questions: 20,
-      minutes: 8,
-    }, // europe-geo
-    {
-      id: 2,
-      title: "Which country is this capital from?",
-      icon: "🏙️",
-      questions: 20,
-      minutes: 8,
-    }, // capital-quiz
-    {
-      id: 3,
-      title: "General knowledge: quick edition",
-      icon: "🧠",
-      questions: 20,
-      minutes: 8,
-    }, // general-quick
-    {
-      id: 4,
-      title: "History test: key events of the 20th century",
-      icon: "📜",
-      questions: 20,
-      minutes: 10,
-    }, // 20th-century-history
-    {
-      id: 5,
-      title: "What do you know about space and planets?",
-      icon: "🪐",
-      questions: 20,
-      minutes: 10,
-    }, // space-planets
-    {
-      id: 6,
-      title: "English grammar test",
-      icon: "📘",
-      questions: 20,
-      minutes: 9,
-    }, // romanian-grammar
+    { id: 1, title: "quiz_title_1", icon: "🌍", questions: 20, minutes: 8 },
+    { id: 2, title: "quiz_title_2", icon: "🏙️", questions: 20, minutes: 8 },
+    { id: 3, title: "quiz_title_3", icon: "🧠", questions: 20, minutes: 8 },
+    { id: 4, title: "quiz_title_4", icon: "📜", questions: 20, minutes: 10 },
+    { id: 5, title: "quiz_title_5", icon: "🪐", questions: 20, minutes: 10 },
+    { id: 6, title: "quiz_title_6", icon: "📘", questions: 20, minutes: 9 },
   ],
   personality: [
-    {
-      id: 7,
-      title: "Which Harry Potter character are you?",
-      icon: "🧙‍♂️",
-      questions: 20,
-      minutes: 8,
-    }, // hp-character
-    {
-      id: 8,
-      title: "Which Disney character matches your personality?",
-      icon: "🐭",
-      questions: 19,
-      minutes: 8,
-    }, // disney-character
-    {
-      id: 9,
-      title: "Which Marvel superhero are you?",
-      icon: "🦸‍♀️",
-      questions: 20,
-      minutes: 9,
-    }, // marvel-hero
-    {
-      id: 10,
-      title: "What’s your ideal vacation?",
-      icon: "🏖️",
-      questions: 20,
-      minutes: 8,
-    }, // ideal-vacation
-    {
-      id: 11,
-      title: "Which Netflix character would you be?",
-      icon: "🎬",
-      questions: 19,
-      minutes: 8,
-    }, // netflix-character
+    { id: 7, title: "quiz_title_7", icon: "🧙‍♂️", questions: 20, minutes: 8 },
+    { id: 8, title: "quiz_title_8", icon: "🐭", questions: 19, minutes: 8 },
+    { id: 9, title: "quiz_title_9", icon: "🦸‍♀️", questions: 20, minutes: 9 },
+    { id: 10, title: "quiz_title_10", icon: "🏖️", questions: 20, minutes: 8 },
+    { id: 11, title: "quiz_title_11", icon: "🎬", questions: 19, minutes: 8 },
   ],
   psychological: [
-    {
-      id: 12,
-      title: "Are you more logical or creative?",
-      icon: "🧩",
-      questions: 15,
-      minutes: 10,
-    }, // logic-or-creative
-    {
-      id: 13,
-      title: "What’s your mental age?",
-      icon: "🎂",
-      questions: 21,
-      minutes: 10,
-    }, // mental-age
-    {
-      id: 14,
-      title: "How empathetic are you?",
-      icon: "💞",
-      questions: 20,
-      minutes: 10,
-    }, // empathy-level
+    { id: 12, title: "quiz_title_12", icon: "🧩", questions: 15, minutes: 10 },
+    { id: 13, title: "quiz_title_13", icon: "🎂", questions: 21, minutes: 10 },
+    { id: 14, title: "quiz_title_14", icon: "💞", questions: 20, minutes: 10 },
     {
       id: 15,
-      title: "Are you more introverted or extroverted?",
+      title: "quiz_title_15",
       icon: "🧍‍♀️👯",
       questions: 20,
       minutes: 10,
-    }, // introvert-extrovert
-    {
-      id: 16,
-      title: "What kind of leader are you?",
-      icon: "👑",
-      questions: 20,
-      minutes: 10,
-    }, // leader-type
-    {
-      id: 17,
-      title: "What’s your communication style?",
-      icon: "🗣️",
-      questions: 20,
-      minutes: 10,
-    }, // communication-style
-    {
-      id: 18,
-      title: "How do you react under stress?",
-      icon: "😰",
-      questions: 20,
-      minutes: 10,
-    }, // stress-response
-    {
-      id: 19,
-      title: "What’s your love language?",
-      icon: "💌",
-      questions: 19,
-      minutes: 10,
-    }, // love-language
+    },
+    { id: 16, title: "quiz_title_16", icon: "👑", questions: 20, minutes: 10 },
+    { id: 17, title: "quiz_title_17", icon: "🗣️", questions: 20, minutes: 10 },
+    { id: 18, title: "quiz_title_18", icon: "😰", questions: 20, minutes: 10 },
+    { id: 19, title: "quiz_title_19", icon: "💌", questions: 19, minutes: 10 },
   ],
 };
 
@@ -156,6 +49,7 @@ const QuizList = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const name = location.state?.name || "";
+  const { t } = useLanguage();
 
   const quizzes = quizzesByCategory[category || ""] || [];
 
@@ -163,15 +57,17 @@ const QuizList = () => {
     navigate(`/quiz/${quizId}`, { state: { name } });
   };
 
+  const pluralize = (count: number, singular: string, plural: string) =>
+    count === 1 ? singular : plural;
+
   return (
     <div className="flex flex-col items-center min-h-screen bg-gradient-to-br from-pink-100 via-yellow-100 to-blue-100 px-6 py-10">
       <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-pink-500 to-yellow-500 mb-6 text-center drop-shadow">
-        Choose a quiz, {name}!
+        {t("quizlist_title", { name })}
       </h1>
 
       <p className="text-md text-gray-700 mb-8 text-center max-w-2xl">
-        We've selected the best knowledge challenges for you. Pick one and let's
-        dive in! ✨
+        {t("quizlist_subtitle")}
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl select-none">
@@ -183,10 +79,10 @@ const QuizList = () => {
           >
             <div className="absolute top-4 right-4 flex flex-col items-end gap-2 group">
               <div className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-white/70 to-white/50 backdrop-blur-md border border-white/40 shadow-md text-[11px] font-semibold text-gray-700 tracking-wide transform transition-transform duration-300 group-hover:-translate-y-1">
-                {quiz.questions} questions
+                {t("quizlist_questionCount", { count: quiz.questions })}
               </div>
               <div className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-white/70 to-white/50 backdrop-blur-md border border-white/40 shadow-md text-[11px] font-semibold text-gray-700 tracking-wide transform transition-transform duration-300 group-hover:-translate-y-1">
-                {quiz.minutes} minutes
+                {t("quizlist_minutes", { count: quiz.minutes })}
               </div>
             </div>
 
@@ -195,7 +91,7 @@ const QuizList = () => {
             </div>
 
             <h3 className="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 transition-colors duration-300 group-hover:brightness-110">
-              {quiz.title}
+              {t(quiz.title as any)}
             </h3>
           </div>
         ))}
