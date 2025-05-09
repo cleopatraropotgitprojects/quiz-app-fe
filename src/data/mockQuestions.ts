@@ -18,6 +18,7 @@ export type QuizQuestion =
     };
 
 export const mockQuestions: Record<number, QuizQuestion[]> = {
+  // How well do you know European geography?
   1: [
     {
       question: "Which country does the city of Prague belong to?",
@@ -125,6 +126,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       correct: 0,
     },
   ],
+  // Which country is this capital from?
   2: [
     {
       question: "Oslo is the capital of?",
@@ -213,7 +215,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     },
     {
       question: "Chisinau is the capital of?",
-      options: ["Belarus", "Ukraine", "Romania", "Moldova"],
+      options: ["Belarus", "Ukraine", "Romania", "Republic of Moldova"],
       correct: 3,
     },
     {
@@ -227,6 +229,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       correct: 3,
     },
   ],
+  // General knowledge: quick edition
   3: [
     {
       question: "What is the largest planet in our Solar System?",
@@ -334,6 +337,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       correct: 2,
     },
   ],
+  // History test: key events of the 20th century
   4: [
     {
       question: "In which year did World War I begin?",
@@ -470,6 +474,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       correct: 3,
     },
   ],
+  // What do you know about space and planets?
   5: [
     {
       question: "Which planet is known as the Red Planet?",
@@ -482,7 +487,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       correct: 0,
     },
     {
-      question: "How many planets are there in the solar system?",
+      question: "How many planets are in the solar system?",
       options: ["7", "9", "8", "10"],
       correct: 2,
     },
@@ -582,6 +587,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       correct: 2,
     },
   ],
+  // English grammar test
   6: [
     {
       question: "Which sentence is grammatically correct?",
@@ -707,6 +713,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       correct: 1,
     },
   ],
+  // Which Harry Potter character are you?
   7: [
     {
       question: "What quality describes you best?",
@@ -892,6 +899,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       ],
     },
   ],
+  // Which Disney character matches your personality?
   8: [
     {
       question: "What's your ideal weekend?",
@@ -923,10 +931,10 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "Choose a companion animal:",
       options: [
-        { text: "Horse with a library name", scores: { Belle: 1 } },
-        { text: "Snow Leopard", scores: { Elsa: 1 } },
-        { text: "Flounder the fish", scores: { Ariel: 1 } },
-        { text: "Cricket or dragon", scores: { Mulan: 1 } },
+        { text: "Golden Retriever", scores: { Belle: 1 } },
+        { text: "Arctic Wolf", scores: { Elsa: 1 } },
+        { text: "Clownfish", scores: { Ariel: 1 } },
+        { text: "Siberian Tiger", scores: { Mulan: 1 } },
       ],
     },
     {
@@ -1071,6 +1079,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       ],
     },
   ],
+  // Which Marvel superhero are you?
   9: [
     {
       question: "How do you solve problems?",
@@ -1268,6 +1277,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       ],
     },
   ],
+  //  What's your ideal vacation?
   10: [
     {
       question: "How do you want to feel during your vacation?",
@@ -1463,6 +1473,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       ],
     },
   ],
+  // Which Netflix character would you be?
   11: [
     {
       question: "What's your ideal way to spend a Friday night?",
@@ -1663,310 +1674,325 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       ],
     },
   ],
+  // Are you more logical or creative?
   12: [
     {
-      question: "What do you enjoy more?",
+      question: "Which activity sounds more appealing?",
       options: [
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-        { text: "Expressing through art", traits: { creative: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "Your ideal weekend activity is:",
-      options: [
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "How do you approach a problem?",
-      options: [
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "What kind of movies do you prefer?",
-      options: [
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "Choose a metaphor that describes your mind:",
-      options: [
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-        { text: "Expressing through art", traits: { creative: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "What's your favorite type of book?",
-      options: [
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "How do you plan your week?",
-      options: [
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "Which of these feels most rewarding?",
-      options: [
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "What do you do when you're bored?",
-      options: [
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "Which class did you like more in school?",
-      options: [
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "What kind of environment helps you think?",
-      options: [
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "What do you value in others?",
-      options: [
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "What makes you feel proud?",
-      options: [
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "How do you process new ideas?",
-      options: [
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "Which tool would you pick?",
-      options: [
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "How do you prefer to communicate?",
-      options: [
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "What inspires you?",
-      options: [
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "What type of goal excites you more?",
-      options: [
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "Which hobby sounds more fun?",
-      options: [
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-      ],
-      multiple: true,
-    },
-    {
-      question: "What kind of thinker are you?",
-      options: [
-        { text: "Solving logic puzzles", traits: { logical: 2 } },
-        { text: "Expressing through art", traits: { creative: 2 } },
-        { text: "Blending structure and style", traits: { balanced: 2 } },
-      ],
-      multiple: true,
-    },
-  ],
-
-  13: [
-    {
-      question: "How do you prefer to spend your Sunday?",
-      multiple: true,
-      options: [
-        { text: "Reading a book at home", traits: { "50+": 2 } },
-        { text: "Meeting friends for brunch", traits: { "30s": 2 } },
-        { text: "Trying a new activity like ziplining", traits: { "20s": 2 } },
-        { text: "Binge-watching cartoons", traits: { teen: 2 } },
-      ],
-    },
-    {
-      question: "Your ideal vacation would be:",
-      multiple: false,
-      options: [
-        { text: "A peaceful countryside retreat", traits: { "50+": 2 } },
-        { text: "A cultural city tour", traits: { "30s": 2 } },
-        { text: "A beach party trip", traits: { "20s": 2 } },
-        { text: "Disneyland!", traits: { teen: 2 } },
-      ],
-    },
-    {
-      question: "Which quote speaks to you most?",
-      multiple: true,
-      options: [
-        { text: "Early to bed and early to rise", traits: { "50+": 2 } },
-        { text: "Work hard, play hard", traits: { "30s": 2 } },
-        { text: "Live in the moment", traits: { "20s": 2 } },
+        { text: "Designing a character from scratch", traits: { creative: 2 } },
+        { text: "Analyzing a detective mystery", traits: { logical: 2 } },
         {
-          text: "Why be moody when you can shake your booty?",
-          traits: { teen: 2 },
+          text: "Structuring a story with plot twists",
+          traits: { balanced: 2 },
         },
       ],
+      multiple: false,
     },
     {
-      question: "Which food are you most likely to crave?",
+      question: "Which would you rather attend?",
+      options: [
+        { text: "An art exhibition", traits: { creative: 2 } },
+        { text: "A chess tournament", traits: { logical: 2 } },
+        { text: "A design thinking workshop", traits: { balanced: 2 } },
+      ],
+      multiple: false,
+    },
+    {
+      question: "Your workspace is usually:",
+      options: [
+        {
+          text: "A bit chaotic but full of inspiration",
+          traits: { creative: 2 },
+        },
+        { text: "Organized and labeled", traits: { logical: 2 } },
+        {
+          text: "Functional with a touch of aesthetic",
+          traits: { balanced: 2 },
+        },
+      ],
+      multiple: false,
+    },
+    {
+      question: "When brainstorming, you usually:",
+      options: [
+        { text: "Sketch your ideas", traits: { creative: 2 } },
+        { text: "Create a mind map or flowchart", traits: { logical: 2 } },
+        { text: "Switch between visuals and notes", traits: { balanced: 2 } },
+      ],
+      multiple: false,
+    },
+    {
+      question: "Pick a quote that resonates with you:",
+      options: [
+        {
+          text: "“Creativity is intelligence having fun.”",
+          traits: { creative: 2 },
+        },
+        {
+          text: "“Everything should make logical sense.”",
+          traits: { logical: 2 },
+        },
+        {
+          text: "“Balance is not something you find, it’s something you create.”",
+          traits: { balanced: 2 },
+        },
+      ],
+      multiple: false,
+    },
+    {
+      question: "What would you do with a blank notebook?",
+      options: [
+        { text: "Start a visual journal", traits: { creative: 2 } },
+        { text: "Write a daily tracker or habit log", traits: { logical: 2 } },
+        {
+          text: "Use it for structured ideas and sketches",
+          traits: { balanced: 2 },
+        },
+      ],
+      multiple: false,
+    },
+    {
+      question: "What type of task drains you the most?",
+      options: [
+        { text: "Repetitive technical tasks", traits: { creative: 2 } },
+        { text: "Unstructured freeform work", traits: { logical: 2 } },
+        {
+          text: "Tasks with no clear direction or feedback",
+          traits: { balanced: 2 },
+        },
+      ],
+      multiple: false,
+    },
+    {
+      question:
+        "You're given a new app to test. What’s the first thing you do?",
+      options: [
+        { text: "Explore the design and experience", traits: { creative: 2 } },
+        { text: "Look for bugs and logic errors", traits: { logical: 2 } },
+        { text: "Compare structure, logic, and flow", traits: { balanced: 2 } },
+      ],
+      multiple: false,
+    },
+    {
+      question: "Which role would suit you best?",
+      options: [
+        { text: "Creative Director", traits: { creative: 2 } },
+        { text: "Data Analyst", traits: { logical: 2 } },
+        { text: "UX Designer", traits: { balanced: 2 } },
+      ],
+      multiple: false,
+    },
+    {
+      question: "Which phrase describes you better?",
+      options: [
+        { text: "My imagination runs wild", traits: { creative: 2 } },
+        { text: "I need structure to focus", traits: { logical: 2 } },
+        { text: "I adapt between chaos and order", traits: { balanced: 2 } },
+      ],
+      multiple: false,
+    },
+    {
+      question: "How do you express your ideas best?",
+      options: [
+        { text: "With sketches, colors, or music", traits: { creative: 2 } },
+        {
+          text: "With clear arguments and structured steps",
+          traits: { logical: 2 },
+        },
+        { text: "By combining visuals and reasoning", traits: { balanced: 2 } },
+      ],
+      multiple: false,
+    },
+    {
+      question: "What sparks your motivation?",
+      options: [
+        {
+          text: "A powerful image, melody, or emotion",
+          traits: { creative: 2 },
+        },
+        { text: "A problem that needs solving", traits: { logical: 2 } },
+        {
+          text: "A challenge that requires both imagination and logic",
+          traits: { balanced: 2 },
+        },
+      ],
+      multiple: false,
+    },
+    {
+      question: "Which kind of achievement feels most fulfilling?",
+      options: [
+        {
+          text: "Finishing a personal artistic project",
+          traits: { creative: 2 },
+        },
+        {
+          text: "Solving something that seemed impossible",
+          traits: { logical: 2 },
+        },
+        {
+          text: "Creating something beautiful *and* functional",
+          traits: { balanced: 2 },
+        },
+      ],
+      multiple: false,
+    },
+    {
+      question: "How would you spend a free afternoon?",
+      options: [
+        { text: "Painting, writing, or crafting", traits: { creative: 2 } },
+        {
+          text: "Playing strategy games or solving puzzles",
+          traits: { logical: 2 },
+        },
+        {
+          text: "Redesigning a space or planning something new",
+          traits: { balanced: 2 },
+        },
+      ],
+      multiple: false,
+    },
+    {
+      question: "Which phrase best describes your thinking style?",
+      options: [
+        { text: "I think in visuals and emotions", traits: { creative: 2 } },
+        { text: "I analyze patterns and logic", traits: { logical: 2 } },
+        { text: "I connect feelings with structure", traits: { balanced: 2 } },
+      ],
+      multiple: false,
+    },
+  ],
+  // What's your mental age?
+  13: [
+    {
+      question: "How do you react when plans get canceled last minute?",
       multiple: true,
       options: [
-        { text: "Stew or casserole", traits: { "50+": 2 } },
-        { text: "Gourmet burger", traits: { "30s": 2 } },
-        { text: "Avocado toast", traits: { "20s": 2 } },
-        { text: "Fruity candy or snacks", traits: { teen: 2 } },
+        { text: "Disappointed, I was excited!", traits: { teen: 2 } },
+        {
+          text: "No problem, I’ll find something fun to do instead",
+          traits: { "20s": 2 },
+        },
+        { text: "Annoyed, I already got ready", traits: { "30s": 2 } },
+        { text: "Relieved — now I can relax", traits: { "50+": 2 } },
+      ],
+    },
+    {
+      question: "Pick a hobby you'd love to start:",
+      multiple: true,
+      options: [
+        { text: "Skateboarding or TikTok edits", traits: { teen: 2 } },
+        { text: "Learning a new language", traits: { "30s": 2 } },
+        { text: "Knitting or gardening", traits: { "50+": 2 } },
+        { text: "Dance classes or stand-up comedy", traits: { "20s": 2 } },
+      ],
+    },
+    {
+      question: "How do you usually manage your money?",
+      multiple: false,
+      options: [
+        { text: "Money? I just ask my parents", traits: { teen: 2 } },
+        { text: "Spend now, think later", traits: { "20s": 2 } },
+        { text: "Save first, spend later", traits: { "50+": 2 } },
+        { text: "Budget and track expenses", traits: { "30s": 2 } },
+      ],
+    },
+    {
+      question: "Which of these sounds most like you in a group setting?",
+      multiple: true,
+      options: [
+        { text: "The loud one, always making jokes", traits: { teen: 2 } },
+        { text: "Energizer who starts wild ideas", traits: { "20s": 2 } },
+        { text: "Quiet observer who gives wise advice", traits: { "50+": 2 } },
+        { text: "Mediator who keeps things calm", traits: { "30s": 2 } },
+      ],
+    },
+    {
+      question: "What’s your bedtime habit?",
+      multiple: false,
+      options: [
+        { text: "Fall asleep with YouTube playing", traits: { teen: 2 } },
+        { text: "Scroll social media endlessly", traits: { "20s": 2 } },
+        { text: "Check emails or plan the next day", traits: { "30s": 2 } },
+        { text: "Read a chapter before sleep", traits: { "50+": 2 } },
       ],
     },
     {
       question: "How do you deal with conflicts?",
       multiple: true,
       options: [
-        { text: "Avoid and keep peace", traits: { "50+": 2 } },
+        { text: "Block and move on", traits: { teen: 2 } },
         { text: "Seek mature dialogue", traits: { "30s": 2 } },
         { text: "Speak your mind quickly", traits: { "20s": 2 } },
-        { text: "Block and move on", traits: { teen: 2 } },
+        { text: "Avoid and keep peace", traits: { "50+": 2 } },
       ],
     },
     {
       question: "Which app do you use the most?",
       multiple: false,
       options: [
-        { text: "News app", traits: { "50+": 2 } },
-        { text: "LinkedIn", traits: { "30s": 2 } },
         { text: "Instagram", traits: { "20s": 2 } },
+        { text: "News app", traits: { "50+": 2 } },
         { text: "TikTok", traits: { teen: 2 } },
+        { text: "LinkedIn", traits: { "30s": 2 } },
       ],
     },
     {
       question: "Your favorite time of day is:",
       multiple: false,
       options: [
-        { text: "Early morning", traits: { "50+": 2 } },
+        { text: "Midnight", traits: { teen: 2 } },
         { text: "Late morning/afternoon", traits: { "30s": 2 } },
         { text: "Evening", traits: { "20s": 2 } },
-        { text: "Midnight", traits: { teen: 2 } },
+        { text: "Early morning", traits: { "50+": 2 } },
       ],
     },
     {
       question: "When shopping, you usually:",
       multiple: true,
       options: [
-        { text: "Buy only what’s needed", traits: { "50+": 2 } },
-        { text: "Invest in long-lasting items", traits: { "30s": 2 } },
         { text: "Look for trendy outfits", traits: { "20s": 2 } },
         { text: "Grab fun, random things", traits: { teen: 2 } },
+        { text: "Invest in long-lasting items", traits: { "30s": 2 } },
+        { text: "Buy only what’s needed", traits: { "50+": 2 } },
       ],
     },
     {
       question: "Pick a TV genre:",
       multiple: false,
       options: [
-        { text: "Documentaries", traits: { "50+": 2 } },
-        { text: "Drama", traits: { "30s": 2 } },
-        { text: "Reality shows", traits: { "20s": 2 } },
         { text: "Anime", traits: { teen: 2 } },
+        { text: "Documentaries", traits: { "50+": 2 } },
+        { text: "Reality shows", traits: { "20s": 2 } },
+        { text: "Drama", traits: { "30s": 2 } },
       ],
     },
     {
       question: "Which drink sounds best?",
       multiple: false,
       options: [
+        { text: "Bubble tea", traits: { teen: 2 } },
+        { text: "Iced matcha latte", traits: { "20s": 2 } },
         { text: "Herbal tea", traits: { "50+": 2 } },
         { text: "Black coffee", traits: { "30s": 2 } },
-        { text: "Iced matcha latte", traits: { "20s": 2 } },
-        { text: "Bubble tea", traits: { teen: 2 } },
       ],
     },
     {
       question: "How do you take notes?",
       multiple: true,
       options: [
-        { text: "Pen and paper", traits: { "50+": 2 } },
-        { text: "Notebook or planner", traits: { "30s": 2 } },
-        { text: "Notes app on phone", traits: { "20s": 2 } },
         { text: "Just remember it", traits: { teen: 2 } },
+        { text: "Notebook or planner", traits: { "30s": 2 } },
+        { text: "Pen and paper", traits: { "50+": 2 } },
+        { text: "Notes app on phone", traits: { "20s": 2 } },
       ],
     },
     {
       question: "What motivates you the most?",
       multiple: true,
       options: [
-        { text: "Stability and comfort", traits: { "50+": 2 } },
         { text: "Growth and career", traits: { "30s": 2 } },
         { text: "Freedom and fun", traits: { "20s": 2 } },
+        { text: "Stability and comfort", traits: { "50+": 2 } },
         { text: "Attention and praise", traits: { teen: 2 } },
       ],
     },
@@ -1974,83 +2000,84 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       question: "You describe your music taste as:",
       multiple: true,
       options: [
-        { text: "Classical and calm", traits: { "50+": 2 } },
-        { text: "Alternative or chill", traits: { "30s": 2 } },
-        { text: "Upbeat pop", traits: { "20s": 2 } },
         { text: "Trendy & chaotic", traits: { teen: 2 } },
+        { text: "Classical and calm", traits: { "50+": 2 } },
+        { text: "Upbeat pop", traits: { "20s": 2 } },
+        { text: "Alternative or chill", traits: { "30s": 2 } },
       ],
     },
     {
       question: "Your social circle is:",
       multiple: true,
       options: [
-        { text: "Small and meaningful", traits: { "50+": 2 } },
-        { text: "Professional and strong", traits: { "30s": 2 } },
-        { text: "Fun and wide", traits: { "20s": 2 } },
         { text: "Online and ever-changing", traits: { teen: 2 } },
+        { text: "Professional and strong", traits: { "30s": 2 } },
+        { text: "Small and meaningful", traits: { "50+": 2 } },
+        { text: "Fun and wide", traits: { "20s": 2 } },
       ],
     },
     {
       question: "Which outfit feels most 'you'?",
       multiple: false,
       options: [
-        { text: "Cozy cardigan and slacks", traits: { "50+": 2 } },
         { text: "Stylish neutral-toned layers", traits: { "30s": 2 } },
-        { text: "Trendy crop top and jeans", traits: { "20s": 2 } },
         { text: "Something colorful and mismatched", traits: { teen: 2 } },
+        { text: "Trendy crop top and jeans", traits: { "20s": 2 } },
+        { text: "Cozy cardigan and slacks", traits: { "50+": 2 } },
       ],
     },
     {
       question: "Which word best describes your vibe?",
       multiple: false,
       options: [
-        { text: "Wise", traits: { "50+": 2 } },
-        { text: "Balanced", traits: { "30s": 2 } },
-        { text: "Energetic", traits: { "20s": 2 } },
         { text: "Playful", traits: { teen: 2 } },
+        { text: "Wise", traits: { "50+": 2 } },
+        { text: "Energetic", traits: { "20s": 2 } },
+        { text: "Balanced", traits: { "30s": 2 } },
       ],
     },
     {
       question: "In a group project, you're the one who:",
       multiple: true,
       options: [
-        { text: "Organizes everything", traits: { "50+": 2 } },
-        { text: "Leads with logic", traits: { "30s": 2 } },
-        { text: "Adds creativity", traits: { "20s": 2 } },
         { text: "Distracts everyone", traits: { teen: 2 } },
+        { text: "Organizes everything", traits: { "50+": 2 } },
+        { text: "Adds creativity", traits: { "20s": 2 } },
+        { text: "Leads with logic", traits: { "30s": 2 } },
       ],
     },
     {
       question: "Which color palette attracts you most?",
       multiple: false,
       options: [
-        { text: "Earth tones", traits: { "50+": 2 } },
         { text: "Neutrals and sleek tones", traits: { "30s": 2 } },
-        { text: "Bright summer shades", traits: { "20s": 2 } },
         { text: "Neon and rainbow", traits: { teen: 2 } },
+        { text: "Earth tones", traits: { "50+": 2 } },
+        { text: "Bright summer shades", traits: { "20s": 2 } },
       ],
     },
     {
       question: "You believe love is:",
       multiple: false,
       options: [
-        { text: "A steady flame", traits: { "50+": 2 } },
-        { text: "Mutual respect", traits: { "30s": 2 } },
         { text: "Fun and exciting", traits: { "20s": 2 } },
+        { text: "A steady flame", traits: { "50+": 2 } },
         { text: "A movie plot", traits: { teen: 2 } },
+        { text: "Mutual respect", traits: { "30s": 2 } },
       ],
     },
     {
       question: "How do you usually feel on your birthday?",
       multiple: true,
       options: [
-        { text: "Grateful for memories", traits: { "50+": 2 } },
         { text: "Reflective and calm", traits: { "30s": 2 } },
-        { text: "Hyped for the party", traits: { "20s": 2 } },
         { text: "Screaming with excitement", traits: { teen: 2 } },
+        { text: "Grateful for memories", traits: { "50+": 2 } },
+        { text: "Hyped for the party", traits: { "20s": 2 } },
       ],
     },
   ],
+  // How empathetic are you?
   14: [
     {
       question: "You see someone crying on the street. What do you do?",
@@ -2257,6 +2284,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       ],
     },
   ],
+  // Are you more introverted or extroverted?
   15: [
     {
       question: "How do you feel at parties?",
@@ -2462,6 +2490,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       ],
     },
   ],
+  // What kind of leader are you?
   16: [
     {
       question: "How do you make decisions?",
@@ -2715,6 +2744,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       ],
     },
   ],
+  // What's your communication style?
   17: [
     {
       question: "How do you express disagreement?",
@@ -2947,6 +2977,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       ],
     },
   ],
+  // How do you react under stress?
   18: [
     {
       question:
@@ -3183,6 +3214,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       ],
     },
   ],
+  // What's your love language?
   19: [
     {
       question: "Which gestures make you feel most loved?",
