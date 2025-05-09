@@ -19,16 +19,30 @@ const Quiz = () => {
   const [score, setScore] = useState(0);
   const [scoreMap, setScoreMap] = useState<Record<string, number>>({});
   const [finished, setFinished] = useState(false);
+  const [secondsElapsed, setSecondsElapsed] = useState(0);
+  const [selectedAnswers, setSelectedAnswers] = useState<number[]>([]);
 
   // Reset state when quiz ID changes
   useEffect(() => {
     setCurrentIndex(0);
     setSelectedOption(null);
     setSelectedOptions([]);
+    setSelectedAnswers([]);
     setScore(0);
     setScoreMap({});
     setFinished(false);
+    setSecondsElapsed(0);
   }, [quizId]);
+
+  useEffect(() => {
+    if (finished) return;
+
+    const timer = setInterval(() => {
+      setSecondsElapsed((prev) => prev + 1);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [finished]);
 
   const currentQuestion = questions[currentIndex];
 
@@ -91,14 +105,19 @@ const Quiz = () => {
 
   const handleNext = () => {
     if (quizType === "knowledge") {
-      const knowledgeQuestion = currentQuestion as { correct: number };
-      if (
-        selectedOption !== null &&
-        selectedOption === knowledgeQuestion.correct
-      ) {
-        setScore((prev) => prev + 1);
+      if (selectedOption !== null) {
+        setSelectedAnswers((prev) => [...prev, selectedOption]);
+
+        const knowledgeQuestion = currentQuestion as { correct: number };
+        if (selectedOption === knowledgeQuestion.correct) {
+          setScore((prev) => prev + 1);
+        }
+      } else {
+        setSelectedAnswers((prev) => [...prev, -1]);
       }
-    } else if (quizType === "personality") {
+    }
+
+    if (quizType === "personality") {
       if (selectedOption !== null) {
         const option = currentQuestion.options[selectedOption] as {
           text: string;
@@ -112,7 +131,9 @@ const Quiz = () => {
           }));
         }
       }
-    } else if (quizType === "psychological") {
+    }
+
+    if (quizType === "psychological") {
       selectedOptions.forEach((index) => {
         const option = currentQuestion.options[index] as {
           text: string;
@@ -139,6 +160,14 @@ const Quiz = () => {
 
   const progress = ((currentIndex + Number(finished)) / questions.length) * 100;
 
+  const formatTime = (totalSeconds: number) => {
+    const minutes = Math.floor(totalSeconds / 60);
+    const seconds = totalSeconds % 60;
+    return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  };
+
+  const finalTime = formatTime(secondsElapsed);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-100 via-yellow-100 to-blue-100 px-6 py-10 flex flex-col items-center">
       <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-pink-500 to-yellow-500 mb-6 text-center drop-shadow">
@@ -157,6 +186,10 @@ const Quiz = () => {
                 className="h-full bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-300"
                 style={{ width: `${progress}%` }}
               ></div>
+            </div>
+            <div className="text-sm text-gray-600 font-semibold mb-2 flex justify-end gap-1">
+              Time Elapsed:
+              <span className="font-mono">{formatTime(secondsElapsed)}</span>
             </div>
 
             <p className="text-gray-700 mb-4 font-semibold">
@@ -227,6 +260,15 @@ const Quiz = () => {
                 score={score}
                 total={questions.length}
                 name={name}
+                time={finalTime}
+                questions={
+                  questions as {
+                    question: string;
+                    options: string[];
+                    correct: number;
+                  }[]
+                }
+                selectedAnswers={selectedAnswers}
               />
             ) : (
               <></>
@@ -236,6 +278,7 @@ const Quiz = () => {
                 quizId={quizId}
                 name={name}
                 topTrait={topCharacter || "?"}
+                time={finalTime}
               />
             ) : (
               <></>
@@ -245,6 +288,7 @@ const Quiz = () => {
                 quizId={quizId}
                 topCharacter={topCharacter || "Unknown"}
                 name={name}
+                time={finalTime}
               />
             ) : (
               <></>

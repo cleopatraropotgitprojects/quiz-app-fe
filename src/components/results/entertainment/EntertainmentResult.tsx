@@ -4,12 +4,14 @@ type Props = {
   quizId: number;
   topCharacter: string;
   name: string;
+  time: string;
 };
 
 const EntertainmentResult: React.FC<Props> = ({
   quizId,
   topCharacter,
   name,
+  time,
 }) => {
   const results: Record<
     number,
@@ -59,6 +61,7 @@ const EntertainmentResult: React.FC<Props> = ({
             {topCharacter}
           </span>{" "}
           {result.suffix}
+          <p className="text-sm text-gray-600">⏱ Time taken: {time}</p>
         </h2>
       )}
       <p className="text-sm text-gray-500">Thanks for playing, {name}!</p>

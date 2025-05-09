@@ -4,9 +4,15 @@ type Props = {
   name: string;
   topTrait: string;
   quizId: number;
+  time: string;
 };
 
-const PsychologicalResult: React.FC<Props> = ({ name, topTrait, quizId }) => {
+const PsychologicalResult: React.FC<Props> = ({
+  name,
+  topTrait,
+  quizId,
+  time,
+}) => {
   const messages: Record<
     number,
     { icon: string; title: string; color: string; message: string }
@@ -70,6 +76,8 @@ const PsychologicalResult: React.FC<Props> = ({ name, topTrait, quizId }) => {
         {result?.title} <span className="font-bold">{topTrait}</span>
       </h2>
       <p className="text-sm text-gray-500">{result?.message}</p>
+      <p className="text-sm text-gray-600">⏱ Time taken: {time}</p>
+
       <p className="text-xs text-gray-400">Nice job, {name}! 🎯</p>
     </div>
   );

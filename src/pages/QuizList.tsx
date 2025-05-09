@@ -181,7 +181,6 @@ const QuizList = () => {
             onClick={() => handleQuizSelect(quiz.id)}
             className="relative group bg-white rounded-3xl border border-transparent shadow-xl hover:shadow-2xl hover:border-pink-300 transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] cursor-pointer p-8 pt-12 flex flex-col items-center text-center"
           >
-            {/* Badge-ul din colțul dreapta sus */}
             <div className="absolute top-4 right-4 flex flex-col items-end gap-2 group">
               <div className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-white/70 to-white/50 backdrop-blur-md border border-white/40 shadow-md text-[11px] font-semibold text-gray-700 tracking-wide transform transition-transform duration-300 group-hover:-translate-y-1">
                 {quiz.questions} questions
