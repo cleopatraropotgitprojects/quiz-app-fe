@@ -33,7 +33,7 @@ const SelectQuiz = () => {
         </div>
 
         <div
-          onClick={() => handleCategorySelect("entertainment")}
+          onClick={() => handleCategorySelect("personality")}
           className="bg-white p-6 rounded-3xl shadow-xl hover:shadow-yellow-300 hover:-rotate-1 hover:scale-105 transform transition-all cursor-pointer flex flex-col items-center text-center border-4 border-pink-200 hover:border-pink-400"
         >
           <div className="text-5xl mb-3">🎭</div>

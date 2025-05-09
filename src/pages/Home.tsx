@@ -7,6 +7,7 @@ const Home = () => {
 
   const handleStart = () => {
     if (name.trim()) {
+      localStorage.setItem("quizPlayerName", name);
       navigate("/select-quiz", { state: { name } });
     }
   };

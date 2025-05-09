@@ -1,12 +1,16 @@
 import { useLocation, useParams } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { mockQuestions } from "../data/mockQuestions";
+import KnowledgeResult from "../components/results/knowledge/KnowledgeResult";
+import PsychologicalResult from "../components/results/psychological/PsychologicalResult";
+import EntertainmentResult from "../components/results/entertainment/EntertainmentResult";
 
 const Quiz = () => {
   const { id } = useParams();
   const quizId = Number(id);
   const location = useLocation();
-  const name = location.state?.name || "Player";
+  const name =
+    location.state?.name || localStorage.getItem("quizPlayerName") || "Player";
 
   const questions = mockQuestions[quizId] || [];
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,6 +19,16 @@ const Quiz = () => {
   const [score, setScore] = useState(0);
   const [scoreMap, setScoreMap] = useState<Record<string, number>>({});
   const [finished, setFinished] = useState(false);
+
+  // Reset state when quiz ID changes
+  useEffect(() => {
+    setCurrentIndex(0);
+    setSelectedOption(null);
+    setSelectedOptions([]);
+    setScore(0);
+    setScoreMap({});
+    setFinished(false);
+  }, [quizId]);
 
   const currentQuestion = questions[currentIndex];
 
@@ -41,7 +55,7 @@ const Quiz = () => {
         18: "psychological",
         19: "psychological",
       } as Record<number, "knowledge" | "personality" | "psychological">
-    )[quizId] || "knowledge";
+    )[quizId] || "";
 
   const quizTitles: Record<number, string> = {
     1: "How well do you know European geography?",
@@ -53,16 +67,16 @@ const Quiz = () => {
     7: "Which Harry Potter character are you?",
     8: "Which Disney character matches your personality?",
     9: "Which Marvel superhero are you?",
-    10: "What’s your ideal vacation?",
+    10: "What's your ideal vacation?",
     11: "Which Netflix character would you be?",
     12: "Are you more logical or creative?",
-    13: "What’s your mental age?",
+    13: "What's your mental age?",
     14: "How empathetic are you?",
     15: "Are you more introverted or extroverted?",
     16: "What kind of leader are you?",
-    17: "What’s your communication style?",
+    17: "What's your communication style?",
     18: "How do you react under stress?",
-    19: "What’s your love language?",
+    19: "What's your love language?",
   };
 
   const quizTitle = quizTitles[quizId] || "Quiz";
@@ -76,22 +90,35 @@ const Quiz = () => {
       : null;
 
   const handleNext = () => {
-    if (currentQuestion.type === "knowledge") {
-      if (selectedOption === currentQuestion.correct) {
+    if (quizType === "knowledge") {
+      const knowledgeQuestion = currentQuestion as { correct: number };
+      if (
+        selectedOption !== null &&
+        selectedOption === knowledgeQuestion.correct
+      ) {
         setScore((prev) => prev + 1);
       }
-    } else if (currentQuestion.type === "personality") {
-      const option = currentQuestion.options[selectedOption!];
-      const selectedScores = option.scores;
-      for (const character in selectedScores) {
-        setScoreMap((prev) => ({
-          ...prev,
-          [character]: (prev[character] || 0) + selectedScores[character],
-        }));
+    } else if (quizType === "personality") {
+      if (selectedOption !== null) {
+        const option = currentQuestion.options[selectedOption] as {
+          text: string;
+          scores: Record<string, number>;
+        };
+        const selectedScores = option.scores;
+        for (const character in selectedScores) {
+          setScoreMap((prev) => ({
+            ...prev,
+            [character]: (prev[character] || 0) + selectedScores[character],
+          }));
+        }
       }
-    } else if (currentQuestion.type === "psychological") {
+    } else if (quizType === "psychological") {
       selectedOptions.forEach((index) => {
-        const traits = currentQuestion.options[index].traits;
+        const option = currentQuestion.options[index] as {
+          text: string;
+          traits: Record<string, number>;
+        };
+        const traits = option.traits;
         for (const key in traits) {
           setScoreMap((prev) => ({
             ...prev,
@@ -196,100 +223,31 @@ const Quiz = () => {
         ) : (
           <div className="flex flex-col items-center gap-4">
             {quizType === "knowledge" ? (
-              <>
-                {score === 0 && (
-                  <>
-                    <div className="text-4xl">😅📚</div>
-                    <h2 className="text-2xl font-extrabold text-red-500">
-                      You didn’t score this time, {name}!
-                    </h2>
-                    <p className="text-sm text-gray-500">
-                      Try again and keep learning 🚀
-                    </p>
-                  </>
-                )}
-
-                {score > 0 && score < questions.length && (
-                  <>
-                    <div className="text-4xl">🎉👏</div>
-                    <h2 className="text-2xl font-extrabold text-green-600">
-                      You’ve completed the quiz, {name}!
-                    </h2>
-                    <p className="text-sm text-gray-500">
-                      Great job! You’re one step smarter today 🧠✨
-                    </p>
-                  </>
-                )}
-
-                {score === questions.length && (
-                  <>
-                    <div className="text-4xl">👑🏆</div>
-                    <h2 className="text-2xl font-extrabold text-yellow-600">
-                      Outstanding, {name}!
-                    </h2>
-                    <p className="text-sm text-gray-500">
-                      Perfect score! You nailed it 💯🔥
-                    </p>
-                  </>
-                )}
-
-                <div className="text-xl font-bold bg-green-100 text-green-800 px-8 py-2 rounded-full shadow-inner">
-                  Score: {score} / {questions.length}
-                </div>
-              </>
+              <KnowledgeResult
+                score={score}
+                total={questions.length}
+                name={name}
+              />
             ) : (
-              <>
-                {quizType === "psychological" ? (
-                  <>
-                    <div className="text-4xl">🧠💫</div>
-                    <h2 className="text-2xl font-extrabold text-indigo-600 text-center">
-                      Your strongest trait is{" "}
-                      <span className="text-pink-600">{topCharacter}</span>!
-                    </h2>
-                    <p className="text-sm text-gray-500 text-center">
-                      Self-awareness is power. Well done, {name}!
-                    </p>
-                  </>
-                ) : (
-                  <>
-                    <div className="text-4xl">🦸‍♀️✨</div>
-                    {quizId === 7 && (
-                      <h2 className="text-2xl font-extrabold text-purple-600 text-center">
-                        You’re most like{" "}
-                        <span className="text-indigo-600">{topCharacter}</span>{" "}
-                        from Harry Potter!
-                      </h2>
-                    )}
-                    {quizId === 8 && (
-                      <h2 className="text-2xl font-extrabold text-purple-600 text-center">
-                        <span className="text-pink-600">{topCharacter}</span> is
-                        your Disney twin!
-                      </h2>
-                    )}
-                    {quizId === 9 && (
-                      <h2 className="text-2xl font-extrabold text-purple-600 text-center">
-                        Your inner hero is{" "}
-                        <span className="text-red-600">{topCharacter}</span>!
-                      </h2>
-                    )}
-                    {quizId === 10 && (
-                      <h2 className="text-2xl font-extrabold text-purple-600 text-center">
-                        Your dream vacation vibe is:{" "}
-                        <span className="text-orange-500">{topCharacter}</span>!
-                      </h2>
-                    )}
-                    {quizId === 11 && (
-                      <h2 className="text-2xl font-extrabold text-purple-600 text-center">
-                        If you lived on Netflix, you’d be{" "}
-                        <span className="text-rose-500">{topCharacter}</span>!
-                      </h2>
-                    )}
-                    <p className="text-sm text-gray-500 text-center">
-                      Thanks for playing, {name}!
-                    </p>
-                  </>
-                )}
-              </>
+              <></>
+            )}
+            {quizType === "psychological" ? (
+              <PsychologicalResult
+                quizId={quizId}
+                name={name}
+                topTrait={topCharacter || "?"}
+              />
+            ) : (
+              <></>
+            )}
+            {quizType === "personality" ? (
+              <EntertainmentResult
+                quizId={quizId}
+                topCharacter={topCharacter || "Unknown"}
+                name={name}
+              />
+            ) : (
+              <></>
             )}
 
             <button

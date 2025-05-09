@@ -23,16 +23,19 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       question: "Which country does the city of Prague belong to?",
       options: ["Poland", "Austria", "Czech Republic", "Slovakia"],
       correct: 2,
+      type: "knowledge",
     },
     {
       question: "Which sea borders Greece to the west?",
       options: ["Black Sea", "Adriatic Sea", "Ionian Sea", "Baltic Sea"],
       correct: 2,
+      type: "knowledge",
     },
     {
       question: "Which of the following is NOT part of Scandinavia?",
       options: ["Sweden", "Norway", "Denmark", "Germany"],
       correct: 3,
+      type: "knowledge",
     },
     {
       question: "Which country is Budapest the capital of?",
