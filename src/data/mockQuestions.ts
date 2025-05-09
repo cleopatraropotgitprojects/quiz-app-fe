@@ -21,36 +21,33 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
   1: [
     {
       question: "Which country does the city of Prague belong to?",
-      options: ["Poland", "Austria", "Czech Republic", "Slovakia"],
+      options: ["Austria", "Poland", "Czech Republic", "Slovakia"],
       correct: 2,
-      type: "knowledge",
     },
     {
       question: "Which sea borders Greece to the west?",
-      options: ["Black Sea", "Adriatic Sea", "Ionian Sea", "Baltic Sea"],
+      options: ["Black Sea", "Baltic Sea", "Ionian Sea", "Adriatic Sea"],
       correct: 2,
-      type: "knowledge",
     },
     {
       question: "Which of the following is NOT part of Scandinavia?",
-      options: ["Sweden", "Norway", "Denmark", "Germany"],
-      correct: 3,
-      type: "knowledge",
+      options: ["Norway", "Sweden", "Germany", "Denmark"],
+      correct: 2,
     },
     {
       question: "Which country is Budapest the capital of?",
-      options: ["Hungary", "Romania", "Bulgaria", "Austria"],
+      options: ["Hungary", "Romania", "Austria", "Bulgaria"],
       correct: 0,
     },
     {
       question: "The Danube River flows through how many countries?",
-      options: ["6", "10", "12", "8"],
-      correct: 1,
+      options: ["12", "8", "6", "10"],
+      correct: 3,
     },
     {
       question: "Which country has the northernmost point in Europe?",
-      options: ["Sweden", "Norway", "Finland", "Iceland"],
-      correct: 1,
+      options: ["Sweden", "Finland", "Iceland", "Norway"],
+      correct: 3,
     },
     {
       question: "What is the capital of Portugal?",
@@ -59,23 +56,23 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     },
     {
       question: "Which country shares a border with both France and Poland?",
-      options: ["Germany", "Belgium", "Austria", "Czech Republic"],
-      correct: 0,
+      options: ["Austria", "Germany", "Czech Republic", "Belgium"],
+      correct: 1,
     },
     {
       question: "What is the largest island in the Mediterranean Sea?",
-      options: ["Sardinia", "Corsica", "Sicily", "Crete"],
-      correct: 2,
+      options: ["Sardinia", "Sicily", "Crete", "Corsica"],
+      correct: 1,
     },
     {
       question: "Which country is the city of Bruges located in?",
-      options: ["Netherlands", "Germany", "Belgium", "France"],
+      options: ["France", "Germany", "Belgium", "Netherlands"],
       correct: 2,
     },
     {
       question: "Which country does Transylvania belong to?",
-      options: ["Hungary", "Ukraine", "Romania", "Serbia"],
-      correct: 2,
+      options: ["Serbia", "Ukraine", "Hungary", "Romania"],
+      correct: 3,
     },
     {
       question: "What is the capital of Iceland?",
@@ -84,8 +81,8 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     },
     {
       question: "Which country has the most volcanoes in Europe?",
-      options: ["Greece", "Italy", "Iceland", "Spain"],
-      correct: 2,
+      options: ["Iceland", "Spain", "Italy", "Greece"],
+      correct: 0,
     },
     {
       question: "Mount Elbrus is located in which country?",
@@ -94,26 +91,26 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     },
     {
       question: "What sea separates Sweden and the Baltic states?",
-      options: ["North Sea", "Baltic Sea", "Barents Sea", "Norwegian Sea"],
+      options: ["Barents Sea", "Baltic Sea", "Norwegian Sea", "North Sea"],
       correct: 1,
     },
     {
       question: "Which European country is famous for fjords?",
-      options: ["Denmark", "Sweden", "Norway", "Finland"],
-      correct: 2,
+      options: ["Denmark", "Norway", "Sweden", "Finland"],
+      correct: 1,
     },
     {
       question: "Which country is home to the city of Kraków?",
-      options: ["Poland", "Czech Republic", "Slovakia", "Hungary"],
-      correct: 0,
+      options: ["Slovakia", "Czech Republic", "Hungary", "Poland"],
+      correct: 3,
     },
     {
       question: "Andorra is located between which two countries?",
       options: [
         "France and Spain",
-        "Italy and Switzerland",
-        "Spain and Portugal",
         "Austria and Germany",
+        "Spain and Portugal",
+        "Italy and Switzerland",
       ],
       correct: 0,
     },
@@ -124,177 +121,177 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     },
     {
       question: "What is the smallest country in Europe by area?",
-      options: ["San Marino", "Liechtenstein", "Vatican City", "Monaco"],
-      correct: 2,
+      options: ["Vatican City", "Liechtenstein", "San Marino", "Monaco"],
+      correct: 0,
     },
   ],
   2: [
     {
       question: "Oslo is the capital of?",
-      options: ["Sweden", "Finland", "Norway", "Denmark"],
-      correct: 2,
-    },
-    {
-      question: "Vienna is the capital of?",
-      options: ["Hungary", "Germany", "Austria", "Switzerland"],
-      correct: 2,
-    },
-    {
-      question: "Warsaw is the capital of?",
-      options: ["Ukraine", "Poland", "Belarus", "Czech Republic"],
-      correct: 1,
-    },
-    {
-      question: "Helsinki is the capital of?",
-      options: ["Finland", "Norway", "Estonia", "Latvia"],
+      options: ["Norway", "Denmark", "Sweden", "Finland"],
       correct: 0,
     },
     {
+      question: "Vienna is the capital of?",
+      options: ["Germany", "Hungary", "Switzerland", "Austria"],
+      correct: 3,
+    },
+    {
+      question: "Warsaw is the capital of?",
+      options: ["Ukraine", "Czech Republic", "Poland", "Belarus"],
+      correct: 2,
+    },
+    {
+      question: "Helsinki is the capital of?",
+      options: ["Estonia", "Norway", "Finland", "Latvia"],
+      correct: 2,
+    },
+    {
       question: "Lisbon is the capital of?",
-      options: ["Spain", "Portugal", "Italy", "Greece"],
+      options: ["Italy", "Portugal", "Greece", "Spain"],
       correct: 1,
     },
     {
       question: "Bern is the capital of?",
-      options: ["Germany", "Austria", "Luxembourg", "Switzerland"],
-      correct: 3,
+      options: ["Austria", "Switzerland", "Germany", "Luxembourg"],
+      correct: 1,
     },
     {
       question: "Brussels is the capital of?",
-      options: ["Belgium", "Netherlands", "France", "Luxembourg"],
-      correct: 0,
+      options: ["France", "Belgium", "Luxembourg", "Netherlands"],
+      correct: 1,
     },
     {
       question: "Athens is the capital of?",
-      options: ["Italy", "Greece", "Cyprus", "Malta"],
-      correct: 1,
-    },
-    {
-      question: "Reykjavik is the capital of?",
-      options: ["Iceland", "Norway", "Greenland", "Denmark"],
-      correct: 0,
-    },
-    {
-      question: "Zagreb is the capital of?",
-      options: ["Slovenia", "Croatia", "Serbia", "Montenegro"],
-      correct: 1,
-    },
-    {
-      question: "Skopje is the capital of?",
-      options: ["Kosovo", "Albania", "North Macedonia", "Bulgaria"],
+      options: ["Malta", "Cyprus", "Greece", "Italy"],
       correct: 2,
     },
     {
+      question: "Reykjavik is the capital of?",
+      options: ["Greenland", "Denmark", "Norway", "Iceland"],
+      correct: 3,
+    },
+    {
+      question: "Zagreb is the capital of?",
+      options: ["Serbia", "Slovenia", "Croatia", "Montenegro"],
+      correct: 2,
+    },
+    {
+      question: "Skopje is the capital of?",
+      options: ["Albania", "North Macedonia", "Bulgaria", "Kosovo"],
+      correct: 1,
+    },
+    {
       question: "Sofia is the capital of?",
-      options: ["Bulgaria", "Serbia", "Romania", "Slovakia"],
+      options: ["Bulgaria", "Serbia", "Slovakia", "Romania"],
       correct: 0,
     },
     {
       question: "Tirana is the capital of?",
-      options: ["Albania", "Kosovo", "North Macedonia", "Bosnia & Herzegovina"],
-      correct: 0,
+      options: ["Bosnia & Herzegovina", "North Macedonia", "Kosovo", "Albania"],
+      correct: 3,
     },
     {
       question: "Podgorica is the capital of?",
-      options: ["Montenegro", "Slovenia", "Serbia", "Croatia"],
-      correct: 0,
+      options: ["Slovenia", "Montenegro", "Croatia", "Serbia"],
+      correct: 1,
     },
     {
       question: "Ljubljana is the capital of?",
-      options: ["Croatia", "Slovenia", "Slovakia", "Austria"],
-      correct: 1,
-    },
-    {
-      question: "Belgrade is the capital of?",
-      options: ["Bosnia", "Serbia", "Montenegro", "Romania"],
-      correct: 1,
-    },
-    {
-      question: "Sarajevo is the capital of?",
-      options: ["Bosnia & Herzegovina", "Croatia", "Montenegro", "Serbia"],
-      correct: 0,
-    },
-    {
-      question: "Chisinau is the capital of?",
-      options: ["Moldova", "Ukraine", "Romania", "Belarus"],
-      correct: 0,
-    },
-    {
-      question: "Bucharest is the capital of?",
-      options: ["Bulgaria", "Hungary", "Romania", "Moldova"],
+      options: ["Austria", "Slovakia", "Slovenia", "Croatia"],
       correct: 2,
     },
     {
+      question: "Belgrade is the capital of?",
+      options: ["Bosnia", "Romania", "Montenegro", "Serbia"],
+      correct: 3,
+    },
+    {
+      question: "Sarajevo is the capital of?",
+      options: ["Serbia", "Croatia", "Bosnia & Herzegovina", "Montenegro"],
+      correct: 2,
+    },
+    {
+      question: "Chisinau is the capital of?",
+      options: ["Belarus", "Ukraine", "Romania", "Moldova"],
+      correct: 3,
+    },
+    {
+      question: "Bucharest is the capital of?",
+      options: ["Romania", "Moldova", "Hungary", "Bulgaria"],
+      correct: 0,
+    },
+    {
       question: "Tallinn is the capital of?",
-      options: ["Latvia", "Estonia", "Lithuania", "Finland"],
-      correct: 1,
+      options: ["Lithuania", "Finland", "Latvia", "Estonia"],
+      correct: 3,
     },
   ],
   3: [
     {
       question: "What is the largest planet in our Solar System?",
-      options: ["Earth", "Saturn", "Jupiter", "Mars"],
-      correct: 2,
+      options: ["Earth", "Mars", "Saturn", "Jupiter"],
+      correct: 3,
     },
     {
       question: "Who painted the Mona Lisa?",
-      options: ["Van Gogh", "Leonardo da Vinci", "Picasso", "Michelangelo"],
-      correct: 1,
+      options: ["Van Gogh", "Michelangelo", "Picasso", "Leonardo da Vinci"],
+      correct: 3,
     },
     {
       question: "What year did World War II end?",
-      options: ["1945", "1939", "1942", "1950"],
+      options: ["1945", "1939", "1950", "1942"],
       correct: 0,
     },
     {
       question: "What is the capital of Canada?",
-      options: ["Toronto", "Ottawa", "Vancouver", "Montreal"],
-      correct: 1,
+      options: ["Toronto", "Montreal", "Vancouver", "Ottawa"],
+      correct: 3,
     },
     {
       question: "Which organ is responsible for pumping blood?",
-      options: ["Liver", "Lungs", "Heart", "Kidneys"],
-      correct: 2,
+      options: ["Heart", "Liver", "Lungs", "Kidneys"],
+      correct: 0,
     },
     {
       question: "How many continents are there?",
-      options: ["5", "6", "7", "8"],
-      correct: 2,
+      options: ["7", "8", "6", "5"],
+      correct: 0,
     },
     {
       question: "Which is the longest river in the world?",
-      options: ["Amazon", "Nile", "Yangtze", "Mississippi"],
-      correct: 1,
+      options: ["Yangtze", "Amazon", "Mississippi", "Nile"],
+      correct: 3,
     },
     {
       question: "What is the chemical symbol for gold?",
-      options: ["G", "Go", "Au", "Ag"],
-      correct: 2,
+      options: ["Au", "Ag", "G", "Go"],
+      correct: 0,
     },
     {
       question: "Which planet is known as the Red Planet?",
-      options: ["Venus", "Jupiter", "Mars", "Mercury"],
-      correct: 2,
-    },
-    {
-      question: "Which famous scientist developed the theory of relativity?",
-      options: ["Newton", "Einstein", "Tesla", "Bohr"],
+      options: ["Jupiter", "Mars", "Venus", "Mercury"],
       correct: 1,
     },
     {
+      question: "Which famous scientist developed the theory of relativity?",
+      options: ["Einstein", "Newton", "Bohr", "Tesla"],
+      correct: 0,
+    },
+    {
       question: "What’s the capital of Australia?",
-      options: ["Sydney", "Melbourne", "Canberra", "Brisbane"],
-      correct: 2,
+      options: ["Canberra", "Sydney", "Brisbane", "Melbourne"],
+      correct: 0,
     },
     {
       question: "Which country invented pizza?",
-      options: ["France", "Greece", "Italy", "Spain"],
-      correct: 2,
+      options: ["Greece", "Spain", "France", "Italy"],
+      correct: 3,
     },
     {
       question: "How many players are on a soccer team (on the field)?",
-      options: ["9", "10", "11", "12"],
-      correct: 2,
+      options: ["9", "11", "10", "12"],
+      correct: 1,
     },
     {
       question: "Which element does 'O' represent on the periodic table?",
@@ -303,80 +300,80 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     },
     {
       question: "Which language has the most native speakers?",
-      options: ["English", "Hindi", "Mandarin Chinese", "Spanish"],
-      correct: 2,
+      options: ["Mandarin Chinese", "English", "Hindi", "Spanish"],
+      correct: 0,
     },
     {
       question: "What’s the tallest mountain on Earth?",
-      options: ["K2", "Everest", "Makalu", "Kangchenjunga"],
-      correct: 1,
+      options: ["K2", "Makalu", "Kangchenjunga", "Everest"],
+      correct: 3,
     },
     {
       question: "Who wrote 'Romeo and Juliet'?",
-      options: ["Shakespeare", "Dante", "Homer", "Dickens"],
-      correct: 0,
+      options: ["Dickens", "Homer", "Dante", "Shakespeare"],
+      correct: 3,
     },
     {
       question: "What does 'WWW' stand for in a website browser?",
       options: [
-        "World Wide Web",
         "Web World Wide",
         "Wide Web World",
+        "World Wide Web",
         "Wide Web Worldnet",
       ],
-      correct: 0,
-    },
-    {
-      question: "Which animal is known as the 'King of the Jungle'?",
-      options: ["Tiger", "Elephant", "Lion", "Panther"],
       correct: 2,
     },
     {
+      question: "Which animal is known as the 'King of the Jungle'?",
+      options: ["Tiger", "Lion", "Elephant", "Panther"],
+      correct: 1,
+    },
+    {
       question: "How many colors are in a rainbow?",
-      options: ["5", "6", "7", "8"],
+      options: ["5", "8", "7", "6"],
       correct: 2,
     },
   ],
   4: [
     {
       question: "In which year did World War I begin?",
-      options: ["1912", "1914", "1916", "1918"],
-      correct: 1,
+      options: ["1918", "1916", "1912", "1914"],
+      correct: 3,
     },
     {
       question:
         "Who was the British Prime Minister during most of World War II?",
       options: [
-        "Winston Churchill",
         "Neville Chamberlain",
-        "Tony Blair",
         "Margaret Thatcher",
-      ],
-      correct: 0,
-    },
-    {
-      question: "What year did the Berlin Wall fall?",
-      options: ["1987", "1989", "1991", "1993"],
-      correct: 1,
-    },
-    {
-      question: "Which country launched the first artificial satellite?",
-      options: ["USA", "Russia", "China", "Germany"],
-      correct: 1,
-    },
-    {
-      question: "Who was assassinated in 1963 in Dallas, Texas?",
-      options: [
-        "Martin Luther King Jr.",
-        "Robert Kennedy",
-        "John F. Kennedy",
-        "Ronald Reagan",
+        "Winston Churchill",
+        "Tony Blair",
       ],
       correct: 2,
     },
     {
+      question: "What year did the Berlin Wall fall?",
+      options: ["1991", "1987", "1993", "1989"],
+      correct: 3,
+    },
+    {
+      question: "Which country launched the first artificial satellite?",
+      options: ["USA", "China", "Germany", "Russia"],
+      correct: 3,
+    },
+    {
+      question: "Who was assassinated in 1963 in Dallas, Texas?",
+      options: [
+        "John F. Kennedy",
+        "Robert Kennedy",
+        "Martin Luther King Jr.",
+        "Ronald Reagan",
+      ],
+      correct: 0,
+    },
+    {
       question: "What year did World War II end?",
-      options: ["1942", "1945", "1950", "1939"],
+      options: ["1950", "1945", "1939", "1942"],
       correct: 1,
     },
     {
@@ -384,164 +381,164 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
         "What was the name of the US civil rights leader who delivered the 'I Have a Dream' speech?",
       options: [
         "Malcolm X",
-        "Barack Obama",
         "Martin Luther King Jr.",
         "Frederick Douglass",
+        "Barack Obama",
       ],
-      correct: 2,
+      correct: 1,
     },
     {
       question: "When did the Soviet Union dissolve?",
-      options: ["1989", "1990", "1991", "1992"],
+      options: ["1989", "1992", "1991", "1990"],
       correct: 2,
     },
     {
       question: "Which war was fought between North and South Korea?",
-      options: ["Vietnam War", "Cold War", "Korean War", "World War II"],
-      correct: 2,
+      options: ["Korean War", "World War II", "Vietnam War", "Cold War"],
+      correct: 0,
     },
     {
       question: "What was the name of the first man to walk on the moon?",
       options: [
-        "Yuri Gagarin",
-        "Buzz Aldrin",
         "Michael Collins",
         "Neil Armstrong",
+        "Yuri Gagarin",
+        "Buzz Aldrin",
       ],
-      correct: 3,
-    },
-    {
-      question: "Which country did Adolf Hitler lead?",
-      options: ["Austria", "Germany", "Russia", "France"],
       correct: 1,
     },
     {
-      question: "The Titanic sank in what year?",
-      options: ["1912", "1914", "1905", "1920"],
+      question: "Which country did Adolf Hitler lead?",
+      options: ["Germany", "France", "Austria", "Russia"],
       correct: 0,
+    },
+    {
+      question: "The Titanic sank in what year?",
+      options: ["1914", "1920", "1912", "1905"],
+      correct: 2,
     },
     {
       question:
         "Which Cold War conflict occurred in Southeast Asia during the 1960s–70s?",
-      options: ["Vietnam War", "Gulf War", "Korean War", "Afghan War"],
+      options: ["Vietnam War", "Korean War", "Gulf War", "Afghan War"],
       correct: 0,
     },
     {
       question:
         "What wall was a symbol of division in Germany during the Cold War?",
-      options: ["Great Wall", "Iron Wall", "Berlin Wall", "Western Wall"],
+      options: ["Great Wall", "Western Wall", "Berlin Wall", "Iron Wall"],
       correct: 2,
     },
     {
       question: "When was the United Nations founded?",
-      options: ["1942", "1945", "1950", "1939"],
-      correct: 1,
+      options: ["1942", "1939", "1945", "1950"],
+      correct: 2,
     },
     {
       question: "Who was the first female Prime Minister of the UK?",
       options: [
         "Margaret Thatcher",
-        "Angela Merkel",
         "Theresa May",
+        "Angela Merkel",
         "Indira Gandhi",
       ],
       correct: 0,
     },
     {
       question: "Which country did the nuclear disaster at Chernobyl occur in?",
-      options: ["Russia", "Ukraine", "Kazakhstan", "Belarus"],
+      options: ["Belarus", "Ukraine", "Russia", "Kazakhstan"],
       correct: 1,
     },
     {
       question: "Who was the leader of the Soviet Union during World War II?",
-      options: ["Lenin", "Trotsky", "Stalin", "Gorbachev"],
-      correct: 2,
+      options: ["Lenin", "Stalin", "Trotsky", "Gorbachev"],
+      correct: 1,
     },
     {
       question: "What was the name of the treaty that ended World War I?",
       options: [
-        "Treaty of Versailles",
         "Treaty of Paris",
-        "Potsdam Agreement",
+        "Treaty of Versailles",
         "Yalta Pact",
+        "Potsdam Agreement",
       ],
-      correct: 0,
+      correct: 1,
     },
     {
       question: "Which wall fell in 1989, marking the end of the Cold War era?",
-      options: ["Berlin Wall", "Western Wall", "Iron Wall", "Great Wall"],
-      correct: 0,
+      options: ["Iron Wall", "Western Wall", "Great Wall", "Berlin Wall"],
+      correct: 3,
     },
   ],
   5: [
     {
       question: "Which planet is known as the Red Planet?",
-      options: ["Mars", "Venus", "Jupiter", "Mercury"],
-      correct: 0,
+      options: ["Mercury", "Venus", "Jupiter", "Mars"],
+      correct: 3,
     },
     {
       question: "Which planet is the largest in our solar system?",
-      options: ["Saturn", "Jupiter", "Neptune", "Earth"],
-      correct: 1,
-    },
-    {
-      question: "How many planets are there in the solar system?",
-      options: ["7", "8", "9", "10"],
-      correct: 1,
-    },
-    {
-      question: "Which planet has the most moons?",
-      options: ["Saturn", "Jupiter", "Mars", "Uranus"],
+      options: ["Jupiter", "Earth", "Saturn", "Neptune"],
       correct: 0,
     },
     {
+      question: "How many planets are there in the solar system?",
+      options: ["7", "9", "8", "10"],
+      correct: 2,
+    },
+    {
+      question: "Which planet has the most moons?",
+      options: ["Uranus", "Mars", "Jupiter", "Saturn"],
+      correct: 3,
+    },
+    {
       question: "What is the closest planet to the Sun?",
-      options: ["Venus", "Mercury", "Mars", "Earth"],
-      correct: 1,
+      options: ["Mercury", "Earth", "Mars", "Venus"],
+      correct: 0,
     },
     {
       question: "Which planet is known for its rings?",
-      options: ["Uranus", "Saturn", "Jupiter", "Neptune"],
+      options: ["Jupiter", "Saturn", "Neptune", "Uranus"],
       correct: 1,
     },
     {
       question: "What galaxy is Earth located in?",
-      options: ["Andromeda", "Whirlpool", "Milky Way", "Triangulum"],
-      correct: 2,
+      options: ["Milky Way", "Andromeda", "Whirlpool", "Triangulum"],
+      correct: 0,
     },
     {
       question: "What is the name of Earth’s moon?",
-      options: ["Luna", "Selene", "The Moon", "Phobos"],
-      correct: 2,
+      options: ["The Moon", "Luna", "Selene", "Phobos"],
+      correct: 0,
     },
     {
       question: "Which planet has a day longer than its year?",
-      options: ["Venus", "Mars", "Mercury", "Jupiter"],
-      correct: 0,
+      options: ["Mercury", "Jupiter", "Mars", "Venus"],
+      correct: 3,
     },
     {
       question: "Which is the coldest planet in the solar system?",
-      options: ["Neptune", "Uranus", "Pluto", "Saturn"],
-      correct: 1,
-    },
-    {
-      question: "Which planet has the strongest gravity?",
-      options: ["Jupiter", "Saturn", "Earth", "Neptune"],
-      correct: 0,
-    },
-    {
-      question: "What is a black hole?",
-      options: ["A collapsed star", "A wormhole", "A planet", "A type of moon"],
-      correct: 0,
-    },
-    {
-      question: "Which planet is tipped on its side?",
-      options: ["Neptune", "Mars", "Uranus", "Jupiter"],
+      options: ["Saturn", "Neptune", "Uranus", "Pluto"],
       correct: 2,
     },
     {
+      question: "Which planet has the strongest gravity?",
+      options: ["Earth", "Jupiter", "Saturn", "Neptune"],
+      correct: 1,
+    },
+    {
+      question: "What is a black hole?",
+      options: ["A planet", "A type of moon", "A wormhole", "A collapsed star"],
+      correct: 3,
+    },
+    {
+      question: "Which planet is tipped on its side?",
+      options: ["Jupiter", "Uranus", "Neptune", "Mars"],
+      correct: 1,
+    },
+    {
       question: "Which was the first country to send a man to space?",
-      options: ["USA", "Germany", "China", "Soviet Union"],
+      options: ["Germany", "USA", "China", "Soviet Union"],
       correct: 3,
     },
     {
@@ -556,32 +553,32 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     },
     {
       question: "Which planet is farthest from the Sun?",
-      options: ["Uranus", "Neptune", "Pluto", "Saturn"],
+      options: ["Pluto", "Neptune", "Saturn", "Uranus"],
       correct: 1,
     },
     {
       question: "What is the name of NASA's most famous space telescope?",
-      options: ["James Webb", "Spitzer", "Kepler", "Hubble"],
-      correct: 3,
+      options: ["Spitzer", "Hubble", "James Webb", "Kepler"],
+      correct: 1,
     },
     {
       question: "Which planet is known as the 'Evening Star'?",
-      options: ["Mars", "Venus", "Jupiter", "Saturn"],
-      correct: 1,
+      options: ["Saturn", "Mars", "Venus", "Jupiter"],
+      correct: 2,
     },
     {
       question: "What is a light-year?",
       options: [
+        "A year with 366 days",
+        "The speed of light",
         "A year on Mercury",
         "A measurement of distance",
-        "The speed of light",
-        "A year with 366 days",
       ],
-      correct: 1,
+      correct: 3,
     },
     {
       question: "Which planet has the fastest rotation?",
-      options: ["Earth", "Mars", "Jupiter", "Saturn"],
+      options: ["Earth", "Saturn", "Jupiter", "Mars"],
       correct: 2,
     },
   ],
@@ -589,39 +586,39 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "Which sentence is grammatically correct?",
       options: [
-        "She go to school.",
         "She goes to school.",
         "She going to school.",
+        "She go to school.",
         "She gone to school.",
       ],
-      correct: 1,
+      correct: 0,
     },
     {
       question: "What is the past tense of 'run'?",
-      options: ["runned", "ran", "run", "running"],
-      correct: 1,
+      options: ["ran", "runned", "running", "run"],
+      correct: 0,
     },
     {
       question:
         "Choose the correct article: ___ apple a day keeps the doctor away.",
-      options: ["A", "An", "The", "No article"],
+      options: ["The", "An", "A", "No article"],
       correct: 1,
     },
     {
       question: "Which word is an adjective?",
-      options: ["Quickly", "Run", "Beautiful", "Happily"],
-      correct: 2,
+      options: ["Run", "Beautiful", "Quickly", "Happily"],
+      correct: 1,
     },
     {
       question: "What is the plural of 'child'?",
-      options: ["Childs", "Children", "Childes", "Childer"],
+      options: ["Childer", "Children", "Childes", "Childs"],
       correct: 1,
     },
     {
       question: "Choose the correct sentence:",
       options: [
-        "He don’t like coffee.",
         "He doesn’t likes coffee.",
+        "He don’t like coffee.",
         "He doesn’t like coffee.",
         "He doesn’t like coffees.",
       ],
@@ -629,43 +626,43 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     },
     {
       question: "Which word is a preposition?",
-      options: ["Quick", "Under", "Beautiful", "Running"],
-      correct: 1,
+      options: ["Quick", "Beautiful", "Running", "Under"],
+      correct: 3,
     },
     {
       question: "Complete the sentence: I have lived here ___ 2015.",
-      options: ["since", "for", "at", "in"],
-      correct: 0,
+      options: ["in", "since", "for", "at"],
+      correct: 1,
     },
     {
       question: "What’s the superlative form of 'good'?",
-      options: ["Better", "Goodest", "More good", "Best"],
-      correct: 3,
+      options: ["Goodest", "Better", "Best", "More good"],
+      correct: 2,
     },
     {
       question: "Which sentence is in the passive voice?",
       options: [
+        "The teacher will explain.",
         "The teacher explained the lesson.",
         "The lesson was explained by the teacher.",
         "The teacher is explaining.",
-        "The teacher will explain.",
       ],
-      correct: 1,
+      correct: 2,
     },
     {
       question: "What type of word is 'quickly'?",
-      options: ["Verb", "Adjective", "Adverb", "Noun"],
-      correct: 2,
+      options: ["Adverb", "Noun", "Verb", "Adjective"],
+      correct: 0,
     },
     {
       question: "Identify the conjunction: 'I like tea **and** coffee.'",
-      options: ["Like", "And", "Tea", "Coffee"],
-      correct: 1,
+      options: ["Like", "Tea", "Coffee", "And"],
+      correct: 3,
     },
     {
       question: "Choose the correct form: 'She ___ playing now.'",
-      options: ["was", "were", "is", "be"],
-      correct: 2,
+      options: ["was", "be", "were", "is"],
+      correct: 3,
     },
     {
       question: "Which sentence is correct?",
@@ -679,63 +676,63 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     },
     {
       question: "Which one is a noun?",
-      options: ["Run", "Happy", "Apple", "Quickly"],
-      correct: 2,
+      options: ["Apple", "Run", "Quickly", "Happy"],
+      correct: 0,
     },
     {
       question:
         "Choose the correct comparative form: 'This book is ___ than that one.'",
-      options: ["good", "better", "best", "more good"],
-      correct: 1,
+      options: ["better", "best", "good", "more good"],
+      correct: 0,
     },
     {
       question: "Fill in the blank: I’m interested ___ learning Spanish.",
-      options: ["at", "in", "with", "for"],
-      correct: 1,
+      options: ["with", "for", "in", "at"],
+      correct: 2,
     },
     {
       question:
         "Which word completes the sentence? 'She has ___ her homework.'",
-      options: ["did", "done", "doing", "do"],
+      options: ["did", "done", "do", "doing"],
       correct: 1,
     },
     {
       question: "What is the opposite of 'always'?",
-      options: ["Often", "Usually", "Never", "Sometimes"],
-      correct: 2,
+      options: ["Often", "Usually", "Sometimes", "Never"],
+      correct: 3,
     },
     {
       question: "Which word is a verb?",
-      options: ["Eat", "Hungry", "Happy", "Slow"],
-      correct: 0,
+      options: ["Happy", "Eat", "Hungry", "Slow"],
+      correct: 1,
     },
   ],
   7: [
     {
       question: "What quality describes you best?",
       options: [
-        { text: "Brave", scores: { Harry: 1 } },
         { text: "Smart", scores: { Hermione: 1 } },
         { text: "Loyal", scores: { Ron: 1 } },
+        { text: "Brave", scores: { Harry: 1 } },
         { text: "Ambitious", scores: { Draco: 1 } },
       ],
     },
     {
       question: "What would be your favorite subject at Hogwarts?",
       options: [
+        { text: "Charms", scores: { Draco: 1 } },
         { text: "Defense Against the Dark Arts", scores: { Harry: 1 } },
         { text: "Potions", scores: { Hermione: 1 } },
-        { text: "Charms", scores: { Draco: 1 } },
         { text: "Care of Magical Creatures", scores: { Luna: 1 } },
       ],
     },
     {
       question: "How do you handle conflict?",
       options: [
-        { text: "Face it head-on", scores: { Harry: 1 } },
-        { text: "Use logic to win", scores: { Hermione: 1 } },
-        { text: "Avoid it if possible", scores: { Ron: 1 } },
         { text: "Manipulate behind the scenes", scores: { Draco: 1 } },
+        { text: "Avoid it if possible", scores: { Ron: 1 } },
+        { text: "Use logic to win", scores: { Hermione: 1 } },
+        { text: "Face it head-on", scores: { Harry: 1 } },
       ],
     },
     {
@@ -750,82 +747,82 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "What would you see in the Mirror of Erised?",
       options: [
-        { text: "Your family safe and happy", scores: { Ron: 1 } },
         { text: "Knowledge and books", scores: { Hermione: 1 } },
-        { text: "Power and control", scores: { Draco: 1 } },
+        { text: "Your family safe and happy", scores: { Ron: 1 } },
         { text: "Adventure and excitement", scores: { Harry: 1 } },
+        { text: "Power and control", scores: { Draco: 1 } },
       ],
     },
     {
       question: "Pick a Hogwarts house:",
       options: [
-        { text: "Gryffindor", scores: { Harry: 1 } },
-        { text: "Ravenclaw", scores: { Luna: 1 } },
-        { text: "Hufflepuff", scores: { Ron: 1 } },
         { text: "Slytherin", scores: { Draco: 1 } },
+        { text: "Ravenclaw", scores: { Luna: 1 } },
+        { text: "Gryffindor", scores: { Harry: 1 } },
+        { text: "Hufflepuff", scores: { Ron: 1 } },
       ],
     },
     {
       question: "What’s your biggest flaw?",
       options: [
-        { text: "Impulsiveness", scores: { Harry: 1 } },
         { text: "Stubbornness", scores: { Hermione: 1 } },
         { text: "Insecurity", scores: { Ron: 1 } },
+        { text: "Impulsiveness", scores: { Harry: 1 } },
         { text: "Arrogance", scores: { Draco: 1 } },
       ],
     },
     {
       question: "Choose a drink from The Three Broomsticks:",
       options: [
+        { text: "Firewhisky", scores: { Draco: 1 } },
         { text: "Butterbeer", scores: { Ron: 1 } },
         { text: "Pumpkin Juice", scores: { Hermione: 1 } },
-        { text: "Firewhisky", scores: { Draco: 1 } },
         { text: "Gillywater", scores: { Luna: 1 } },
       ],
     },
     {
       question: "In a group project, you’re the one who...",
       options: [
-        { text: "Takes the lead", scores: { Harry: 1 } },
         { text: "Organizes everything", scores: { Hermione: 1 } },
         { text: "Goes with the flow", scores: { Ron: 1 } },
+        { text: "Takes the lead", scores: { Harry: 1 } },
         { text: "Makes sarcastic comments", scores: { Draco: 1 } },
       ],
     },
     {
       question: "What scares you the most?",
       options: [
-        { text: "Losing loved ones", scores: { Harry: 1 } },
-        { text: "Failure", scores: { Hermione: 1 } },
         { text: "Being ignored", scores: { Luna: 1 } },
+        { text: "Failure", scores: { Hermione: 1 } },
+        { text: "Losing loved ones", scores: { Harry: 1 } },
         { text: "Being underestimated", scores: { Draco: 1 } },
       ],
     },
     {
       question: "Your dream job in the wizarding world?",
       options: [
-        { text: "Auror", scores: { Harry: 1 } },
         { text: "Professor", scores: { Hermione: 1 } },
-        { text: "Shop owner", scores: { Ron: 1 } },
+        { text: "Auror", scores: { Harry: 1 } },
         { text: "Minister of Magic", scores: { Draco: 1 } },
+        { text: "Shop owner", scores: { Ron: 1 } },
       ],
     },
     {
       question: "Pick a spell:",
       options: [
-        { text: "Expelliarmus", scores: { Harry: 1 } },
-        { text: "Alohomora", scores: { Hermione: 1 } },
         { text: "Lumos", scores: { Luna: 1 } },
+        { text: "Alohomora", scores: { Hermione: 1 } },
         { text: "Sectumsempra", scores: { Draco: 1 } },
+        { text: "Expelliarmus", scores: { Harry: 1 } },
       ],
     },
     {
       question: "You’re most likely to be found...",
       options: [
-        { text: "Practicing spells", scores: { Harry: 1 } },
-        { text: "Reading in the library", scores: { Hermione: 1 } },
         { text: "Eating in the Great Hall", scores: { Ron: 1 } },
         { text: "Plotting in the common room", scores: { Draco: 1 } },
+        { text: "Reading in the library", scores: { Hermione: 1 } },
+        { text: "Practicing spells", scores: { Harry: 1 } },
       ],
     },
     {
@@ -833,63 +830,63 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       options: [
         { text: "Invisibility Cloak", scores: { Harry: 1 } },
         { text: "Time Turner", scores: { Hermione: 1 } },
-        { text: "Marauder’s Map", scores: { Ron: 1 } },
         { text: "Elder Wand", scores: { Draco: 1 } },
+        { text: "Marauder’s Map", scores: { Ron: 1 } },
       ],
     },
     {
       question: "Your friend is in trouble. You...",
       options: [
         { text: "Run to help immediately", scores: { Harry: 1 } },
+        { text: "See if it's worth your time", scores: { Draco: 1 } },
         { text: "Come up with a smart plan", scores: { Hermione: 1 } },
         { text: "Support them emotionally", scores: { Ron: 1 } },
-        { text: "See if it's worth your time", scores: { Draco: 1 } },
       ],
     },
     {
       question: "What’s your Hogwarts aesthetic?",
       options: [
-        { text: "Capes and candles", scores: { Harry: 1 } },
-        { text: "Books and scrolls", scores: { Hermione: 1 } },
         { text: "Laughter and snacks", scores: { Ron: 1 } },
+        { text: "Books and scrolls", scores: { Hermione: 1 } },
         { text: "Dark corridors", scores: { Draco: 1 } },
+        { text: "Capes and candles", scores: { Harry: 1 } },
       ],
     },
     {
       question: "What would others say about you?",
       options: [
-        { text: "Courageous", scores: { Harry: 1 } },
-        { text: "Intelligent", scores: { Hermione: 1 } },
-        { text: "Funny", scores: { Ron: 1 } },
         { text: "Cunning", scores: { Draco: 1 } },
+        { text: "Intelligent", scores: { Hermione: 1 } },
+        { text: "Courageous", scores: { Harry: 1 } },
+        { text: "Funny", scores: { Ron: 1 } },
       ],
     },
     {
       question: "Choose a quote:",
       options: [
-        { text: "It takes a great deal of bravery...", scores: { Harry: 1 } },
-        { text: "Books! And cleverness!", scores: { Hermione: 1 } },
+        { text: "My father will hear about this!", scores: { Draco: 1 } },
         {
           text: "You're going to suffer, but you're going to be happy about it.",
           scores: { Luna: 1 },
         },
-        { text: "My father will hear about this!", scores: { Draco: 1 } },
+        { text: "It takes a great deal of bravery...", scores: { Harry: 1 } },
+        { text: "Books! And cleverness!", scores: { Hermione: 1 } },
       ],
     },
     {
       question: "Which word resonates most with you?",
       options: [
-        { text: "Bravery", scores: { Harry: 1 } },
         { text: "Wisdom", scores: { Hermione: 1 } },
         { text: "Kindness", scores: { Ron: 1 } },
+        { text: "Bravery", scores: { Harry: 1 } },
         { text: "Ambition", scores: { Draco: 1 } },
       ],
     },
     {
       question: "Pick a magical item to keep forever:",
       options: [
-        { text: "Felix Felicis", scores: { Hermione: 1 } },
         { text: "A Firebolt", scores: { Harry: 1 } },
+        { text: "Felix Felicis", scores: { Hermione: 1 } },
         { text: "A Pensieve", scores: { Ron: 1 } },
         { text: "A Horcrux (if you dare)", scores: { Draco: 1 } },
       ],
@@ -899,8 +896,8 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "What's your ideal weekend?",
       options: [
-        { text: "Exploring nature alone", scores: { Elsa: 1 } },
         { text: "Swimming and collecting treasures", scores: { Ariel: 1 } },
+        { text: "Exploring nature alone", scores: { Elsa: 1 } },
         { text: "Reading a book in a cozy spot", scores: { Belle: 1 } },
         { text: "Training or learning new skills", scores: { Mulan: 1 } },
       ],
@@ -908,55 +905,55 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "Pick a favorite element:",
       options: [
-        { text: "Ice", scores: { Elsa: 1 } },
-        { text: "Water", scores: { Ariel: 1 } },
-        { text: "Earth", scores: { Belle: 1 } },
         { text: "Fire", scores: { Mulan: 1 } },
+        { text: "Earth", scores: { Belle: 1 } },
+        { text: "Water", scores: { Ariel: 1 } },
+        { text: "Ice", scores: { Elsa: 1 } },
       ],
     },
     {
       question: "How do you handle conflict?",
       options: [
         { text: "Stay calm and distant", scores: { Elsa: 1 } },
+        { text: "Act quickly and take charge", scores: { Mulan: 1 } },
         { text: "Speak your mind", scores: { Ariel: 1 } },
         { text: "Use reason and empathy", scores: { Belle: 1 } },
-        { text: "Act quickly and take charge", scores: { Mulan: 1 } },
       ],
     },
     {
       question: "Choose a companion animal:",
       options: [
+        { text: "Horse with a library name", scores: { Belle: 1 } },
         { text: "Snow Leopard", scores: { Elsa: 1 } },
         { text: "Flounder the fish", scores: { Ariel: 1 } },
-        { text: "Horse with a library name", scores: { Belle: 1 } },
         { text: "Cricket or dragon", scores: { Mulan: 1 } },
       ],
     },
     {
       question: "What motivates you the most?",
       options: [
-        { text: "Freedom to be yourself", scores: { Elsa: 1 } },
+        { text: "Honor and duty", scores: { Mulan: 1 } },
         { text: "Adventure and curiosity", scores: { Ariel: 1 } },
         { text: "Knowledge and understanding", scores: { Belle: 1 } },
-        { text: "Honor and duty", scores: { Mulan: 1 } },
+        { text: "Freedom to be yourself", scores: { Elsa: 1 } },
       ],
     },
     {
       question: "How do others describe you?",
       options: [
-        { text: "Reserved but powerful", scores: { Elsa: 1 } },
         { text: "Free-spirited and daring", scores: { Ariel: 1 } },
-        { text: "Kind and intelligent", scores: { Belle: 1 } },
         { text: "Brave and strategic", scores: { Mulan: 1 } },
+        { text: "Reserved but powerful", scores: { Elsa: 1 } },
+        { text: "Kind and intelligent", scores: { Belle: 1 } },
       ],
     },
     {
       question: "Pick a favorite place:",
       options: [
-        { text: "A quiet snowy mountain", scores: { Elsa: 1 } },
+        { text: "A battlefield of honor", scores: { Mulan: 1 } },
         { text: "The ocean floor", scores: { Ariel: 1 } },
         { text: "A cozy library", scores: { Belle: 1 } },
-        { text: "A battlefield of honor", scores: { Mulan: 1 } },
+        { text: "A quiet snowy mountain", scores: { Elsa: 1 } },
       ],
     },
     {
@@ -971,106 +968,106 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "What's your weakness?",
       options: [
+        { text: "Breaking rules", scores: { Mulan: 1 } },
+        { text: "Overthinking", scores: { Belle: 1 } },
         { text: "Shutting people out", scores: { Elsa: 1 } },
         { text: "Being impulsive", scores: { Ariel: 1 } },
-        { text: "Overthinking", scores: { Belle: 1 } },
-        { text: "Breaking rules", scores: { Mulan: 1 } },
       ],
     },
     {
       question: "Pick a quote:",
       options: [
-        { text: "Let it go.", scores: { Elsa: 1 } },
-        { text: "I want to be where the people are.", scores: { Ariel: 1 } },
-        {
-          text: "I want adventure in the great wide somewhere.",
-          scores: { Belle: 1 },
-        },
         {
           text: "The flower that blooms in adversity is the most rare and beautiful of all.",
           scores: { Mulan: 1 },
+        },
+        { text: "I want to be where the people are.", scores: { Ariel: 1 } },
+        { text: "Let it go.", scores: { Elsa: 1 } },
+        {
+          text: "I want adventure in the great wide somewhere.",
+          scores: { Belle: 1 },
         },
       ],
     },
     {
       question: "What kind of music do you like?",
       options: [
-        { text: "Instrumental and dramatic", scores: { Elsa: 1 } },
-        { text: "Dreamy pop", scores: { Ariel: 1 } },
-        { text: "Soft classical", scores: { Belle: 1 } },
         { text: "Epic soundtracks", scores: { Mulan: 1 } },
+        { text: "Dreamy pop", scores: { Ariel: 1 } },
+        { text: "Instrumental and dramatic", scores: { Elsa: 1 } },
+        { text: "Soft classical", scores: { Belle: 1 } },
       ],
     },
     {
       question: "If you had a power, it would be...",
       options: [
-        { text: "Ice and snow", scores: { Elsa: 1 } },
         { text: "Breathing underwater", scores: { Ariel: 1 } },
-        { text: "Talking to books (magically)", scores: { Belle: 1 } },
+        { text: "Ice and snow", scores: { Elsa: 1 } },
         { text: "Martial arts mastery", scores: { Mulan: 1 } },
+        { text: "Talking to books (magically)", scores: { Belle: 1 } },
       ],
     },
     {
       question: "Your fashion style is:",
       options: [
-        { text: "Elegant and icy", scores: { Elsa: 1 } },
-        { text: "Whimsical and beachy", scores: { Ariel: 1 } },
         { text: "Classic and bookish", scores: { Belle: 1 } },
         { text: "Minimal and practical", scores: { Mulan: 1 } },
+        { text: "Whimsical and beachy", scores: { Ariel: 1 } },
+        { text: "Elegant and icy", scores: { Elsa: 1 } },
       ],
     },
     {
       question: "Which word resonates most with you?",
       options: [
         { text: "Independence", scores: { Elsa: 1 } },
-        { text: "Wonder", scores: { Ariel: 1 } },
         { text: "Wisdom", scores: { Belle: 1 } },
         { text: "Courage", scores: { Mulan: 1 } },
+        { text: "Wonder", scores: { Ariel: 1 } },
       ],
     },
     {
       question: "Which of these do you value most?",
       options: [
-        { text: "Self-control", scores: { Elsa: 1 } },
         { text: "Freedom", scores: { Ariel: 1 } },
-        { text: "Understanding others", scores: { Belle: 1 } },
+        { text: "Self-control", scores: { Elsa: 1 } },
         { text: "Protecting those you love", scores: { Mulan: 1 } },
+        { text: "Understanding others", scores: { Belle: 1 } },
       ],
     },
     {
       question: "How do you make decisions?",
       options: [
-        { text: "Quietly and alone", scores: { Elsa: 1 } },
         { text: "From the heart", scores: { Ariel: 1 } },
         { text: "With thought and care", scores: { Belle: 1 } },
         { text: "Quickly under pressure", scores: { Mulan: 1 } },
+        { text: "Quietly and alone", scores: { Elsa: 1 } },
       ],
     },
     {
       question: "Pick a favorite food:",
       options: [
         { text: "Snowflake cupcakes", scores: { Elsa: 1 } },
-        { text: "Seaweed salad", scores: { Ariel: 1 } },
-        { text: "French pastries", scores: { Belle: 1 } },
         { text: "Rice and noodles", scores: { Mulan: 1 } },
+        { text: "French pastries", scores: { Belle: 1 } },
+        { text: "Seaweed salad", scores: { Ariel: 1 } },
       ],
     },
     {
       question: "Your best friend would describe you as:",
       options: [
+        { text: "Thoughtful", scores: { Belle: 1 } },
         { text: "Protective", scores: { Elsa: 1 } },
         { text: "Curious", scores: { Ariel: 1 } },
-        { text: "Thoughtful", scores: { Belle: 1 } },
         { text: "Loyal", scores: { Mulan: 1 } },
       ],
     },
     {
       question: "What gives you peace?",
       options: [
-        { text: "Solitude", scores: { Elsa: 1 } },
         { text: "Exploration", scores: { Ariel: 1 } },
-        { text: "A good story", scores: { Belle: 1 } },
+        { text: "Solitude", scores: { Elsa: 1 } },
         { text: "Knowing you did the right thing", scores: { Mulan: 1 } },
+        { text: "A good story", scores: { Belle: 1 } },
       ],
     },
   ],
@@ -1078,19 +1075,19 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "How do you solve problems?",
       options: [
-        { text: "With quick thinking and humor", scores: { "Spider-Man": 1 } },
         { text: "Invent tech to fix it", scores: { "Iron Man": 1 } },
-        { text: "Strategically and calmly", scores: { "Black Widow": 1 } },
         { text: "Using emotion and instinct", scores: { "Scarlet Witch": 1 } },
+        { text: "Strategically and calmly", scores: { "Black Widow": 1 } },
+        { text: "With quick thinking and humor", scores: { "Spider-Man": 1 } },
       ],
     },
     {
       question: "What’s your biggest strength?",
       options: [
-        { text: "Empathy", scores: { "Spider-Man": 1 } },
+        { text: "Power", scores: { "Scarlet Witch": 1 } },
         { text: "Intelligence", scores: { "Iron Man": 1 } },
         { text: "Precision", scores: { "Black Widow": 1 } },
-        { text: "Power", scores: { "Scarlet Witch": 1 } },
+        { text: "Empathy", scores: { "Spider-Man": 1 } },
       ],
     },
     {
@@ -1098,24 +1095,24 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       options: [
         { text: "Web shooters", scores: { "Spider-Man": 1 } },
         { text: "Iron suit", scores: { "Iron Man": 1 } },
-        { text: "Batons", scores: { "Black Widow": 1 } },
         { text: "Magic energy", scores: { "Scarlet Witch": 1 } },
+        { text: "Batons", scores: { "Black Widow": 1 } },
       ],
     },
     {
       question: "Which city feels like home?",
       options: [
-        { text: "Queens", scores: { "Spider-Man": 1 } },
         { text: "Malibu", scores: { "Iron Man": 1 } },
         { text: "Budapest", scores: { "Black Widow": 1 } },
         { text: "Sokovia", scores: { "Scarlet Witch": 1 } },
+        { text: "Queens", scores: { "Spider-Man": 1 } },
       ],
     },
     {
       question: "What would your friends say about you?",
       options: [
-        { text: "Loyal and kind", scores: { "Spider-Man": 1 } },
         { text: "Brilliant and sarcastic", scores: { "Iron Man": 1 } },
+        { text: "Loyal and kind", scores: { "Spider-Man": 1 } },
         { text: "Mysterious and reliable", scores: { "Black Widow": 1 } },
         { text: "Emotional and powerful", scores: { "Scarlet Witch": 1 } },
       ],
@@ -1123,6 +1120,7 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "Choose a motto:",
       options: [
+        { text: "I get by just fine on my own", scores: { "Black Widow": 1 } },
         {
           text: "With great power comes great responsibility",
           scores: { "Spider-Man": 1 },
@@ -1131,7 +1129,6 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
           text: "Sometimes you gotta run before you can walk",
           scores: { "Iron Man": 1 },
         },
-        { text: "I get by just fine on my own", scores: { "Black Widow": 1 } },
         {
           text: "I can’t control their fear, only mine",
           scores: { "Scarlet Witch": 1 },
@@ -1141,17 +1138,17 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "Your biggest fear?",
       options: [
-        { text: "Losing loved ones", scores: { "Spider-Man": 1 } },
-        { text: "Failing despite effort", scores: { "Iron Man": 1 } },
-        { text: "Being used or manipulated", scores: { "Black Widow": 1 } },
         { text: "Losing control", scores: { "Scarlet Witch": 1 } },
+        { text: "Being used or manipulated", scores: { "Black Widow": 1 } },
+        { text: "Failing despite effort", scores: { "Iron Man": 1 } },
+        { text: "Losing loved ones", scores: { "Spider-Man": 1 } },
       ],
     },
     {
       question: "Pick a battle style:",
       options: [
-        { text: "Agile and reactive", scores: { "Spider-Man": 1 } },
         { text: "High-tech and ranged", scores: { "Iron Man": 1 } },
+        { text: "Agile and reactive", scores: { "Spider-Man": 1 } },
         { text: "Close combat and stealth", scores: { "Black Widow": 1 } },
         { text: "Telekinetic and raw", scores: { "Scarlet Witch": 1 } },
       ],
@@ -1169,85 +1166,85 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       question: "What color fits you best?",
       options: [
         { text: "Red and blue", scores: { "Spider-Man": 1 } },
-        { text: "Gold and red", scores: { "Iron Man": 1 } },
-        { text: "Black", scores: { "Black Widow": 1 } },
         { text: "Scarlet", scores: { "Scarlet Witch": 1 } },
+        { text: "Black", scores: { "Black Widow": 1 } },
+        { text: "Gold and red", scores: { "Iron Man": 1 } },
       ],
     },
     {
       question: "Your greatest weapon is...",
       options: [
-        { text: "Your heart", scores: { "Spider-Man": 1 } },
-        { text: "Your brain", scores: { "Iron Man": 1 } },
         { text: "Your discipline", scores: { "Black Widow": 1 } },
+        { text: "Your heart", scores: { "Spider-Man": 1 } },
         { text: "Your emotions", scores: { "Scarlet Witch": 1 } },
+        { text: "Your brain", scores: { "Iron Man": 1 } },
       ],
     },
     {
       question: "How do you handle teamwork?",
       options: [
-        { text: "Collaborative and fun", scores: { "Spider-Man": 1 } },
         { text: "Lead with vision", scores: { "Iron Man": 1 } },
-        { text: "Quiet contributor", scores: { "Black Widow": 1 } },
         { text: "Protective and intense", scores: { "Scarlet Witch": 1 } },
+        { text: "Quiet contributor", scores: { "Black Widow": 1 } },
+        { text: "Collaborative and fun", scores: { "Spider-Man": 1 } },
       ],
     },
     {
       question: "Your favorite activity is...",
       options: [
-        { text: "Helping neighbors", scores: { "Spider-Man": 1 } },
         { text: "Building tech", scores: { "Iron Man": 1 } },
-        { text: "Gathering intel", scores: { "Black Widow": 1 } },
+        { text: "Helping neighbors", scores: { "Spider-Man": 1 } },
         { text: "Practicing spells", scores: { "Scarlet Witch": 1 } },
+        { text: "Gathering intel", scores: { "Black Widow": 1 } },
       ],
     },
     {
       question: "If someone betrays you, you...",
       options: [
+        { text: "Keep calm and strike later", scores: { "Black Widow": 1 } },
         { text: "Are heartbroken but forgive", scores: { "Spider-Man": 1 } },
         {
           text: "Never forget and upgrade your defense",
           scores: { "Iron Man": 1 },
         },
-        { text: "Keep calm and strike later", scores: { "Black Widow": 1 } },
         { text: "Lose control but regret it", scores: { "Scarlet Witch": 1 } },
       ],
     },
     {
       question: "What do you value most?",
       options: [
-        { text: "Friendship", scores: { "Spider-Man": 1 } },
+        { text: "Connection", scores: { "Scarlet Witch": 1 } },
         { text: "Innovation", scores: { "Iron Man": 1 } },
         { text: "Loyalty", scores: { "Black Widow": 1 } },
-        { text: "Connection", scores: { "Scarlet Witch": 1 } },
+        { text: "Friendship", scores: { "Spider-Man": 1 } },
       ],
     },
     {
       question: "What’s your vibe?",
       options: [
         { text: "Witty and awkward", scores: { "Spider-Man": 1 } },
-        { text: "Confident and loud", scores: { "Iron Man": 1 } },
         { text: "Quiet and sharp", scores: { "Black Widow": 1 } },
         { text: "Calm but explosive", scores: { "Scarlet Witch": 1 } },
+        { text: "Confident and loud", scores: { "Iron Man": 1 } },
       ],
     },
     {
       question: "What motivates you most?",
       options: [
-        { text: "Doing the right thing", scores: { "Spider-Man": 1 } },
         { text: "Leaving a legacy", scores: { "Iron Man": 1 } },
+        { text: "Healing personal loss", scores: { "Scarlet Witch": 1 } },
         {
           text: "Protecting others from your past",
           scores: { "Black Widow": 1 },
         },
-        { text: "Healing personal loss", scores: { "Scarlet Witch": 1 } },
+        { text: "Doing the right thing", scores: { "Spider-Man": 1 } },
       ],
     },
     {
       question: "If you had a superpower, it’d be...",
       options: [
-        { text: "Agility and senses", scores: { "Spider-Man": 1 } },
         { text: "Technology and flight", scores: { "Iron Man": 1 } },
+        { text: "Agility and senses", scores: { "Spider-Man": 1 } },
         { text: "Combat mastery", scores: { "Black Widow": 1 } },
         { text: "Mind manipulation", scores: { "Scarlet Witch": 1 } },
       ],
@@ -1255,19 +1252,19 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "What kind of leader are you?",
       options: [
+        { text: "Emotional and empathetic", scores: { "Scarlet Witch": 1 } },
+        { text: "Stealthy and balanced", scores: { "Black Widow": 1 } },
         { text: "Reluctant but inspiring", scores: { "Spider-Man": 1 } },
         { text: "Visionary and strategic", scores: { "Iron Man": 1 } },
-        { text: "Stealthy and balanced", scores: { "Black Widow": 1 } },
-        { text: "Emotional and empathetic", scores: { "Scarlet Witch": 1 } },
       ],
     },
     {
       question: "What makes you powerful?",
       options: [
-        { text: "My humanity", scores: { "Spider-Man": 1 } },
-        { text: "My intellect", scores: { "Iron Man": 1 } },
-        { text: "My training", scores: { "Black Widow": 1 } },
         { text: "My emotions", scores: { "Scarlet Witch": 1 } },
+        { text: "My humanity", scores: { "Spider-Man": 1 } },
+        { text: "My training", scores: { "Black Widow": 1 } },
+        { text: "My intellect", scores: { "Iron Man": 1 } },
       ],
     },
   ],
@@ -1297,12 +1294,12 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "Your travel outfit is:",
       options: [
-        { text: "Swimsuit and sandals", scores: { "Beach Paradise": 1 } },
         { text: "Hiking boots and backpack", scores: { "Adventure Trek": 1 } },
         {
           text: "Comfortable shoes and a camera",
           scores: { "Cultural City Trip": 1 },
         },
+        { text: "Swimsuit and sandals", scores: { "Beach Paradise": 1 } },
       ],
     },
     {
@@ -1319,17 +1316,17 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "Pick your travel snack:",
       options: [
-        { text: "Fresh fruit", scores: { "Beach Paradise": 1 } },
         { text: "Energy bar", scores: { "Adventure Trek": 1 } },
+        { text: "Fresh fruit", scores: { "Beach Paradise": 1 } },
         { text: "Local pastry", scores: { "Cultural City Trip": 1 } },
       ],
     },
     {
       question: "Favorite vacation activity:",
       options: [
-        { text: "Sunbathing with a drink", scores: { "Beach Paradise": 1 } },
         { text: "Climbing or kayaking", scores: { "Adventure Trek": 1 } },
         { text: "Visiting a museum", scores: { "Cultural City Trip": 1 } },
+        { text: "Sunbathing with a drink", scores: { "Beach Paradise": 1 } },
       ],
     },
     {
@@ -1346,123 +1343,123 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "Where would you sleep?",
       options: [
-        { text: "Beachfront bungalow", scores: { "Beach Paradise": 1 } },
-        { text: "Tent in the wilderness", scores: { "Adventure Trek": 1 } },
         {
           text: "Boutique hotel downtown",
           scores: { "Cultural City Trip": 1 },
         },
+        { text: "Tent in the wilderness", scores: { "Adventure Trek": 1 } },
+        { text: "Beachfront bungalow", scores: { "Beach Paradise": 1 } },
       ],
     },
     {
       question: "What do you pack most of?",
       options: [
+        { text: "Books and guides", scores: { "Cultural City Trip": 1 } },
         { text: "Sunglasses and swimsuits", scores: { "Beach Paradise": 1 } },
         { text: "Gear and gadgets", scores: { "Adventure Trek": 1 } },
-        { text: "Books and guides", scores: { "Cultural City Trip": 1 } },
       ],
     },
     {
       question: "Choose a drink:",
       options: [
+        { text: "Espresso", scores: { "Cultural City Trip": 1 } },
         { text: "Coconut water", scores: { "Beach Paradise": 1 } },
         { text: "Energy drink", scores: { "Adventure Trek": 1 } },
-        { text: "Espresso", scores: { "Cultural City Trip": 1 } },
       ],
     },
     {
       question: "Vacation length ideal for you:",
       options: [
-        { text: "One week of sun and sea", scores: { "Beach Paradise": 1 } },
-        { text: "A few intense days", scores: { "Adventure Trek": 1 } },
         {
           text: "10 days to explore culture",
           scores: { "Cultural City Trip": 1 },
         },
+        { text: "One week of sun and sea", scores: { "Beach Paradise": 1 } },
+        { text: "A few intense days", scores: { "Adventure Trek": 1 } },
       ],
     },
     {
       question: "Travel goal:",
       options: [
+        { text: "To learn and discover", scores: { "Cultural City Trip": 1 } },
         { text: "To unwind and rest", scores: { "Beach Paradise": 1 } },
         { text: "To conquer something new", scores: { "Adventure Trek": 1 } },
-        { text: "To learn and discover", scores: { "Cultural City Trip": 1 } },
       ],
     },
     {
       question: "Vacation photos are mostly:",
       options: [
         { text: "Beach sunsets", scores: { "Beach Paradise": 1 } },
-        { text: "Cliff views and trails", scores: { "Adventure Trek": 1 } },
         { text: "Art and street scenes", scores: { "Cultural City Trip": 1 } },
+        { text: "Cliff views and trails", scores: { "Adventure Trek": 1 } },
       ],
     },
     {
       question: "Souvenir you’d bring:",
       options: [
-        { text: "Seashells or beach towel", scores: { "Beach Paradise": 1 } },
         { text: "Rock or hiking badge", scores: { "Adventure Trek": 1 } },
         {
           text: "Postcards and paintings",
           scores: { "Cultural City Trip": 1 },
         },
+        { text: "Seashells or beach towel", scores: { "Beach Paradise": 1 } },
       ],
     },
     {
       question: "Group or solo travel?",
       options: [
-        { text: "With friends or partner", scores: { "Beach Paradise": 1 } },
-        { text: "Solo or with adventurers", scores: { "Adventure Trek": 1 } },
         {
           text: "Small group of curious people",
           scores: { "Cultural City Trip": 1 },
         },
+        { text: "Solo or with adventurers", scores: { "Adventure Trek": 1 } },
+        { text: "With friends or partner", scores: { "Beach Paradise": 1 } },
       ],
     },
     {
       question: "What do you avoid?",
       options: [
-        { text: "Stress and noise", scores: { "Beach Paradise": 1 } },
-        { text: "Crowds", scores: { "Adventure Trek": 1 } },
         { text: "Overplanning", scores: { "Cultural City Trip": 1 } },
+        { text: "Crowds", scores: { "Adventure Trek": 1 } },
+        { text: "Stress and noise", scores: { "Beach Paradise": 1 } },
       ],
     },
     {
       question: "Ideal footwear:",
       options: [
+        { text: "Sneakers or loafers", scores: { "Cultural City Trip": 1 } },
         { text: "Flip-flops", scores: { "Beach Paradise": 1 } },
         { text: "Hiking boots", scores: { "Adventure Trek": 1 } },
-        { text: "Sneakers or loafers", scores: { "Cultural City Trip": 1 } },
       ],
     },
     {
       question: "What's in your playlist?",
       options: [
+        { text: "Local folk and jazz", scores: { "Cultural City Trip": 1 } },
         { text: "Chill beach vibes", scores: { "Beach Paradise": 1 } },
         { text: "Upbeat rock", scores: { "Adventure Trek": 1 } },
-        { text: "Local folk and jazz", scores: { "Cultural City Trip": 1 } },
       ],
     },
     {
       question: "Pick a weather:",
       options: [
         { text: "Sunny and warm", scores: { "Beach Paradise": 1 } },
-        { text: "Cool and breezy", scores: { "Adventure Trek": 1 } },
         { text: "Mild and varied", scores: { "Cultural City Trip": 1 } },
+        { text: "Cool and breezy", scores: { "Adventure Trek": 1 } },
       ],
     },
     {
       question: "Perfect end to your day:",
       options: [
         {
+          text: "Dinner at a quaint cafe",
+          scores: { "Cultural City Trip": 1 },
+        },
+        {
           text: "Watching waves with a drink",
           scores: { "Beach Paradise": 1 },
         },
         { text: "Campfire under stars", scores: { "Adventure Trek": 1 } },
-        {
-          text: "Dinner at a quaint cafe",
-          scores: { "Cultural City Trip": 1 },
-        },
       ],
     },
   ],
@@ -1470,58 +1467,58 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "What's your ideal way to spend a Friday night?",
       options: [
+        { text: "Reading chess theory books", scores: { "Beth Harmon": 1 } },
+        { text: "Hanging out with close friends", scores: { Eleven: 1 } },
         { text: "Writing dark poetry", scores: { "Wednesday Addams": 1 } },
         { text: "Watching people from afar", scores: { "Joe Goldberg": 1 } },
-        { text: "Hanging out with close friends", scores: { Eleven: 1 } },
-        { text: "Reading chess theory books", scores: { "Beth Harmon": 1 } },
       ],
     },
     {
       question: "Pick a superpower:",
       options: [
-        { text: "Mind control", scores: { "Joe Goldberg": 1 } },
-        { text: "Telekinesis", scores: { Eleven: 1 } },
         { text: "Hyper intelligence", scores: { "Beth Harmon": 1 } },
+        { text: "Telekinesis", scores: { Eleven: 1 } },
+        { text: "Mind control", scores: { "Joe Goldberg": 1 } },
         { text: "Dark aura", scores: { "Wednesday Addams": 1 } },
       ],
     },
     {
       question: "How do you handle conflict?",
       options: [
+        { text: "Defend loved ones fiercely", scores: { Eleven: 1 } },
         {
           text: "Cold silence and eye rolls",
           scores: { "Wednesday Addams": 1 },
         },
-        { text: "Plan a psychological counter", scores: { "Joe Goldberg": 1 } },
-        { text: "Defend loved ones fiercely", scores: { Eleven: 1 } },
         { text: "Outsmart everyone", scores: { "Beth Harmon": 1 } },
+        { text: "Plan a psychological counter", scores: { "Joe Goldberg": 1 } },
       ],
     },
     {
       question: "Your fashion style is...",
       options: [
-        { text: "All black, all day", scores: { "Wednesday Addams": 1 } },
-        { text: "Neutral and discreet", scores: { "Joe Goldberg": 1 } },
-        { text: "Comfy and casual", scores: { Eleven: 1 } },
         { text: "Retro and sharp", scores: { "Beth Harmon": 1 } },
+        { text: "Comfy and casual", scores: { Eleven: 1 } },
+        { text: "Neutral and discreet", scores: { "Joe Goldberg": 1 } },
+        { text: "All black, all day", scores: { "Wednesday Addams": 1 } },
       ],
     },
     {
       question: "What drives you the most?",
       options: [
-        { text: "Truth in the darkness", scores: { "Wednesday Addams": 1 } },
         { text: "Love and obsession", scores: { "Joe Goldberg": 1 } },
-        { text: "Loyalty and protection", scores: { Eleven: 1 } },
         { text: "Ambition and focus", scores: { "Beth Harmon": 1 } },
+        { text: "Loyalty and protection", scores: { Eleven: 1 } },
+        { text: "Truth in the darkness", scores: { "Wednesday Addams": 1 } },
       ],
     },
     {
       question: "Pick a hobby:",
       options: [
-        { text: "Investigating mysteries", scores: { "Wednesday Addams": 1 } },
         { text: "Analyzing people", scores: { "Joe Goldberg": 1 } },
-        { text: "Exploring powers", scores: { Eleven: 1 } },
         { text: "Playing strategic games", scores: { "Beth Harmon": 1 } },
+        { text: "Exploring powers", scores: { Eleven: 1 } },
+        { text: "Investigating mysteries", scores: { "Wednesday Addams": 1 } },
       ],
     },
     {
@@ -1539,20 +1536,20 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "What's your biggest flaw?",
       options: [
-        { text: "Emotionally distant", scores: { "Wednesday Addams": 1 } },
-        { text: "Obsessive", scores: { "Joe Goldberg": 1 } },
-        { text: "Impulsive", scores: { Eleven: 1 } },
         { text: "Addictive personality", scores: { "Beth Harmon": 1 } },
+        { text: "Obsessive", scores: { "Joe Goldberg": 1 } },
+        { text: "Emotionally distant", scores: { "Wednesday Addams": 1 } },
+        { text: "Impulsive", scores: { Eleven: 1 } },
       ],
     },
     {
       question: "Favorite environment:",
       options: [
+        { text: "Hidden bookstore", scores: { "Joe Goldberg": 1 } },
         {
           text: "Graveyard or foggy forest",
           scores: { "Wednesday Addams": 1 },
         },
-        { text: "Hidden bookstore", scores: { "Joe Goldberg": 1 } },
         { text: "Basement with fairy lights", scores: { Eleven: 1 } },
         { text: "Chess tournament hall", scores: { "Beth Harmon": 1 } },
       ],
@@ -1564,77 +1561,77 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
           text: "I find social norms limiting",
           scores: { "Wednesday Addams": 1 },
         },
-        { text: "I do everything for love", scores: { "Joe Goldberg": 1 } },
         { text: "Friends don't lie", scores: { Eleven: 1 } },
         { text: "It's not luck, it's skill", scores: { "Beth Harmon": 1 } },
+        { text: "I do everything for love", scores: { "Joe Goldberg": 1 } },
       ],
     },
     {
       question: "You’re most likely to win a...",
       options: [
-        { text: "Spooky costume contest", scores: { "Wednesday Addams": 1 } },
-        { text: "Debate or manipulation game", scores: { "Joe Goldberg": 1 } },
         { text: "Fight with a monster", scores: { Eleven: 1 } },
+        { text: "Debate or manipulation game", scores: { "Joe Goldberg": 1 } },
         { text: "High-stakes tournament", scores: { "Beth Harmon": 1 } },
+        { text: "Spooky costume contest", scores: { "Wednesday Addams": 1 } },
       ],
     },
     {
       question: "Choose a companion:",
       options: [
-        { text: "A pet scorpion", scores: { "Wednesday Addams": 1 } },
         {
           text: "Someone you’re secretly watching",
           scores: { "Joe Goldberg": 1 },
         },
         { text: "A loyal best friend", scores: { Eleven: 1 } },
+        { text: "A pet scorpion", scores: { "Wednesday Addams": 1 } },
         { text: "No one – I work alone", scores: { "Beth Harmon": 1 } },
       ],
     },
     {
       question: "Biggest fear:",
       options: [
-        { text: "Being normal", scores: { "Wednesday Addams": 1 } },
-        { text: "Being abandoned", scores: { "Joe Goldberg": 1 } },
         { text: "Losing control", scores: { Eleven: 1 } },
+        { text: "Being normal", scores: { "Wednesday Addams": 1 } },
         { text: "Failure", scores: { "Beth Harmon": 1 } },
+        { text: "Being abandoned", scores: { "Joe Goldberg": 1 } },
       ],
     },
     {
       question: "Pick a secret weapon:",
       options: [
-        { text: "Your wit", scores: { "Wednesday Addams": 1 } },
+        { text: "A sharp mind", scores: { "Beth Harmon": 1 } },
         { text: "Manipulation", scores: { "Joe Goldberg": 1 } },
         { text: "Telekinetic rage", scores: { Eleven: 1 } },
-        { text: "A sharp mind", scores: { "Beth Harmon": 1 } },
+        { text: "Your wit", scores: { "Wednesday Addams": 1 } },
       ],
     },
     {
       question: "Social life looks like:",
       options: [
-        { text: "Solitary by choice", scores: { "Wednesday Addams": 1 } },
-        { text: "Pretending to fit in", scores: { "Joe Goldberg": 1 } },
         { text: "Tight-knit group", scores: { Eleven: 1 } },
+        { text: "Solitary by choice", scores: { "Wednesday Addams": 1 } },
         {
           text: "People respect me, but I keep distance",
           scores: { "Beth Harmon": 1 },
         },
+        { text: "Pretending to fit in", scores: { "Joe Goldberg": 1 } },
       ],
     },
     {
       question: "How do you think?",
       options: [
-        { text: "Darkly and deeply", scores: { "Wednesday Addams": 1 } },
+        { text: "Logically and ahead", scores: { "Beth Harmon": 1 } },
         { text: "In twisted stories", scores: { "Joe Goldberg": 1 } },
         { text: "Emotionally and intuitively", scores: { Eleven: 1 } },
-        { text: "Logically and ahead", scores: { "Beth Harmon": 1 } },
+        { text: "Darkly and deeply", scores: { "Wednesday Addams": 1 } },
       ],
     },
     {
       question: "Ideal power dynamic:",
       options: [
         { text: "Challenge the system", scores: { "Wednesday Addams": 1 } },
-        { text: "Control from the shadows", scores: { "Joe Goldberg": 1 } },
         { text: "Protect the ones I love", scores: { Eleven: 1 } },
+        { text: "Control from the shadows", scores: { "Joe Goldberg": 1 } },
         { text: "Be the best without help", scores: { "Beth Harmon": 1 } },
       ],
     },
@@ -1645,8 +1642,8 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
           text: "Not caring what others think",
           scores: { "Wednesday Addams": 1 },
         },
-        { text: "Conviction", scores: { "Joe Goldberg": 1 } },
         { text: "Survival", scores: { Eleven: 1 } },
+        { text: "Conviction", scores: { "Joe Goldberg": 1 } },
         { text: "Discipline", scores: { "Beth Harmon": 1 } },
       ],
     },
@@ -1654,15 +1651,15 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       question: "Choose a theme song:",
       options: [
         {
+          text: "White Rabbit – Jefferson Airplane",
+          scores: { "Beth Harmon": 1 },
+        },
+        {
           text: "Paint it Black – Rolling Stones",
           scores: { "Wednesday Addams": 1 },
         },
         { text: "Creep – Radiohead", scores: { "Joe Goldberg": 1 } },
         { text: "Running Up That Hill – Kate Bush", scores: { Eleven: 1 } },
-        {
-          text: "White Rabbit – Jefferson Airplane",
-          scores: { "Beth Harmon": 1 },
-        },
       ],
     },
   ],
@@ -1670,484 +1667,185 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
     {
       question: "What do you enjoy more?",
       options: [
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
+        { text: "Expressing through art", traits: { creative: 2 } },
       ],
       multiple: true,
     },
     {
       question: "Your ideal weekend activity is:",
       options: [
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
       ],
       multiple: true,
     },
     {
       question: "How do you approach a problem?",
       options: [
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
       ],
       multiple: true,
     },
     {
       question: "What kind of movies do you prefer?",
       options: [
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
       ],
       multiple: true,
     },
     {
       question: "Choose a metaphor that describes your mind:",
       options: [
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
+        { text: "Expressing through art", traits: { creative: 2 } },
       ],
       multiple: true,
     },
     {
       question: "What's your favorite type of book?",
       options: [
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
       ],
       multiple: true,
     },
     {
       question: "How do you plan your week?",
       options: [
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
       ],
       multiple: true,
     },
     {
       question: "Which of these feels most rewarding?",
       options: [
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
       ],
       multiple: true,
     },
     {
       question: "What do you do when you're bored?",
       options: [
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
       ],
       multiple: true,
     },
     {
       question: "Which class did you like more in school?",
       options: [
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
       ],
       multiple: true,
     },
     {
       question: "What kind of environment helps you think?",
       options: [
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
       ],
       multiple: true,
     },
     {
       question: "What do you value in others?",
       options: [
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
       ],
       multiple: true,
     },
     {
       question: "What makes you feel proud?",
       options: [
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
       ],
       multiple: true,
     },
     {
       question: "How do you process new ideas?",
       options: [
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
       ],
       multiple: true,
     },
     {
       question: "Which tool would you pick?",
       options: [
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
       ],
       multiple: true,
     },
     {
       question: "How do you prefer to communicate?",
       options: [
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
       ],
       multiple: true,
     },
     {
       question: "What inspires you?",
       options: [
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
       ],
       multiple: true,
     },
     {
       question: "What type of goal excites you more?",
       options: [
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
       ],
       multiple: true,
     },
     {
       question: "Which hobby sounds more fun?",
       options: [
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
       ],
       multiple: true,
     },
     {
       question: "What kind of thinker are you?",
       options: [
-        {
-          text: "Solving logic puzzles",
-          traits: {
-            logical: 2,
-          },
-        },
-        {
-          text: "Blending structure and style",
-          traits: {
-            balanced: 2,
-          },
-        },
-        {
-          text: "Expressing through art",
-          traits: {
-            creative: 2,
-          },
-        },
+        { text: "Solving logic puzzles", traits: { logical: 2 } },
+        { text: "Expressing through art", traits: { creative: 2 } },
+        { text: "Blending structure and style", traits: { balanced: 2 } },
       ],
       multiple: true,
     },
   ],
+
   13: [
     {
       question: "How do you prefer to spend your Sunday?",
