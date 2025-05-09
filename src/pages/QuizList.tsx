@@ -2,40 +2,152 @@ import { useLocation, useParams, useNavigate } from "react-router-dom";
 
 const quizzesByCategory: Record<
   string,
-  { id: number; title: string; icon: string }[]
+  {
+    id: number;
+    title: string;
+    icon: string;
+    questions: number;
+    minutes: number;
+  }[]
 > = {
   knowledge: [
-    { id: 1, title: "How well do you know European geography?", icon: "🌍" }, // europe-geo
-    { id: 2, title: "Which country is this capital from?", icon: "🏙️" }, // capital-quiz
-    { id: 3, title: "General knowledge: quick edition", icon: "🧠" }, // general-quick
+    {
+      id: 1,
+      title: "How well do you know European geography?",
+      icon: "🌍",
+      questions: 20,
+      minutes: 8,
+    }, // europe-geo
+    {
+      id: 2,
+      title: "Which country is this capital from?",
+      icon: "🏙️",
+      questions: 20,
+      minutes: 8,
+    }, // capital-quiz
+    {
+      id: 3,
+      title: "General knowledge: quick edition",
+      icon: "🧠",
+      questions: 20,
+      minutes: 8,
+    }, // general-quick
     {
       id: 4,
       title: "History test: key events of the 20th century",
       icon: "📜",
+      questions: 20,
+      minutes: 10,
     }, // 20th-century-history
-    { id: 5, title: "What do you know about space and planets?", icon: "🪐" }, // space-planets
-    { id: 6, title: "English grammar test", icon: "📘" }, // romanian-grammar
+    {
+      id: 5,
+      title: "What do you know about space and planets?",
+      icon: "🪐",
+      questions: 20,
+      minutes: 10,
+    }, // space-planets
+    {
+      id: 6,
+      title: "English grammar test",
+      icon: "📘",
+      questions: 20,
+      minutes: 9,
+    }, // romanian-grammar
   ],
   personality: [
-    { id: 7, title: "Which Harry Potter character are you?", icon: "🧙‍♂️" }, // hp-character
+    {
+      id: 7,
+      title: "Which Harry Potter character are you?",
+      icon: "🧙‍♂️",
+      questions: 20,
+      minutes: 8,
+    }, // hp-character
     {
       id: 8,
       title: "Which Disney character matches your personality?",
       icon: "🐭",
+      questions: 19,
+      minutes: 8,
     }, // disney-character
-    { id: 9, title: "Which Marvel superhero are you?", icon: "🦸‍♀️" }, // marvel-hero
-    { id: 10, title: "What’s your ideal vacation?", icon: "🏖️" }, // ideal-vacation
-    { id: 11, title: "Which Netflix character would you be?", icon: "🎬" }, // netflix-character
+    {
+      id: 9,
+      title: "Which Marvel superhero are you?",
+      icon: "🦸‍♀️",
+      questions: 20,
+      minutes: 9,
+    }, // marvel-hero
+    {
+      id: 10,
+      title: "What’s your ideal vacation?",
+      icon: "🏖️",
+      questions: 20,
+      minutes: 8,
+    }, // ideal-vacation
+    {
+      id: 11,
+      title: "Which Netflix character would you be?",
+      icon: "🎬",
+      questions: 19,
+      minutes: 8,
+    }, // netflix-character
   ],
   psychological: [
-    { id: 12, title: "Are you more logical or creative?", icon: "🧩" }, // logic-or-creative
-    { id: 13, title: "What’s your mental age?", icon: "🎂" }, // mental-age
-    { id: 14, title: "How empathetic are you?", icon: "💞" }, // empathy-level
-    { id: 15, title: "Are you more introverted or extroverted?", icon: "🧍‍♀️👯" }, // introvert-extrovert
-    { id: 16, title: "What kind of leader are you?", icon: "👑" }, // leader-type
-    { id: 17, title: "What’s your communication style?", icon: "🗣️" }, // communication-style
-    { id: 18, title: "How do you react under stress?", icon: "😰" }, // stress-response
-    { id: 19, title: "What’s your love language?", icon: "💌" }, // love-language
+    {
+      id: 12,
+      title: "Are you more logical or creative?",
+      icon: "🧩",
+      questions: 15,
+      minutes: 10,
+    }, // logic-or-creative
+    {
+      id: 13,
+      title: "What’s your mental age?",
+      icon: "🎂",
+      questions: 21,
+      minutes: 10,
+    }, // mental-age
+    {
+      id: 14,
+      title: "How empathetic are you?",
+      icon: "💞",
+      questions: 20,
+      minutes: 10,
+    }, // empathy-level
+    {
+      id: 15,
+      title: "Are you more introverted or extroverted?",
+      icon: "🧍‍♀️👯",
+      questions: 20,
+      minutes: 10,
+    }, // introvert-extrovert
+    {
+      id: 16,
+      title: "What kind of leader are you?",
+      icon: "👑",
+      questions: 20,
+      minutes: 10,
+    }, // leader-type
+    {
+      id: 17,
+      title: "What’s your communication style?",
+      icon: "🗣️",
+      questions: 20,
+      minutes: 10,
+    }, // communication-style
+    {
+      id: 18,
+      title: "How do you react under stress?",
+      icon: "😰",
+      questions: 20,
+      minutes: 10,
+    }, // stress-response
+    {
+      id: 19,
+      title: "What’s your love language?",
+      icon: "💌",
+      questions: 19,
+      minutes: 10,
+    }, // love-language
   ],
 };
 
@@ -67,8 +179,18 @@ const QuizList = () => {
           <div
             key={quiz.id}
             onClick={() => handleQuizSelect(quiz.id)}
-            className="relative group bg-white rounded-3xl border border-transparent shadow-xl hover:shadow-2xl hover:border-pink-300 transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] cursor-pointer p-8 flex flex-col items-center text-center"
+            className="relative group bg-white rounded-3xl border border-transparent shadow-xl hover:shadow-2xl hover:border-pink-300 transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] cursor-pointer p-8 pt-12 flex flex-col items-center text-center"
           >
+            {/* Badge-ul din colțul dreapta sus */}
+            <div className="absolute top-4 right-4 flex flex-col items-end gap-2 group">
+              <div className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-white/70 to-white/50 backdrop-blur-md border border-white/40 shadow-md text-[11px] font-semibold text-gray-700 tracking-wide transform transition-transform duration-300 group-hover:-translate-y-1">
+                {quiz.questions} questions
+              </div>
+              <div className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-white/70 to-white/50 backdrop-blur-md border border-white/40 shadow-md text-[11px] font-semibold text-gray-700 tracking-wide transform transition-transform duration-300 group-hover:-translate-y-1">
+                {quiz.minutes} minutes
+              </div>
+            </div>
+
             <div className="text-6xl mb-6 transition-transform group-hover:scale-110">
               {quiz.icon}
             </div>
