@@ -13,7 +13,7 @@ type Dictionary = typeof en;
 const LanguageContext = createContext<{
   lang: Lang;
   setLang: (lang: Lang) => void;
-  t: (key: keyof Dictionary, vars?: Record<string, string | number>) => string;
+  t: (key: keyof Dictionary | string, vars?: Record<string, string | number>) => string;
 }>({
   lang: "en",
   setLang: () => {},
@@ -28,10 +28,11 @@ export const LanguageProvider = ({
   const [lang, setLang] = useState<Lang>("en");
 
   const t = (
-    key: keyof Dictionary,
+    key: keyof Dictionary | string,
     vars: Record<string, string | number> = {},
   ) => {
-    let template = languages[lang][key] || "";
+    const currentLang = languages[lang];
+    let template = (currentLang as Record<string, string>)[key] || "";
     for (const varKey in vars) {
       template = template.replace(`{{${varKey}}}`, String(vars[varKey]));
     }

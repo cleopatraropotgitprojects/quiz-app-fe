@@ -777,4 +777,843 @@ export const ru = {
   personality_quiz5_question19_option2: "Paint it Black – Rolling Stones",
   personality_quiz5_question19_option3: "Creep – Radiohead",
   personality_quiz5_question19_option4: "Running Up That Hill – Kate Bush",
+
+  // Knowledge Quiz 1
+
+  // Q1
+  knowledge_quiz1_question1_ru: "К какой стране принадлежит город Прага?",
+  knowledge_quiz1_question1_option1_ru: "Австрия",
+  knowledge_quiz1_question1_option2_ru: "Польша",
+  knowledge_quiz1_question1_option3_ru: "Чехия",
+  knowledge_quiz1_question1_option4_ru: "Словакия",
+
+  // Q2
+  knowledge_quiz1_question2_ru: "Какое море омывает Грецию с запада?",
+  knowledge_quiz1_question2_option1_ru: "Чёрное море",
+  knowledge_quiz1_question2_option2_ru: "Балтийское море",
+  knowledge_quiz1_question2_option3_ru: "Ионическое море",
+  knowledge_quiz1_question2_option4_ru: "Адриатическое море",
+
+  // Q3
+  knowledge_quiz1_question3_ru: "Какая из этих стран НЕ входит в Скандинавию?",
+  knowledge_quiz1_question3_option1_ru: "Норвегия",
+  knowledge_quiz1_question3_option2_ru: "Швеция",
+  knowledge_quiz1_question3_option3_ru: "Германия",
+  knowledge_quiz1_question3_option4_ru: "Дания",
+
+  // Q4
+  knowledge_quiz1_question4_ru: "Столицей какой страны является Будапешт?",
+  knowledge_quiz1_question4_option1_ru: "Венгрия",
+  knowledge_quiz1_question4_option2_ru: "Румыния",
+  knowledge_quiz1_question4_option3_ru: "Австрия",
+  knowledge_quiz1_question4_option4_ru: "Болгария",
+
+  // Q5
+  knowledge_quiz1_question5_ru: "По территории скольких стран протекает Дунай?",
+  knowledge_quiz1_question5_option1_ru: "12",
+  knowledge_quiz1_question5_option2_ru: "8",
+  knowledge_quiz1_question5_option3_ru: "6",
+  knowledge_quiz1_question5_option4_ru: "10",
+
+  // Q6
+  knowledge_quiz1_question6_ru: "У какой страны самая северная точка Европы?",
+  knowledge_quiz1_question6_option1_ru: "Швеция",
+  knowledge_quiz1_question6_option2_ru: "Финляндия",
+  knowledge_quiz1_question6_option3_ru: "Исландия",
+  knowledge_quiz1_question6_option4_ru: "Норвегия",
+
+  // Q7
+  knowledge_quiz1_question7_ru: "Какая столица Португалии?",
+  knowledge_quiz1_question7_option1_ru: "Лиссабон",
+  knowledge_quiz1_question7_option2_ru: "Мадрид",
+  knowledge_quiz1_question7_option3_ru: "Порту",
+  knowledge_quiz1_question7_option4_ru: "Барселона",
+
+  // Q8
+  knowledge_quiz1_question8_ru:
+    "Какая страна граничит и с Францией, и с Польшей?",
+  knowledge_quiz1_question8_option1_ru: "Австрия",
+  knowledge_quiz1_question8_option2_ru: "Германия",
+  knowledge_quiz1_question8_option3_ru: "Чехия",
+  knowledge_quiz1_question8_option4_ru: "Бельгия",
+
+  // Q9
+  knowledge_quiz1_question9_ru:
+    "Какой самый большой остров в Средиземном море?",
+  knowledge_quiz1_question9_option1_ru: "Сардиния",
+  knowledge_quiz1_question9_option2_ru: "Сицилия",
+  knowledge_quiz1_question9_option3_ru: "Крит",
+  knowledge_quiz1_question9_option4_ru: "Корсика",
+
+  // Q10
+  knowledge_quiz1_question10_ru: "В какой стране находится город Брюгге?",
+  knowledge_quiz1_question10_option1_ru: "Франция",
+  knowledge_quiz1_question10_option2_ru: "Германия",
+  knowledge_quiz1_question10_option3_ru: "Бельгия",
+  knowledge_quiz1_question10_option4_ru: "Нидерланды",
+
+  // Q11
+  knowledge_quiz1_question11_ru: "К какой стране относится Трансильвания?",
+  knowledge_quiz1_question11_option1_ru: "Сербия",
+  knowledge_quiz1_question11_option2_ru: "Украина",
+  knowledge_quiz1_question11_option3_ru: "Венгрия",
+  knowledge_quiz1_question11_option4_ru: "Румыния",
+
+  // Q12
+  knowledge_quiz1_question12_ru: "Какая столица Исландии?",
+  knowledge_quiz1_question12_option1_ru: "Осло",
+  knowledge_quiz1_question12_option2_ru: "Рейкьявик",
+  knowledge_quiz1_question12_option3_ru: "Хельсинки",
+  knowledge_quiz1_question12_option4_ru: "Стокгольм",
+
+  // Q13
+  knowledge_quiz1_question13_ru:
+    "В какой стране больше всего вулканов в Европе?",
+  knowledge_quiz1_question13_option1_ru: "Исландия",
+  knowledge_quiz1_question13_option2_ru: "Испания",
+  knowledge_quiz1_question13_option3_ru: "Италия",
+  knowledge_quiz1_question13_option4_ru: "Греция",
+
+  // Q14
+  knowledge_quiz1_question14_ru: "В какой стране находится гора Эльбрус?",
+  knowledge_quiz1_question14_option1_ru: "Грузия",
+  knowledge_quiz1_question14_option2_ru: "Россия",
+  knowledge_quiz1_question14_option3_ru: "Турция",
+  knowledge_quiz1_question14_option4_ru: "Украина",
+
+  // Q15
+  knowledge_quiz1_question15_ru: "Какое море отделяет Швецию от стран Балтии?",
+  knowledge_quiz1_question15_option1_ru: "Баренцево море",
+  knowledge_quiz1_question15_option2_ru: "Балтийское море",
+  knowledge_quiz1_question15_option3_ru: "Норвежское море",
+  knowledge_quiz1_question15_option4_ru: "Северное море",
+
+  // Q16
+  knowledge_quiz1_question16_ru:
+    "Какая европейская страна знаменита своими фьордами?",
+  knowledge_quiz1_question16_option1_ru: "Дания",
+  knowledge_quiz1_question16_option2_ru: "Норвегия",
+  knowledge_quiz1_question16_option3_ru: "Швеция",
+  knowledge_quiz1_question16_option4_ru: "Финляндия",
+
+  // Q17
+  knowledge_quiz1_question17_ru: "В какой стране находится город Краков?",
+  knowledge_quiz1_question17_option1_ru: "Словакия",
+  knowledge_quiz1_question17_option2_ru: "Чехия",
+  knowledge_quiz1_question17_option3_ru: "Венгрия",
+  knowledge_quiz1_question17_option4_ru: "Польша",
+
+  // Q18
+  knowledge_quiz1_question18_ru:
+    "Андорра находится между какими двумя странами?",
+  knowledge_quiz1_question18_option1_ru: "Франция и Испания",
+  knowledge_quiz1_question18_option2_ru: "Австрия и Германия",
+  knowledge_quiz1_question18_option3_ru: "Испания и Португалия",
+  knowledge_quiz1_question18_option4_ru: "Италия и Швейцария",
+
+  // Q19
+  knowledge_quiz1_question19_ru:
+    "У какой страны самая длинная береговая линия в Европе?",
+  knowledge_quiz1_question19_option1_ru: "Италия",
+  knowledge_quiz1_question19_option2_ru: "Греция",
+  knowledge_quiz1_question19_option3_ru: "Норвегия",
+  knowledge_quiz1_question19_option4_ru: "Великобритания",
+
+  // Q20
+  knowledge_quiz1_question20_ru:
+    "Какая самая маленькая страна в Европе по площади?",
+  knowledge_quiz1_question20_option1_ru: "Ватикан",
+  knowledge_quiz1_question20_option2_ru: "Лихтенштейн",
+  knowledge_quiz1_question20_option3_ru: "Сан-Марино",
+  knowledge_quiz1_question20_option4_ru: "Монако",
+
+  // Knowledge Quiz 2
+
+  // Q1
+  knowledge_quiz2_question1_ru: "Осло — столица какой страны?",
+  knowledge_quiz2_question1_option1_ru: "Норвегия",
+  knowledge_quiz2_question1_option2_ru: "Дания",
+  knowledge_quiz2_question1_option3_ru: "Швеция",
+  knowledge_quiz2_question1_option4_ru: "Финляндия",
+
+  // Q2
+  knowledge_quiz2_question2_ru: "Вена — столица какой страны?",
+  knowledge_quiz2_question2_option1_ru: "Германия",
+  knowledge_quiz2_question2_option2_ru: "Венгрия",
+  knowledge_quiz2_question2_option3_ru: "Швейцария",
+  knowledge_quiz2_question2_option4_ru: "Австрия",
+
+  // Q3
+  knowledge_quiz2_question3_ru: "Варшава — столица какой страны?",
+  knowledge_quiz2_question3_option1_ru: "Украина",
+  knowledge_quiz2_question3_option2_ru: "Чехия",
+  knowledge_quiz2_question3_option3_ru: "Польша",
+  knowledge_quiz2_question3_option4_ru: "Беларусь",
+
+  // Q4
+  knowledge_quiz2_question4_ru: "Хельсинки — столица какой страны?",
+  knowledge_quiz2_question4_option1_ru: "Эстония",
+  knowledge_quiz2_question4_option2_ru: "Норвегия",
+  knowledge_quiz2_question4_option3_ru: "Финляндия",
+  knowledge_quiz2_question4_option4_ru: "Латвия",
+
+  // Q5
+  knowledge_quiz2_question5_ru: "Лиссабон — столица какой страны?",
+  knowledge_quiz2_question5_option1_ru: "Италия",
+  knowledge_quiz2_question5_option2_ru: "Португалия",
+  knowledge_quiz2_question5_option3_ru: "Греция",
+  knowledge_quiz2_question5_option4_ru: "Испания",
+
+  // Q6
+  knowledge_quiz2_question6_ru: "Берн — столица какой страны?",
+  knowledge_quiz2_question6_option1_ru: "Австрия",
+  knowledge_quiz2_question6_option2_ru: "Швейцария",
+  knowledge_quiz2_question6_option3_ru: "Германия",
+  knowledge_quiz2_question6_option4_ru: "Люксембург",
+
+  // Q7
+  knowledge_quiz2_question7_ru: "Брюссель — столица какой страны?",
+  knowledge_quiz2_question7_option1_ru: "Франция",
+  knowledge_quiz2_question7_option2_ru: "Бельгия",
+  knowledge_quiz2_question7_option3_ru: "Люксембург",
+  knowledge_quiz2_question7_option4_ru: "Нидерланды",
+
+  // Q8
+  knowledge_quiz2_question8_ru: "Афины — столица какой страны?",
+  knowledge_quiz2_question8_option1_ru: "Мальта",
+  knowledge_quiz2_question8_option2_ru: "Кипр",
+  knowledge_quiz2_question8_option3_ru: "Греция",
+  knowledge_quiz2_question8_option4_ru: "Италия",
+
+  // Q9
+  knowledge_quiz2_question9_ru: "Рейкьявик — столица какой страны?",
+  knowledge_quiz2_question9_option1_ru: "Гренландия",
+  knowledge_quiz2_question9_option2_ru: "Дания",
+  knowledge_quiz2_question9_option3_ru: "Норвегия",
+  knowledge_quiz2_question9_option4_ru: "Исландия",
+
+  // Q10
+  knowledge_quiz2_question10_ru: "Загреб — столица какой страны?",
+  knowledge_quiz2_question10_option1_ru: "Сербия",
+  knowledge_quiz2_question10_option2_ru: "Словения",
+  knowledge_quiz2_question10_option3_ru: "Хорватия",
+  knowledge_quiz2_question10_option4_ru: "Черногория",
+
+  // Q11
+  knowledge_quiz2_question11_ru: "Скопье — столица какой страны?",
+  knowledge_quiz2_question11_option1_ru: "Албания",
+  knowledge_quiz2_question11_option2_ru: "Северная Македония",
+  knowledge_quiz2_question11_option3_ru: "Болгария",
+  knowledge_quiz2_question11_option4_ru: "Косово",
+
+  // Q12
+  knowledge_quiz2_question12_ru: "София — столица какой страны?",
+  knowledge_quiz2_question12_option1_ru: "Болгария",
+  knowledge_quiz2_question12_option2_ru: "Сербия",
+  knowledge_quiz2_question12_option3_ru: "Словакия",
+  knowledge_quiz2_question12_option4_ru: "Румыния",
+
+  // Q13
+  knowledge_quiz2_question13_ru: "Тирана — столица какой страны?",
+  knowledge_quiz2_question13_option1_ru: "Босния и Герцеговина",
+  knowledge_quiz2_question13_option2_ru: "Северная Македония",
+  knowledge_quiz2_question13_option3_ru: "Косово",
+  knowledge_quiz2_question13_option4_ru: "Албания",
+
+  // Q14
+  knowledge_quiz2_question14_ru: "Подгорица — столица какой страны?",
+  knowledge_quiz2_question14_option1_ru: "Словения",
+  knowledge_quiz2_question14_option2_ru: "Черногория",
+  knowledge_quiz2_question14_option3_ru: "Хорватия",
+  knowledge_quiz2_question14_option4_ru: "Сербия",
+
+  // Q15
+  knowledge_quiz2_question15_ru: "Любляна — столица какой страны?",
+  knowledge_quiz2_question15_option1_ru: "Австрия",
+  knowledge_quiz2_question15_option2_ru: "Словакия",
+  knowledge_quiz2_question15_option3_ru: "Словения",
+  knowledge_quiz2_question15_option4_ru: "Хорватия",
+
+  // Q16
+  knowledge_quiz2_question16_ru: "Белград — столица какой страны?",
+  knowledge_quiz2_question16_option1_ru: "Босния",
+  knowledge_quiz2_question16_option2_ru: "Румыния",
+  knowledge_quiz2_question16_option3_ru: "Черногория",
+  knowledge_quiz2_question16_option4_ru: "Сербия",
+
+  // Q17
+  knowledge_quiz2_question17_ru: "Сараево — столица какой страны?",
+  knowledge_quiz2_question17_option1_ru: "Сербия",
+  knowledge_quiz2_question17_option2_ru: "Хорватия",
+  knowledge_quiz2_question17_option3_ru: "Босния и Герцеговина",
+  knowledge_quiz2_question17_option4_ru: "Черногория",
+
+  // Q18
+  knowledge_quiz2_question18_ru: "Кишинёв — столица какой страны?",
+  knowledge_quiz2_question18_option1_ru: "Беларусь",
+  knowledge_quiz2_question18_option2_ru: "Украина",
+  knowledge_quiz2_question18_option3_ru: "Румыния",
+  knowledge_quiz2_question18_option4_ru: "Республика Молдова",
+
+  // Q19
+  knowledge_quiz2_question19_ru: "Бухарест — столица какой страны?",
+  knowledge_quiz2_question19_option1_ru: "Румыния",
+  knowledge_quiz2_question19_option2_ru: "Молдова",
+  knowledge_quiz2_question19_option3_ru: "Венгрия",
+  knowledge_quiz2_question19_option4_ru: "Болгария",
+
+  // Q20
+  knowledge_quiz2_question20_ru: "Таллин — столица какой страны?",
+  knowledge_quiz2_question20_option1_ru: "Литва",
+  knowledge_quiz2_question20_option2_ru: "Финляндия",
+  knowledge_quiz2_question20_option3_ru: "Латвия",
+  knowledge_quiz2_question20_option4_ru: "Эстония",
+
+  // Knowledge Quiz 3
+
+  // Q1
+  knowledge_quiz3_question1_ru:
+    "Какая самая большая планета в Солнечной системе?",
+  knowledge_quiz3_question1_option1_ru: "Земля",
+  knowledge_quiz3_question1_option2_ru: "Марс",
+  knowledge_quiz3_question1_option3_ru: "Сатурн",
+  knowledge_quiz3_question1_option4_ru: "Юпитер",
+
+  // Q2
+  knowledge_quiz3_question2_ru: "Кто нарисовал «Мону Лизу»?",
+  knowledge_quiz3_question2_option1_ru: "Ван Гог",
+  knowledge_quiz3_question2_option2_ru: "Микеланджело",
+  knowledge_quiz3_question2_option3_ru: "Пикассо",
+  knowledge_quiz3_question2_option4_ru: "Леонардо да Винчи",
+
+  // Q3
+  knowledge_quiz3_question3_ru:
+    "В каком году закончилась Вторая мировая война?",
+  knowledge_quiz3_question3_option1_ru: "1945",
+  knowledge_quiz3_question3_option2_ru: "1939",
+  knowledge_quiz3_question3_option3_ru: "1950",
+  knowledge_quiz3_question3_option4_ru: "1942",
+
+  // Q4
+  knowledge_quiz3_question4_ru: "Какой город является столицей Канады?",
+  knowledge_quiz3_question4_option1_ru: "Торонто",
+  knowledge_quiz3_question4_option2_ru: "Монреаль",
+  knowledge_quiz3_question4_option3_ru: "Ванкувер",
+  knowledge_quiz3_question4_option4_ru: "Оттава",
+
+  // Q5
+  knowledge_quiz3_question5_ru: "Какой орган отвечает за перекачивание крови?",
+  knowledge_quiz3_question5_option1_ru: "Сердце",
+  knowledge_quiz3_question5_option2_ru: "Печень",
+  knowledge_quiz3_question5_option3_ru: "Лёгкие",
+  knowledge_quiz3_question5_option4_ru: "Почки",
+
+  // Q6
+  knowledge_quiz3_question6_ru: "Сколько континентов существует?",
+  knowledge_quiz3_question6_option1_ru: "7",
+  knowledge_quiz3_question6_option2_ru: "8",
+  knowledge_quiz3_question6_option3_ru: "6",
+  knowledge_quiz3_question6_option4_ru: "5",
+
+  // Q7
+  knowledge_quiz3_question7_ru: "Какая самая длинная река в мире?",
+  knowledge_quiz3_question7_option1_ru: "Янцзы",
+  knowledge_quiz3_question7_option2_ru: "Амазонка",
+  knowledge_quiz3_question7_option3_ru: "Миссисипи",
+  knowledge_quiz3_question7_option4_ru: "Нил",
+
+  // Q8
+  knowledge_quiz3_question8_ru: "Каков химический символ золота?",
+  knowledge_quiz3_question8_option1_ru: "Au",
+  knowledge_quiz3_question8_option2_ru: "Ag",
+  knowledge_quiz3_question8_option3_ru: "G",
+  knowledge_quiz3_question8_option4_ru: "Go",
+
+  // Q9
+  knowledge_quiz3_question9_ru: "Какая планета известна как Красная планета?",
+  knowledge_quiz3_question9_option1_ru: "Юпитер",
+  knowledge_quiz3_question9_option2_ru: "Марс",
+  knowledge_quiz3_question9_option3_ru: "Венера",
+  knowledge_quiz3_question9_option4_ru: "Меркурий",
+
+  // Q10
+  knowledge_quiz3_question10_ru:
+    "Какой учёный разработал теорию относительности?",
+  knowledge_quiz3_question10_option1_ru: "Эйнштейн",
+  knowledge_quiz3_question10_option2_ru: "Ньютон",
+  knowledge_quiz3_question10_option3_ru: "Бор",
+  knowledge_quiz3_question10_option4_ru: "Тесла",
+
+  // Q11
+  knowledge_quiz3_question11_ru: "Какой город является столицей Австралии?",
+  knowledge_quiz3_question11_option1_ru: "Канберра",
+  knowledge_quiz3_question11_option2_ru: "Сидней",
+  knowledge_quiz3_question11_option3_ru: "Брисбен",
+  knowledge_quiz3_question11_option4_ru: "Мельбурн",
+
+  // Q12
+  knowledge_quiz3_question12_ru: "Какая страна изобрела пиццу?",
+  knowledge_quiz3_question12_option1_ru: "Греция",
+  knowledge_quiz3_question12_option2_ru: "Испания",
+  knowledge_quiz3_question12_option3_ru: "Франция",
+  knowledge_quiz3_question12_option4_ru: "Италия",
+
+  // Q13
+  knowledge_quiz3_question13_ru:
+    "Сколько игроков в футбольной команде на поле?",
+  knowledge_quiz3_question13_option1_ru: "9",
+  knowledge_quiz3_question13_option2_ru: "11",
+  knowledge_quiz3_question13_option3_ru: "10",
+  knowledge_quiz3_question13_option4_ru: "12",
+
+  // Q14
+  knowledge_quiz3_question14_ru:
+    "Какой элемент обозначается буквой 'O' в таблице Менделеева?",
+  knowledge_quiz3_question14_option1_ru: "Осмий",
+  knowledge_quiz3_question14_option2_ru: "Кислород",
+  knowledge_quiz3_question14_option3_ru: "Озон",
+  knowledge_quiz3_question14_option4_ru: "Оксид",
+
+  // Q15
+  knowledge_quiz3_question15_ru:
+    "На каком языке наибольшее количество носителей?",
+  knowledge_quiz3_question15_option1_ru: "Китайский (мандарин)",
+  knowledge_quiz3_question15_option2_ru: "Английский",
+  knowledge_quiz3_question15_option3_ru: "Хинди",
+  knowledge_quiz3_question15_option4_ru: "Испанский",
+
+  // Q16
+  knowledge_quiz3_question16_ru: "Какая гора является самой высокой на Земле?",
+  knowledge_quiz3_question16_option1_ru: "К2",
+  knowledge_quiz3_question16_option2_ru: "Макалу",
+  knowledge_quiz3_question16_option3_ru: "Канченджанга",
+  knowledge_quiz3_question16_option4_ru: "Эверест",
+
+  // Q17
+  knowledge_quiz3_question17_ru: "Кто написал «Ромео и Джульетту»?",
+  knowledge_quiz3_question17_option1_ru: "Диккенс",
+  knowledge_quiz3_question17_option2_ru: "Гомер",
+  knowledge_quiz3_question17_option3_ru: "Данте",
+  knowledge_quiz3_question17_option4_ru: "Шекспир",
+
+  // Q18
+  knowledge_quiz3_question18_ru: "Что означает «WWW» в адресе сайта?",
+  knowledge_quiz3_question18_option1_ru: "Web World Wide",
+  knowledge_quiz3_question18_option2_ru: "Wide Web World",
+  knowledge_quiz3_question18_option3_ru: "World Wide Web",
+  knowledge_quiz3_question18_option4_ru: "Wide Web Worldnet",
+
+  // Q19
+  knowledge_quiz3_question19_ru: "Какое животное называют «Королём джунглей»?",
+  knowledge_quiz3_question19_option1_ru: "Тигр",
+  knowledge_quiz3_question19_option2_ru: "Лев",
+  knowledge_quiz3_question19_option3_ru: "Слон",
+  knowledge_quiz3_question19_option4_ru: "Пантера",
+
+  // Q20
+  knowledge_quiz3_question20_ru: "Сколько цветов в радуге?",
+  knowledge_quiz3_question20_option1_ru: "5",
+  knowledge_quiz3_question20_option2_ru: "8",
+  knowledge_quiz3_question20_option3_ru: "7",
+  knowledge_quiz3_question20_option4_ru: "6",
+
+  // Knowledge Quiz 4
+
+  // Q1
+  knowledge_quiz4_question1_ru: "В каком году началась Первая мировая война?",
+  knowledge_quiz4_question1_option1_ru: "1918",
+  knowledge_quiz4_question1_option2_ru: "1916",
+  knowledge_quiz4_question1_option3_ru: "1912",
+  knowledge_quiz4_question1_option4_ru: "1914",
+
+  // Q2
+  knowledge_quiz4_question2_ru:
+    "Кто был премьер-министром Великобритании в годы Второй мировой войны?",
+  knowledge_quiz4_question2_option1_ru: "Невилл Чемберлен",
+  knowledge_quiz4_question2_option2_ru: "Маргарет Тэтчер",
+  knowledge_quiz4_question2_option3_ru: "Уинстон Черчилль",
+  knowledge_quiz4_question2_option4_ru: "Тони Блэр",
+
+  // Q3
+  knowledge_quiz4_question3_ru: "В каком году пал Берлинская стена?",
+  knowledge_quiz4_question3_option1_ru: "1991",
+  knowledge_quiz4_question3_option2_ru: "1987",
+  knowledge_quiz4_question3_option3_ru: "1993",
+  knowledge_quiz4_question3_option4_ru: "1989",
+
+  // Q4
+  knowledge_quiz4_question4_ru:
+    "Какая страна запустила первый искусственный спутник?",
+  knowledge_quiz4_question4_option1_ru: "США",
+  knowledge_quiz4_question4_option2_ru: "Китай",
+  knowledge_quiz4_question4_option3_ru: "Германия",
+  knowledge_quiz4_question4_option4_ru: "Россия",
+
+  // Q5
+  knowledge_quiz4_question5_ru: "Кто был убит в 1963 году в Далласе, Техас?",
+  knowledge_quiz4_question5_option1_ru: "Джон Ф. Кеннеди",
+  knowledge_quiz4_question5_option2_ru: "Роберт Кеннеди",
+  knowledge_quiz4_question5_option3_ru: "Мартин Лютер Кинг-младший",
+  knowledge_quiz4_question5_option4_ru: "Рональд Рейган",
+
+  // Q6
+  knowledge_quiz4_question6_ru:
+    "В каком году закончилась Вторая мировая война?",
+  knowledge_quiz4_question6_option1_ru: "1950",
+  knowledge_quiz4_question6_option2_ru: "1945",
+  knowledge_quiz4_question6_option3_ru: "1939",
+  knowledge_quiz4_question6_option4_ru: "1942",
+
+  // Q7
+  knowledge_quiz4_question7_ru:
+    "Как звали лидера движения за гражданские права, произнесшего речь «У меня есть мечта»?",
+  knowledge_quiz4_question7_option1_ru: "Малкольм Икс",
+  knowledge_quiz4_question7_option2_ru: "Мартин Лютер Кинг-младший",
+  knowledge_quiz4_question7_option3_ru: "Фредерик Дуглас",
+  knowledge_quiz4_question7_option4_ru: "Барак Обама",
+
+  // Q8
+  knowledge_quiz4_question8_ru: "Когда распался Советский Союз?",
+  knowledge_quiz4_question8_option1_ru: "1989",
+  knowledge_quiz4_question8_option2_ru: "1992",
+  knowledge_quiz4_question8_option3_ru: "1991",
+  knowledge_quiz4_question8_option4_ru: "1990",
+
+  // Q9
+  knowledge_quiz4_question9_ru:
+    "Какая война велась между Северной и Южной Кореей?",
+  knowledge_quiz4_question9_option1_ru: "Корейская война",
+  knowledge_quiz4_question9_option2_ru: "Вторая мировая война",
+  knowledge_quiz4_question9_option3_ru: "Вьетнамская война",
+  knowledge_quiz4_question9_option4_ru: "Холодная война",
+
+  // Q10
+  knowledge_quiz4_question10_ru:
+    "Как звали первого человека, ступившего на Луну?",
+  knowledge_quiz4_question10_option1_ru: "Майкл Коллинз",
+  knowledge_quiz4_question10_option2_ru: "Нил Армстронг",
+  knowledge_quiz4_question10_option3_ru: "Юрий Гагарин",
+  knowledge_quiz4_question10_option4_ru: "Базз Олдрин",
+
+  // Q11
+  knowledge_quiz4_question11_ru: "Какой страной управлял Адольф Гитлер?",
+  knowledge_quiz4_question11_option1_ru: "Германия",
+  knowledge_quiz4_question11_option2_ru: "Франция",
+  knowledge_quiz4_question11_option3_ru: "Австрия",
+  knowledge_quiz4_question11_option4_ru: "Россия",
+
+  // Q12
+  knowledge_quiz4_question12_ru: "В каком году затонул «Титаник»?",
+  knowledge_quiz4_question12_option1_ru: "1914",
+  knowledge_quiz4_question12_option2_ru: "1920",
+  knowledge_quiz4_question12_option3_ru: "1912",
+  knowledge_quiz4_question12_option4_ru: "1905",
+
+  // Q13
+  knowledge_quiz4_question13_ru:
+    "Какой конфликт холодной войны происходил в Юго-Восточной Азии в 1960–1970-х годах?",
+  knowledge_quiz4_question13_option1_ru: "Вьетнамская война",
+  knowledge_quiz4_question13_option2_ru: "Корейская война",
+  knowledge_quiz4_question13_option3_ru: "Война в Персидском заливе",
+  knowledge_quiz4_question13_option4_ru: "Афганская война",
+
+  // Q14
+  knowledge_quiz4_question14_ru:
+    "Какой стеной символизировалась разделённая Германия во время Холодной войны?",
+  knowledge_quiz4_question14_option1_ru: "Великая китайская стена",
+  knowledge_quiz4_question14_option2_ru: "Западная стена",
+  knowledge_quiz4_question14_option3_ru: "Берлинская стена",
+  knowledge_quiz4_question14_option4_ru: "Железный занавес",
+
+  // Q15
+  knowledge_quiz4_question15_ru:
+    "Когда была основана Организация Объединённых Наций?",
+  knowledge_quiz4_question15_option1_ru: "1942",
+  knowledge_quiz4_question15_option2_ru: "1939",
+  knowledge_quiz4_question15_option3_ru: "1945",
+  knowledge_quiz4_question15_option4_ru: "1950",
+
+  // Q16
+  knowledge_quiz4_question16_ru:
+    "Кто была первой женщиной — премьер-министром Великобритании?",
+  knowledge_quiz4_question16_option1_ru: "Маргарет Тэтчер",
+  knowledge_quiz4_question16_option2_ru: "Тереза Мэй",
+  knowledge_quiz4_question16_option3_ru: "Ангела Меркель",
+  knowledge_quiz4_question16_option4_ru: "Индира Ганди",
+
+  // Q17
+  knowledge_quiz4_question17_ru:
+    "В какой стране произошла ядерная катастрофа в Чернобыле?",
+  knowledge_quiz4_question17_option1_ru: "Белоруссия",
+  knowledge_quiz4_question17_option2_ru: "Украина",
+  knowledge_quiz4_question17_option3_ru: "Россия",
+  knowledge_quiz4_question17_option4_ru: "Казахстан",
+
+  // Q18
+  knowledge_quiz4_question18_ru:
+    "Кто был лидером Советского Союза во время Второй мировой войны?",
+  knowledge_quiz4_question18_option1_ru: "Ленин",
+  knowledge_quiz4_question18_option2_ru: "Сталин",
+  knowledge_quiz4_question18_option3_ru: "Троцкий",
+  knowledge_quiz4_question18_option4_ru: "Горбачёв",
+
+  // Q19
+  knowledge_quiz4_question19_ru:
+    "Как назывался договор, завершивший Первую мировую войну?",
+  knowledge_quiz4_question19_option1_ru: "Парижский договор",
+  knowledge_quiz4_question19_option2_ru: "Версальский договор",
+  knowledge_quiz4_question19_option3_ru: "Ялтинское соглашение",
+  knowledge_quiz4_question19_option4_ru: "Потсдамское соглашение",
+
+  // Q20
+  knowledge_quiz4_question20_ru:
+    "Какой стеной завершилась эпоха Холодной войны в 1989 году?",
+  knowledge_quiz4_question20_option1_ru: "Железный занавес",
+  knowledge_quiz4_question20_option2_ru: "Западная стена",
+  knowledge_quiz4_question20_option3_ru: "Великая стена",
+  knowledge_quiz4_question20_option4_ru: "Берлинская стена",
+
+  // Knowledge Quiz 5
+
+  // Q1
+  knowledge_quiz5_question1_ru: "Какая планета известна как Красная планета?",
+  knowledge_quiz5_question1_option1_ru: "Меркурий",
+  knowledge_quiz5_question1_option2_ru: "Венера",
+  knowledge_quiz5_question1_option3_ru: "Юпитер",
+  knowledge_quiz5_question1_option4_ru: "Марс",
+
+  // Q2
+  knowledge_quiz5_question2_ru:
+    "Какая самая большая планета в нашей солнечной системе?",
+  knowledge_quiz5_question2_option1_ru: "Юпитер",
+  knowledge_quiz5_question2_option2_ru: "Земля",
+  knowledge_quiz5_question2_option3_ru: "Сатурн",
+  knowledge_quiz5_question2_option4_ru: "Нептун",
+
+  // Q3
+  knowledge_quiz5_question3_ru: "Сколько планет в солнечной системе?",
+  knowledge_quiz5_question3_option1_ru: "7",
+  knowledge_quiz5_question3_option2_ru: "9",
+  knowledge_quiz5_question3_option3_ru: "8",
+  knowledge_quiz5_question3_option4_ru: "10",
+
+  // Q4
+  knowledge_quiz5_question4_ru: "У какой планеты больше всего лун?",
+  knowledge_quiz5_question4_option1_ru: "Уран",
+  knowledge_quiz5_question4_option2_ru: "Марс",
+  knowledge_quiz5_question4_option3_ru: "Юпитер",
+  knowledge_quiz5_question4_option4_ru: "Сатурн",
+
+  // Q5
+  knowledge_quiz5_question5_ru: "Какая планета ближе всего к Солнцу?",
+  knowledge_quiz5_question5_option1_ru: "Меркурий",
+  knowledge_quiz5_question5_option2_ru: "Земля",
+  knowledge_quiz5_question5_option3_ru: "Марс",
+  knowledge_quiz5_question5_option4_ru: "Венера",
+
+  // Q6
+  knowledge_quiz5_question6_ru: "Какая планета известна своими кольцами?",
+  knowledge_quiz5_question6_option1_ru: "Юпитер",
+  knowledge_quiz5_question6_option2_ru: "Сатурн",
+  knowledge_quiz5_question6_option3_ru: "Нептун",
+  knowledge_quiz5_question6_option4_ru: "Уран",
+
+  // Q7
+  knowledge_quiz5_question7_ru: "В какой галактике находится Земля?",
+  knowledge_quiz5_question7_option1_ru: "Млечный Путь",
+  knowledge_quiz5_question7_option2_ru: "Андромеда",
+  knowledge_quiz5_question7_option3_ru: "Водоворот",
+  knowledge_quiz5_question7_option4_ru: "Треугольник",
+
+  // Q8
+  knowledge_quiz5_question8_ru: "Как называется луна Земли?",
+  knowledge_quiz5_question8_option1_ru: "Луна",
+  knowledge_quiz5_question8_option2_ru: "Луна (лат.)",
+  knowledge_quiz5_question8_option3_ru: "Селена",
+  knowledge_quiz5_question8_option4_ru: "Фобос",
+
+  // Q9
+  knowledge_quiz5_question9_ru: "У какой планеты день длится дольше, чем год?",
+  knowledge_quiz5_question9_option1_ru: "Меркурий",
+  knowledge_quiz5_question9_option2_ru: "Юпитер",
+  knowledge_quiz5_question9_option3_ru: "Марс",
+  knowledge_quiz5_question9_option4_ru: "Венера",
+
+  // Q10
+  knowledge_quiz5_question10_ru:
+    "Какая самая холодная планета в солнечной системе?",
+  knowledge_quiz5_question10_option1_ru: "Сатурн",
+  knowledge_quiz5_question10_option2_ru: "Нептун",
+  knowledge_quiz5_question10_option3_ru: "Уран",
+  knowledge_quiz5_question10_option4_ru: "Плутон",
+
+  // Q11
+  knowledge_quiz5_question11_ru: "У какой планеты самая сильная гравитация?",
+  knowledge_quiz5_question11_option1_ru: "Земля",
+  knowledge_quiz5_question11_option2_ru: "Юпитер",
+  knowledge_quiz5_question11_option3_ru: "Сатурн",
+  knowledge_quiz5_question11_option4_ru: "Нептун",
+
+  // Q12
+  knowledge_quiz5_question12_ru: "Что такое чёрная дыра?",
+  knowledge_quiz5_question12_option1_ru: "Планета",
+  knowledge_quiz5_question12_option2_ru: "Тип луны",
+  knowledge_quiz5_question12_option3_ru: "Червоточина",
+  knowledge_quiz5_question12_option4_ru: "Коллапсировавшая звезда",
+
+  // Q13
+  knowledge_quiz5_question13_ru: "Какая планета наклонена на бок?",
+  knowledge_quiz5_question13_option1_ru: "Юпитер",
+  knowledge_quiz5_question13_option2_ru: "Уран",
+  knowledge_quiz5_question13_option3_ru: "Нептун",
+  knowledge_quiz5_question13_option4_ru: "Марс",
+
+  // Q14
+  knowledge_quiz5_question14_ru:
+    "Какая страна первой отправила человека в космос?",
+  knowledge_quiz5_question14_option1_ru: "Германия",
+  knowledge_quiz5_question14_option2_ru: "США",
+  knowledge_quiz5_question14_option3_ru: "Китай",
+  knowledge_quiz5_question14_option4_ru: "Советский Союз",
+
+  // Q15
+  knowledge_quiz5_question15_ru: "Кто был первым человеком в космосе?",
+  knowledge_quiz5_question15_option1_ru: "Нил Армстронг",
+  knowledge_quiz5_question15_option2_ru: "Базз Олдрин",
+  knowledge_quiz5_question15_option3_ru: "Юрий Гагарин",
+  knowledge_quiz5_question15_option4_ru: "Майкл Коллинз",
+
+  // Q16
+  knowledge_quiz5_question16_ru: "Какая планета самая дальняя от Солнца?",
+  knowledge_quiz5_question16_option1_ru: "Плутон",
+  knowledge_quiz5_question16_option2_ru: "Нептун",
+  knowledge_quiz5_question16_option3_ru: "Сатурн",
+  knowledge_quiz5_question16_option4_ru: "Уран",
+
+  // Q17
+  knowledge_quiz5_question17_ru:
+    "Как называется самый известный космический телескоп NASA?",
+  knowledge_quiz5_question17_option1_ru: "Спитцер",
+  knowledge_quiz5_question17_option2_ru: "Хаббл",
+  knowledge_quiz5_question17_option3_ru: "Джеймс Уэбб",
+  knowledge_quiz5_question17_option4_ru: "Кеплер",
+
+  // Q18
+  knowledge_quiz5_question18_ru:
+    "Какая планета известна как 'Вечерняя звезда'?",
+  knowledge_quiz5_question18_option1_ru: "Сатурн",
+  knowledge_quiz5_question18_option2_ru: "Марс",
+  knowledge_quiz5_question18_option3_ru: "Венера",
+  knowledge_quiz5_question18_option4_ru: "Юпитер",
+
+  // Q19
+  knowledge_quiz5_question19_ru: "Что такое световой год?",
+  knowledge_quiz5_question19_option1_ru: "Год с 366 днями",
+  knowledge_quiz5_question19_option2_ru: "Скорость света",
+  knowledge_quiz5_question19_option3_ru: "Год на Меркурии",
+  knowledge_quiz5_question19_option4_ru: "Единица измерения расстояния",
+
+  // Q20
+  knowledge_quiz5_question20_ru:
+    "У какой планеты самая быстрая осевая вращаемость?",
+  knowledge_quiz5_question20_option1_ru: "Земля",
+  knowledge_quiz5_question20_option2_ru: "Сатурн",
+  knowledge_quiz5_question20_option3_ru: "Юпитер",
+  knowledge_quiz5_question20_option4_ru: "Марс",
+
+  //Psychological Quiz 1
+  personality_quiz12_question1:
+    "Какая деятельность кажется тебе более привлекательной?",
+  personality_quiz12_question1_option1: "Создание персонажа с нуля",
+  personality_quiz12_question1_option2: "Анализ детективной загадки",
+  personality_quiz12_question1_option3:
+    "Построение сюжета с неожиданными поворотами",
+
+  personality_quiz12_question2:
+    "К какому мероприятию ты бы с удовольствием пошёл(а)?",
+  personality_quiz12_question2_option1: "На художественную выставку",
+  personality_quiz12_question2_option2: "На шахматный турнир",
+  personality_quiz12_question2_option3: "На воркшоп по дизайн-мышлению",
+
+  personality_quiz12_question3: "Твое рабочее пространство обычно:",
+  personality_quiz12_question3_option1: "Немного хаотичное, но вдохновляющее",
+  personality_quiz12_question3_option2: "Организованное и подписанное",
+  personality_quiz12_question3_option3: "Функциональное с элементами эстетики",
+
+  personality_quiz12_question4: "Когда ты генерируешь идеи, ты обычно:",
+  personality_quiz12_question4_option1: "Рисуешь наброски своих идей",
+  personality_quiz12_question4_option2: "Создаешь майнд-карту или схему",
+  personality_quiz12_question4_option3:
+    "Чередуешь визуальные и текстовые заметки",
+
+  personality_quiz12_question5: "Выбери цитату, которая тебе откликается:",
+  personality_quiz12_question5_option1:
+    "«Креативность — это интеллект, получающий удовольствие.»",
+  personality_quiz12_question5_option2: "«Во всём должна быть логика.»",
+  personality_quiz12_question5_option3:
+    "«Баланс — это не то, что находят, а то, что создают.»",
+
+  personality_quiz12_question6: "Что бы ты сделал(а) с пустым блокнотом?",
+  personality_quiz12_question6_option1: "Начал(а) бы визуальный дневник",
+  personality_quiz12_question6_option2:
+    "Создал(а) бы трекер или журнал привычек",
+  personality_quiz12_question6_option3:
+    "Использовал(а) бы его для идей и набросков",
+
+  personality_quiz12_question7: "Какая задача утомляет тебя больше всего?",
+  personality_quiz12_question7_option1: "Скучные технические повторения",
+  personality_quiz12_question7_option2: "Бесструктурная работа",
+  personality_quiz12_question7_option3:
+    "Задачи без четкой цели или обратной связи",
+
+  personality_quiz12_question8:
+    "Ты тестируешь новое приложение. Что делаешь в первую очередь?",
+  personality_quiz12_question8_option1: "Исследую дизайн и впечатления",
+  personality_quiz12_question8_option2: "Ищу баги и логические ошибки",
+  personality_quiz12_question8_option3: "Анализирую структуру, логику и поток",
+
+  personality_quiz12_question9: "Какая роль тебе подходит больше всего?",
+  personality_quiz12_question9_option1: "Креативный директор",
+  personality_quiz12_question9_option2: "Аналитик данных",
+  personality_quiz12_question9_option3: "UX-дизайнер",
+
+  personality_quiz12_question10: "Какая фраза лучше всего тебя описывает?",
+  personality_quiz12_question10_option1: "Моё воображение не знает границ",
+  personality_quiz12_question10_option2:
+    "Мне нужна структура, чтобы сосредоточиться",
+  personality_quiz12_question10_option3:
+    "Я легко переключаюсь между хаосом и порядком",
+
+  personality_quiz12_question11: "Как ты лучше всего выражаешь свои идеи?",
+  personality_quiz12_question11_option1:
+    "С помощью рисунков, цветов или музыки",
+  personality_quiz12_question11_option2:
+    "С помощью логических аргументов и структуры",
+  personality_quiz12_question11_option3:
+    "Через визуальные образы и рассуждения",
+
+  personality_quiz12_question12: "Что вдохновляет тебя больше всего?",
+  personality_quiz12_question12_option1: "Сильный образ, музыка или эмоция",
+  personality_quiz12_question12_option2: "Решение сложной задачи",
+  personality_quiz12_question12_option3:
+    "Испытание, где нужна и фантазия, и логика",
+
+  personality_quiz12_question13: "Какое достижение тебе кажется самым ценным?",
+  personality_quiz12_question13_option1: "Завершение творческого проекта",
+  personality_quiz12_question13_option2:
+    "Решение, которое казалось невозможным",
+  personality_quiz12_question13_option3:
+    "Создание чего-то красивого и полезного",
+
+  personality_quiz12_question14: "Как ты бы провёл(а) свободный день?",
+  personality_quiz12_question14_option1: "Рисовал(а), писал(а), творил(а)",
+  personality_quiz12_question14_option2:
+    "Играл(а) в стратегии или решал(а) головоломки",
+  personality_quiz12_question14_option3:
+    "Переделывал(а) пространство или планировал(а) что-то новое",
+
+  personality_quiz12_question15: "Какая фраза описывает твой стиль мышления?",
+  personality_quiz12_question15_option1: "Я думаю в образах и эмоциях",
+  personality_quiz12_question15_option2: "Я анализирую шаблоны и логику",
+  personality_quiz12_question15_option3: "Я соединяю чувства со структурой",
 };

@@ -794,4 +794,857 @@ export const fr = {
   personality_quiz5_question19_option2: "Paint it Black – Rolling Stones",
   personality_quiz5_question19_option3: "Creep – Radiohead",
   personality_quiz5_question19_option4: "Running Up That Hill – Kate Bush",
+
+  // Knowledge Quiz 1
+
+  // Q1
+  knowledge_quiz1_question1_fr: "À quel pays appartient la ville de Prague ?",
+  knowledge_quiz1_question1_option1_fr: "Autriche",
+  knowledge_quiz1_question1_option2_fr: "Pologne",
+  knowledge_quiz1_question1_option3_fr: "République tchèque",
+  knowledge_quiz1_question1_option4_fr: "Slovaquie",
+
+  // Q2
+  knowledge_quiz1_question2_fr: "Quelle mer borde la Grèce à l'ouest ?",
+  knowledge_quiz1_question2_option1_fr: "Mer Noire",
+  knowledge_quiz1_question2_option2_fr: "Mer Baltique",
+  knowledge_quiz1_question2_option3_fr: "Mer Ionienne",
+  knowledge_quiz1_question2_option4_fr: "Mer Adriatique",
+
+  // Q3
+  knowledge_quiz1_question3_fr:
+    "Lequel des pays suivants ne fait PAS partie de la Scandinavie ?",
+  knowledge_quiz1_question3_option1_fr: "Norvège",
+  knowledge_quiz1_question3_option2_fr: "Suède",
+  knowledge_quiz1_question3_option3_fr: "Allemagne",
+  knowledge_quiz1_question3_option4_fr: "Danemark",
+
+  // Q4
+  knowledge_quiz1_question4_fr: "De quel pays Budapest est-elle la capitale ?",
+  knowledge_quiz1_question4_option1_fr: "Hongrie",
+  knowledge_quiz1_question4_option2_fr: "Roumanie",
+  knowledge_quiz1_question4_option3_fr: "Autriche",
+  knowledge_quiz1_question4_option4_fr: "Bulgarie",
+
+  // Q5
+  knowledge_quiz1_question5_fr: "Le Danube traverse combien de pays ?",
+  knowledge_quiz1_question5_option1_fr: "12",
+  knowledge_quiz1_question5_option2_fr: "8",
+  knowledge_quiz1_question5_option3_fr: "6",
+  knowledge_quiz1_question5_option4_fr: "10",
+
+  // Q6
+  knowledge_quiz1_question6_fr:
+    "Quel pays possède le point le plus au nord de l'Europe ?",
+  knowledge_quiz1_question6_option1_fr: "Suède",
+  knowledge_quiz1_question6_option2_fr: "Finlande",
+  knowledge_quiz1_question6_option3_fr: "Islande",
+  knowledge_quiz1_question6_option4_fr: "Norvège",
+
+  // Q7
+  knowledge_quiz1_question7_fr: "Quelle est la capitale du Portugal ?",
+  knowledge_quiz1_question7_option1_fr: "Lisbonne",
+  knowledge_quiz1_question7_option2_fr: "Madrid",
+  knowledge_quiz1_question7_option3_fr: "Porto",
+  knowledge_quiz1_question7_option4_fr: "Barcelone",
+
+  // Q8
+  knowledge_quiz1_question8_fr:
+    "Quel pays a une frontière avec la France et la Pologne ?",
+  knowledge_quiz1_question8_option1_fr: "Autriche",
+  knowledge_quiz1_question8_option2_fr: "Allemagne",
+  knowledge_quiz1_question8_option3_fr: "République tchèque",
+  knowledge_quiz1_question8_option4_fr: "Belgique",
+
+  // Q9
+  knowledge_quiz1_question9_fr:
+    "Quelle est la plus grande île de la mer Méditerranée ?",
+  knowledge_quiz1_question9_option1_fr: "Sardaigne",
+  knowledge_quiz1_question9_option2_fr: "Sicile",
+  knowledge_quiz1_question9_option3_fr: "Crète",
+  knowledge_quiz1_question9_option4_fr: "Corse",
+
+  // Q10
+  knowledge_quiz1_question10_fr:
+    "Dans quel pays se trouve la ville de Bruges ?",
+  knowledge_quiz1_question10_option1_fr: "France",
+  knowledge_quiz1_question10_option2_fr: "Allemagne",
+  knowledge_quiz1_question10_option3_fr: "Belgique",
+  knowledge_quiz1_question10_option4_fr: "Pays-Bas",
+
+  // Q11
+  knowledge_quiz1_question11_fr: "À quel pays appartient la Transylvanie ?",
+  knowledge_quiz1_question11_option1_fr: "Serbie",
+  knowledge_quiz1_question11_option2_fr: "Ukraine",
+  knowledge_quiz1_question11_option3_fr: "Hongrie",
+  knowledge_quiz1_question11_option4_fr: "Roumanie",
+
+  // Q12
+  knowledge_quiz1_question12_fr: "Quelle est la capitale de l’Islande ?",
+  knowledge_quiz1_question12_option1_fr: "Oslo",
+  knowledge_quiz1_question12_option2_fr: "Reykjavik",
+  knowledge_quiz1_question12_option3_fr: "Helsinki",
+  knowledge_quiz1_question12_option4_fr: "Stockholm",
+
+  // Q13
+  knowledge_quiz1_question13_fr: "Quel pays a le plus de volcans en Europe ?",
+  knowledge_quiz1_question13_option1_fr: "Islande",
+  knowledge_quiz1_question13_option2_fr: "Espagne",
+  knowledge_quiz1_question13_option3_fr: "Italie",
+  knowledge_quiz1_question13_option4_fr: "Grèce",
+
+  // Q14
+  knowledge_quiz1_question14_fr: "Dans quel pays se trouve le mont Elbrouz ?",
+  knowledge_quiz1_question14_option1_fr: "Géorgie",
+  knowledge_quiz1_question14_option2_fr: "Russie",
+  knowledge_quiz1_question14_option3_fr: "Turquie",
+  knowledge_quiz1_question14_option4_fr: "Ukraine",
+
+  // Q15
+  knowledge_quiz1_question15_fr: "Quelle mer sépare la Suède des pays baltes ?",
+  knowledge_quiz1_question15_option1_fr: "Mer de Barents",
+  knowledge_quiz1_question15_option2_fr: "Mer Baltique",
+  knowledge_quiz1_question15_option3_fr: "Mer de Norvège",
+  knowledge_quiz1_question15_option4_fr: "Mer du Nord",
+
+  // Q16
+  knowledge_quiz1_question16_fr:
+    "Quel pays européen est célèbre pour ses fjords ?",
+  knowledge_quiz1_question16_option1_fr: "Danemark",
+  knowledge_quiz1_question16_option2_fr: "Norvège",
+  knowledge_quiz1_question16_option3_fr: "Suède",
+  knowledge_quiz1_question16_option4_fr: "Finlande",
+
+  // Q17
+  knowledge_quiz1_question17_fr:
+    "Dans quel pays se trouve la ville de Cracovie ?",
+  knowledge_quiz1_question17_option1_fr: "Slovaquie",
+  knowledge_quiz1_question17_option2_fr: "République tchèque",
+  knowledge_quiz1_question17_option3_fr: "Hongrie",
+  knowledge_quiz1_question17_option4_fr: "Pologne",
+
+  // Q18
+  knowledge_quiz1_question18_fr: "Andorre se situe entre quels deux pays ?",
+  knowledge_quiz1_question18_option1_fr: "France et Espagne",
+  knowledge_quiz1_question18_option2_fr: "Autriche et Allemagne",
+  knowledge_quiz1_question18_option3_fr: "Espagne et Portugal",
+  knowledge_quiz1_question18_option4_fr: "Italie et Suisse",
+
+  // Q19
+  knowledge_quiz1_question19_fr: "Quel pays a la plus longue côte en Europe ?",
+  knowledge_quiz1_question19_option1_fr: "Italie",
+  knowledge_quiz1_question19_option2_fr: "Grèce",
+  knowledge_quiz1_question19_option3_fr: "Norvège",
+  knowledge_quiz1_question19_option4_fr: "Royaume-Uni",
+
+  // Q20
+  knowledge_quiz1_question20_fr:
+    "Quel est le plus petit pays d’Europe en superficie ?",
+  knowledge_quiz1_question20_option1_fr: "Vatican",
+  knowledge_quiz1_question20_option2_fr: "Liechtenstein",
+  knowledge_quiz1_question20_option3_fr: "Saint-Marin",
+  knowledge_quiz1_question20_option4_fr: "Monaco",
+
+  // Knowledge Quiz 2
+
+  // Q1
+  knowledge_quiz2_question1_fr: "Oslo est la capitale de quel pays ?",
+  knowledge_quiz2_question1_option1_fr: "Norvège",
+  knowledge_quiz2_question1_option2_fr: "Danemark",
+  knowledge_quiz2_question1_option3_fr: "Suède",
+  knowledge_quiz2_question1_option4_fr: "Finlande",
+
+  // Q2
+  knowledge_quiz2_question2_fr: "Vienne est la capitale de quel pays ?",
+  knowledge_quiz2_question2_option1_fr: "Allemagne",
+  knowledge_quiz2_question2_option2_fr: "Hongrie",
+  knowledge_quiz2_question2_option3_fr: "Suisse",
+  knowledge_quiz2_question2_option4_fr: "Autriche",
+
+  // Q3
+  knowledge_quiz2_question3_fr: "Varsovie est la capitale de quel pays ?",
+  knowledge_quiz2_question3_option1_fr: "Ukraine",
+  knowledge_quiz2_question3_option2_fr: "République tchèque",
+  knowledge_quiz2_question3_option3_fr: "Pologne",
+  knowledge_quiz2_question3_option4_fr: "Biélorussie",
+
+  // Q4
+  knowledge_quiz2_question4_fr: "Helsinki est la capitale de quel pays ?",
+  knowledge_quiz2_question4_option1_fr: "Estonie",
+  knowledge_quiz2_question4_option2_fr: "Norvège",
+  knowledge_quiz2_question4_option3_fr: "Finlande",
+  knowledge_quiz2_question4_option4_fr: "Lettonie",
+
+  // Q5
+  knowledge_quiz2_question5_fr: "Lisbonne est la capitale de quel pays ?",
+  knowledge_quiz2_question5_option1_fr: "Italie",
+  knowledge_quiz2_question5_option2_fr: "Portugal",
+  knowledge_quiz2_question5_option3_fr: "Grèce",
+  knowledge_quiz2_question5_option4_fr: "Espagne",
+
+  // Q6
+  knowledge_quiz2_question6_fr: "Berne est la capitale de quel pays ?",
+  knowledge_quiz2_question6_option1_fr: "Autriche",
+  knowledge_quiz2_question6_option2_fr: "Suisse",
+  knowledge_quiz2_question6_option3_fr: "Allemagne",
+  knowledge_quiz2_question6_option4_fr: "Luxembourg",
+
+  // Q7
+  knowledge_quiz2_question7_fr: "Bruxelles est la capitale de quel pays ?",
+  knowledge_quiz2_question7_option1_fr: "France",
+  knowledge_quiz2_question7_option2_fr: "Belgique",
+  knowledge_quiz2_question7_option3_fr: "Luxembourg",
+  knowledge_quiz2_question7_option4_fr: "Pays-Bas",
+
+  // Q8
+  knowledge_quiz2_question8_fr: "Athènes est la capitale de quel pays ?",
+  knowledge_quiz2_question8_option1_fr: "Malte",
+  knowledge_quiz2_question8_option2_fr: "Chypre",
+  knowledge_quiz2_question8_option3_fr: "Grèce",
+  knowledge_quiz2_question8_option4_fr: "Italie",
+
+  // Q9
+  knowledge_quiz2_question9_fr: "Reykjavik est la capitale de quel pays ?",
+  knowledge_quiz2_question9_option1_fr: "Groenland",
+  knowledge_quiz2_question9_option2_fr: "Danemark",
+  knowledge_quiz2_question9_option3_fr: "Norvège",
+  knowledge_quiz2_question9_option4_fr: "Islande",
+
+  // Q10
+  knowledge_quiz2_question10_fr: "Zagreb est la capitale de quel pays ?",
+  knowledge_quiz2_question10_option1_fr: "Serbie",
+  knowledge_quiz2_question10_option2_fr: "Slovénie",
+  knowledge_quiz2_question10_option3_fr: "Croatie",
+  knowledge_quiz2_question10_option4_fr: "Monténégro",
+
+  // Q11
+  knowledge_quiz2_question11_fr: "Skopje est la capitale de quel pays ?",
+  knowledge_quiz2_question11_option1_fr: "Albanie",
+  knowledge_quiz2_question11_option2_fr: "Macédoine du Nord",
+  knowledge_quiz2_question11_option3_fr: "Bulgarie",
+  knowledge_quiz2_question11_option4_fr: "Kosovo",
+
+  // Q12
+  knowledge_quiz2_question12_fr: "Sofia est la capitale de quel pays ?",
+  knowledge_quiz2_question12_option1_fr: "Bulgarie",
+  knowledge_quiz2_question12_option2_fr: "Serbie",
+  knowledge_quiz2_question12_option3_fr: "Slovaquie",
+  knowledge_quiz2_question12_option4_fr: "Roumanie",
+
+  // Q13
+  knowledge_quiz2_question13_fr: "Tirana est la capitale de quel pays ?",
+  knowledge_quiz2_question13_option1_fr: "Bosnie-Herzégovine",
+  knowledge_quiz2_question13_option2_fr: "Macédoine du Nord",
+  knowledge_quiz2_question13_option3_fr: "Kosovo",
+  knowledge_quiz2_question13_option4_fr: "Albanie",
+
+  // Q14
+  knowledge_quiz2_question14_fr: "Podgorica est la capitale de quel pays ?",
+  knowledge_quiz2_question14_option1_fr: "Slovénie",
+  knowledge_quiz2_question14_option2_fr: "Monténégro",
+  knowledge_quiz2_question14_option3_fr: "Croatie",
+  knowledge_quiz2_question14_option4_fr: "Serbie",
+
+  // Q15
+  knowledge_quiz2_question15_fr: "Ljubljana est la capitale de quel pays ?",
+  knowledge_quiz2_question15_option1_fr: "Autriche",
+  knowledge_quiz2_question15_option2_fr: "Slovaquie",
+  knowledge_quiz2_question15_option3_fr: "Slovénie",
+  knowledge_quiz2_question15_option4_fr: "Croatie",
+
+  // Q16
+  knowledge_quiz2_question16_fr: "Belgrade est la capitale de quel pays ?",
+  knowledge_quiz2_question16_option1_fr: "Bosnie",
+  knowledge_quiz2_question16_option2_fr: "Roumanie",
+  knowledge_quiz2_question16_option3_fr: "Monténégro",
+  knowledge_quiz2_question16_option4_fr: "Serbie",
+
+  // Q17
+  knowledge_quiz2_question17_fr: "Sarajevo est la capitale de quel pays ?",
+  knowledge_quiz2_question17_option1_fr: "Serbie",
+  knowledge_quiz2_question17_option2_fr: "Croatie",
+  knowledge_quiz2_question17_option3_fr: "Bosnie-Herzégovine",
+  knowledge_quiz2_question17_option4_fr: "Monténégro",
+
+  // Q18
+  knowledge_quiz2_question18_fr: "Chișinău est la capitale de quel pays ?",
+  knowledge_quiz2_question18_option1_fr: "Biélorussie",
+  knowledge_quiz2_question18_option2_fr: "Ukraine",
+  knowledge_quiz2_question18_option3_fr: "Roumanie",
+  knowledge_quiz2_question18_option4_fr: "République de Moldavie",
+
+  // Q19
+  knowledge_quiz2_question19_fr: "Bucarest est la capitale de quel pays ?",
+  knowledge_quiz2_question19_option1_fr: "Roumanie",
+  knowledge_quiz2_question19_option2_fr: "Moldavie",
+  knowledge_quiz2_question19_option3_fr: "Hongrie",
+  knowledge_quiz2_question19_option4_fr: "Bulgarie",
+
+  // Q20
+  knowledge_quiz2_question20_fr: "Tallinn est la capitale de quel pays ?",
+  knowledge_quiz2_question20_option1_fr: "Lituanie",
+  knowledge_quiz2_question20_option2_fr: "Finlande",
+  knowledge_quiz2_question20_option3_fr: "Lettonie",
+  knowledge_quiz2_question20_option4_fr: "Estonie",
+
+  // Knowledge Quiz 3
+
+  // Q1
+  knowledge_quiz3_question1_fr:
+    "Quelle est la plus grande planète du système solaire ?",
+  knowledge_quiz3_question1_option1_fr: "Terre",
+  knowledge_quiz3_question1_option2_fr: "Mars",
+  knowledge_quiz3_question1_option3_fr: "Saturne",
+  knowledge_quiz3_question1_option4_fr: "Jupiter",
+
+  // Q2
+  knowledge_quiz3_question2_fr: "Qui a peint la Joconde ?",
+  knowledge_quiz3_question2_option1_fr: "Van Gogh",
+  knowledge_quiz3_question2_option2_fr: "Michel-Ange",
+  knowledge_quiz3_question2_option3_fr: "Picasso",
+  knowledge_quiz3_question2_option4_fr: "Léonard de Vinci",
+
+  // Q3
+  knowledge_quiz3_question3_fr:
+    "En quelle année la Seconde Guerre mondiale s'est-elle terminée ?",
+  knowledge_quiz3_question3_option1_fr: "1945",
+  knowledge_quiz3_question3_option2_fr: "1939",
+  knowledge_quiz3_question3_option3_fr: "1950",
+  knowledge_quiz3_question3_option4_fr: "1942",
+
+  // Q4
+  knowledge_quiz3_question4_fr: "Quelle est la capitale du Canada ?",
+  knowledge_quiz3_question4_option1_fr: "Toronto",
+  knowledge_quiz3_question4_option2_fr: "Montréal",
+  knowledge_quiz3_question4_option3_fr: "Vancouver",
+  knowledge_quiz3_question4_option4_fr: "Ottawa",
+
+  // Q5
+  knowledge_quiz3_question5_fr:
+    "Quel organe est responsable de la circulation du sang ?",
+  knowledge_quiz3_question5_option1_fr: "Cœur",
+  knowledge_quiz3_question5_option2_fr: "Foie",
+  knowledge_quiz3_question5_option3_fr: "Poumons",
+  knowledge_quiz3_question5_option4_fr: "Reins",
+
+  // Q6
+  knowledge_quiz3_question6_fr: "Combien y a-t-il de continents ?",
+  knowledge_quiz3_question6_option1_fr: "7",
+  knowledge_quiz3_question6_option2_fr: "8",
+  knowledge_quiz3_question6_option3_fr: "6",
+  knowledge_quiz3_question6_option4_fr: "5",
+
+  // Q7
+  knowledge_quiz3_question7_fr: "Quel est le fleuve le plus long du monde ?",
+  knowledge_quiz3_question7_option1_fr: "Yangtsé",
+  knowledge_quiz3_question7_option2_fr: "Amazone",
+  knowledge_quiz3_question7_option3_fr: "Mississippi",
+  knowledge_quiz3_question7_option4_fr: "Nil",
+
+  // Q8
+  knowledge_quiz3_question8_fr: "Quel est le symbole chimique de l’or ?",
+  knowledge_quiz3_question8_option1_fr: "Au",
+  knowledge_quiz3_question8_option2_fr: "Ag",
+  knowledge_quiz3_question8_option3_fr: "G",
+  knowledge_quiz3_question8_option4_fr: "Go",
+
+  // Q9
+  knowledge_quiz3_question9_fr:
+    "Quelle planète est connue comme la planète rouge ?",
+  knowledge_quiz3_question9_option1_fr: "Jupiter",
+  knowledge_quiz3_question9_option2_fr: "Mars",
+  knowledge_quiz3_question9_option3_fr: "Vénus",
+  knowledge_quiz3_question9_option4_fr: "Mercure",
+
+  // Q10
+  knowledge_quiz3_question10_fr:
+    "Quel scientifique a développé la théorie de la relativité ?",
+  knowledge_quiz3_question10_option1_fr: "Einstein",
+  knowledge_quiz3_question10_option2_fr: "Newton",
+  knowledge_quiz3_question10_option3_fr: "Bohr",
+  knowledge_quiz3_question10_option4_fr: "Tesla",
+
+  // Q11
+  knowledge_quiz3_question11_fr: "Quelle est la capitale de l’Australie ?",
+  knowledge_quiz3_question11_option1_fr: "Canberra",
+  knowledge_quiz3_question11_option2_fr: "Sydney",
+  knowledge_quiz3_question11_option3_fr: "Brisbane",
+  knowledge_quiz3_question11_option4_fr: "Melbourne",
+
+  // Q12
+  knowledge_quiz3_question12_fr: "Quel pays a inventé la pizza ?",
+  knowledge_quiz3_question12_option1_fr: "Grèce",
+  knowledge_quiz3_question12_option2_fr: "Espagne",
+  knowledge_quiz3_question12_option3_fr: "France",
+  knowledge_quiz3_question12_option4_fr: "Italie",
+
+  // Q13
+  knowledge_quiz3_question13_fr:
+    "Combien de joueurs sur le terrain dans une équipe de football ?",
+  knowledge_quiz3_question13_option1_fr: "9",
+  knowledge_quiz3_question13_option2_fr: "11",
+  knowledge_quiz3_question13_option3_fr: "10",
+  knowledge_quiz3_question13_option4_fr: "12",
+
+  // Q14
+  knowledge_quiz3_question14_fr:
+    "Quel élément est représenté par le symbole 'O' dans le tableau périodique ?",
+  knowledge_quiz3_question14_option1_fr: "Osmium",
+  knowledge_quiz3_question14_option2_fr: "Oxygène",
+  knowledge_quiz3_question14_option3_fr: "Ozone",
+  knowledge_quiz3_question14_option4_fr: "Oxyde",
+
+  // Q15
+  knowledge_quiz3_question15_fr:
+    "Quelle langue a le plus de locuteurs natifs ?",
+  knowledge_quiz3_question15_option1_fr: "Chinois mandarin",
+  knowledge_quiz3_question15_option2_fr: "Anglais",
+  knowledge_quiz3_question15_option3_fr: "Hindi",
+  knowledge_quiz3_question15_option4_fr: "Espagnol",
+
+  // Q16
+  knowledge_quiz3_question16_fr: "Quel est le plus haut sommet de la Terre ?",
+  knowledge_quiz3_question16_option1_fr: "K2",
+  knowledge_quiz3_question16_option2_fr: "Makalu",
+  knowledge_quiz3_question16_option3_fr: "Kangchenjunga",
+  knowledge_quiz3_question16_option4_fr: "Everest",
+
+  // Q17
+  knowledge_quiz3_question17_fr: "Qui a écrit 'Roméo et Juliette' ?",
+  knowledge_quiz3_question17_option1_fr: "Dickens",
+  knowledge_quiz3_question17_option2_fr: "Homère",
+  knowledge_quiz3_question17_option3_fr: "Dante",
+  knowledge_quiz3_question17_option4_fr: "Shakespeare",
+
+  // Q18
+  knowledge_quiz3_question18_fr:
+    "Que signifie 'WWW' dans un navigateur internet ?",
+  knowledge_quiz3_question18_option1_fr: "Web World Wide",
+  knowledge_quiz3_question18_option2_fr: "Wide Web World",
+  knowledge_quiz3_question18_option3_fr: "World Wide Web",
+  knowledge_quiz3_question18_option4_fr: "Wide Web Worldnet",
+
+  // Q19
+  knowledge_quiz3_question19_fr:
+    "Quel animal est connu comme le 'Roi de la jungle' ?",
+  knowledge_quiz3_question19_option1_fr: "Tigre",
+  knowledge_quiz3_question19_option2_fr: "Lion",
+  knowledge_quiz3_question19_option3_fr: "Éléphant",
+  knowledge_quiz3_question19_option4_fr: "Panthère",
+
+  // Q20
+  knowledge_quiz3_question20_fr: "Combien de couleurs a un arc-en-ciel ?",
+  knowledge_quiz3_question20_option1_fr: "5",
+  knowledge_quiz3_question20_option2_fr: "8",
+  knowledge_quiz3_question20_option3_fr: "7",
+  knowledge_quiz3_question20_option4_fr: "6",
+
+  // Knowledge Quiz 4
+
+  // Q1
+  knowledge_quiz4_question1_fr:
+    "En quelle année a commencé la Première Guerre mondiale ?",
+  knowledge_quiz4_question1_option1_fr: "1918",
+  knowledge_quiz4_question1_option2_fr: "1916",
+  knowledge_quiz4_question1_option3_fr: "1912",
+  knowledge_quiz4_question1_option4_fr: "1914",
+
+  // Q2
+  knowledge_quiz4_question2_fr:
+    "Qui était le Premier ministre britannique pendant la majeure partie de la Seconde Guerre mondiale ?",
+  knowledge_quiz4_question2_option1_fr: "Neville Chamberlain",
+  knowledge_quiz4_question2_option2_fr: "Margaret Thatcher",
+  knowledge_quiz4_question2_option3_fr: "Winston Churchill",
+  knowledge_quiz4_question2_option4_fr: "Tony Blair",
+
+  // Q3
+  knowledge_quiz4_question3_fr: "En quelle année est tombé le mur de Berlin ?",
+  knowledge_quiz4_question3_option1_fr: "1991",
+  knowledge_quiz4_question3_option2_fr: "1987",
+  knowledge_quiz4_question3_option3_fr: "1993",
+  knowledge_quiz4_question3_option4_fr: "1989",
+
+  // Q4
+  knowledge_quiz4_question4_fr:
+    "Quel pays a lancé le premier satellite artificiel ?",
+  knowledge_quiz4_question4_option1_fr: "États-Unis",
+  knowledge_quiz4_question4_option2_fr: "Chine",
+  knowledge_quiz4_question4_option3_fr: "Allemagne",
+  knowledge_quiz4_question4_option4_fr: "Russie",
+
+  // Q5
+  knowledge_quiz4_question5_fr: "Qui a été assassiné en 1963 à Dallas, Texas ?",
+  knowledge_quiz4_question5_option1_fr: "John F. Kennedy",
+  knowledge_quiz4_question5_option2_fr: "Robert Kennedy",
+  knowledge_quiz4_question5_option3_fr: "Martin Luther King Jr.",
+  knowledge_quiz4_question5_option4_fr: "Ronald Reagan",
+
+  // Q6
+  knowledge_quiz4_question6_fr:
+    "En quelle année s'est terminée la Seconde Guerre mondiale ?",
+  knowledge_quiz4_question6_option1_fr: "1950",
+  knowledge_quiz4_question6_option2_fr: "1945",
+  knowledge_quiz4_question6_option3_fr: "1939",
+  knowledge_quiz4_question6_option4_fr: "1942",
+
+  // Q7
+  knowledge_quiz4_question7_fr:
+    "Quel était le nom du leader des droits civiques qui a prononcé le discours « I Have a Dream » ?",
+  knowledge_quiz4_question7_option1_fr: "Malcolm X",
+  knowledge_quiz4_question7_option2_fr: "Martin Luther King Jr.",
+  knowledge_quiz4_question7_option3_fr: "Frederick Douglass",
+  knowledge_quiz4_question7_option4_fr: "Barack Obama",
+
+  // Q8
+  knowledge_quiz4_question8_fr:
+    "Quand l'Union soviétique s'est-elle dissoute ?",
+  knowledge_quiz4_question8_option1_fr: "1989",
+  knowledge_quiz4_question8_option2_fr: "1992",
+  knowledge_quiz4_question8_option3_fr: "1991",
+  knowledge_quiz4_question8_option4_fr: "1990",
+
+  // Q9
+  knowledge_quiz4_question9_fr:
+    "Quelle guerre a été menée entre la Corée du Nord et la Corée du Sud ?",
+  knowledge_quiz4_question9_option1_fr: "Guerre de Corée",
+  knowledge_quiz4_question9_option2_fr: "Seconde Guerre mondiale",
+  knowledge_quiz4_question9_option3_fr: "Guerre du Vietnam",
+  knowledge_quiz4_question9_option4_fr: "Guerre froide",
+
+  // Q10
+  knowledge_quiz4_question10_fr:
+    "Quel est le nom du premier homme à avoir marché sur la Lune ?",
+  knowledge_quiz4_question10_option1_fr: "Michael Collins",
+  knowledge_quiz4_question10_option2_fr: "Neil Armstrong",
+  knowledge_quiz4_question10_option3_fr: "Youri Gagarine",
+  knowledge_quiz4_question10_option4_fr: "Buzz Aldrin",
+
+  // Q11
+  knowledge_quiz4_question11_fr: "Quel pays Adolf Hitler a-t-il dirigé ?",
+  knowledge_quiz4_question11_option1_fr: "Allemagne",
+  knowledge_quiz4_question11_option2_fr: "France",
+  knowledge_quiz4_question11_option3_fr: "Autriche",
+  knowledge_quiz4_question11_option4_fr: "Russie",
+
+  // Q12
+  knowledge_quiz4_question12_fr: "En quelle année le Titanic a-t-il coulé ?",
+  knowledge_quiz4_question12_option1_fr: "1914",
+  knowledge_quiz4_question12_option2_fr: "1920",
+  knowledge_quiz4_question12_option3_fr: "1912",
+  knowledge_quiz4_question12_option4_fr: "1905",
+
+  // Q13
+  knowledge_quiz4_question13_fr:
+    "Quel conflit de la guerre froide s'est déroulé en Asie du Sud-Est dans les années 1960–1970 ?",
+  knowledge_quiz4_question13_option1_fr: "Guerre du Vietnam",
+  knowledge_quiz4_question13_option2_fr: "Guerre de Corée",
+  knowledge_quiz4_question13_option3_fr: "Guerre du Golfe",
+  knowledge_quiz4_question13_option4_fr: "Guerre d'Afghanistan",
+
+  // Q14
+  knowledge_quiz4_question14_fr:
+    "Quel mur symbolisait la division en Allemagne pendant la guerre froide ?",
+  knowledge_quiz4_question14_option1_fr: "Grande Muraille",
+  knowledge_quiz4_question14_option2_fr: "Mur occidental",
+  knowledge_quiz4_question14_option3_fr: "Mur de Berlin",
+  knowledge_quiz4_question14_option4_fr: "Mur de fer",
+
+  // Q15
+  knowledge_quiz4_question15_fr:
+    "Quand l'Organisation des Nations Unies a-t-elle été fondée ?",
+  knowledge_quiz4_question15_option1_fr: "1942",
+  knowledge_quiz4_question15_option2_fr: "1939",
+  knowledge_quiz4_question15_option3_fr: "1945",
+  knowledge_quiz4_question15_option4_fr: "1950",
+
+  // Q16
+  knowledge_quiz4_question16_fr:
+    "Qui a été la première femme Premier ministre du Royaume-Uni ?",
+  knowledge_quiz4_question16_option1_fr: "Margaret Thatcher",
+  knowledge_quiz4_question16_option2_fr: "Theresa May",
+  knowledge_quiz4_question16_option3_fr: "Angela Merkel",
+  knowledge_quiz4_question16_option4_fr: "Indira Gandhi",
+
+  // Q17
+  knowledge_quiz4_question17_fr:
+    "Dans quel pays a eu lieu la catastrophe nucléaire de Tchernobyl ?",
+  knowledge_quiz4_question17_option1_fr: "Biélorussie",
+  knowledge_quiz4_question17_option2_fr: "Ukraine",
+  knowledge_quiz4_question17_option3_fr: "Russie",
+  knowledge_quiz4_question17_option4_fr: "Kazakhstan",
+
+  // Q18
+  knowledge_quiz4_question18_fr:
+    "Qui était le dirigeant de l'Union soviétique pendant la Seconde Guerre mondiale ?",
+  knowledge_quiz4_question18_option1_fr: "Lénine",
+  knowledge_quiz4_question18_option2_fr: "Staline",
+  knowledge_quiz4_question18_option3_fr: "Trotski",
+  knowledge_quiz4_question18_option4_fr: "Gorbatchev",
+
+  // Q19
+  knowledge_quiz4_question19_fr:
+    "Quel est le nom du traité qui a mis fin à la Première Guerre mondiale ?",
+  knowledge_quiz4_question19_option1_fr: "Traité de Paris",
+  knowledge_quiz4_question19_option2_fr: "Traité de Versailles",
+  knowledge_quiz4_question19_option3_fr: "Pacte de Yalta",
+  knowledge_quiz4_question19_option4_fr: "Accord de Potsdam",
+
+  // Q20
+  knowledge_quiz4_question20_fr:
+    "Quel mur est tombé en 1989, marquant la fin de la guerre froide ?",
+  knowledge_quiz4_question20_option1_fr: "Mur de fer",
+  knowledge_quiz4_question20_option2_fr: "Mur occidental",
+  knowledge_quiz4_question20_option3_fr: "Grande Muraille",
+  knowledge_quiz4_question20_option4_fr: "Mur de Berlin",
+
+  // Knowledge Quiz 5
+
+  // Q1
+  knowledge_quiz5_question1_fr:
+    "Quelle planète est connue sous le nom de Planète Rouge ?",
+  knowledge_quiz5_question1_option1_fr: "Mercure",
+  knowledge_quiz5_question1_option2_fr: "Vénus",
+  knowledge_quiz5_question1_option3_fr: "Jupiter",
+  knowledge_quiz5_question1_option4_fr: "Mars",
+
+  // Q2
+  knowledge_quiz5_question2_fr:
+    "Quelle est la plus grande planète du système solaire ?",
+  knowledge_quiz5_question2_option1_fr: "Jupiter",
+  knowledge_quiz5_question2_option2_fr: "Terre",
+  knowledge_quiz5_question2_option3_fr: "Saturne",
+  knowledge_quiz5_question2_option4_fr: "Neptune",
+
+  // Q3
+  knowledge_quiz5_question3_fr:
+    "Combien de planètes y a-t-il dans le système solaire ?",
+  knowledge_quiz5_question3_option1_fr: "7",
+  knowledge_quiz5_question3_option2_fr: "9",
+  knowledge_quiz5_question3_option3_fr: "8",
+  knowledge_quiz5_question3_option4_fr: "10",
+
+  // Q4
+  knowledge_quiz5_question4_fr: "Quelle planète a le plus de lunes ?",
+  knowledge_quiz5_question4_option1_fr: "Uranus",
+  knowledge_quiz5_question4_option2_fr: "Mars",
+  knowledge_quiz5_question4_option3_fr: "Jupiter",
+  knowledge_quiz5_question4_option4_fr: "Saturne",
+
+  // Q5
+  knowledge_quiz5_question5_fr:
+    "Quelle est la planète la plus proche du Soleil ?",
+  knowledge_quiz5_question5_option1_fr: "Mercure",
+  knowledge_quiz5_question5_option2_fr: "Terre",
+  knowledge_quiz5_question5_option3_fr: "Mars",
+  knowledge_quiz5_question5_option4_fr: "Vénus",
+
+  // Q6
+  knowledge_quiz5_question6_fr: "Quelle planète est célèbre pour ses anneaux ?",
+  knowledge_quiz5_question6_option1_fr: "Jupiter",
+  knowledge_quiz5_question6_option2_fr: "Saturne",
+  knowledge_quiz5_question6_option3_fr: "Neptune",
+  knowledge_quiz5_question6_option4_fr: "Uranus",
+
+  // Q7
+  knowledge_quiz5_question7_fr: "Dans quelle galaxie se trouve la Terre ?",
+  knowledge_quiz5_question7_option1_fr: "Voie lactée",
+  knowledge_quiz5_question7_option2_fr: "Andromède",
+  knowledge_quiz5_question7_option3_fr: "Whirlpool",
+  knowledge_quiz5_question7_option4_fr: "Triangulum",
+
+  // Q8
+  knowledge_quiz5_question8_fr: "Quel est le nom de la Lune de la Terre ?",
+  knowledge_quiz5_question8_option1_fr: "La Lune",
+  knowledge_quiz5_question8_option2_fr: "Luna",
+  knowledge_quiz5_question8_option3_fr: "Séléné",
+  knowledge_quiz5_question8_option4_fr: "Phobos",
+
+  // Q9
+  knowledge_quiz5_question9_fr:
+    "Quelle planète a un jour plus long que son année ?",
+  knowledge_quiz5_question9_option1_fr: "Mercure",
+  knowledge_quiz5_question9_option2_fr: "Jupiter",
+  knowledge_quiz5_question9_option3_fr: "Mars",
+  knowledge_quiz5_question9_option4_fr: "Vénus",
+
+  // Q10
+  knowledge_quiz5_question10_fr:
+    "Quelle est la planète la plus froide du système solaire ?",
+  knowledge_quiz5_question10_option1_fr: "Saturne",
+  knowledge_quiz5_question10_option2_fr: "Neptune",
+  knowledge_quiz5_question10_option3_fr: "Uranus",
+  knowledge_quiz5_question10_option4_fr: "Pluton",
+
+  // Q11
+  knowledge_quiz5_question11_fr: "Quelle planète a la gravité la plus forte ?",
+  knowledge_quiz5_question11_option1_fr: "Terre",
+  knowledge_quiz5_question11_option2_fr: "Jupiter",
+  knowledge_quiz5_question11_option3_fr: "Saturne",
+  knowledge_quiz5_question11_option4_fr: "Neptune",
+
+  // Q12
+  knowledge_quiz5_question12_fr: "Qu’est-ce qu’un trou noir ?",
+  knowledge_quiz5_question12_option1_fr: "Une planète",
+  knowledge_quiz5_question12_option2_fr: "Un type de lune",
+  knowledge_quiz5_question12_option3_fr: "Un trou de ver",
+  knowledge_quiz5_question12_option4_fr: "Une étoile effondrée",
+
+  // Q13
+  knowledge_quiz5_question13_fr: "Quelle planète est inclinée sur le côté ?",
+  knowledge_quiz5_question13_option1_fr: "Jupiter",
+  knowledge_quiz5_question13_option2_fr: "Uranus",
+  knowledge_quiz5_question13_option3_fr: "Neptune",
+  knowledge_quiz5_question13_option4_fr: "Mars",
+
+  // Q14
+  knowledge_quiz5_question14_fr:
+    "Quel pays a envoyé le premier homme dans l’espace ?",
+  knowledge_quiz5_question14_option1_fr: "Allemagne",
+  knowledge_quiz5_question14_option2_fr: "États-Unis",
+  knowledge_quiz5_question14_option3_fr: "Chine",
+  knowledge_quiz5_question14_option4_fr: "Union soviétique",
+
+  // Q15
+  knowledge_quiz5_question15_fr: "Qui a été le premier humain dans l’espace ?",
+  knowledge_quiz5_question15_option1_fr: "Neil Armstrong",
+  knowledge_quiz5_question15_option2_fr: "Buzz Aldrin",
+  knowledge_quiz5_question15_option3_fr: "Youri Gagarine",
+  knowledge_quiz5_question15_option4_fr: "Michael Collins",
+
+  // Q16
+  knowledge_quiz5_question16_fr:
+    "Quelle planète est la plus éloignée du Soleil ?",
+  knowledge_quiz5_question16_option1_fr: "Pluton",
+  knowledge_quiz5_question16_option2_fr: "Neptune",
+  knowledge_quiz5_question16_option3_fr: "Saturne",
+  knowledge_quiz5_question16_option4_fr: "Uranus",
+
+  // Q17
+  knowledge_quiz5_question17_fr:
+    "Quel est le nom du télescope spatial le plus célèbre de la NASA ?",
+  knowledge_quiz5_question17_option1_fr: "Spitzer",
+  knowledge_quiz5_question17_option2_fr: "Hubble",
+  knowledge_quiz5_question17_option3_fr: "James Webb",
+  knowledge_quiz5_question17_option4_fr: "Kepler",
+
+  // Q18
+  knowledge_quiz5_question18_fr:
+    "Quelle planète est connue sous le nom de 'l’étoile du soir' ?",
+  knowledge_quiz5_question18_option1_fr: "Saturne",
+  knowledge_quiz5_question18_option2_fr: "Mars",
+  knowledge_quiz5_question18_option3_fr: "Vénus",
+  knowledge_quiz5_question18_option4_fr: "Jupiter",
+
+  // Q19
+  knowledge_quiz5_question19_fr: "Qu’est-ce qu’une année-lumière ?",
+  knowledge_quiz5_question19_option1_fr: "Une année de 366 jours",
+  knowledge_quiz5_question19_option2_fr: "La vitesse de la lumière",
+  knowledge_quiz5_question19_option3_fr: "Une année sur Mercure",
+  knowledge_quiz5_question19_option4_fr: "Une unité de mesure de distance",
+
+  // Q20
+  knowledge_quiz5_question20_fr:
+    "Quelle planète a la rotation la plus rapide ?",
+  knowledge_quiz5_question20_option1_fr: "Terre",
+  knowledge_quiz5_question20_option2_fr: "Saturne",
+  knowledge_quiz5_question20_option3_fr: "Jupiter",
+  knowledge_quiz5_question20_option4_fr: "Mars",
+
+  //Psychological Quiz 1
+  personality_quiz12_question1: "Quelle activité te semble la plus attirante ?",
+  personality_quiz12_question1_option1: "Créer un personnage à partir de zéro",
+  personality_quiz12_question1_option2: "Analyser un mystère policier",
+  personality_quiz12_question1_option3:
+    "Structurer une histoire avec des rebondissements",
+
+  personality_quiz12_question2: "À quel événement préférerais-tu assister ?",
+  personality_quiz12_question2_option1: "Une exposition d’art",
+  personality_quiz12_question2_option2: "Un tournoi d’échecs",
+  personality_quiz12_question2_option3: "Un atelier de design thinking",
+
+  personality_quiz12_question3: "Ton espace de travail est généralement :",
+  personality_quiz12_question3_option1: "Un peu chaotique mais très inspirant",
+  personality_quiz12_question3_option2: "Organisé et étiqueté",
+  personality_quiz12_question3_option3:
+    "Fonctionnel avec une touche esthétique",
+
+  personality_quiz12_question4:
+    "Quand tu fais du brainstorming, tu as tendance à :",
+  personality_quiz12_question4_option1: "Faire des croquis de tes idées",
+  personality_quiz12_question4_option2: "Créer une carte mentale ou un schéma",
+  personality_quiz12_question4_option3: "Alterner entre visuels et notes",
+
+  personality_quiz12_question5: "Choisis une citation qui te parle :",
+  personality_quiz12_question5_option1:
+    "« La créativité, c’est l’intelligence qui s’amuse. »",
+  personality_quiz12_question5_option2: "« Tout doit avoir un sens logique. »",
+  personality_quiz12_question5_option3:
+    "« L’équilibre ne se trouve pas, il se crée. »",
+
+  personality_quiz12_question6: "Que ferais-tu avec un carnet vierge ?",
+  personality_quiz12_question6_option1: "Commencer un journal visuel",
+  personality_quiz12_question6_option2:
+    "Créer un tracker quotidien ou un journal d’habitudes",
+  personality_quiz12_question6_option3:
+    "L’utiliser pour des idées structurées et des croquis",
+
+  personality_quiz12_question7: "Quel type de tâche te fatigue le plus ?",
+  personality_quiz12_question7_option1: "Des tâches techniques répétitives",
+  personality_quiz12_question7_option2: "Un travail sans structure définie",
+  personality_quiz12_question7_option3:
+    "Des tâches sans direction ni retour clair",
+
+  personality_quiz12_question8:
+    "Tu testes une nouvelle application. Que fais-tu en premier ?",
+  personality_quiz12_question8_option1: "Explorer le design et l’expérience",
+  personality_quiz12_question8_option2: "Chercher des bugs ou erreurs logiques",
+  personality_quiz12_question8_option3:
+    "Comparer la structure, la logique et le flux",
+
+  personality_quiz12_question9: "Quel rôle te correspond le mieux ?",
+  personality_quiz12_question9_option1: "Directeur artistique",
+  personality_quiz12_question9_option2: "Analyste de données",
+  personality_quiz12_question9_option3: "Designer UX",
+
+  personality_quiz12_question10: "Quelle phrase te décrit le mieux ?",
+  personality_quiz12_question10_option1: "Mon imagination est sans limite",
+  personality_quiz12_question10_option2:
+    "J’ai besoin de structure pour me concentrer",
+  personality_quiz12_question10_option3: "Je m’adapte entre chaos et ordre",
+
+  personality_quiz12_question11:
+    "Comment exprimes-tu tes idées le plus facilement ?",
+  personality_quiz12_question11_option1:
+    "Avec des croquis, des couleurs ou de la musique",
+  personality_quiz12_question11_option2:
+    "Avec des arguments clairs et des étapes structurées",
+  personality_quiz12_question11_option3: "En combinant visuels et raisonnement",
+
+  personality_quiz12_question12: "Qu’est-ce qui déclenche ta motivation ?",
+  personality_quiz12_question12_option1:
+    "Une image forte, une mélodie ou une émotion",
+  personality_quiz12_question12_option2: "Un problème à résoudre",
+  personality_quiz12_question12_option3:
+    "Un défi qui demande créativité et logique",
+
+  personality_quiz12_question13: "Quel type de réussite te satisfait le plus ?",
+  personality_quiz12_question13_option1:
+    "Terminer un projet artistique personnel",
+  personality_quiz12_question13_option2:
+    "Résoudre quelque chose qui semblait impossible",
+  personality_quiz12_question13_option3:
+    "Créer quelque chose de beau *et* fonctionnel",
+
+  personality_quiz12_question14: "Comment passerais-tu un après-midi libre ?",
+  personality_quiz12_question14_option1: "Peindre, écrire ou faire du DIY",
+  personality_quiz12_question14_option2:
+    "Jouer à des jeux de stratégie ou résoudre des puzzles",
+  personality_quiz12_question14_option3:
+    "Réorganiser un espace ou planifier un projet",
+
+  personality_quiz12_question15: "Quelle phrase décrit ton style de pensée ?",
+  personality_quiz12_question15_option1: "Je pense en images et en émotions",
+  personality_quiz12_question15_option2: "J’analyse des schémas logiques",
+  personality_quiz12_question15_option3:
+    "Je relie les sentiments à une structure",
 };

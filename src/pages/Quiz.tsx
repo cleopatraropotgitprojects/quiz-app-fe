@@ -5,6 +5,7 @@ import KnowledgeResult from "../components/results/knowledge/KnowledgeResult";
 import PsychologicalResult from "../components/results/psychological/PsychologicalResult";
 import EntertainmentResult from "../components/results/entertainment/EntertainmentResult";
 import { useLanguage } from "../contexts/LanguageContext";
+import { en } from "../i18n/en";
 
 const Quiz = () => {
   const { id } = useParams();
@@ -122,7 +123,7 @@ const Quiz = () => {
     if (quizType === "personality") {
       if (selectedOption !== null) {
         const option = currentQuestion.options[selectedOption] as {
-          text: string;
+          key: string;
           scores: Record<string, number>;
         };
         const selectedScores = option.scores;
@@ -138,7 +139,7 @@ const Quiz = () => {
     if (quizType === "psychological") {
       selectedOptions.forEach((index) => {
         const option = currentQuestion.options[index] as {
-          text: string;
+          key: string;
           traits: Record<string, number>;
         };
         const traits = option.traits;
@@ -224,7 +225,7 @@ const Quiz = () => {
 
             <h2 className="text-xl font-bold mb-6">
               <h2 className="text-xl font-bold mb-6">
-                {t(currentQuestion.questionKey)}
+                {t(currentQuestion.questionKey as any)}
               </h2>
             </h2>
 
@@ -258,8 +259,8 @@ const Quiz = () => {
                     {typeof option === "string"
                       ? option
                       : option.key
-                        ? t(option.key)
-                        : option.text}
+                        ? t(option.key as any)
+                        : (option as any).text}
                   </button>
                 );
               })}
@@ -293,13 +294,16 @@ const Quiz = () => {
                 total={questions.length}
                 name={name}
                 time={finalTime}
-                questions={
-                  questions as {
-                    question: string;
-                    options: string[];
-                    correct: number;
-                  }[]
-                }
+                questions={questions.map(q => {
+                  if (q.type === "knowledge") {
+                    return {
+                      question: t(q.questionKey),
+                      options: q.options.map(opt => t(opt)),
+                      correct: q.correct
+                    };
+                  }
+                  throw new Error("Invalid question type for knowledge quiz");
+                })}
                 selectedAnswers={selectedAnswers}
               />
             ) : (

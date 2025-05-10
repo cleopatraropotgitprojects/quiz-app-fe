@@ -782,4 +782,988 @@ export const ro = {
   personality_quiz5_question19_option2: "Paint it Black – Rolling Stones",
   personality_quiz5_question19_option3: "Creep – Radiohead",
   personality_quiz5_question19_option4: "Running Up That Hill – Kate Bush",
+
+  // Knowledge Quiz 2 – Romanian Translation
+
+  // Q1
+  knowledge_quiz2_question1: "Oslo este capitala cărei țări?",
+  knowledge_quiz2_question1_option1: "Norvegia",
+  knowledge_quiz2_question1_option2: "Danemarca",
+  knowledge_quiz2_question1_option3: "Suedia",
+  knowledge_quiz2_question1_option4: "Finlanda",
+
+  // Q2
+  knowledge_quiz2_question2: "Viena este capitala cărei țări?",
+  knowledge_quiz2_question2_option1: "Germania",
+  knowledge_quiz2_question2_option2: "Ungaria",
+  knowledge_quiz2_question2_option3: "Elveția",
+  knowledge_quiz2_question2_option4: "Austria",
+
+  // Q3
+  knowledge_quiz2_question3: "Varșovia este capitala cărei țări?",
+  knowledge_quiz2_question3_option1: "Ucraina",
+  knowledge_quiz2_question3_option2: "Cehia",
+  knowledge_quiz2_question3_option3: "Polonia",
+  knowledge_quiz2_question3_option4: "Belarus",
+
+  // Q4
+  knowledge_quiz2_question4: "Helsinki este capitala cărei țări?",
+  knowledge_quiz2_question4_option1: "Estonia",
+  knowledge_quiz2_question4_option2: "Norvegia",
+  knowledge_quiz2_question4_option3: "Finlanda",
+  knowledge_quiz2_question4_option4: "Letonia",
+
+  // Q5
+  knowledge_quiz2_question5: "Lisabona este capitala cărei țări?",
+  knowledge_quiz2_question5_option1: "Italia",
+  knowledge_quiz2_question5_option2: "Portugalia",
+  knowledge_quiz2_question5_option3: "Grecia",
+  knowledge_quiz2_question5_option4: "Spania",
+
+  // Q6
+  knowledge_quiz2_question6: "Berna este capitala cărei țări?",
+  knowledge_quiz2_question6_option1: "Austria",
+  knowledge_quiz2_question6_option2: "Elveția",
+  knowledge_quiz2_question6_option3: "Germania",
+  knowledge_quiz2_question6_option4: "Luxemburg",
+
+  // Q7
+  knowledge_quiz2_question7: "Bruxelles este capitala cărei țări?",
+  knowledge_quiz2_question7_option1: "Franța",
+  knowledge_quiz2_question7_option2: "Belgia",
+  knowledge_quiz2_question7_option3: "Luxemburg",
+  knowledge_quiz2_question7_option4: "Țările de Jos",
+
+  // Q8
+  knowledge_quiz2_question8: "Atena este capitala cărei țări?",
+  knowledge_quiz2_question8_option1: "Malta",
+  knowledge_quiz2_question8_option2: "Cipru",
+  knowledge_quiz2_question8_option3: "Grecia",
+  knowledge_quiz2_question8_option4: "Italia",
+
+  // Q9
+  knowledge_quiz2_question9: "Reykjavik este capitala cărei țări?",
+  knowledge_quiz2_question9_option1: "Groenlanda",
+  knowledge_quiz2_question9_option2: "Danemarca",
+  knowledge_quiz2_question9_option3: "Norvegia",
+  knowledge_quiz2_question9_option4: "Islanda",
+
+  // Q10
+  knowledge_quiz2_question10: "Zagreb este capitala cărei țări?",
+  knowledge_quiz2_question10_option1: "Serbia",
+  knowledge_quiz2_question10_option2: "Slovenia",
+  knowledge_quiz2_question10_option3: "Croația",
+  knowledge_quiz2_question10_option4: "Muntenegru",
+
+  // Q11
+  knowledge_quiz2_question11: "Skopje este capitala cărei țări?",
+  knowledge_quiz2_question11_option1: "Albania",
+  knowledge_quiz2_question11_option2: "Macedonia de Nord",
+  knowledge_quiz2_question11_option3: "Bulgaria",
+  knowledge_quiz2_question11_option4: "Kosovo",
+
+  // Q12
+  knowledge_quiz2_question12: "Sofia este capitala cărei țări?",
+  knowledge_quiz2_question12_option1: "Bulgaria",
+  knowledge_quiz2_question12_option2: "Serbia",
+  knowledge_quiz2_question12_option3: "Slovacia",
+  knowledge_quiz2_question12_option4: "România",
+
+  // Q13
+  knowledge_quiz2_question13: "Tirana este capitala cărei țări?",
+  knowledge_quiz2_question13_option1: "Bosnia și Herțegovina",
+  knowledge_quiz2_question13_option2: "Macedonia de Nord",
+  knowledge_quiz2_question13_option3: "Kosovo",
+  knowledge_quiz2_question13_option4: "Albania",
+
+  // Q14
+  knowledge_quiz2_question14: "Podgorica este capitala cărei țări?",
+  knowledge_quiz2_question14_option1: "Slovenia",
+  knowledge_quiz2_question14_option2: "Muntenegru",
+  knowledge_quiz2_question14_option3: "Croația",
+  knowledge_quiz2_question14_option4: "Serbia",
+
+  // Q15
+  knowledge_quiz2_question15: "Ljubljana este capitala cărei țări?",
+  knowledge_quiz2_question15_option1: "Austria",
+  knowledge_quiz2_question15_option2: "Slovacia",
+  knowledge_quiz2_question15_option3: "Slovenia",
+  knowledge_quiz2_question15_option4: "Croația",
+
+  // Q16
+  knowledge_quiz2_question16: "Belgrad este capitala cărei țări?",
+  knowledge_quiz2_question16_option1: "Bosnia",
+  knowledge_quiz2_question16_option2: "România",
+  knowledge_quiz2_question16_option3: "Muntenegru",
+  knowledge_quiz2_question16_option4: "Serbia",
+
+  // Q17
+  knowledge_quiz2_question17: "Sarajevo este capitala cărei țări?",
+  knowledge_quiz2_question17_option1: "Serbia",
+  knowledge_quiz2_question17_option2: "Croația",
+  knowledge_quiz2_question17_option3: "Bosnia și Herțegovina",
+  knowledge_quiz2_question17_option4: "Muntenegru",
+
+  // Q18
+  knowledge_quiz2_question18: "Chișinău este capitala cărei țări?",
+  knowledge_quiz2_question18_option1: "Belarus",
+  knowledge_quiz2_question18_option2: "Ucraina",
+  knowledge_quiz2_question18_option3: "România",
+  knowledge_quiz2_question18_option4: "Republica Moldova",
+
+  // Q19
+  knowledge_quiz2_question19: "București este capitala cărei țări?",
+  knowledge_quiz2_question19_option1: "România",
+  knowledge_quiz2_question19_option2: "Moldova",
+  knowledge_quiz2_question19_option3: "Ungaria",
+  knowledge_quiz2_question19_option4: "Bulgaria",
+
+  // Q20
+  knowledge_quiz2_question20: "Tallinn este capitala cărei țări?",
+  knowledge_quiz2_question20_option1: "Lituania",
+  knowledge_quiz2_question20_option2: "Finlanda",
+  knowledge_quiz2_question20_option3: "Letonia",
+  knowledge_quiz2_question20_option4: "Estonia",
+
+  // Knowledge Quiz 1
+
+  // Q1
+  knowledge_quiz1_question1_ro: "Cărui stat aparține orașul Praga?",
+  knowledge_quiz1_question1_option1_ro: "Austria",
+  knowledge_quiz1_question1_option2_ro: "Polonia",
+  knowledge_quiz1_question1_option3_ro: "Republica Cehă",
+  knowledge_quiz1_question1_option4_ro: "Slovacia",
+
+  // Q2
+  knowledge_quiz1_question2_ro: "Ce mare se află la vest de Grecia?",
+  knowledge_quiz1_question2_option1_ro: "Marea Neagră",
+  knowledge_quiz1_question2_option2_ro: "Marea Baltică",
+  knowledge_quiz1_question2_option3_ro: "Marea Ionică",
+  knowledge_quiz1_question2_option4_ro: "Marea Adriatică",
+
+  // Q3
+  knowledge_quiz1_question3_ro:
+    "Care dintre următoarele NU face parte din Scandinavia?",
+  knowledge_quiz1_question3_option1_ro: "Norvegia",
+  knowledge_quiz1_question3_option2_ro: "Suedia",
+  knowledge_quiz1_question3_option3_ro: "Germania",
+  knowledge_quiz1_question3_option4_ro: "Danemarca",
+
+  // Q4
+  knowledge_quiz1_question4_ro: "Budapesta este capitala cărei țări?",
+  knowledge_quiz1_question4_option1_ro: "Ungaria",
+  knowledge_quiz1_question4_option2_ro: "România",
+  knowledge_quiz1_question4_option3_ro: "Austria",
+  knowledge_quiz1_question4_option4_ro: "Bulgaria",
+
+  // Q5
+  knowledge_quiz1_question5_ro: "Fluviul Dunărea traversează câte țări?",
+  knowledge_quiz1_question5_option1_ro: "12",
+  knowledge_quiz1_question5_option2_ro: "8",
+  knowledge_quiz1_question5_option3_ro: "6",
+  knowledge_quiz1_question5_option4_ro: "10",
+
+  // Q6
+  knowledge_quiz1_question6_ro:
+    "Care țară are cel mai nordic punct al Europei?",
+  knowledge_quiz1_question6_option1_ro: "Suedia",
+  knowledge_quiz1_question6_option2_ro: "Finlanda",
+  knowledge_quiz1_question6_option3_ro: "Islanda",
+  knowledge_quiz1_question6_option4_ro: "Norvegia",
+
+  // Q7
+  knowledge_quiz1_question7_ro: "Care este capitala Portugaliei?",
+  knowledge_quiz1_question7_option1_ro: "Lisabona",
+  knowledge_quiz1_question7_option2_ro: "Madrid",
+  knowledge_quiz1_question7_option3_ro: "Porto",
+  knowledge_quiz1_question7_option4_ro: "Barcelona",
+
+  // Q8
+  knowledge_quiz1_question8_ro: "Care țară are graniță cu Franța și Polonia?",
+  knowledge_quiz1_question8_option1_ro: "Austria",
+  knowledge_quiz1_question8_option2_ro: "Germania",
+  knowledge_quiz1_question8_option3_ro: "Republica Cehă",
+  knowledge_quiz1_question8_option4_ro: "Belgia",
+
+  // Q9
+  knowledge_quiz1_question9_ro:
+    "Care este cea mai mare insulă din Marea Mediterană?",
+  knowledge_quiz1_question9_option1_ro: "Sardinia",
+  knowledge_quiz1_question9_option2_ro: "Sicilia",
+  knowledge_quiz1_question9_option3_ro: "Creta",
+  knowledge_quiz1_question9_option4_ro: "Corsica",
+
+  // Q10
+  knowledge_quiz1_question10_ro: "În ce țară se află orașul Bruges?",
+  knowledge_quiz1_question10_option1_ro: "Franța",
+  knowledge_quiz1_question10_option2_ro: "Germania",
+  knowledge_quiz1_question10_option3_ro: "Belgia",
+  knowledge_quiz1_question10_option4_ro: "Țările de Jos",
+
+  // Q11
+  knowledge_quiz1_question11_ro: "Cărui stat aparține regiunea Transilvania?",
+  knowledge_quiz1_question11_option1_ro: "Serbia",
+  knowledge_quiz1_question11_option2_ro: "Ucraina",
+  knowledge_quiz1_question11_option3_ro: "Ungaria",
+  knowledge_quiz1_question11_option4_ro: "România",
+
+  // Q12
+  knowledge_quiz1_question12_ro: "Care este capitala Islandei?",
+  knowledge_quiz1_question12_option1_ro: "Oslo",
+  knowledge_quiz1_question12_option2_ro: "Reykjavik",
+  knowledge_quiz1_question12_option3_ro: "Helsinki",
+  knowledge_quiz1_question12_option4_ro: "Stockholm",
+
+  // Q13
+  knowledge_quiz1_question13_ro:
+    "Care țară are cei mai mulți vulcani din Europa?",
+  knowledge_quiz1_question13_option1_ro: "Islanda",
+  knowledge_quiz1_question13_option2_ro: "Spania",
+  knowledge_quiz1_question13_option3_ro: "Italia",
+  knowledge_quiz1_question13_option4_ro: "Grecia",
+
+  // Q14
+  knowledge_quiz1_question14_ro: "Unde se află Muntele Elbrus?",
+  knowledge_quiz1_question14_option1_ro: "Georgia",
+  knowledge_quiz1_question14_option2_ro: "Rusia",
+  knowledge_quiz1_question14_option3_ro: "Turcia",
+  knowledge_quiz1_question14_option4_ro: "Ucraina",
+
+  // Q15
+  knowledge_quiz1_question15_ro: "Ce mare separă Suedia de statele baltice?",
+  knowledge_quiz1_question15_option1_ro: "Marea Barents",
+  knowledge_quiz1_question15_option2_ro: "Marea Baltică",
+  knowledge_quiz1_question15_option3_ro: "Marea Norvegiei",
+  knowledge_quiz1_question15_option4_ro: "Marea Nordului",
+
+  // Q16
+  knowledge_quiz1_question16_ro:
+    "Care țară europeană este renumită pentru fiorduri?",
+  knowledge_quiz1_question16_option1_ro: "Danemarca",
+  knowledge_quiz1_question16_option2_ro: "Norvegia",
+  knowledge_quiz1_question16_option3_ro: "Suedia",
+  knowledge_quiz1_question16_option4_ro: "Finlanda",
+
+  // Q17
+  knowledge_quiz1_question17_ro: "În ce țară se află orașul Cracovia?",
+  knowledge_quiz1_question17_option1_ro: "Slovacia",
+  knowledge_quiz1_question17_option2_ro: "Republica Cehă",
+  knowledge_quiz1_question17_option3_ro: "Ungaria",
+  knowledge_quiz1_question17_option4_ro: "Polonia",
+
+  // Q18
+  knowledge_quiz1_question18_ro: "Andorra este situată între ce două țări?",
+  knowledge_quiz1_question18_option1_ro: "Franța și Spania",
+  knowledge_quiz1_question18_option2_ro: "Austria și Germania",
+  knowledge_quiz1_question18_option3_ro: "Spania și Portugalia",
+  knowledge_quiz1_question18_option4_ro: "Italia și Elveția",
+
+  // Q19
+  knowledge_quiz1_question19_ro:
+    "Care țară are cea mai lungă linie de coastă din Europa?",
+  knowledge_quiz1_question19_option1_ro: "Italia",
+  knowledge_quiz1_question19_option2_ro: "Grecia",
+  knowledge_quiz1_question19_option3_ro: "Norvegia",
+  knowledge_quiz1_question19_option4_ro: "Regatul Unit",
+
+  // Q20
+  knowledge_quiz1_question20_ro:
+    "Care este cea mai mică țară din Europa ca suprafață?",
+  knowledge_quiz1_question20_option1_ro: "Vatican",
+  knowledge_quiz1_question20_option2_ro: "Liechtenstein",
+  knowledge_quiz1_question20_option3_ro: "San Marino",
+  knowledge_quiz1_question20_option4_ro: "Monaco",
+
+  // Knowledge Quiz 2
+
+  // Q1
+  knowledge_quiz2_question1_ro: "Oslo este capitala cărei țări?",
+  knowledge_quiz2_question1_option1_ro: "Norvegia",
+  knowledge_quiz2_question1_option2_ro: "Danemarca",
+  knowledge_quiz2_question1_option3_ro: "Suedia",
+  knowledge_quiz2_question1_option4_ro: "Finlanda",
+
+  // Q2
+  knowledge_quiz2_question2_ro: "Viena este capitala cărei țări?",
+  knowledge_quiz2_question2_option1_ro: "Germania",
+  knowledge_quiz2_question2_option2_ro: "Ungaria",
+  knowledge_quiz2_question2_option3_ro: "Elveția",
+  knowledge_quiz2_question2_option4_ro: "Austria",
+
+  // Q3
+  knowledge_quiz2_question3_ro: "Varșovia este capitala cărei țări?",
+  knowledge_quiz2_question3_option1_ro: "Ucraina",
+  knowledge_quiz2_question3_option2_ro: "Republica Cehă",
+  knowledge_quiz2_question3_option3_ro: "Polonia",
+  knowledge_quiz2_question3_option4_ro: "Belarus",
+
+  // Q4
+  knowledge_quiz2_question4_ro: "Helsinki este capitala cărei țări?",
+  knowledge_quiz2_question4_option1_ro: "Estonia",
+  knowledge_quiz2_question4_option2_ro: "Norvegia",
+  knowledge_quiz2_question4_option3_ro: "Finlanda",
+  knowledge_quiz2_question4_option4_ro: "Letonia",
+
+  // Q5
+  knowledge_quiz2_question5_ro: "Lisabona este capitala cărei țări?",
+  knowledge_quiz2_question5_option1_ro: "Italia",
+  knowledge_quiz2_question5_option2_ro: "Portugalia",
+  knowledge_quiz2_question5_option3_ro: "Grecia",
+  knowledge_quiz2_question5_option4_ro: "Spania",
+
+  // Q6
+  knowledge_quiz2_question6_ro: "Berna este capitala cărei țări?",
+  knowledge_quiz2_question6_option1_ro: "Austria",
+  knowledge_quiz2_question6_option2_ro: "Elveția",
+  knowledge_quiz2_question6_option3_ro: "Germania",
+  knowledge_quiz2_question6_option4_ro: "Luxemburg",
+
+  // Q7
+  knowledge_quiz2_question7_ro: "Bruxelles este capitala cărei țări?",
+  knowledge_quiz2_question7_option1_ro: "Franța",
+  knowledge_quiz2_question7_option2_ro: "Belgia",
+  knowledge_quiz2_question7_option3_ro: "Luxemburg",
+  knowledge_quiz2_question7_option4_ro: "Țările de Jos",
+
+  // Q8
+  knowledge_quiz2_question8_ro: "Atena este capitala cărei țări?",
+  knowledge_quiz2_question8_option1_ro: "Malta",
+  knowledge_quiz2_question8_option2_ro: "Cipru",
+  knowledge_quiz2_question8_option3_ro: "Grecia",
+  knowledge_quiz2_question8_option4_ro: "Italia",
+
+  // Q9
+  knowledge_quiz2_question9_ro: "Reykjavik este capitala cărei țări?",
+  knowledge_quiz2_question9_option1_ro: "Groenlanda",
+  knowledge_quiz2_question9_option2_ro: "Danemarca",
+  knowledge_quiz2_question9_option3_ro: "Norvegia",
+  knowledge_quiz2_question9_option4_ro: "Islanda",
+
+  // Q10
+  knowledge_quiz2_question10_ro: "Zagreb este capitala cărei țări?",
+  knowledge_quiz2_question10_option1_ro: "Serbia",
+  knowledge_quiz2_question10_option2_ro: "Slovenia",
+  knowledge_quiz2_question10_option3_ro: "Croația",
+  knowledge_quiz2_question10_option4_ro: "Muntenegru",
+
+  // Q11
+  knowledge_quiz2_question11_ro: "Skopje este capitala cărei țări?",
+  knowledge_quiz2_question11_option1_ro: "Albania",
+  knowledge_quiz2_question11_option2_ro: "Macedonia de Nord",
+  knowledge_quiz2_question11_option3_ro: "Bulgaria",
+  knowledge_quiz2_question11_option4_ro: "Kosovo",
+
+  // Q12
+  knowledge_quiz2_question12_ro: "Sofia este capitala cărei țări?",
+  knowledge_quiz2_question12_option1_ro: "Bulgaria",
+  knowledge_quiz2_question12_option2_ro: "Serbia",
+  knowledge_quiz2_question12_option3_ro: "Slovacia",
+  knowledge_quiz2_question12_option4_ro: "România",
+
+  // Q13
+  knowledge_quiz2_question13_ro: "Tirana este capitala cărei țări?",
+  knowledge_quiz2_question13_option1_ro: "Bosnia și Herțegovina",
+  knowledge_quiz2_question13_option2_ro: "Macedonia de Nord",
+  knowledge_quiz2_question13_option3_ro: "Kosovo",
+  knowledge_quiz2_question13_option4_ro: "Albania",
+
+  // Q14
+  knowledge_quiz2_question14_ro: "Podgorica este capitala cărei țări?",
+  knowledge_quiz2_question14_option1_ro: "Slovenia",
+  knowledge_quiz2_question14_option2_ro: "Muntenegru",
+  knowledge_quiz2_question14_option3_ro: "Croația",
+  knowledge_quiz2_question14_option4_ro: "Serbia",
+
+  // Q15
+  knowledge_quiz2_question15_ro: "Ljubljana este capitala cărei țări?",
+  knowledge_quiz2_question15_option1_ro: "Austria",
+  knowledge_quiz2_question15_option2_ro: "Slovacia",
+  knowledge_quiz2_question15_option3_ro: "Slovenia",
+  knowledge_quiz2_question15_option4_ro: "Croația",
+
+  // Q16
+  knowledge_quiz2_question16_ro: "Belgrad este capitala cărei țări?",
+  knowledge_quiz2_question16_option1_ro: "Bosnia",
+  knowledge_quiz2_question16_option2_ro: "România",
+  knowledge_quiz2_question16_option3_ro: "Muntenegru",
+  knowledge_quiz2_question16_option4_ro: "Serbia",
+
+  // Q17
+  knowledge_quiz2_question17_ro: "Sarajevo este capitala cărei țări?",
+  knowledge_quiz2_question17_option1_ro: "Serbia",
+  knowledge_quiz2_question17_option2_ro: "Croația",
+  knowledge_quiz2_question17_option3_ro: "Bosnia și Herțegovina",
+  knowledge_quiz2_question17_option4_ro: "Muntenegru",
+
+  // Q18
+  knowledge_quiz2_question18_ro: "Chișinău este capitala cărei țări?",
+  knowledge_quiz2_question18_option1_ro: "Belarus",
+  knowledge_quiz2_question18_option2_ro: "Ucraina",
+  knowledge_quiz2_question18_option3_ro: "România",
+  knowledge_quiz2_question18_option4_ro: "Republica Moldova",
+
+  // Q19
+  knowledge_quiz2_question19_ro: "București este capitala cărei țări?",
+  knowledge_quiz2_question19_option1_ro: "România",
+  knowledge_quiz2_question19_option2_ro: "Moldova",
+  knowledge_quiz2_question19_option3_ro: "Ungaria",
+  knowledge_quiz2_question19_option4_ro: "Bulgaria",
+
+  // Q20
+  knowledge_quiz2_question20_ro: "Tallinn este capitala cărei țări?",
+  knowledge_quiz2_question20_option1_ro: "Lituania",
+  knowledge_quiz2_question20_option2_ro: "Finlanda",
+  knowledge_quiz2_question20_option3_ro: "Letonia",
+  knowledge_quiz2_question20_option4_ro: "Estonia",
+
+  // Knowledge Quiz 3
+
+  // Q1
+  knowledge_quiz3_question1_ro:
+    "Care este cea mai mare planetă din Sistemul Solar?",
+  knowledge_quiz3_question1_option1_ro: "Pământ",
+  knowledge_quiz3_question1_option2_ro: "Marte",
+  knowledge_quiz3_question1_option3_ro: "Saturn",
+  knowledge_quiz3_question1_option4_ro: "Jupiter",
+
+  // Q2
+  knowledge_quiz3_question2_ro: "Cine a pictat Mona Lisa?",
+  knowledge_quiz3_question2_option1_ro: "Van Gogh",
+  knowledge_quiz3_question2_option2_ro: "Michelangelo",
+  knowledge_quiz3_question2_option3_ro: "Picasso",
+  knowledge_quiz3_question2_option4_ro: "Leonardo da Vinci",
+
+  // Q3
+  knowledge_quiz3_question3_ro:
+    "În ce an s-a încheiat al Doilea Război Mondial?",
+  knowledge_quiz3_question3_option1_ro: "1945",
+  knowledge_quiz3_question3_option2_ro: "1939",
+  knowledge_quiz3_question3_option3_ro: "1950",
+  knowledge_quiz3_question3_option4_ro: "1942",
+
+  // Q4
+  knowledge_quiz3_question4_ro: "Care este capitala Canadei?",
+  knowledge_quiz3_question4_option1_ro: "Toronto",
+  knowledge_quiz3_question4_option2_ro: "Montreal",
+  knowledge_quiz3_question4_option3_ro: "Vancouver",
+  knowledge_quiz3_question4_option4_ro: "Ottawa",
+
+  // Q5
+  knowledge_quiz3_question5_ro:
+    "Care organ este responsabil pentru pomparea sângelui?",
+  knowledge_quiz3_question5_option1_ro: "Inima",
+  knowledge_quiz3_question5_option2_ro: "Ficatul",
+  knowledge_quiz3_question5_option3_ro: "Plămânii",
+  knowledge_quiz3_question5_option4_ro: "Rinichii",
+
+  // Q6
+  knowledge_quiz3_question6_ro: "Câte continente există?",
+  knowledge_quiz3_question6_option1_ro: "7",
+  knowledge_quiz3_question6_option2_ro: "8",
+  knowledge_quiz3_question6_option3_ro: "6",
+  knowledge_quiz3_question6_option4_ro: "5",
+
+  // Q7
+  knowledge_quiz3_question7_ro: "Care este cel mai lung fluviu din lume?",
+  knowledge_quiz3_question7_option1_ro: "Yangtze",
+  knowledge_quiz3_question7_option2_ro: "Amazon",
+  knowledge_quiz3_question7_option3_ro: "Mississippi",
+  knowledge_quiz3_question7_option4_ro: "Nil",
+
+  // Q8
+  knowledge_quiz3_question8_ro: "Care este simbolul chimic pentru aur?",
+  knowledge_quiz3_question8_option1_ro: "Au",
+  knowledge_quiz3_question8_option2_ro: "Ag",
+  knowledge_quiz3_question8_option3_ro: "G",
+  knowledge_quiz3_question8_option4_ro: "Go",
+
+  // Q9
+  knowledge_quiz3_question9_ro:
+    "Care planetă este cunoscută drept Planeta Roșie?",
+  knowledge_quiz3_question9_option1_ro: "Jupiter",
+  knowledge_quiz3_question9_option2_ro: "Marte",
+  knowledge_quiz3_question9_option3_ro: "Venus",
+  knowledge_quiz3_question9_option4_ro: "Mercur",
+
+  // Q10
+  knowledge_quiz3_question10_ro:
+    "Care om de știință a formulat teoria relativității?",
+  knowledge_quiz3_question10_option1_ro: "Einstein",
+  knowledge_quiz3_question10_option2_ro: "Newton",
+  knowledge_quiz3_question10_option3_ro: "Bohr",
+  knowledge_quiz3_question10_option4_ro: "Tesla",
+
+  // Q11
+  knowledge_quiz3_question11_ro: "Care este capitala Australiei?",
+  knowledge_quiz3_question11_option1_ro: "Canberra",
+  knowledge_quiz3_question11_option2_ro: "Sydney",
+  knowledge_quiz3_question11_option3_ro: "Brisbane",
+  knowledge_quiz3_question11_option4_ro: "Melbourne",
+
+  // Q12
+  knowledge_quiz3_question12_ro: "Ce țară a inventat pizza?",
+  knowledge_quiz3_question12_option1_ro: "Grecia",
+  knowledge_quiz3_question12_option2_ro: "Spania",
+  knowledge_quiz3_question12_option3_ro: "Franța",
+  knowledge_quiz3_question12_option4_ro: "Italia",
+
+  // Q13
+  knowledge_quiz3_question13_ro:
+    "Câți jucători sunt într-o echipă de fotbal (pe teren)?",
+  knowledge_quiz3_question13_option1_ro: "9",
+  knowledge_quiz3_question13_option2_ro: "11",
+  knowledge_quiz3_question13_option3_ro: "10",
+  knowledge_quiz3_question13_option4_ro: "12",
+
+  // Q14
+  knowledge_quiz3_question14_ro:
+    "Ce element este reprezentat prin 'O' în tabelul periodic?",
+  knowledge_quiz3_question14_option1_ro: "Osmiu",
+  knowledge_quiz3_question14_option2_ro: "Oxigen",
+  knowledge_quiz3_question14_option3_ro: "Ozon",
+  knowledge_quiz3_question14_option4_ro: "Oxid",
+
+  // Q15
+  knowledge_quiz3_question15_ro: "Ce limbă are cei mai mulți vorbitori nativi?",
+  knowledge_quiz3_question15_option1_ro: "Chineză mandarină",
+  knowledge_quiz3_question15_option2_ro: "Engleză",
+  knowledge_quiz3_question15_option3_ro: "Hindi",
+  knowledge_quiz3_question15_option4_ro: "Spaniolă",
+
+  // Q16
+  knowledge_quiz3_question16_ro: "Care este cel mai înalt munte de pe Pământ?",
+  knowledge_quiz3_question16_option1_ro: "K2",
+  knowledge_quiz3_question16_option2_ro: "Makalu",
+  knowledge_quiz3_question16_option3_ro: "Kangchenjunga",
+  knowledge_quiz3_question16_option4_ro: "Everest",
+
+  // Q17
+  knowledge_quiz3_question17_ro: "Cine a scris 'Romeo și Julieta'?",
+  knowledge_quiz3_question17_option1_ro: "Dickens",
+  knowledge_quiz3_question17_option2_ro: "Homer",
+  knowledge_quiz3_question17_option3_ro: "Dante",
+  knowledge_quiz3_question17_option4_ro: "Shakespeare",
+
+  // Q18
+  knowledge_quiz3_question18_ro: "Ce înseamnă 'WWW' într-un browser web?",
+  knowledge_quiz3_question18_option1_ro: "Web World Wide",
+  knowledge_quiz3_question18_option2_ro: "Wide Web World",
+  knowledge_quiz3_question18_option3_ro: "World Wide Web",
+  knowledge_quiz3_question18_option4_ro: "Wide Web Worldnet",
+
+  // Q19
+  knowledge_quiz3_question19_ro:
+    "Ce animal este cunoscut drept 'Regele junglei'?",
+  knowledge_quiz3_question19_option1_ro: "Tigru",
+  knowledge_quiz3_question19_option2_ro: "Leu",
+  knowledge_quiz3_question19_option3_ro: "Elefant",
+  knowledge_quiz3_question19_option4_ro: "Panteră",
+
+  // Q20
+  knowledge_quiz3_question20_ro: "Câte culori are un curcubeu?",
+  knowledge_quiz3_question20_option1_ro: "5",
+  knowledge_quiz3_question20_option2_ro: "8",
+  knowledge_quiz3_question20_option3_ro: "7",
+  knowledge_quiz3_question20_option4_ro: "6",
+
+  // Knowledge Quiz 4
+
+  // Q1
+  knowledge_quiz4_question1_ro: "În ce an a început Primul Război Mondial?",
+  knowledge_quiz4_question1_option1_ro: "1918",
+  knowledge_quiz4_question1_option2_ro: "1916",
+  knowledge_quiz4_question1_option3_ro: "1912",
+  knowledge_quiz4_question1_option4_ro: "1914",
+
+  // Q2
+  knowledge_quiz4_question2_ro:
+    "Cine a fost prim-ministrul Marii Britanii în cea mai mare parte a celui de-Al Doilea Război Mondial?",
+  knowledge_quiz4_question2_option1_ro: "Neville Chamberlain",
+  knowledge_quiz4_question2_option2_ro: "Margaret Thatcher",
+  knowledge_quiz4_question2_option3_ro: "Winston Churchill",
+  knowledge_quiz4_question2_option4_ro: "Tony Blair",
+
+  // Q3
+  knowledge_quiz4_question3_ro: "În ce an a căzut Zidul Berlinului?",
+  knowledge_quiz4_question3_option1_ro: "1991",
+  knowledge_quiz4_question3_option2_ro: "1987",
+  knowledge_quiz4_question3_option3_ro: "1993",
+  knowledge_quiz4_question3_option4_ro: "1989",
+
+  // Q4
+  knowledge_quiz4_question4_ro: "Care țară a lansat primul satelit artificial?",
+  knowledge_quiz4_question4_option1_ro: "SUA",
+  knowledge_quiz4_question4_option2_ro: "China",
+  knowledge_quiz4_question4_option3_ro: "Germania",
+  knowledge_quiz4_question4_option4_ro: "Rusia",
+
+  // Q5
+  knowledge_quiz4_question5_ro:
+    "Cine a fost asasinat în 1963 în Dallas, Texas?",
+  knowledge_quiz4_question5_option1_ro: "John F. Kennedy",
+  knowledge_quiz4_question5_option2_ro: "Robert Kennedy",
+  knowledge_quiz4_question5_option3_ro: "Martin Luther King Jr.",
+  knowledge_quiz4_question5_option4_ro: "Ronald Reagan",
+
+  // Q6
+  knowledge_quiz4_question6_ro:
+    "În ce an s-a încheiat Al Doilea Război Mondial?",
+  knowledge_quiz4_question6_option1_ro: "1950",
+  knowledge_quiz4_question6_option2_ro: "1945",
+  knowledge_quiz4_question6_option3_ro: "1939",
+  knowledge_quiz4_question6_option4_ro: "1942",
+
+  // Q7
+  knowledge_quiz4_question7_ro:
+    "Cum se numea liderul pentru drepturile civile care a rostit discursul 'I Have a Dream'?",
+  knowledge_quiz4_question7_option1_ro: "Malcolm X",
+  knowledge_quiz4_question7_option2_ro: "Martin Luther King Jr.",
+  knowledge_quiz4_question7_option3_ro: "Frederick Douglass",
+  knowledge_quiz4_question7_option4_ro: "Barack Obama",
+
+  // Q8
+  knowledge_quiz4_question8_ro: "Când s-a destrămat Uniunea Sovietică?",
+  knowledge_quiz4_question8_option1_ro: "1989",
+  knowledge_quiz4_question8_option2_ro: "1992",
+  knowledge_quiz4_question8_option3_ro: "1991",
+  knowledge_quiz4_question8_option4_ro: "1990",
+
+  // Q9
+  knowledge_quiz4_question9_ro:
+    "Care război a fost purtat între Coreea de Nord și Coreea de Sud?",
+  knowledge_quiz4_question9_option1_ro: "Războiul din Coreea",
+  knowledge_quiz4_question9_option2_ro: "Al Doilea Război Mondial",
+  knowledge_quiz4_question9_option3_ro: "Războiul din Vietnam",
+  knowledge_quiz4_question9_option4_ro: "Războiul Rece",
+
+  // Q10
+  knowledge_quiz4_question10_ro: "Cum se numea primul om care a pășit pe Lună?",
+  knowledge_quiz4_question10_option1_ro: "Michael Collins",
+  knowledge_quiz4_question10_option2_ro: "Neil Armstrong",
+  knowledge_quiz4_question10_option3_ro: "Yuri Gagarin",
+  knowledge_quiz4_question10_option4_ro: "Buzz Aldrin",
+
+  // Q11
+  knowledge_quiz4_question11_ro: "Ce țară a condus Adolf Hitler?",
+  knowledge_quiz4_question11_option1_ro: "Germania",
+  knowledge_quiz4_question11_option2_ro: "Franța",
+  knowledge_quiz4_question11_option3_ro: "Austria",
+  knowledge_quiz4_question11_option4_ro: "Rusia",
+
+  // Q12
+  knowledge_quiz4_question12_ro: "În ce an s-a scufundat Titanicul?",
+  knowledge_quiz4_question12_option1_ro: "1914",
+  knowledge_quiz4_question12_option2_ro: "1920",
+  knowledge_quiz4_question12_option3_ro: "1912",
+  knowledge_quiz4_question12_option4_ro: "1905",
+
+  // Q13
+  knowledge_quiz4_question13_ro:
+    "Ce conflict al Războiului Rece a avut loc în Asia de Sud-Est în anii 1960–1970?",
+  knowledge_quiz4_question13_option1_ro: "Războiul din Vietnam",
+  knowledge_quiz4_question13_option2_ro: "Războiul din Coreea",
+  knowledge_quiz4_question13_option3_ro: "Războiul din Golf",
+  knowledge_quiz4_question13_option4_ro: "Războiul din Afganistan",
+
+  // Q14
+  knowledge_quiz4_question14_ro:
+    "Ce zid a fost simbolul divizării în Germania în timpul Războiului Rece?",
+  knowledge_quiz4_question14_option1_ro: "Marele Zid",
+  knowledge_quiz4_question14_option2_ro: "Zidul de Vest",
+  knowledge_quiz4_question14_option3_ro: "Zidul Berlinului",
+  knowledge_quiz4_question14_option4_ro: "Zidul de Fier",
+
+  // Q15
+  knowledge_quiz4_question15_ro:
+    "Când a fost fondată Organizația Națiunilor Unite?",
+  knowledge_quiz4_question15_option1_ro: "1942",
+  knowledge_quiz4_question15_option2_ro: "1939",
+  knowledge_quiz4_question15_option3_ro: "1945",
+  knowledge_quiz4_question15_option4_ro: "1950",
+
+  // Q16
+  knowledge_quiz4_question16_ro:
+    "Cine a fost prima femeie prim-ministru a Marii Britanii?",
+  knowledge_quiz4_question16_option1_ro: "Margaret Thatcher",
+  knowledge_quiz4_question16_option2_ro: "Theresa May",
+  knowledge_quiz4_question16_option3_ro: "Angela Merkel",
+  knowledge_quiz4_question16_option4_ro: "Indira Gandhi",
+
+  // Q17
+  knowledge_quiz4_question17_ro:
+    "În ce țară a avut loc dezastrul nuclear de la Cernobîl?",
+  knowledge_quiz4_question17_option1_ro: "Belarus",
+  knowledge_quiz4_question17_option2_ro: "Ucraina",
+  knowledge_quiz4_question17_option3_ro: "Rusia",
+  knowledge_quiz4_question17_option4_ro: "Kazahstan",
+
+  // Q18
+  knowledge_quiz4_question18_ro:
+    "Cine a fost liderul Uniunii Sovietice în timpul celui de-Al Doilea Război Mondial?",
+  knowledge_quiz4_question18_option1_ro: "Lenin",
+  knowledge_quiz4_question18_option2_ro: "Stalin",
+  knowledge_quiz4_question18_option3_ro: "Troțki",
+  knowledge_quiz4_question18_option4_ro: "Gorbaciov",
+
+  // Q19
+  knowledge_quiz4_question19_ro:
+    "Cum se numea tratatul care a pus capăt Primului Război Mondial?",
+  knowledge_quiz4_question19_option1_ro: "Tratatul de la Paris",
+  knowledge_quiz4_question19_option2_ro: "Tratatul de la Versailles",
+  knowledge_quiz4_question19_option3_ro: "Pactul de la Yalta",
+  knowledge_quiz4_question19_option4_ro: "Acordul de la Potsdam",
+
+  // Q20
+  knowledge_quiz4_question20_ro:
+    "Ce zid a căzut în 1989, marcând sfârșitul Războiului Rece?",
+  knowledge_quiz4_question20_option1_ro: "Zidul de Fier",
+  knowledge_quiz4_question20_option2_ro: "Zidul de Vest",
+  knowledge_quiz4_question20_option3_ro: "Marele Zid",
+  knowledge_quiz4_question20_option4_ro: "Zidul Berlinului",
+
+  // Knowledge Quiz 5
+
+  // Q1
+  knowledge_quiz5_question1_ro:
+    "Ce planetă este cunoscută drept Planeta Roșie?",
+  knowledge_quiz5_question1_option1_ro: "Mercur",
+  knowledge_quiz5_question1_option2_ro: "Venus",
+  knowledge_quiz5_question1_option3_ro: "Jupiter",
+  knowledge_quiz5_question1_option4_ro: "Marte",
+
+  // Q2
+  knowledge_quiz5_question2_ro:
+    "Care este cea mai mare planetă din sistemul nostru solar?",
+  knowledge_quiz5_question2_option1_ro: "Jupiter",
+  knowledge_quiz5_question2_option2_ro: "Pământ",
+  knowledge_quiz5_question2_option3_ro: "Saturn",
+  knowledge_quiz5_question2_option4_ro: "Neptun",
+
+  // Q3
+  knowledge_quiz5_question3_ro: "Câte planete sunt în sistemul solar?",
+  knowledge_quiz5_question3_option1_ro: "7",
+  knowledge_quiz5_question3_option2_ro: "9",
+  knowledge_quiz5_question3_option3_ro: "8",
+  knowledge_quiz5_question3_option4_ro: "10",
+
+  // Q4
+  knowledge_quiz5_question4_ro: "Care planetă are cele mai multe luni?",
+  knowledge_quiz5_question4_option1_ro: "Uranus",
+  knowledge_quiz5_question4_option2_ro: "Marte",
+  knowledge_quiz5_question4_option3_ro: "Jupiter",
+  knowledge_quiz5_question4_option4_ro: "Saturn",
+
+  // Q5
+  knowledge_quiz5_question5_ro: "Care este cea mai apropiată planetă de Soare?",
+  knowledge_quiz5_question5_option1_ro: "Mercur",
+  knowledge_quiz5_question5_option2_ro: "Pământ",
+  knowledge_quiz5_question5_option3_ro: "Marte",
+  knowledge_quiz5_question5_option4_ro: "Venus",
+
+  // Q6
+  knowledge_quiz5_question6_ro:
+    "Ce planetă este cunoscută pentru inelele sale?",
+  knowledge_quiz5_question6_option1_ro: "Jupiter",
+  knowledge_quiz5_question6_option2_ro: "Saturn",
+  knowledge_quiz5_question6_option3_ro: "Neptun",
+  knowledge_quiz5_question6_option4_ro: "Uranus",
+
+  // Q7
+  knowledge_quiz5_question7_ro: "În ce galaxie se află Pământul?",
+  knowledge_quiz5_question7_option1_ro: "Calea Lactee",
+  knowledge_quiz5_question7_option2_ro: "Andromeda",
+  knowledge_quiz5_question7_option3_ro: "Whirlpool",
+  knowledge_quiz5_question7_option4_ro: "Triangulum",
+
+  // Q8
+  knowledge_quiz5_question8_ro: "Cum se numește luna Pământului?",
+  knowledge_quiz5_question8_option1_ro: "Luna",
+  knowledge_quiz5_question8_option2_ro: "Luna (lat.)",
+  knowledge_quiz5_question8_option3_ro: "Selene",
+  knowledge_quiz5_question8_option4_ro: "Phobos",
+
+  // Q9
+  knowledge_quiz5_question9_ro:
+    "Care planetă are o zi mai lungă decât anul ei?",
+  knowledge_quiz5_question9_option1_ro: "Mercur",
+  knowledge_quiz5_question9_option2_ro: "Jupiter",
+  knowledge_quiz5_question9_option3_ro: "Marte",
+  knowledge_quiz5_question9_option4_ro: "Venus",
+
+  // Q10
+  knowledge_quiz5_question10_ro:
+    "Care este cea mai rece planetă din sistemul solar?",
+  knowledge_quiz5_question10_option1_ro: "Saturn",
+  knowledge_quiz5_question10_option2_ro: "Neptun",
+  knowledge_quiz5_question10_option3_ro: "Uranus",
+  knowledge_quiz5_question10_option4_ro: "Pluto",
+
+  // Q11
+  knowledge_quiz5_question11_ro: "Ce planetă are cea mai puternică gravitație?",
+  knowledge_quiz5_question11_option1_ro: "Pământ",
+  knowledge_quiz5_question11_option2_ro: "Jupiter",
+  knowledge_quiz5_question11_option3_ro: "Saturn",
+  knowledge_quiz5_question11_option4_ro: "Neptun",
+
+  // Q12
+  knowledge_quiz5_question12_ro: "Ce este o gaură neagră?",
+  knowledge_quiz5_question12_option1_ro: "O planetă",
+  knowledge_quiz5_question12_option2_ro: "Un tip de lună",
+  knowledge_quiz5_question12_option3_ro: "O gaură de vierme",
+  knowledge_quiz5_question12_option4_ro: "O stea prăbușită",
+
+  // Q13
+  knowledge_quiz5_question13_ro: "Ce planetă este înclinată pe o parte?",
+  knowledge_quiz5_question13_option1_ro: "Jupiter",
+  knowledge_quiz5_question13_option2_ro: "Uranus",
+  knowledge_quiz5_question13_option3_ro: "Neptun",
+  knowledge_quiz5_question13_option4_ro: "Marte",
+
+  // Q14
+  knowledge_quiz5_question14_ro:
+    "Care a fost prima țară care a trimis un om în spațiu?",
+  knowledge_quiz5_question14_option1_ro: "Germania",
+  knowledge_quiz5_question14_option2_ro: "SUA",
+  knowledge_quiz5_question14_option3_ro: "China",
+  knowledge_quiz5_question14_option4_ro: "Uniunea Sovietică",
+
+  // Q15
+  knowledge_quiz5_question15_ro: "Cine a fost primul om în spațiu?",
+  knowledge_quiz5_question15_option1_ro: "Neil Armstrong",
+  knowledge_quiz5_question15_option2_ro: "Buzz Aldrin",
+  knowledge_quiz5_question15_option3_ro: "Yuri Gagarin",
+  knowledge_quiz5_question15_option4_ro: "Michael Collins",
+
+  // Q16
+  knowledge_quiz5_question16_ro:
+    "Care este cea mai îndepărtată planetă față de Soare?",
+  knowledge_quiz5_question16_option1_ro: "Pluto",
+  knowledge_quiz5_question16_option2_ro: "Neptun",
+  knowledge_quiz5_question16_option3_ro: "Saturn",
+  knowledge_quiz5_question16_option4_ro: "Uranus",
+
+  // Q17
+  knowledge_quiz5_question17_ro:
+    "Cum se numește cel mai cunoscut telescop spațial al NASA?",
+  knowledge_quiz5_question17_option1_ro: "Spitzer",
+  knowledge_quiz5_question17_option2_ro: "Hubble",
+  knowledge_quiz5_question17_option3_ro: "James Webb",
+  knowledge_quiz5_question17_option4_ro: "Kepler",
+
+  // Q18
+  knowledge_quiz5_question18_ro:
+    "Ce planetă este cunoscută drept 'Steaua de Seară'?",
+  knowledge_quiz5_question18_option1_ro: "Saturn",
+  knowledge_quiz5_question18_option2_ro: "Marte",
+  knowledge_quiz5_question18_option3_ro: "Venus",
+  knowledge_quiz5_question18_option4_ro: "Jupiter",
+
+  // Q19
+  knowledge_quiz5_question19_ro: "Ce este un an-lumină?",
+  knowledge_quiz5_question19_option1_ro: "Un an cu 366 de zile",
+  knowledge_quiz5_question19_option2_ro: "Viteza luminii",
+  knowledge_quiz5_question19_option3_ro: "Un an pe Mercur",
+  knowledge_quiz5_question19_option4_ro: "O unitate de măsură a distanței",
+
+  // Q20
+  knowledge_quiz5_question20_ro: "Ce planetă are cea mai rapidă rotație?",
+  knowledge_quiz5_question20_option1_ro: "Pământ",
+  knowledge_quiz5_question20_option2_ro: "Saturn",
+  knowledge_quiz5_question20_option3_ro: "Jupiter",
+  knowledge_quiz5_question20_option4_ro: "Marte",
+
+  //Psychological Quiz 1
+  personality_quiz12_question1: "Ce activitate ți se pare mai atractivă?",
+  personality_quiz12_question1_option1: "Să creezi un personaj de la zero",
+  personality_quiz12_question1_option2: "Să analizezi un mister detectivistic",
+  personality_quiz12_question1_option3:
+    "Să structurezi o poveste cu întorsături de situație",
+
+  personality_quiz12_question2: "La ce ai prefera să participi?",
+  personality_quiz12_question2_option1: "O expoziție de artă",
+  personality_quiz12_question2_option2: "Un turneu de șah",
+  personality_quiz12_question2_option3: "Un atelier de design thinking",
+
+  personality_quiz12_question3: "Spațiul tău de lucru este de obicei:",
+  personality_quiz12_question3_option1: "Ușor haotic, dar plin de inspirație",
+  personality_quiz12_question3_option2: "Organizat și etichetat",
+  personality_quiz12_question3_option3: "Funcțional, cu un strop de estetică",
+
+  personality_quiz12_question4: "Când faci brainstorming, de obicei:",
+  personality_quiz12_question4_option1: "Îți schițezi ideile",
+  personality_quiz12_question4_option2:
+    "Creezi o hartă mintală sau un flux logic",
+  personality_quiz12_question4_option3: "Alternezi între vizual și notițe",
+
+  personality_quiz12_question5: "Alege un citat care rezonează cu tine:",
+  personality_quiz12_question5_option1:
+    "„Creativitatea este inteligența care se distrează.”",
+  personality_quiz12_question5_option2: "„Totul ar trebui să aibă logică.”",
+  personality_quiz12_question5_option3:
+    "„Echilibrul nu se găsește, se creează.”",
+
+  personality_quiz12_question6: "Ce ai face cu un caiet gol?",
+  personality_quiz12_question6_option1: "Aș începe un jurnal vizual",
+  personality_quiz12_question6_option2:
+    "Aș scrie un tracker zilnic sau un jurnal de obiceiuri",
+  personality_quiz12_question6_option3:
+    "L-aș folosi pentru idei structurate și schițe",
+
+  personality_quiz12_question7: "Ce tip de sarcină te epuizează cel mai mult?",
+  personality_quiz12_question7_option1: "Taskuri tehnice repetitive",
+  personality_quiz12_question7_option2: "Muncă fără structură clară",
+  personality_quiz12_question7_option3:
+    "Taskuri fără direcție clară sau feedback",
+
+  personality_quiz12_question8:
+    "Primești o aplicație nouă de testat. Ce faci prima dată?",
+  personality_quiz12_question8_option1: "Explorez designul și experiența",
+  personality_quiz12_question8_option2: "Caut buguri și greșeli logice",
+  personality_quiz12_question8_option3: "Compar structura, logica și flow-ul",
+
+  personality_quiz12_question9: "Ce rol ți s-ar potrivi cel mai bine?",
+  personality_quiz12_question9_option1: "Director Creativ",
+  personality_quiz12_question9_option2: "Analist de Date",
+  personality_quiz12_question9_option3: "UX Designer",
+
+  personality_quiz12_question10: "Care frază te descrie mai bine?",
+  personality_quiz12_question10_option1: "Imaginația mea o ia razna",
+  personality_quiz12_question10_option2:
+    "Am nevoie de structură ca să mă concentrez",
+  personality_quiz12_question10_option3: "Mă adaptez între haos și ordine",
+
+  personality_quiz12_question11: "Cum îți exprimi cel mai bine ideile?",
+  personality_quiz12_question11_option1: "Prin schițe, culori sau muzică",
+  personality_quiz12_question11_option2:
+    "Prin argumente clare și pași structurați",
+  personality_quiz12_question11_option3: "Combinând vizualul cu raționamentul",
+
+  personality_quiz12_question12: "Ce îți aprinde motivația?",
+  personality_quiz12_question12_option1:
+    "O imagine puternică, o melodie sau o emoție",
+  personality_quiz12_question12_option2: "O problemă care trebuie rezolvată",
+  personality_quiz12_question12_option3:
+    "O provocare care cere imaginație și logică",
+
+  personality_quiz12_question13:
+    "Ce tip de reușită ți se pare cea mai împlinitoare?",
+  personality_quiz12_question13_option1:
+    "Finalizarea unui proiect artistic personal",
+  personality_quiz12_question13_option2: "Rezolvarea a ceva ce părea imposibil",
+  personality_quiz12_question13_option3:
+    "Crearea a ceva frumos *și* funcțional",
+
+  personality_quiz12_question14: "Cum ai petrece o după-amiază liberă?",
+  personality_quiz12_question14_option1:
+    "Pictând, scriind sau făcând ceva manual",
+  personality_quiz12_question14_option2:
+    "Jucând jocuri de strategie sau puzzle-uri",
+  personality_quiz12_question14_option3:
+    "Redecorând un spațiu sau planificând ceva nou",
+
+  personality_quiz12_question15:
+    "Ce frază îți descrie cel mai bine stilul de gândire?",
+  personality_quiz12_question15_option1: "Gândesc în imagini și emoții",
+  personality_quiz12_question15_option2: "Analizez tipare și logică",
+  personality_quiz12_question15_option3: "Conectez emoțiile cu structura",
 };

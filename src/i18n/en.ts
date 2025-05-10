@@ -762,4 +762,831 @@ export const en = {
   personality_quiz5_question19_option2: "Paint it Black – Rolling Stones",
   personality_quiz5_question19_option3: "Creep – Radiohead",
   personality_quiz5_question19_option4: "Running Up That Hill – Kate Bush",
+
+  // Knowledge Quiz 1
+
+  // Q1
+  knowledge_quiz1_question1: "Which country does the city of Prague belong to?",
+  knowledge_quiz1_question1_option1: "Austria",
+  knowledge_quiz1_question1_option2: "Poland",
+  knowledge_quiz1_question1_option3: "Czech Republic",
+  knowledge_quiz1_question1_option4: "Slovakia",
+
+  // Q2
+  knowledge_quiz1_question2: "Which sea borders Greece to the west?",
+  knowledge_quiz1_question2_option1: "Black Sea",
+  knowledge_quiz1_question2_option2: "Baltic Sea",
+  knowledge_quiz1_question2_option3: "Ionian Sea",
+  knowledge_quiz1_question2_option4: "Adriatic Sea",
+
+  // Q3
+  knowledge_quiz1_question3:
+    "Which of the following is NOT part of Scandinavia?",
+  knowledge_quiz1_question3_option1: "Norway",
+  knowledge_quiz1_question3_option2: "Sweden",
+  knowledge_quiz1_question3_option3: "Germany",
+  knowledge_quiz1_question3_option4: "Denmark",
+
+  // Q4
+  knowledge_quiz1_question4: "Which country is Budapest the capital of?",
+  knowledge_quiz1_question4_option1: "Hungary",
+  knowledge_quiz1_question4_option2: "Romania",
+  knowledge_quiz1_question4_option3: "Austria",
+  knowledge_quiz1_question4_option4: "Bulgaria",
+
+  // Q5
+  knowledge_quiz1_question5:
+    "The Danube River flows through how many countries?",
+  knowledge_quiz1_question5_option1: "12",
+  knowledge_quiz1_question5_option2: "8",
+  knowledge_quiz1_question5_option3: "6",
+  knowledge_quiz1_question5_option4: "10",
+
+  // Q6
+  knowledge_quiz1_question6:
+    "Which country has the northernmost point in Europe?",
+  knowledge_quiz1_question6_option1: "Sweden",
+  knowledge_quiz1_question6_option2: "Finland",
+  knowledge_quiz1_question6_option3: "Iceland",
+  knowledge_quiz1_question6_option4: "Norway",
+
+  // Q7
+  knowledge_quiz1_question7: "What is the capital of Portugal?",
+  knowledge_quiz1_question7_option1: "Lisbon",
+  knowledge_quiz1_question7_option2: "Madrid",
+  knowledge_quiz1_question7_option3: "Porto",
+  knowledge_quiz1_question7_option4: "Barcelona",
+
+  // Q8
+  knowledge_quiz1_question8:
+    "Which country shares a border with both France and Poland?",
+  knowledge_quiz1_question8_option1: "Austria",
+  knowledge_quiz1_question8_option2: "Germany",
+  knowledge_quiz1_question8_option3: "Czech Republic",
+  knowledge_quiz1_question8_option4: "Belgium",
+
+  // Q9
+  knowledge_quiz1_question9:
+    "What is the largest island in the Mediterranean Sea?",
+  knowledge_quiz1_question9_option1: "Sardinia",
+  knowledge_quiz1_question9_option2: "Sicily",
+  knowledge_quiz1_question9_option3: "Crete",
+  knowledge_quiz1_question9_option4: "Corsica",
+
+  // Q10
+  knowledge_quiz1_question10: "Which country is the city of Bruges located in?",
+  knowledge_quiz1_question10_option1: "France",
+  knowledge_quiz1_question10_option2: "Germany",
+  knowledge_quiz1_question10_option3: "Belgium",
+  knowledge_quiz1_question10_option4: "Netherlands",
+
+  // Q11
+  knowledge_quiz1_question11: "Which country does Transylvania belong to?",
+  knowledge_quiz1_question11_option1: "Serbia",
+  knowledge_quiz1_question11_option2: "Ukraine",
+  knowledge_quiz1_question11_option3: "Hungary",
+  knowledge_quiz1_question11_option4: "Romania",
+
+  // Q12
+  knowledge_quiz1_question12: "What is the capital of Iceland?",
+  knowledge_quiz1_question12_option1: "Oslo",
+  knowledge_quiz1_question12_option2: "Reykjavik",
+  knowledge_quiz1_question12_option3: "Helsinki",
+  knowledge_quiz1_question12_option4: "Stockholm",
+
+  // Q13
+  knowledge_quiz1_question13: "Which country has the most volcanoes in Europe?",
+  knowledge_quiz1_question13_option1: "Iceland",
+  knowledge_quiz1_question13_option2: "Spain",
+  knowledge_quiz1_question13_option3: "Italy",
+  knowledge_quiz1_question13_option4: "Greece",
+
+  // Q14
+  knowledge_quiz1_question14: "Mount Elbrus is located in which country?",
+  knowledge_quiz1_question14_option1: "Georgia",
+  knowledge_quiz1_question14_option2: "Russia",
+  knowledge_quiz1_question14_option3: "Turkey",
+  knowledge_quiz1_question14_option4: "Ukraine",
+
+  // Q15
+  knowledge_quiz1_question15:
+    "What sea separates Sweden and the Baltic states?",
+  knowledge_quiz1_question15_option1: "Barents Sea",
+  knowledge_quiz1_question15_option2: "Baltic Sea",
+  knowledge_quiz1_question15_option3: "Norwegian Sea",
+  knowledge_quiz1_question15_option4: "North Sea",
+
+  // Q16
+  knowledge_quiz1_question16: "Which European country is famous for fjords?",
+  knowledge_quiz1_question16_option1: "Denmark",
+  knowledge_quiz1_question16_option2: "Norway",
+  knowledge_quiz1_question16_option3: "Sweden",
+  knowledge_quiz1_question16_option4: "Finland",
+
+  // Q17
+  knowledge_quiz1_question17: "Which country is home to the city of Kraków?",
+  knowledge_quiz1_question17_option1: "Slovakia",
+  knowledge_quiz1_question17_option2: "Czech Republic",
+  knowledge_quiz1_question17_option3: "Hungary",
+  knowledge_quiz1_question17_option4: "Poland",
+
+  // Q18
+  knowledge_quiz1_question18: "Andorra is located between which two countries?",
+  knowledge_quiz1_question18_option1: "France and Spain",
+  knowledge_quiz1_question18_option2: "Austria and Germany",
+  knowledge_quiz1_question18_option3: "Spain and Portugal",
+  knowledge_quiz1_question18_option4: "Italy and Switzerland",
+
+  // Q19
+  knowledge_quiz1_question19:
+    "Which country has the longest coastline in Europe?",
+  knowledge_quiz1_question19_option1: "Italy",
+  knowledge_quiz1_question19_option2: "Greece",
+  knowledge_quiz1_question19_option3: "Norway",
+  knowledge_quiz1_question19_option4: "United Kingdom",
+
+  // Q20
+  knowledge_quiz1_question20: "What is the smallest country in Europe by area?",
+  knowledge_quiz1_question20_option1: "Vatican City",
+  knowledge_quiz1_question20_option2: "Liechtenstein",
+  knowledge_quiz1_question20_option3: "San Marino",
+  knowledge_quiz1_question20_option4: "Monaco",
+
+  // Knowledge Quiz 2
+
+  // Q1
+  knowledge_quiz2_question1: "Oslo is the capital of?",
+  knowledge_quiz2_question1_option1: "Norway",
+  knowledge_quiz2_question1_option2: "Denmark",
+  knowledge_quiz2_question1_option3: "Sweden",
+  knowledge_quiz2_question1_option4: "Finland",
+
+  // Q2
+  knowledge_quiz2_question2: "Vienna is the capital of?",
+  knowledge_quiz2_question2_option1: "Germany",
+  knowledge_quiz2_question2_option2: "Hungary",
+  knowledge_quiz2_question2_option3: "Switzerland",
+  knowledge_quiz2_question2_option4: "Austria",
+
+  // Q3
+  knowledge_quiz2_question3: "Warsaw is the capital of?",
+  knowledge_quiz2_question3_option1: "Ukraine",
+  knowledge_quiz2_question3_option2: "Czech Republic",
+  knowledge_quiz2_question3_option3: "Poland",
+  knowledge_quiz2_question3_option4: "Belarus",
+
+  // Q4
+  knowledge_quiz2_question4: "Helsinki is the capital of?",
+  knowledge_quiz2_question4_option1: "Estonia",
+  knowledge_quiz2_question4_option2: "Norway",
+  knowledge_quiz2_question4_option3: "Finland",
+  knowledge_quiz2_question4_option4: "Latvia",
+
+  // Q5
+  knowledge_quiz2_question5: "Lisbon is the capital of?",
+  knowledge_quiz2_question5_option1: "Italy",
+  knowledge_quiz2_question5_option2: "Portugal",
+  knowledge_quiz2_question5_option3: "Greece",
+  knowledge_quiz2_question5_option4: "Spain",
+
+  // Q6
+  knowledge_quiz2_question6: "Bern is the capital of?",
+  knowledge_quiz2_question6_option1: "Austria",
+  knowledge_quiz2_question6_option2: "Switzerland",
+  knowledge_quiz2_question6_option3: "Germany",
+  knowledge_quiz2_question6_option4: "Luxembourg",
+
+  // Q7
+  knowledge_quiz2_question7: "Brussels is the capital of?",
+  knowledge_quiz2_question7_option1: "France",
+  knowledge_quiz2_question7_option2: "Belgium",
+  knowledge_quiz2_question7_option3: "Luxembourg",
+  knowledge_quiz2_question7_option4: "Netherlands",
+
+  // Q8
+  knowledge_quiz2_question8: "Athens is the capital of?",
+  knowledge_quiz2_question8_option1: "Malta",
+  knowledge_quiz2_question8_option2: "Cyprus",
+  knowledge_quiz2_question8_option3: "Greece",
+  knowledge_quiz2_question8_option4: "Italy",
+
+  // Q9
+  knowledge_quiz2_question9: "Reykjavik is the capital of?",
+  knowledge_quiz2_question9_option1: "Greenland",
+  knowledge_quiz2_question9_option2: "Denmark",
+  knowledge_quiz2_question9_option3: "Norway",
+  knowledge_quiz2_question9_option4: "Iceland",
+
+  // Q10
+  knowledge_quiz2_question10: "Zagreb is the capital of?",
+  knowledge_quiz2_question10_option1: "Serbia",
+  knowledge_quiz2_question10_option2: "Slovenia",
+  knowledge_quiz2_question10_option3: "Croatia",
+  knowledge_quiz2_question10_option4: "Montenegro",
+
+  // Q11
+  knowledge_quiz2_question11: "Skopje is the capital of?",
+  knowledge_quiz2_question11_option1: "Albania",
+  knowledge_quiz2_question11_option2: "North Macedonia",
+  knowledge_quiz2_question11_option3: "Bulgaria",
+  knowledge_quiz2_question11_option4: "Kosovo",
+
+  // Q12
+  knowledge_quiz2_question12: "Sofia is the capital of?",
+  knowledge_quiz2_question12_option1: "Bulgaria",
+  knowledge_quiz2_question12_option2: "Serbia",
+  knowledge_quiz2_question12_option3: "Slovakia",
+  knowledge_quiz2_question12_option4: "Romania",
+
+  // Q13
+  knowledge_quiz2_question13: "Tirana is the capital of?",
+  knowledge_quiz2_question13_option1: "Bosnia & Herzegovina",
+  knowledge_quiz2_question13_option2: "North Macedonia",
+  knowledge_quiz2_question13_option3: "Kosovo",
+  knowledge_quiz2_question13_option4: "Albania",
+
+  // Q14
+  knowledge_quiz2_question14: "Podgorica is the capital of?",
+  knowledge_quiz2_question14_option1: "Slovenia",
+  knowledge_quiz2_question14_option2: "Montenegro",
+  knowledge_quiz2_question14_option3: "Croatia",
+  knowledge_quiz2_question14_option4: "Serbia",
+
+  // Q15
+  knowledge_quiz2_question15: "Ljubljana is the capital of?",
+  knowledge_quiz2_question15_option1: "Austria",
+  knowledge_quiz2_question15_option2: "Slovakia",
+  knowledge_quiz2_question15_option3: "Slovenia",
+  knowledge_quiz2_question15_option4: "Croatia",
+
+  // Q16
+  knowledge_quiz2_question16: "Belgrade is the capital of?",
+  knowledge_quiz2_question16_option1: "Bosnia",
+  knowledge_quiz2_question16_option2: "Romania",
+  knowledge_quiz2_question16_option3: "Montenegro",
+  knowledge_quiz2_question16_option4: "Serbia",
+
+  // Q17
+  knowledge_quiz2_question17: "Sarajevo is the capital of?",
+  knowledge_quiz2_question17_option1: "Serbia",
+  knowledge_quiz2_question17_option2: "Croatia",
+  knowledge_quiz2_question17_option3: "Bosnia & Herzegovina",
+  knowledge_quiz2_question17_option4: "Montenegro",
+
+  // Q18
+  knowledge_quiz2_question18: "Chisinau is the capital of?",
+  knowledge_quiz2_question18_option1: "Belarus",
+  knowledge_quiz2_question18_option2: "Ukraine",
+  knowledge_quiz2_question18_option3: "Romania",
+  knowledge_quiz2_question18_option4: "Republic of Moldova",
+
+  // Q19
+  knowledge_quiz2_question19: "Bucharest is the capital of?",
+  knowledge_quiz2_question19_option1: "Romania",
+  knowledge_quiz2_question19_option2: "Moldova",
+  knowledge_quiz2_question19_option3: "Hungary",
+  knowledge_quiz2_question19_option4: "Bulgaria",
+
+  // Q20
+  knowledge_quiz2_question20: "Tallinn is the capital of?",
+  knowledge_quiz2_question20_option1: "Lithuania",
+  knowledge_quiz2_question20_option2: "Finland",
+  knowledge_quiz2_question20_option3: "Latvia",
+  knowledge_quiz2_question20_option4: "Estonia",
+
+  // Knowledge Quiz 3
+
+  // Q1
+  knowledge_quiz3_question1: "What is the largest planet in our Solar System?",
+  knowledge_quiz3_question1_option1: "Earth",
+  knowledge_quiz3_question1_option2: "Mars",
+  knowledge_quiz3_question1_option3: "Saturn",
+  knowledge_quiz3_question1_option4: "Jupiter",
+
+  // Q2
+  knowledge_quiz3_question2: "Who painted the Mona Lisa?",
+  knowledge_quiz3_question2_option1: "Van Gogh",
+  knowledge_quiz3_question2_option2: "Michelangelo",
+  knowledge_quiz3_question2_option3: "Picasso",
+  knowledge_quiz3_question2_option4: "Leonardo da Vinci",
+
+  // Q3
+  knowledge_quiz3_question3: "What year did World War II end?",
+  knowledge_quiz3_question3_option1: "1945",
+  knowledge_quiz3_question3_option2: "1939",
+  knowledge_quiz3_question3_option3: "1950",
+  knowledge_quiz3_question3_option4: "1942",
+
+  // Q4
+  knowledge_quiz3_question4: "What is the capital of Canada?",
+  knowledge_quiz3_question4_option1: "Toronto",
+  knowledge_quiz3_question4_option2: "Montreal",
+  knowledge_quiz3_question4_option3: "Vancouver",
+  knowledge_quiz3_question4_option4: "Ottawa",
+
+  // Q5
+  knowledge_quiz3_question5: "Which organ is responsible for pumping blood?",
+  knowledge_quiz3_question5_option1: "Heart",
+  knowledge_quiz3_question5_option2: "Liver",
+  knowledge_quiz3_question5_option3: "Lungs",
+  knowledge_quiz3_question5_option4: "Kidneys",
+
+  // Q6
+  knowledge_quiz3_question6: "How many continents are there?",
+  knowledge_quiz3_question6_option1: "7",
+  knowledge_quiz3_question6_option2: "8",
+  knowledge_quiz3_question6_option3: "6",
+  knowledge_quiz3_question6_option4: "5",
+
+  // Q7
+  knowledge_quiz3_question7: "Which is the longest river in the world?",
+  knowledge_quiz3_question7_option1: "Yangtze",
+  knowledge_quiz3_question7_option2: "Amazon",
+  knowledge_quiz3_question7_option3: "Mississippi",
+  knowledge_quiz3_question7_option4: "Nile",
+
+  // Q8
+  knowledge_quiz3_question8: "What is the chemical symbol for gold?",
+  knowledge_quiz3_question8_option1: "Au",
+  knowledge_quiz3_question8_option2: "Ag",
+  knowledge_quiz3_question8_option3: "G",
+  knowledge_quiz3_question8_option4: "Go",
+
+  // Q9
+  knowledge_quiz3_question9: "Which planet is known as the Red Planet?",
+  knowledge_quiz3_question9_option1: "Jupiter",
+  knowledge_quiz3_question9_option2: "Mars",
+  knowledge_quiz3_question9_option3: "Venus",
+  knowledge_quiz3_question9_option4: "Mercury",
+
+  // Q10
+  knowledge_quiz3_question10:
+    "Which famous scientist developed the theory of relativity?",
+  knowledge_quiz3_question10_option1: "Einstein",
+  knowledge_quiz3_question10_option2: "Newton",
+  knowledge_quiz3_question10_option3: "Bohr",
+  knowledge_quiz3_question10_option4: "Tesla",
+
+  // Q11
+  knowledge_quiz3_question11: "What’s the capital of Australia?",
+  knowledge_quiz3_question11_option1: "Canberra",
+  knowledge_quiz3_question11_option2: "Sydney",
+  knowledge_quiz3_question11_option3: "Brisbane",
+  knowledge_quiz3_question11_option4: "Melbourne",
+
+  // Q12
+  knowledge_quiz3_question12: "Which country invented pizza?",
+  knowledge_quiz3_question12_option1: "Greece",
+  knowledge_quiz3_question12_option2: "Spain",
+  knowledge_quiz3_question12_option3: "France",
+  knowledge_quiz3_question12_option4: "Italy",
+
+  // Q13
+  knowledge_quiz3_question13:
+    "How many players are on a soccer team (on the field)?",
+  knowledge_quiz3_question13_option1: "9",
+  knowledge_quiz3_question13_option2: "11",
+  knowledge_quiz3_question13_option3: "10",
+  knowledge_quiz3_question13_option4: "12",
+
+  // Q14
+  knowledge_quiz3_question14:
+    "Which element does 'O' represent on the periodic table?",
+  knowledge_quiz3_question14_option1: "Osmium",
+  knowledge_quiz3_question14_option2: "Oxygen",
+  knowledge_quiz3_question14_option3: "Ozone",
+  knowledge_quiz3_question14_option4: "Oxide",
+
+  // Q15
+  knowledge_quiz3_question15: "Which language has the most native speakers?",
+  knowledge_quiz3_question15_option1: "Mandarin Chinese",
+  knowledge_quiz3_question15_option2: "English",
+  knowledge_quiz3_question15_option3: "Hindi",
+  knowledge_quiz3_question15_option4: "Spanish",
+
+  // Q16
+  knowledge_quiz3_question16: "What’s the tallest mountain on Earth?",
+  knowledge_quiz3_question16_option1: "K2",
+  knowledge_quiz3_question16_option2: "Makalu",
+  knowledge_quiz3_question16_option3: "Kangchenjunga",
+  knowledge_quiz3_question16_option4: "Everest",
+
+  // Q17
+  knowledge_quiz3_question17: "Who wrote 'Romeo and Juliet'?",
+  knowledge_quiz3_question17_option1: "Dickens",
+  knowledge_quiz3_question17_option2: "Homer",
+  knowledge_quiz3_question17_option3: "Dante",
+  knowledge_quiz3_question17_option4: "Shakespeare",
+
+  // Q18
+  knowledge_quiz3_question18: "What does 'WWW' stand for in a website browser?",
+  knowledge_quiz3_question18_option1: "Web World Wide",
+  knowledge_quiz3_question18_option2: "Wide Web World",
+  knowledge_quiz3_question18_option3: "World Wide Web",
+  knowledge_quiz3_question18_option4: "Wide Web Worldnet",
+
+  // Q19
+  knowledge_quiz3_question19:
+    "Which animal is known as the 'King of the Jungle'?",
+  knowledge_quiz3_question19_option1: "Tiger",
+  knowledge_quiz3_question19_option2: "Lion",
+  knowledge_quiz3_question19_option3: "Elephant",
+  knowledge_quiz3_question19_option4: "Panther",
+
+  // Q20
+  knowledge_quiz3_question20: "How many colors are in a rainbow?",
+  knowledge_quiz3_question20_option1: "5",
+  knowledge_quiz3_question20_option2: "8",
+  knowledge_quiz3_question20_option3: "7",
+  knowledge_quiz3_question20_option4: "6",
+
+  // Knowledge Quiz 4
+
+  // Q1
+  knowledge_quiz4_question1: "In which year did World War I begin?",
+  knowledge_quiz4_question1_option1: "1918",
+  knowledge_quiz4_question1_option2: "1916",
+  knowledge_quiz4_question1_option3: "1912",
+  knowledge_quiz4_question1_option4: "1914",
+
+  // Q2
+  knowledge_quiz4_question2:
+    "Who was the British Prime Minister during most of World War II?",
+  knowledge_quiz4_question2_option1: "Neville Chamberlain",
+  knowledge_quiz4_question2_option2: "Margaret Thatcher",
+  knowledge_quiz4_question2_option3: "Winston Churchill",
+  knowledge_quiz4_question2_option4: "Tony Blair",
+
+  // Q3
+  knowledge_quiz4_question3: "What year did the Berlin Wall fall?",
+  knowledge_quiz4_question3_option1: "1991",
+  knowledge_quiz4_question3_option2: "1987",
+  knowledge_quiz4_question3_option3: "1993",
+  knowledge_quiz4_question3_option4: "1989",
+
+  // Q4
+  knowledge_quiz4_question4:
+    "Which country launched the first artificial satellite?",
+  knowledge_quiz4_question4_option1: "USA",
+  knowledge_quiz4_question4_option2: "China",
+  knowledge_quiz4_question4_option3: "Germany",
+  knowledge_quiz4_question4_option4: "Russia",
+
+  // Q5
+  knowledge_quiz4_question5: "Who was assassinated in 1963 in Dallas, Texas?",
+  knowledge_quiz4_question5_option1: "John F. Kennedy",
+  knowledge_quiz4_question5_option2: "Robert Kennedy",
+  knowledge_quiz4_question5_option3: "Martin Luther King Jr.",
+  knowledge_quiz4_question5_option4: "Ronald Reagan",
+
+  // Q6
+  knowledge_quiz4_question6: "What year did World War II end?",
+  knowledge_quiz4_question6_option1: "1950",
+  knowledge_quiz4_question6_option2: "1945",
+  knowledge_quiz4_question6_option3: "1939",
+  knowledge_quiz4_question6_option4: "1942",
+
+  // Q7
+  knowledge_quiz4_question7:
+    "What was the name of the US civil rights leader who delivered the 'I Have a Dream' speech?",
+  knowledge_quiz4_question7_option1: "Malcolm X",
+  knowledge_quiz4_question7_option2: "Martin Luther King Jr.",
+  knowledge_quiz4_question7_option3: "Frederick Douglass",
+  knowledge_quiz4_question7_option4: "Barack Obama",
+
+  // Q8
+  knowledge_quiz4_question8: "When did the Soviet Union dissolve?",
+  knowledge_quiz4_question8_option1: "1989",
+  knowledge_quiz4_question8_option2: "1992",
+  knowledge_quiz4_question8_option3: "1991",
+  knowledge_quiz4_question8_option4: "1990",
+
+  // Q9
+  knowledge_quiz4_question9:
+    "Which war was fought between North and South Korea?",
+  knowledge_quiz4_question9_option1: "Korean War",
+  knowledge_quiz4_question9_option2: "World War II",
+  knowledge_quiz4_question9_option3: "Vietnam War",
+  knowledge_quiz4_question9_option4: "Cold War",
+
+  // Q10
+  knowledge_quiz4_question10:
+    "What was the name of the first man to walk on the moon?",
+  knowledge_quiz4_question10_option1: "Michael Collins",
+  knowledge_quiz4_question10_option2: "Neil Armstrong",
+  knowledge_quiz4_question10_option3: "Yuri Gagarin",
+  knowledge_quiz4_question10_option4: "Buzz Aldrin",
+
+  // Q11
+  knowledge_quiz4_question11: "Which country did Adolf Hitler lead?",
+  knowledge_quiz4_question11_option1: "Germany",
+  knowledge_quiz4_question11_option2: "France",
+  knowledge_quiz4_question11_option3: "Austria",
+  knowledge_quiz4_question11_option4: "Russia",
+
+  // Q12
+  knowledge_quiz4_question12: "The Titanic sank in what year?",
+  knowledge_quiz4_question12_option1: "1914",
+  knowledge_quiz4_question12_option2: "1920",
+  knowledge_quiz4_question12_option3: "1912",
+  knowledge_quiz4_question12_option4: "1905",
+
+  // Q13
+  knowledge_quiz4_question13:
+    "Which Cold War conflict occurred in Southeast Asia during the 1960s–70s?",
+  knowledge_quiz4_question13_option1: "Vietnam War",
+  knowledge_quiz4_question13_option2: "Korean War",
+  knowledge_quiz4_question13_option3: "Gulf War",
+  knowledge_quiz4_question13_option4: "Afghan War",
+
+  // Q14
+  knowledge_quiz4_question14:
+    "What wall was a symbol of division in Germany during the Cold War?",
+  knowledge_quiz4_question14_option1: "Great Wall",
+  knowledge_quiz4_question14_option2: "Western Wall",
+  knowledge_quiz4_question14_option3: "Berlin Wall",
+  knowledge_quiz4_question14_option4: "Iron Wall",
+
+  // Q15
+  knowledge_quiz4_question15: "When was the United Nations founded?",
+  knowledge_quiz4_question15_option1: "1942",
+  knowledge_quiz4_question15_option2: "1939",
+  knowledge_quiz4_question15_option3: "1945",
+  knowledge_quiz4_question15_option4: "1950",
+
+  // Q16
+  knowledge_quiz4_question16:
+    "Who was the first female Prime Minister of the UK?",
+  knowledge_quiz4_question16_option1: "Margaret Thatcher",
+  knowledge_quiz4_question16_option2: "Theresa May",
+  knowledge_quiz4_question16_option3: "Angela Merkel",
+  knowledge_quiz4_question16_option4: "Indira Gandhi",
+
+  // Q17
+  knowledge_quiz4_question17:
+    "Which country did the nuclear disaster at Chernobyl occur in?",
+  knowledge_quiz4_question17_option1: "Belarus",
+  knowledge_quiz4_question17_option2: "Ukraine",
+  knowledge_quiz4_question17_option3: "Russia",
+  knowledge_quiz4_question17_option4: "Kazakhstan",
+
+  // Q18
+  knowledge_quiz4_question18:
+    "Who was the leader of the Soviet Union during World War II?",
+  knowledge_quiz4_question18_option1: "Lenin",
+  knowledge_quiz4_question18_option2: "Stalin",
+  knowledge_quiz4_question18_option3: "Trotsky",
+  knowledge_quiz4_question18_option4: "Gorbachev",
+
+  // Q19
+  knowledge_quiz4_question19:
+    "What was the name of the treaty that ended World War I?",
+  knowledge_quiz4_question19_option1: "Treaty of Paris",
+  knowledge_quiz4_question19_option2: "Treaty of Versailles",
+  knowledge_quiz4_question19_option3: "Yalta Pact",
+  knowledge_quiz4_question19_option4: "Potsdam Agreement",
+
+  // Q20
+  knowledge_quiz4_question20:
+    "Which wall fell in 1989, marking the end of the Cold War era?",
+  knowledge_quiz4_question20_option1: "Iron Wall",
+  knowledge_quiz4_question20_option2: "Western Wall",
+  knowledge_quiz4_question20_option3: "Great Wall",
+  knowledge_quiz4_question20_option4: "Berlin Wall",
+
+  // Knowledge Quiz 5
+
+  // Q1
+  knowledge_quiz5_question1: "Which planet is known as the Red Planet?",
+  knowledge_quiz5_question1_option1: "Mercury",
+  knowledge_quiz5_question1_option2: "Venus",
+  knowledge_quiz5_question1_option3: "Jupiter",
+  knowledge_quiz5_question1_option4: "Mars",
+
+  // Q2
+  knowledge_quiz5_question2: "Which planet is the largest in our solar system?",
+  knowledge_quiz5_question2_option1: "Jupiter",
+  knowledge_quiz5_question2_option2: "Earth",
+  knowledge_quiz5_question2_option3: "Saturn",
+  knowledge_quiz5_question2_option4: "Neptune",
+
+  // Q3
+  knowledge_quiz5_question3: "How many planets are in the solar system?",
+  knowledge_quiz5_question3_option1: "7",
+  knowledge_quiz5_question3_option2: "9",
+  knowledge_quiz5_question3_option3: "8",
+  knowledge_quiz5_question3_option4: "10",
+
+  // Q4
+  knowledge_quiz5_question4: "Which planet has the most moons?",
+  knowledge_quiz5_question4_option1: "Uranus",
+  knowledge_quiz5_question4_option2: "Mars",
+  knowledge_quiz5_question4_option3: "Jupiter",
+  knowledge_quiz5_question4_option4: "Saturn",
+
+  // Q5
+  knowledge_quiz5_question5: "What is the closest planet to the Sun?",
+  knowledge_quiz5_question5_option1: "Mercury",
+  knowledge_quiz5_question5_option2: "Earth",
+  knowledge_quiz5_question5_option3: "Mars",
+  knowledge_quiz5_question5_option4: "Venus",
+
+  // Q6
+  knowledge_quiz5_question6: "Which planet is known for its rings?",
+  knowledge_quiz5_question6_option1: "Jupiter",
+  knowledge_quiz5_question6_option2: "Saturn",
+  knowledge_quiz5_question6_option3: "Neptune",
+  knowledge_quiz5_question6_option4: "Uranus",
+
+  // Q7
+  knowledge_quiz5_question7: "What galaxy is Earth located in?",
+  knowledge_quiz5_question7_option1: "Milky Way",
+  knowledge_quiz5_question7_option2: "Andromeda",
+  knowledge_quiz5_question7_option3: "Whirlpool",
+  knowledge_quiz5_question7_option4: "Triangulum",
+
+  // Q8
+  knowledge_quiz5_question8: "What is the name of Earth’s moon?",
+  knowledge_quiz5_question8_option1: "The Moon",
+  knowledge_quiz5_question8_option2: "Luna",
+  knowledge_quiz5_question8_option3: "Selene",
+  knowledge_quiz5_question8_option4: "Phobos",
+
+  // Q9
+  knowledge_quiz5_question9: "Which planet has a day longer than its year?",
+  knowledge_quiz5_question9_option1: "Mercury",
+  knowledge_quiz5_question9_option2: "Jupiter",
+  knowledge_quiz5_question9_option3: "Mars",
+  knowledge_quiz5_question9_option4: "Venus",
+
+  // Q10
+  knowledge_quiz5_question10:
+    "Which is the coldest planet in the solar system?",
+  knowledge_quiz5_question10_option1: "Saturn",
+  knowledge_quiz5_question10_option2: "Neptune",
+  knowledge_quiz5_question10_option3: "Uranus",
+  knowledge_quiz5_question10_option4: "Pluto",
+
+  // Q11
+  knowledge_quiz5_question11: "Which planet has the strongest gravity?",
+  knowledge_quiz5_question11_option1: "Earth",
+  knowledge_quiz5_question11_option2: "Jupiter",
+  knowledge_quiz5_question11_option3: "Saturn",
+  knowledge_quiz5_question11_option4: "Neptune",
+
+  // Q12
+  knowledge_quiz5_question12: "What is a black hole?",
+  knowledge_quiz5_question12_option1: "A planet",
+  knowledge_quiz5_question12_option2: "A type of moon",
+  knowledge_quiz5_question12_option3: "A wormhole",
+  knowledge_quiz5_question12_option4: "A collapsed star",
+
+  // Q13
+  knowledge_quiz5_question13: "Which planet is tipped on its side?",
+  knowledge_quiz5_question13_option1: "Jupiter",
+  knowledge_quiz5_question13_option2: "Uranus",
+  knowledge_quiz5_question13_option3: "Neptune",
+  knowledge_quiz5_question13_option4: "Mars",
+
+  // Q14
+  knowledge_quiz5_question14:
+    "Which was the first country to send a man to space?",
+  knowledge_quiz5_question14_option1: "Germany",
+  knowledge_quiz5_question14_option2: "USA",
+  knowledge_quiz5_question14_option3: "China",
+  knowledge_quiz5_question14_option4: "Soviet Union",
+
+  // Q15
+  knowledge_quiz5_question15: "Who was the first human in space?",
+  knowledge_quiz5_question15_option1: "Neil Armstrong",
+  knowledge_quiz5_question15_option2: "Buzz Aldrin",
+  knowledge_quiz5_question15_option3: "Yuri Gagarin",
+  knowledge_quiz5_question15_option4: "Michael Collins",
+
+  // Q16
+  knowledge_quiz5_question16: "Which planet is farthest from the Sun?",
+  knowledge_quiz5_question16_option1: "Pluto",
+  knowledge_quiz5_question16_option2: "Neptune",
+  knowledge_quiz5_question16_option3: "Saturn",
+  knowledge_quiz5_question16_option4: "Uranus",
+
+  // Q17
+  knowledge_quiz5_question17:
+    "What is the name of NASA's most famous space telescope?",
+  knowledge_quiz5_question17_option1: "Spitzer",
+  knowledge_quiz5_question17_option2: "Hubble",
+  knowledge_quiz5_question17_option3: "James Webb",
+  knowledge_quiz5_question17_option4: "Kepler",
+
+  // Q18
+  knowledge_quiz5_question18: "Which planet is known as the 'Evening Star'?",
+  knowledge_quiz5_question18_option1: "Saturn",
+  knowledge_quiz5_question18_option2: "Mars",
+  knowledge_quiz5_question18_option3: "Venus",
+  knowledge_quiz5_question18_option4: "Jupiter",
+
+  // Q19
+  knowledge_quiz5_question19: "What is a light-year?",
+  knowledge_quiz5_question19_option1: "A year with 366 days",
+  knowledge_quiz5_question19_option2: "The speed of light",
+  knowledge_quiz5_question19_option3: "A year on Mercury",
+  knowledge_quiz5_question19_option4: "A measurement of distance",
+
+  // Q20
+  knowledge_quiz5_question20: "Which planet has the fastest rotation?",
+  knowledge_quiz5_question20_option1: "Earth",
+  knowledge_quiz5_question20_option2: "Saturn",
+  knowledge_quiz5_question20_option3: "Jupiter",
+  knowledge_quiz5_question20_option4: "Mars",
+
+  //Psychological Quiz 1
+  personality_quiz12_question1: "Which activity sounds more appealing?",
+  personality_quiz12_question1_option1: "Designing a character from scratch",
+  personality_quiz12_question1_option2: "Analyzing a detective mystery",
+  personality_quiz12_question1_option3: "Structuring a story with plot twists",
+
+  personality_quiz12_question2: "Which would you rather attend?",
+  personality_quiz12_question2_option1: "An art exhibition",
+  personality_quiz12_question2_option2: "A chess tournament",
+  personality_quiz12_question2_option3: "A design thinking workshop",
+
+  personality_quiz12_question3: "Your workspace is usually:",
+  personality_quiz12_question3_option1: "A bit chaotic but full of inspiration",
+  personality_quiz12_question3_option2: "Organized and labeled",
+  personality_quiz12_question3_option3: "Functional with a touch of aesthetic",
+
+  personality_quiz12_question4: "When brainstorming, you usually:",
+  personality_quiz12_question4_option1: "Sketch your ideas",
+  personality_quiz12_question4_option2: "Create a mind map or flowchart",
+  personality_quiz12_question4_option3: "Switch between visuals and notes",
+
+  personality_quiz12_question5: "Pick a quote that resonates with you:",
+  personality_quiz12_question5_option1:
+    "“Creativity is intelligence having fun.”",
+  personality_quiz12_question5_option2:
+    "“Everything should make logical sense.”",
+  personality_quiz12_question5_option3:
+    "“Balance is not something you find, it’s something you create.”",
+
+  personality_quiz12_question6: "What would you do with a blank notebook?",
+  personality_quiz12_question6_option1: "Start a visual journal",
+  personality_quiz12_question6_option2: "Write a daily tracker or habit log",
+  personality_quiz12_question6_option3:
+    "Use it for structured ideas and sketches",
+
+  personality_quiz12_question7: "What type of task drains you the most?",
+  personality_quiz12_question7_option1: "Repetitive technical tasks",
+  personality_quiz12_question7_option2: "Unstructured freeform work",
+  personality_quiz12_question7_option3:
+    "Tasks with no clear direction or feedback",
+
+  personality_quiz12_question8:
+    "You're given a new app to test. What’s the first thing you do?",
+  personality_quiz12_question8_option1: "Explore the design and experience",
+  personality_quiz12_question8_option2: "Look for bugs and logic errors",
+  personality_quiz12_question8_option3: "Compare structure, logic, and flow",
+
+  personality_quiz12_question9: "Which role would suit you best?",
+  personality_quiz12_question9_option1: "Creative Director",
+  personality_quiz12_question9_option2: "Data Analyst",
+  personality_quiz12_question9_option3: "UX Designer",
+
+  personality_quiz12_question10: "Which phrase describes you better?",
+  personality_quiz12_question10_option1: "My imagination runs wild",
+  personality_quiz12_question10_option2: "I need structure to focus",
+  personality_quiz12_question10_option3: "I adapt between chaos and order",
+
+  personality_quiz12_question11: "How do you express your ideas best?",
+  personality_quiz12_question11_option1: "With sketches, colors, or music",
+  personality_quiz12_question11_option2:
+    "With clear arguments and structured steps",
+  personality_quiz12_question11_option3: "By combining visuals and reasoning",
+
+  personality_quiz12_question12: "What sparks your motivation?",
+  personality_quiz12_question12_option1: "A powerful image, melody, or emotion",
+  personality_quiz12_question12_option2: "A problem that needs solving",
+  personality_quiz12_question12_option3:
+    "A challenge that requires both imagination and logic",
+
+  personality_quiz12_question13:
+    "Which kind of achievement feels most fulfilling?",
+  personality_quiz12_question13_option1:
+    "Finishing a personal artistic project",
+  personality_quiz12_question13_option2:
+    "Solving something that seemed impossible",
+  personality_quiz12_question13_option3:
+    "Creating something beautiful *and* functional",
+
+  personality_quiz12_question14: "How would you spend a free afternoon?",
+  personality_quiz12_question14_option1: "Painting, writing, or crafting",
+  personality_quiz12_question14_option2:
+    "Playing strategy games or solving puzzles",
+  personality_quiz12_question14_option3:
+    "Redesigning a space or planning something new",
+
+  personality_quiz12_question15:
+    "Which phrase best describes your thinking style?",
+  personality_quiz12_question15_option1: "I think in visuals and emotions",
+  personality_quiz12_question15_option2: "I analyze patterns and logic",
+  personality_quiz12_question15_option3: "I connect feelings with structure",
 };
