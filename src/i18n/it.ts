@@ -786,751 +786,862 @@ export const it = {
   // Knowledge Quiz 1
 
   // Q1
-  knowledge_quiz1_question1_it: "A quale paese appartiene la città di Praga?",
-  knowledge_quiz1_question1_option1_it: "Austria",
-  knowledge_quiz1_question1_option2_it: "Polonia",
-  knowledge_quiz1_question1_option3_it: "Repubblica Ceca",
-  knowledge_quiz1_question1_option4_it: "Slovacchia",
+  knowledge_quiz1_question1: "A quale paese appartiene la città di Praga?",
+  knowledge_quiz1_question1_option1: "Austria",
+  knowledge_quiz1_question1_option2: "Polonia",
+  knowledge_quiz1_question1_option3: "Repubblica Ceca",
+  knowledge_quiz1_question1_option4: "Slovacchia",
 
   // Q2
-  knowledge_quiz1_question2_it: "Quale mare confina a ovest con la Grecia?",
-  knowledge_quiz1_question2_option1_it: "Mar Nero",
-  knowledge_quiz1_question2_option2_it: "Mar Baltico",
-  knowledge_quiz1_question2_option3_it: "Mar Ionio",
-  knowledge_quiz1_question2_option4_it: "Mar Adriatico",
+  knowledge_quiz1_question2: "Quale mare confina a ovest con la Grecia?",
+  knowledge_quiz1_question2_option1: "Mar Nero",
+  knowledge_quiz1_question2_option2: "Mar Baltico",
+  knowledge_quiz1_question2_option3: "Mar Ionio",
+  knowledge_quiz1_question2_option4: "Mar Adriatico",
 
   // Q3
-  knowledge_quiz1_question3_it:
+  knowledge_quiz1_question3:
     "Quale dei seguenti NON fa parte della Scandinavia?",
-  knowledge_quiz1_question3_option1_it: "Norvegia",
-  knowledge_quiz1_question3_option2_it: "Svezia",
-  knowledge_quiz1_question3_option3_it: "Germania",
-  knowledge_quiz1_question3_option4_it: "Danimarca",
+  knowledge_quiz1_question3_option1: "Norvegia",
+  knowledge_quiz1_question3_option2: "Svezia",
+  knowledge_quiz1_question3_option3: "Germania",
+  knowledge_quiz1_question3_option4: "Danimarca",
 
   // Q4
-  knowledge_quiz1_question4_it: "Di quale paese è capitale Budapest?",
-  knowledge_quiz1_question4_option1_it: "Ungheria",
-  knowledge_quiz1_question4_option2_it: "Romania",
-  knowledge_quiz1_question4_option3_it: "Austria",
-  knowledge_quiz1_question4_option4_it: "Bulgaria",
+  knowledge_quiz1_question4: "Di quale paese è capitale Budapest?",
+  knowledge_quiz1_question4_option1: "Ungheria",
+  knowledge_quiz1_question4_option2: "Romania",
+  knowledge_quiz1_question4_option3: "Austria",
+  knowledge_quiz1_question4_option4: "Bulgaria",
 
   // Q5
-  knowledge_quiz1_question5_it: "Il Danubio attraversa quanti paesi?",
-  knowledge_quiz1_question5_option1_it: "12",
-  knowledge_quiz1_question5_option2_it: "8",
-  knowledge_quiz1_question5_option3_it: "6",
-  knowledge_quiz1_question5_option4_it: "10",
+  knowledge_quiz1_question5: "Il Danubio attraversa quanti paesi?",
+  knowledge_quiz1_question5_option1: "12",
+  knowledge_quiz1_question5_option2: "8",
+  knowledge_quiz1_question5_option3: "6",
+  knowledge_quiz1_question5_option4: "10",
 
   // Q6
-  knowledge_quiz1_question6_it: "Quale paese ha il punto più a nord d’Europa?",
-  knowledge_quiz1_question6_option1_it: "Svezia",
-  knowledge_quiz1_question6_option2_it: "Finlandia",
-  knowledge_quiz1_question6_option3_it: "Islanda",
-  knowledge_quiz1_question6_option4_it: "Norvegia",
+  knowledge_quiz1_question6: "Quale paese ha il punto più a nord d’Europa?",
+  knowledge_quiz1_question6_option1: "Svezia",
+  knowledge_quiz1_question6_option2: "Finlandia",
+  knowledge_quiz1_question6_option3: "Islanda",
+  knowledge_quiz1_question6_option4: "Norvegia",
 
   // Q7
-  knowledge_quiz1_question7_it: "Qual è la capitale del Portogallo?",
-  knowledge_quiz1_question7_option1_it: "Lisbona",
-  knowledge_quiz1_question7_option2_it: "Madrid",
-  knowledge_quiz1_question7_option3_it: "Porto",
-  knowledge_quiz1_question7_option4_it: "Barcellona",
+  knowledge_quiz1_question7: "Qual è la capitale del Portogallo?",
+  knowledge_quiz1_question7_option1: "Lisbona",
+  knowledge_quiz1_question7_option2: "Madrid",
+  knowledge_quiz1_question7_option3: "Porto",
+  knowledge_quiz1_question7_option4: "Barcellona",
 
   // Q8
-  knowledge_quiz1_question8_it:
+  knowledge_quiz1_question8:
     "Quale paese confina sia con la Francia che con la Polonia?",
-  knowledge_quiz1_question8_option1_it: "Austria",
-  knowledge_quiz1_question8_option2_it: "Germania",
-  knowledge_quiz1_question8_option3_it: "Repubblica Ceca",
-  knowledge_quiz1_question8_option4_it: "Belgio",
+  knowledge_quiz1_question8_option1: "Austria",
+  knowledge_quiz1_question8_option2: "Germania",
+  knowledge_quiz1_question8_option3: "Repubblica Ceca",
+  knowledge_quiz1_question8_option4: "Belgio",
 
   // Q9
-  knowledge_quiz1_question9_it:
-    "Qual è la più grande isola del Mar Mediterraneo?",
-  knowledge_quiz1_question9_option1_it: "Sardegna",
-  knowledge_quiz1_question9_option2_it: "Sicilia",
-  knowledge_quiz1_question9_option3_it: "Creta",
-  knowledge_quiz1_question9_option4_it: "Corsica",
+  knowledge_quiz1_question9: "Qual è la più grande isola del Mar Mediterraneo?",
+  knowledge_quiz1_question9_option1: "Sardegna",
+  knowledge_quiz1_question9_option2: "Sicilia",
+  knowledge_quiz1_question9_option3: "Creta",
+  knowledge_quiz1_question9_option4: "Corsica",
 
   // Q10
-  knowledge_quiz1_question10_it: "In quale paese si trova la città di Bruges?",
-  knowledge_quiz1_question10_option1_it: "Francia",
-  knowledge_quiz1_question10_option2_it: "Germania",
-  knowledge_quiz1_question10_option3_it: "Belgio",
-  knowledge_quiz1_question10_option4_it: "Paesi Bassi",
+  knowledge_quiz1_question10: "In quale paese si trova la città di Bruges?",
+  knowledge_quiz1_question10_option1: "Francia",
+  knowledge_quiz1_question10_option2: "Germania",
+  knowledge_quiz1_question10_option3: "Belgio",
+  knowledge_quiz1_question10_option4: "Paesi Bassi",
 
   // Q11
-  knowledge_quiz1_question11_it: "A quale paese appartiene la Transilvania?",
-  knowledge_quiz1_question11_option1_it: "Serbia",
-  knowledge_quiz1_question11_option2_it: "Ucraina",
-  knowledge_quiz1_question11_option3_it: "Ungheria",
-  knowledge_quiz1_question11_option4_it: "Romania",
+  knowledge_quiz1_question11: "A quale paese appartiene la Transilvania?",
+  knowledge_quiz1_question11_option1: "Serbia",
+  knowledge_quiz1_question11_option2: "Ucraina",
+  knowledge_quiz1_question11_option3: "Ungheria",
+  knowledge_quiz1_question11_option4: "Romania",
 
   // Q12
-  knowledge_quiz1_question12_it: "Qual è la capitale dell’Islanda?",
-  knowledge_quiz1_question12_option1_it: "Oslo",
-  knowledge_quiz1_question12_option2_it: "Reykjavík",
-  knowledge_quiz1_question12_option3_it: "Helsinki",
-  knowledge_quiz1_question12_option4_it: "Stoccolma",
+  knowledge_quiz1_question12: "Qual è la capitale dell’Islanda?",
+  knowledge_quiz1_question12_option1: "Oslo",
+  knowledge_quiz1_question12_option2: "Reykjavík",
+  knowledge_quiz1_question12_option3: "Helsinki",
+  knowledge_quiz1_question12_option4: "Stoccolma",
 
   // Q13
-  knowledge_quiz1_question13_it:
+  knowledge_quiz1_question13:
     "Quale paese ha il maggior numero di vulcani in Europa?",
-  knowledge_quiz1_question13_option1_it: "Islanda",
-  knowledge_quiz1_question13_option2_it: "Spagna",
-  knowledge_quiz1_question13_option3_it: "Italia",
-  knowledge_quiz1_question13_option4_it: "Grecia",
+  knowledge_quiz1_question13_option1: "Islanda",
+  knowledge_quiz1_question13_option2: "Spagna",
+  knowledge_quiz1_question13_option3: "Italia",
+  knowledge_quiz1_question13_option4: "Grecia",
 
   // Q14
-  knowledge_quiz1_question14_it: "In quale paese si trova il Monte Elbrus?",
-  knowledge_quiz1_question14_option1_it: "Georgia",
-  knowledge_quiz1_question14_option2_it: "Russia",
-  knowledge_quiz1_question14_option3_it: "Turchia",
-  knowledge_quiz1_question14_option4_it: "Ucraina",
+  knowledge_quiz1_question14: "In quale paese si trova il Monte Elbrus?",
+  knowledge_quiz1_question14_option1: "Georgia",
+  knowledge_quiz1_question14_option2: "Russia",
+  knowledge_quiz1_question14_option3: "Turchia",
+  knowledge_quiz1_question14_option4: "Ucraina",
 
   // Q15
-  knowledge_quiz1_question15_it:
-    "Quale mare separa la Svezia dai paesi baltici?",
-  knowledge_quiz1_question15_option1_it: "Mar di Barents",
-  knowledge_quiz1_question15_option2_it: "Mar Baltico",
-  knowledge_quiz1_question15_option3_it: "Mar di Norvegia",
-  knowledge_quiz1_question15_option4_it: "Mare del Nord",
+  knowledge_quiz1_question15: "Quale mare separa la Svezia dai paesi baltici?",
+  knowledge_quiz1_question15_option1: "Mar di Barents",
+  knowledge_quiz1_question15_option2: "Mar Baltico",
+  knowledge_quiz1_question15_option3: "Mar di Norvegia",
+  knowledge_quiz1_question15_option4: "Mare del Nord",
 
   // Q16
-  knowledge_quiz1_question16_it: "Quale paese europeo è famoso per i fiordi?",
-  knowledge_quiz1_question16_option1_it: "Danimarca",
-  knowledge_quiz1_question16_option2_it: "Norvegia",
-  knowledge_quiz1_question16_option3_it: "Svezia",
-  knowledge_quiz1_question16_option4_it: "Finlandia",
+  knowledge_quiz1_question16: "Quale paese europeo è famoso per i fiordi?",
+  knowledge_quiz1_question16_option1: "Danimarca",
+  knowledge_quiz1_question16_option2: "Norvegia",
+  knowledge_quiz1_question16_option3: "Svezia",
+  knowledge_quiz1_question16_option4: "Finlandia",
 
   // Q17
-  knowledge_quiz1_question17_it:
-    "In quale paese si trova la città di Cracovia?",
-  knowledge_quiz1_question17_option1_it: "Slovacchia",
-  knowledge_quiz1_question17_option2_it: "Repubblica Ceca",
-  knowledge_quiz1_question17_option3_it: "Ungheria",
-  knowledge_quiz1_question17_option4_it: "Polonia",
+  knowledge_quiz1_question17: "In quale paese si trova la città di Cracovia?",
+  knowledge_quiz1_question17_option1: "Slovacchia",
+  knowledge_quiz1_question17_option2: "Repubblica Ceca",
+  knowledge_quiz1_question17_option3: "Ungheria",
+  knowledge_quiz1_question17_option4: "Polonia",
 
   // Q18
-  knowledge_quiz1_question18_it: "Andorra si trova tra quali due paesi?",
-  knowledge_quiz1_question18_option1_it: "Francia e Spagna",
-  knowledge_quiz1_question18_option2_it: "Austria e Germania",
-  knowledge_quiz1_question18_option3_it: "Spagna e Portogallo",
-  knowledge_quiz1_question18_option4_it: "Italia e Svizzera",
+  knowledge_quiz1_question18: "Andorra si trova tra quali due paesi?",
+  knowledge_quiz1_question18_option1: "Francia e Spagna",
+  knowledge_quiz1_question18_option2: "Austria e Germania",
+  knowledge_quiz1_question18_option3: "Spagna e Portogallo",
+  knowledge_quiz1_question18_option4: "Italia e Svizzera",
 
   // Q19
-  knowledge_quiz1_question19_it: "Quale paese ha la costa più lunga d’Europa?",
-  knowledge_quiz1_question19_option1_it: "Italia",
-  knowledge_quiz1_question19_option2_it: "Grecia",
-  knowledge_quiz1_question19_option3_it: "Norvegia",
-  knowledge_quiz1_question19_option4_it: "Regno Unito",
+  knowledge_quiz1_question19: "Quale paese ha la costa più lunga d’Europa?",
+  knowledge_quiz1_question19_option1: "Italia",
+  knowledge_quiz1_question19_option2: "Grecia",
+  knowledge_quiz1_question19_option3: "Norvegia",
+  knowledge_quiz1_question19_option4: "Regno Unito",
 
   // Q20
-  knowledge_quiz1_question20_it:
+  knowledge_quiz1_question20:
     "Qual è il paese più piccolo d’Europa per superficie?",
-  knowledge_quiz1_question20_option1_it: "Città del Vaticano",
-  knowledge_quiz1_question20_option2_it: "Liechtenstein",
-  knowledge_quiz1_question20_option3_it: "San Marino",
-  knowledge_quiz1_question20_option4_it: "Monaco",
+  knowledge_quiz1_question20_option1: "Città del Vaticano",
+  knowledge_quiz1_question20_option2: "Liechtenstein",
+  knowledge_quiz1_question20_option3: "San Marino",
+  knowledge_quiz1_question20_option4: "Monaco",
 
   // Knowledge Quiz 2
 
   // Q1
-  knowledge_quiz2_question1_it: "Oslo è la capitale di quale paese?",
-  knowledge_quiz2_question1_option1_it: "Norvegia",
-  knowledge_quiz2_question1_option2_it: "Danimarca",
-  knowledge_quiz2_question1_option3_it: "Svezia",
-  knowledge_quiz2_question1_option4_it: "Finlandia",
+  knowledge_quiz2_question1: "Oslo è la capitale di quale paese?",
+  knowledge_quiz2_question1_option1: "Norvegia",
+  knowledge_quiz2_question1_option2: "Danimarca",
+  knowledge_quiz2_question1_option3: "Svezia",
+  knowledge_quiz2_question1_option4: "Finlandia",
 
   // Q2
-  knowledge_quiz2_question2_it: "Vienna è la capitale di quale paese?",
-  knowledge_quiz2_question2_option1_it: "Germania",
-  knowledge_quiz2_question2_option2_it: "Ungheria",
-  knowledge_quiz2_question2_option3_it: "Svizzera",
-  knowledge_quiz2_question2_option4_it: "Austria",
+  knowledge_quiz2_question2: "Vienna è la capitale di quale paese?",
+  knowledge_quiz2_question2_option1: "Germania",
+  knowledge_quiz2_question2_option2: "Ungheria",
+  knowledge_quiz2_question2_option3: "Svizzera",
+  knowledge_quiz2_question2_option4: "Austria",
 
   // Q3
-  knowledge_quiz2_question3_it: "Varsavia è la capitale di quale paese?",
-  knowledge_quiz2_question3_option1_it: "Ucraina",
-  knowledge_quiz2_question3_option2_it: "Repubblica Ceca",
-  knowledge_quiz2_question3_option3_it: "Polonia",
-  knowledge_quiz2_question3_option4_it: "Bielorussia",
+  knowledge_quiz2_question3: "Varsavia è la capitale di quale paese?",
+  knowledge_quiz2_question3_option1: "Ucraina",
+  knowledge_quiz2_question3_option2: "Repubblica Ceca",
+  knowledge_quiz2_question3_option3: "Polonia",
+  knowledge_quiz2_question3_option4: "Bielorussia",
 
   // Q4
-  knowledge_quiz2_question4_it: "Helsinki è la capitale di quale paese?",
-  knowledge_quiz2_question4_option1_it: "Estonia",
-  knowledge_quiz2_question4_option2_it: "Norvegia",
-  knowledge_quiz2_question4_option3_it: "Finlandia",
-  knowledge_quiz2_question4_option4_it: "Lettonia",
+  knowledge_quiz2_question4: "Helsinki è la capitale di quale paese?",
+  knowledge_quiz2_question4_option1: "Estonia",
+  knowledge_quiz2_question4_option2: "Norvegia",
+  knowledge_quiz2_question4_option3: "Finlandia",
+  knowledge_quiz2_question4_option4: "Lettonia",
 
   // Q5
-  knowledge_quiz2_question5_it: "Lisbona è la capitale di quale paese?",
-  knowledge_quiz2_question5_option1_it: "Italia",
-  knowledge_quiz2_question5_option2_it: "Portogallo",
-  knowledge_quiz2_question5_option3_it: "Grecia",
-  knowledge_quiz2_question5_option4_it: "Spagna",
+  knowledge_quiz2_question5: "Lisbona è la capitale di quale paese?",
+  knowledge_quiz2_question5_option1: "Italia",
+  knowledge_quiz2_question5_option2: "Portogallo",
+  knowledge_quiz2_question5_option3: "Grecia",
+  knowledge_quiz2_question5_option4: "Spagna",
 
   // Q6
-  knowledge_quiz2_question6_it: "Berna è la capitale di quale paese?",
-  knowledge_quiz2_question6_option1_it: "Austria",
-  knowledge_quiz2_question6_option2_it: "Svizzera",
-  knowledge_quiz2_question6_option3_it: "Germania",
-  knowledge_quiz2_question6_option4_it: "Lussemburgo",
+  knowledge_quiz2_question6: "Berna è la capitale di quale paese?",
+  knowledge_quiz2_question6_option1: "Austria",
+  knowledge_quiz2_question6_option2: "Svizzera",
+  knowledge_quiz2_question6_option3: "Germania",
+  knowledge_quiz2_question6_option4: "Lussemburgo",
 
   // Q7
-  knowledge_quiz2_question7_it: "Bruxelles è la capitale di quale paese?",
-  knowledge_quiz2_question7_option1_it: "Francia",
-  knowledge_quiz2_question7_option2_it: "Belgio",
-  knowledge_quiz2_question7_option3_it: "Lussemburgo",
-  knowledge_quiz2_question7_option4_it: "Paesi Bassi",
+  knowledge_quiz2_question7: "Bruxelles è la capitale di quale paese?",
+  knowledge_quiz2_question7_option1: "Francia",
+  knowledge_quiz2_question7_option2: "Belgio",
+  knowledge_quiz2_question7_option3: "Lussemburgo",
+  knowledge_quiz2_question7_option4: "Paesi Bassi",
 
   // Q8
-  knowledge_quiz2_question8_it: "Atene è la capitale di quale paese?",
-  knowledge_quiz2_question8_option1_it: "Malta",
-  knowledge_quiz2_question8_option2_it: "Cipro",
-  knowledge_quiz2_question8_option3_it: "Grecia",
-  knowledge_quiz2_question8_option4_it: "Italia",
+  knowledge_quiz2_question8: "Atene è la capitale di quale paese?",
+  knowledge_quiz2_question8_option1: "Malta",
+  knowledge_quiz2_question8_option2: "Cipro",
+  knowledge_quiz2_question8_option3: "Grecia",
+  knowledge_quiz2_question8_option4: "Italia",
 
   // Q9
-  knowledge_quiz2_question9_it: "Reykjavík è la capitale di quale paese?",
-  knowledge_quiz2_question9_option1_it: "Groenlandia",
-  knowledge_quiz2_question9_option2_it: "Danimarca",
-  knowledge_quiz2_question9_option3_it: "Norvegia",
-  knowledge_quiz2_question9_option4_it: "Islanda",
+  knowledge_quiz2_question9: "Reykjavík è la capitale di quale paese?",
+  knowledge_quiz2_question9_option1: "Groenlandia",
+  knowledge_quiz2_question9_option2: "Danimarca",
+  knowledge_quiz2_question9_option3: "Norvegia",
+  knowledge_quiz2_question9_option4: "Islanda",
 
   // Q10
-  knowledge_quiz2_question10_it: "Zagabria è la capitale di quale paese?",
-  knowledge_quiz2_question10_option1_it: "Serbia",
-  knowledge_quiz2_question10_option2_it: "Slovenia",
-  knowledge_quiz2_question10_option3_it: "Croazia",
-  knowledge_quiz2_question10_option4_it: "Montenegro",
+  knowledge_quiz2_question10: "Zagabria è la capitale di quale paese?",
+  knowledge_quiz2_question10_option1: "Serbia",
+  knowledge_quiz2_question10_option2: "Slovenia",
+  knowledge_quiz2_question10_option3: "Croazia",
+  knowledge_quiz2_question10_option4: "Montenegro",
 
   // Q11
-  knowledge_quiz2_question11_it: "Skopje è la capitale di quale paese?",
-  knowledge_quiz2_question11_option1_it: "Albania",
-  knowledge_quiz2_question11_option2_it: "Macedonia del Nord",
-  knowledge_quiz2_question11_option3_it: "Bulgaria",
-  knowledge_quiz2_question11_option4_it: "Kosovo",
+  knowledge_quiz2_question11: "Skopje è la capitale di quale paese?",
+  knowledge_quiz2_question11_option1: "Albania",
+  knowledge_quiz2_question11_option2: "Macedonia del Nord",
+  knowledge_quiz2_question11_option3: "Bulgaria",
+  knowledge_quiz2_question11_option4: "Kosovo",
 
   // Q12
-  knowledge_quiz2_question12_it: "Sofia è la capitale di quale paese?",
-  knowledge_quiz2_question12_option1_it: "Bulgaria",
-  knowledge_quiz2_question12_option2_it: "Serbia",
-  knowledge_quiz2_question12_option3_it: "Slovacchia",
-  knowledge_quiz2_question12_option4_it: "Romania",
+  knowledge_quiz2_question12: "Sofia è la capitale di quale paese?",
+  knowledge_quiz2_question12_option1: "Bulgaria",
+  knowledge_quiz2_question12_option2: "Serbia",
+  knowledge_quiz2_question12_option3: "Slovacchia",
+  knowledge_quiz2_question12_option4: "Romania",
 
   // Q13
-  knowledge_quiz2_question13_it: "Tirana è la capitale di quale paese?",
-  knowledge_quiz2_question13_option1_it: "Bosnia ed Erzegovina",
-  knowledge_quiz2_question13_option2_it: "Macedonia del Nord",
-  knowledge_quiz2_question13_option3_it: "Kosovo",
-  knowledge_quiz2_question13_option4_it: "Albania",
+  knowledge_quiz2_question13: "Tirana è la capitale di quale paese?",
+  knowledge_quiz2_question13_option1: "Bosnia ed Erzegovina",
+  knowledge_quiz2_question13_option2: "Macedonia del Nord",
+  knowledge_quiz2_question13_option3: "Kosovo",
+  knowledge_quiz2_question13_option4: "Albania",
 
   // Q14
-  knowledge_quiz2_question14_it: "Podgorica è la capitale di quale paese?",
-  knowledge_quiz2_question14_option1_it: "Slovenia",
-  knowledge_quiz2_question14_option2_it: "Montenegro",
-  knowledge_quiz2_question14_option3_it: "Croazia",
-  knowledge_quiz2_question14_option4_it: "Serbia",
+  knowledge_quiz2_question14: "Podgorica è la capitale di quale paese?",
+  knowledge_quiz2_question14_option1: "Slovenia",
+  knowledge_quiz2_question14_option2: "Montenegro",
+  knowledge_quiz2_question14_option3: "Croazia",
+  knowledge_quiz2_question14_option4: "Serbia",
 
   // Q15
-  knowledge_quiz2_question15_it: "Lubiana è la capitale di quale paese?",
-  knowledge_quiz2_question15_option1_it: "Austria",
-  knowledge_quiz2_question15_option2_it: "Slovacchia",
-  knowledge_quiz2_question15_option3_it: "Slovenia",
-  knowledge_quiz2_question15_option4_it: "Croazia",
+  knowledge_quiz2_question15: "Lubiana è la capitale di quale paese?",
+  knowledge_quiz2_question15_option1: "Austria",
+  knowledge_quiz2_question15_option2: "Slovacchia",
+  knowledge_quiz2_question15_option3: "Slovenia",
+  knowledge_quiz2_question15_option4: "Croazia",
 
   // Q16
-  knowledge_quiz2_question16_it: "Belgrado è la capitale di quale paese?",
-  knowledge_quiz2_question16_option1_it: "Bosnia",
-  knowledge_quiz2_question16_option2_it: "Romania",
-  knowledge_quiz2_question16_option3_it: "Montenegro",
-  knowledge_quiz2_question16_option4_it: "Serbia",
+  knowledge_quiz2_question16: "Belgrado è la capitale di quale paese?",
+  knowledge_quiz2_question16_option1: "Bosnia",
+  knowledge_quiz2_question16_option2: "Romania",
+  knowledge_quiz2_question16_option3: "Montenegro",
+  knowledge_quiz2_question16_option4: "Serbia",
 
   // Q17
-  knowledge_quiz2_question17_it: "Sarajevo è la capitale di quale paese?",
-  knowledge_quiz2_question17_option1_it: "Serbia",
-  knowledge_quiz2_question17_option2_it: "Croazia",
-  knowledge_quiz2_question17_option3_it: "Bosnia ed Erzegovina",
-  knowledge_quiz2_question17_option4_it: "Montenegro",
+  knowledge_quiz2_question17: "Sarajevo è la capitale di quale paese?",
+  knowledge_quiz2_question17_option1: "Serbia",
+  knowledge_quiz2_question17_option2: "Croazia",
+  knowledge_quiz2_question17_option3: "Bosnia ed Erzegovina",
+  knowledge_quiz2_question17_option4: "Montenegro",
 
   // Q18
-  knowledge_quiz2_question18_it: "Chișinău è la capitale di quale paese?",
-  knowledge_quiz2_question18_option1_it: "Bielorussia",
-  knowledge_quiz2_question18_option2_it: "Ucraina",
-  knowledge_quiz2_question18_option3_it: "Romania",
-  knowledge_quiz2_question18_option4_it: "Repubblica di Moldova",
+  knowledge_quiz2_question18: "Chișinău è la capitale di quale paese?",
+  knowledge_quiz2_question18_option1: "Bielorussia",
+  knowledge_quiz2_question18_option2: "Ucraina",
+  knowledge_quiz2_question18_option3: "Romania",
+  knowledge_quiz2_question18_option4: "Repubblica di Moldova",
 
   // Q19
-  knowledge_quiz2_question19_it: "Bucarest è la capitale di quale paese?",
-  knowledge_quiz2_question19_option1_it: "Romania",
-  knowledge_quiz2_question19_option2_it: "Moldova",
-  knowledge_quiz2_question19_option3_it: "Ungheria",
-  knowledge_quiz2_question19_option4_it: "Bulgaria",
+  knowledge_quiz2_question19: "Bucarest è la capitale di quale paese?",
+  knowledge_quiz2_question19_option1: "Romania",
+  knowledge_quiz2_question19_option2: "Moldova",
+  knowledge_quiz2_question19_option3: "Ungheria",
+  knowledge_quiz2_question19_option4: "Bulgaria",
 
   // Q20
-  knowledge_quiz2_question20_it: "Tallinn è la capitale di quale paese?",
-  knowledge_quiz2_question20_option1_it: "Lituania",
-  knowledge_quiz2_question20_option2_it: "Finlandia",
-  knowledge_quiz2_question20_option3_it: "Lettonia",
-  knowledge_quiz2_question20_option4_it: "Estonia",
+  knowledge_quiz2_question20: "Tallinn è la capitale di quale paese?",
+  knowledge_quiz2_question20_option1: "Lituania",
+  knowledge_quiz2_question20_option2: "Finlandia",
+  knowledge_quiz2_question20_option3: "Lettonia",
+  knowledge_quiz2_question20_option4: "Estonia",
 
   // Knowledge Quiz 3
 
   // Q1
-  knowledge_quiz3_question1_it:
-    "Qual è il pianeta più grande del sistema solare?",
-  knowledge_quiz3_question1_option1_it: "Terra",
-  knowledge_quiz3_question1_option2_it: "Marte",
-  knowledge_quiz3_question1_option3_it: "Saturno",
-  knowledge_quiz3_question1_option4_it: "Giove",
+  knowledge_quiz3_question1: "Qual è il pianeta più grande del sistema solare?",
+  knowledge_quiz3_question1_option1: "Terra",
+  knowledge_quiz3_question1_option2: "Marte",
+  knowledge_quiz3_question1_option3: "Saturno",
+  knowledge_quiz3_question1_option4: "Giove",
 
   // Q2
-  knowledge_quiz3_question2_it: "Chi ha dipinto la Monna Lisa?",
-  knowledge_quiz3_question2_option1_it: "Van Gogh",
-  knowledge_quiz3_question2_option2_it: "Michelangelo",
-  knowledge_quiz3_question2_option3_it: "Picasso",
-  knowledge_quiz3_question2_option4_it: "Leonardo da Vinci",
+  knowledge_quiz3_question2: "Chi ha dipinto la Monna Lisa?",
+  knowledge_quiz3_question2_option1: "Van Gogh",
+  knowledge_quiz3_question2_option2: "Michelangelo",
+  knowledge_quiz3_question2_option3: "Picasso",
+  knowledge_quiz3_question2_option4: "Leonardo da Vinci",
 
   // Q3
-  knowledge_quiz3_question3_it:
-    "In che anno è finita la Seconda Guerra Mondiale?",
-  knowledge_quiz3_question3_option1_it: "1945",
-  knowledge_quiz3_question3_option2_it: "1939",
-  knowledge_quiz3_question3_option3_it: "1950",
-  knowledge_quiz3_question3_option4_it: "1942",
+  knowledge_quiz3_question3: "In che anno è finita la Seconda Guerra Mondiale?",
+  knowledge_quiz3_question3_option1: "1945",
+  knowledge_quiz3_question3_option2: "1939",
+  knowledge_quiz3_question3_option3: "1950",
+  knowledge_quiz3_question3_option4: "1942",
 
   // Q4
-  knowledge_quiz3_question4_it: "Qual è la capitale del Canada?",
-  knowledge_quiz3_question4_option1_it: "Toronto",
-  knowledge_quiz3_question4_option2_it: "Montreal",
-  knowledge_quiz3_question4_option3_it: "Vancouver",
-  knowledge_quiz3_question4_option4_it: "Ottawa",
+  knowledge_quiz3_question4: "Qual è la capitale del Canada?",
+  knowledge_quiz3_question4_option1: "Toronto",
+  knowledge_quiz3_question4_option2: "Montreal",
+  knowledge_quiz3_question4_option3: "Vancouver",
+  knowledge_quiz3_question4_option4: "Ottawa",
 
   // Q5
-  knowledge_quiz3_question5_it:
+  knowledge_quiz3_question5:
     "Quale organo è responsabile del pompaggio del sangue?",
-  knowledge_quiz3_question5_option1_it: "Cuore",
-  knowledge_quiz3_question5_option2_it: "Fegato",
-  knowledge_quiz3_question5_option3_it: "Polmoni",
-  knowledge_quiz3_question5_option4_it: "Reni",
+  knowledge_quiz3_question5_option1: "Cuore",
+  knowledge_quiz3_question5_option2: "Fegato",
+  knowledge_quiz3_question5_option3: "Polmoni",
+  knowledge_quiz3_question5_option4: "Reni",
 
   // Q6
-  knowledge_quiz3_question6_it: "Quanti continenti ci sono?",
-  knowledge_quiz3_question6_option1_it: "7",
-  knowledge_quiz3_question6_option2_it: "8",
-  knowledge_quiz3_question6_option3_it: "6",
-  knowledge_quiz3_question6_option4_it: "5",
+  knowledge_quiz3_question6: "Quanti continenti ci sono?",
+  knowledge_quiz3_question6_option1: "7",
+  knowledge_quiz3_question6_option2: "8",
+  knowledge_quiz3_question6_option3: "6",
+  knowledge_quiz3_question6_option4: "5",
 
   // Q7
-  knowledge_quiz3_question7_it: "Qual è il fiume più lungo del mondo?",
-  knowledge_quiz3_question7_option1_it: "Yangtze",
-  knowledge_quiz3_question7_option2_it: "Amazzonia",
-  knowledge_quiz3_question7_option3_it: "Mississippi",
-  knowledge_quiz3_question7_option4_it: "Nilo",
+  knowledge_quiz3_question7: "Qual è il fiume più lungo del mondo?",
+  knowledge_quiz3_question7_option1: "Yangtze",
+  knowledge_quiz3_question7_option2: "Amazzonia",
+  knowledge_quiz3_question7_option3: "Mississippi",
+  knowledge_quiz3_question7_option4: "Nilo",
 
   // Q8
-  knowledge_quiz3_question8_it: "Qual è il simbolo chimico dell'oro?",
-  knowledge_quiz3_question8_option1_it: "Au",
-  knowledge_quiz3_question8_option2_it: "Ag",
-  knowledge_quiz3_question8_option3_it: "G",
-  knowledge_quiz3_question8_option4_it: "Go",
+  knowledge_quiz3_question8: "Qual è il simbolo chimico dell'oro?",
+  knowledge_quiz3_question8_option1: "Au",
+  knowledge_quiz3_question8_option2: "Ag",
+  knowledge_quiz3_question8_option3: "G",
+  knowledge_quiz3_question8_option4: "Go",
 
   // Q9
-  knowledge_quiz3_question9_it: "Qual è il pianeta noto come Pianeta Rosso?",
-  knowledge_quiz3_question9_option1_it: "Giove",
-  knowledge_quiz3_question9_option2_it: "Marte",
-  knowledge_quiz3_question9_option3_it: "Venere",
-  knowledge_quiz3_question9_option4_it: "Mercurio",
+  knowledge_quiz3_question9: "Qual è il pianeta noto come Pianeta Rosso?",
+  knowledge_quiz3_question9_option1: "Giove",
+  knowledge_quiz3_question9_option2: "Marte",
+  knowledge_quiz3_question9_option3: "Venere",
+  knowledge_quiz3_question9_option4: "Mercurio",
 
   // Q10
-  knowledge_quiz3_question10_it:
+  knowledge_quiz3_question10:
     "Quale scienziato ha sviluppato la teoria della relatività?",
-  knowledge_quiz3_question10_option1_it: "Einstein",
-  knowledge_quiz3_question10_option2_it: "Newton",
-  knowledge_quiz3_question10_option3_it: "Bohr",
-  knowledge_quiz3_question10_option4_it: "Tesla",
+  knowledge_quiz3_question10_option1: "Einstein",
+  knowledge_quiz3_question10_option2: "Newton",
+  knowledge_quiz3_question10_option3: "Bohr",
+  knowledge_quiz3_question10_option4: "Tesla",
 
   // Q11
-  knowledge_quiz3_question11_it: "Qual è la capitale dell’Australia?",
-  knowledge_quiz3_question11_option1_it: "Canberra",
-  knowledge_quiz3_question11_option2_it: "Sydney",
-  knowledge_quiz3_question11_option3_it: "Brisbane",
-  knowledge_quiz3_question11_option4_it: "Melbourne",
+  knowledge_quiz3_question11: "Qual è la capitale dell’Australia?",
+  knowledge_quiz3_question11_option1: "Canberra",
+  knowledge_quiz3_question11_option2: "Sydney",
+  knowledge_quiz3_question11_option3: "Brisbane",
+  knowledge_quiz3_question11_option4: "Melbourne",
 
   // Q12
-  knowledge_quiz3_question12_it: "Quale paese ha inventato la pizza?",
-  knowledge_quiz3_question12_option1_it: "Grecia",
-  knowledge_quiz3_question12_option2_it: "Spagna",
-  knowledge_quiz3_question12_option3_it: "Francia",
-  knowledge_quiz3_question12_option4_it: "Italia",
+  knowledge_quiz3_question12: "Quale paese ha inventato la pizza?",
+  knowledge_quiz3_question12_option1: "Grecia",
+  knowledge_quiz3_question12_option2: "Spagna",
+  knowledge_quiz3_question12_option3: "Francia",
+  knowledge_quiz3_question12_option4: "Italia",
 
   // Q13
-  knowledge_quiz3_question13_it:
+  knowledge_quiz3_question13:
     "Quanti giocatori ci sono in una squadra di calcio (in campo)?",
-  knowledge_quiz3_question13_option1_it: "9",
-  knowledge_quiz3_question13_option2_it: "11",
-  knowledge_quiz3_question13_option3_it: "10",
-  knowledge_quiz3_question13_option4_it: "12",
+  knowledge_quiz3_question13_option1: "9",
+  knowledge_quiz3_question13_option2: "11",
+  knowledge_quiz3_question13_option3: "10",
+  knowledge_quiz3_question13_option4: "12",
 
   // Q14
-  knowledge_quiz3_question14_it:
+  knowledge_quiz3_question14:
     "Quale elemento è rappresentato dalla sigla 'O' nella tavola periodica?",
-  knowledge_quiz3_question14_option1_it: "Osmio",
-  knowledge_quiz3_question14_option2_it: "Ossigeno",
-  knowledge_quiz3_question14_option3_it: "Ozono",
-  knowledge_quiz3_question14_option4_it: "Ossido",
+  knowledge_quiz3_question14_option1: "Osmio",
+  knowledge_quiz3_question14_option2: "Ossigeno",
+  knowledge_quiz3_question14_option3: "Ozono",
+  knowledge_quiz3_question14_option4: "Ossido",
 
   // Q15
-  knowledge_quiz3_question15_it:
+  knowledge_quiz3_question15:
     "Qual è la lingua con il maggior numero di madrelingua?",
-  knowledge_quiz3_question15_option1_it: "Cinese mandarino",
-  knowledge_quiz3_question15_option2_it: "Inglese",
-  knowledge_quiz3_question15_option3_it: "Hindi",
-  knowledge_quiz3_question15_option4_it: "Spagnolo",
+  knowledge_quiz3_question15_option1: "Cinese mandarino",
+  knowledge_quiz3_question15_option2: "Inglese",
+  knowledge_quiz3_question15_option3: "Hindi",
+  knowledge_quiz3_question15_option4: "Spagnolo",
 
   // Q16
-  knowledge_quiz3_question16_it: "Qual è la montagna più alta della Terra?",
-  knowledge_quiz3_question16_option1_it: "K2",
-  knowledge_quiz3_question16_option2_it: "Makalu",
-  knowledge_quiz3_question16_option3_it: "Kangchenjunga",
-  knowledge_quiz3_question16_option4_it: "Everest",
+  knowledge_quiz3_question16: "Qual è la montagna più alta della Terra?",
+  knowledge_quiz3_question16_option1: "K2",
+  knowledge_quiz3_question16_option2: "Makalu",
+  knowledge_quiz3_question16_option3: "Kangchenjunga",
+  knowledge_quiz3_question16_option4: "Everest",
 
   // Q17
-  knowledge_quiz3_question17_it: "Chi ha scritto 'Romeo e Giulietta'?",
-  knowledge_quiz3_question17_option1_it: "Dickens",
-  knowledge_quiz3_question17_option2_it: "Omero",
-  knowledge_quiz3_question17_option3_it: "Dante",
-  knowledge_quiz3_question17_option4_it: "Shakespeare",
+  knowledge_quiz3_question17: "Chi ha scritto 'Romeo e Giulietta'?",
+  knowledge_quiz3_question17_option1: "Dickens",
+  knowledge_quiz3_question17_option2: "Omero",
+  knowledge_quiz3_question17_option3: "Dante",
+  knowledge_quiz3_question17_option4: "Shakespeare",
 
   // Q18
-  knowledge_quiz3_question18_it: "Cosa significa 'WWW' in un browser web?",
-  knowledge_quiz3_question18_option1_it: "Web World Wide",
-  knowledge_quiz3_question18_option2_it: "Wide Web World",
-  knowledge_quiz3_question18_option3_it: "World Wide Web",
-  knowledge_quiz3_question18_option4_it: "Wide Web Worldnet",
+  knowledge_quiz3_question18: "Cosa significa 'WWW' in un browser web?",
+  knowledge_quiz3_question18_option1: "Web World Wide",
+  knowledge_quiz3_question18_option2: "Wide Web World",
+  knowledge_quiz3_question18_option3: "World Wide Web",
+  knowledge_quiz3_question18_option4: "Wide Web Worldnet",
 
   // Q19
-  knowledge_quiz3_question19_it:
+  knowledge_quiz3_question19:
     "Qual è l'animale noto come il 'Re della giungla'?",
-  knowledge_quiz3_question19_option1_it: "Tigre",
-  knowledge_quiz3_question19_option2_it: "Leone",
-  knowledge_quiz3_question19_option3_it: "Elefante",
-  knowledge_quiz3_question19_option4_it: "Pantera",
+  knowledge_quiz3_question19_option1: "Tigre",
+  knowledge_quiz3_question19_option2: "Leone",
+  knowledge_quiz3_question19_option3: "Elefante",
+  knowledge_quiz3_question19_option4: "Pantera",
 
   // Q20
-  knowledge_quiz3_question20_it: "Quanti colori ha un arcobaleno?",
-  knowledge_quiz3_question20_option1_it: "5",
-  knowledge_quiz3_question20_option2_it: "8",
-  knowledge_quiz3_question20_option3_it: "7",
-  knowledge_quiz3_question20_option4_it: "6",
+  knowledge_quiz3_question20: "Quanti colori ha un arcobaleno?",
+  knowledge_quiz3_question20_option1: "5",
+  knowledge_quiz3_question20_option2: "8",
+  knowledge_quiz3_question20_option3: "7",
+  knowledge_quiz3_question20_option4: "6",
 
   // Knowledge Quiz 4
 
   // Q1
-  knowledge_quiz4_question1_it:
+  knowledge_quiz4_question1:
     "In quale anno è iniziata la Prima Guerra Mondiale?",
-  knowledge_quiz4_question1_option1_it: "1918",
-  knowledge_quiz4_question1_option2_it: "1916",
-  knowledge_quiz4_question1_option3_it: "1912",
-  knowledge_quiz4_question1_option4_it: "1914",
+  knowledge_quiz4_question1_option1: "1918",
+  knowledge_quiz4_question1_option2: "1916",
+  knowledge_quiz4_question1_option3: "1912",
+  knowledge_quiz4_question1_option4: "1914",
 
   // Q2
-  knowledge_quiz4_question2_it:
+  knowledge_quiz4_question2:
     "Chi è stato il Primo Ministro britannico durante la maggior parte della Seconda Guerra Mondiale?",
-  knowledge_quiz4_question2_option1_it: "Neville Chamberlain",
-  knowledge_quiz4_question2_option2_it: "Margaret Thatcher",
-  knowledge_quiz4_question2_option3_it: "Winston Churchill",
-  knowledge_quiz4_question2_option4_it: "Tony Blair",
+  knowledge_quiz4_question2_option1: "Neville Chamberlain",
+  knowledge_quiz4_question2_option2: "Margaret Thatcher",
+  knowledge_quiz4_question2_option3: "Winston Churchill",
+  knowledge_quiz4_question2_option4: "Tony Blair",
 
   // Q3
-  knowledge_quiz4_question3_it: "In che anno è caduto il Muro di Berlino?",
-  knowledge_quiz4_question3_option1_it: "1991",
-  knowledge_quiz4_question3_option2_it: "1987",
-  knowledge_quiz4_question3_option3_it: "1993",
-  knowledge_quiz4_question3_option4_it: "1989",
+  knowledge_quiz4_question3: "In che anno è caduto il Muro di Berlino?",
+  knowledge_quiz4_question3_option1: "1991",
+  knowledge_quiz4_question3_option2: "1987",
+  knowledge_quiz4_question3_option3: "1993",
+  knowledge_quiz4_question3_option4: "1989",
 
   // Q4
-  knowledge_quiz4_question4_it:
+  knowledge_quiz4_question4:
     "Quale paese ha lanciato il primo satellite artificiale?",
-  knowledge_quiz4_question4_option1_it: "Stati Uniti",
-  knowledge_quiz4_question4_option2_it: "Cina",
-  knowledge_quiz4_question4_option3_it: "Germania",
-  knowledge_quiz4_question4_option4_it: "Russia",
+  knowledge_quiz4_question4_option1: "Stati Uniti",
+  knowledge_quiz4_question4_option2: "Cina",
+  knowledge_quiz4_question4_option3: "Germania",
+  knowledge_quiz4_question4_option4: "Russia",
 
   // Q5
-  knowledge_quiz4_question5_it:
+  knowledge_quiz4_question5:
     "Chi è stato assassinato nel 1963 a Dallas, Texas?",
-  knowledge_quiz4_question5_option1_it: "John F. Kennedy",
-  knowledge_quiz4_question5_option2_it: "Robert Kennedy",
-  knowledge_quiz4_question5_option3_it: "Martin Luther King Jr.",
-  knowledge_quiz4_question5_option4_it: "Ronald Reagan",
+  knowledge_quiz4_question5_option1: "John F. Kennedy",
+  knowledge_quiz4_question5_option2: "Robert Kennedy",
+  knowledge_quiz4_question5_option3: "Martin Luther King Jr.",
+  knowledge_quiz4_question5_option4: "Ronald Reagan",
 
   // Q6
-  knowledge_quiz4_question6_it:
-    "In che anno è finita la Seconda Guerra Mondiale?",
-  knowledge_quiz4_question6_option1_it: "1950",
-  knowledge_quiz4_question6_option2_it: "1945",
-  knowledge_quiz4_question6_option3_it: "1939",
-  knowledge_quiz4_question6_option4_it: "1942",
+  knowledge_quiz4_question6: "In che anno è finita la Seconda Guerra Mondiale?",
+  knowledge_quiz4_question6_option1: "1950",
+  knowledge_quiz4_question6_option2: "1945",
+  knowledge_quiz4_question6_option3: "1939",
+  knowledge_quiz4_question6_option4: "1942",
 
   // Q7
-  knowledge_quiz4_question7_it:
+  knowledge_quiz4_question7:
     "Come si chiamava il leader per i diritti civili che tenne il discorso 'I Have a Dream'?",
-  knowledge_quiz4_question7_option1_it: "Malcolm X",
-  knowledge_quiz4_question7_option2_it: "Martin Luther King Jr.",
-  knowledge_quiz4_question7_option3_it: "Frederick Douglass",
-  knowledge_quiz4_question7_option4_it: "Barack Obama",
+  knowledge_quiz4_question7_option1: "Malcolm X",
+  knowledge_quiz4_question7_option2: "Martin Luther King Jr.",
+  knowledge_quiz4_question7_option3: "Frederick Douglass",
+  knowledge_quiz4_question7_option4: "Barack Obama",
 
   // Q8
-  knowledge_quiz4_question8_it: "Quando si è dissolta l'Unione Sovietica?",
-  knowledge_quiz4_question8_option1_it: "1989",
-  knowledge_quiz4_question8_option2_it: "1992",
-  knowledge_quiz4_question8_option3_it: "1991",
-  knowledge_quiz4_question8_option4_it: "1990",
+  knowledge_quiz4_question8: "Quando si è dissolta l'Unione Sovietica?",
+  knowledge_quiz4_question8_option1: "1989",
+  knowledge_quiz4_question8_option2: "1992",
+  knowledge_quiz4_question8_option3: "1991",
+  knowledge_quiz4_question8_option4: "1990",
 
   // Q9
-  knowledge_quiz4_question9_it:
+  knowledge_quiz4_question9:
     "Quale guerra è stata combattuta tra Corea del Nord e Corea del Sud?",
-  knowledge_quiz4_question9_option1_it: "Guerra di Corea",
-  knowledge_quiz4_question9_option2_it: "Seconda Guerra Mondiale",
-  knowledge_quiz4_question9_option3_it: "Guerra del Vietnam",
-  knowledge_quiz4_question9_option4_it: "Guerra Fredda",
+  knowledge_quiz4_question9_option1: "Guerra di Corea",
+  knowledge_quiz4_question9_option2: "Seconda Guerra Mondiale",
+  knowledge_quiz4_question9_option3: "Guerra del Vietnam",
+  knowledge_quiz4_question9_option4: "Guerra Fredda",
 
   // Q10
-  knowledge_quiz4_question10_it:
+  knowledge_quiz4_question10:
     "Come si chiamava il primo uomo a camminare sulla Luna?",
-  knowledge_quiz4_question10_option1_it: "Michael Collins",
-  knowledge_quiz4_question10_option2_it: "Neil Armstrong",
-  knowledge_quiz4_question10_option3_it: "Jurij Gagarin",
-  knowledge_quiz4_question10_option4_it: "Buzz Aldrin",
+  knowledge_quiz4_question10_option1: "Michael Collins",
+  knowledge_quiz4_question10_option2: "Neil Armstrong",
+  knowledge_quiz4_question10_option3: "Jurij Gagarin",
+  knowledge_quiz4_question10_option4: "Buzz Aldrin",
 
   // Q11
-  knowledge_quiz4_question11_it: "Quale paese ha guidato Adolf Hitler?",
-  knowledge_quiz4_question11_option1_it: "Germania",
-  knowledge_quiz4_question11_option2_it: "Francia",
-  knowledge_quiz4_question11_option3_it: "Austria",
-  knowledge_quiz4_question11_option4_it: "Russia",
+  knowledge_quiz4_question11: "Quale paese ha guidato Adolf Hitler?",
+  knowledge_quiz4_question11_option1: "Germania",
+  knowledge_quiz4_question11_option2: "Francia",
+  knowledge_quiz4_question11_option3: "Austria",
+  knowledge_quiz4_question11_option4: "Russia",
 
   // Q12
-  knowledge_quiz4_question12_it: "In che anno è affondato il Titanic?",
-  knowledge_quiz4_question12_option1_it: "1914",
-  knowledge_quiz4_question12_option2_it: "1920",
-  knowledge_quiz4_question12_option3_it: "1912",
-  knowledge_quiz4_question12_option4_it: "1905",
+  knowledge_quiz4_question12: "In che anno è affondato il Titanic?",
+  knowledge_quiz4_question12_option1: "1914",
+  knowledge_quiz4_question12_option2: "1920",
+  knowledge_quiz4_question12_option3: "1912",
+  knowledge_quiz4_question12_option4: "1905",
 
   // Q13
-  knowledge_quiz4_question13_it:
+  knowledge_quiz4_question13:
     "Quale conflitto della Guerra Fredda si è verificato nel sud-est asiatico negli anni '60–'70?",
-  knowledge_quiz4_question13_option1_it: "Guerra del Vietnam",
-  knowledge_quiz4_question13_option2_it: "Guerra di Corea",
-  knowledge_quiz4_question13_option3_it: "Guerra del Golfo",
-  knowledge_quiz4_question13_option4_it: "Guerra in Afghanistan",
+  knowledge_quiz4_question13_option1: "Guerra del Vietnam",
+  knowledge_quiz4_question13_option2: "Guerra di Corea",
+  knowledge_quiz4_question13_option3: "Guerra del Golfo",
+  knowledge_quiz4_question13_option4: "Guerra in Afghanistan",
 
   // Q14
-  knowledge_quiz4_question14_it:
+  knowledge_quiz4_question14:
     "Quale muro era un simbolo di divisione in Germania durante la Guerra Fredda?",
-  knowledge_quiz4_question14_option1_it: "Grande Muraglia",
-  knowledge_quiz4_question14_option2_it: "Muro Occidentale",
-  knowledge_quiz4_question14_option3_it: "Muro di Berlino",
-  knowledge_quiz4_question14_option4_it: "Muro di Ferro",
+  knowledge_quiz4_question14_option1: "Grande Muraglia",
+  knowledge_quiz4_question14_option2: "Muro Occidentale",
+  knowledge_quiz4_question14_option3: "Muro di Berlino",
+  knowledge_quiz4_question14_option4: "Muro di Ferro",
 
   // Q15
-  knowledge_quiz4_question15_it:
+  knowledge_quiz4_question15:
     "Quando è stata fondata l'Organizzazione delle Nazioni Unite?",
-  knowledge_quiz4_question15_option1_it: "1942",
-  knowledge_quiz4_question15_option2_it: "1939",
-  knowledge_quiz4_question15_option3_it: "1945",
-  knowledge_quiz4_question15_option4_it: "1950",
+  knowledge_quiz4_question15_option1: "1942",
+  knowledge_quiz4_question15_option2: "1939",
+  knowledge_quiz4_question15_option3: "1945",
+  knowledge_quiz4_question15_option4: "1950",
 
   // Q16
-  knowledge_quiz4_question16_it:
+  knowledge_quiz4_question16:
     "Chi è stata la prima donna Primo Ministro del Regno Unito?",
-  knowledge_quiz4_question16_option1_it: "Margaret Thatcher",
-  knowledge_quiz4_question16_option2_it: "Theresa May",
-  knowledge_quiz4_question16_option3_it: "Angela Merkel",
-  knowledge_quiz4_question16_option4_it: "Indira Gandhi",
+  knowledge_quiz4_question16_option1: "Margaret Thatcher",
+  knowledge_quiz4_question16_option2: "Theresa May",
+  knowledge_quiz4_question16_option3: "Angela Merkel",
+  knowledge_quiz4_question16_option4: "Indira Gandhi",
 
   // Q17
-  knowledge_quiz4_question17_it:
+  knowledge_quiz4_question17:
     "In quale paese è avvenuto il disastro nucleare di Chernobyl?",
-  knowledge_quiz4_question17_option1_it: "Bielorussia",
-  knowledge_quiz4_question17_option2_it: "Ucraina",
-  knowledge_quiz4_question17_option3_it: "Russia",
-  knowledge_quiz4_question17_option4_it: "Kazakistan",
+  knowledge_quiz4_question17_option1: "Bielorussia",
+  knowledge_quiz4_question17_option2: "Ucraina",
+  knowledge_quiz4_question17_option3: "Russia",
+  knowledge_quiz4_question17_option4: "Kazakistan",
 
   // Q18
-  knowledge_quiz4_question18_it:
+  knowledge_quiz4_question18:
     "Chi era il leader dell'Unione Sovietica durante la Seconda Guerra Mondiale?",
-  knowledge_quiz4_question18_option1_it: "Lenin",
-  knowledge_quiz4_question18_option2_it: "Stalin",
-  knowledge_quiz4_question18_option3_it: "Trotsky",
-  knowledge_quiz4_question18_option4_it: "Gorbaciov",
+  knowledge_quiz4_question18_option1: "Lenin",
+  knowledge_quiz4_question18_option2: "Stalin",
+  knowledge_quiz4_question18_option3: "Trotsky",
+  knowledge_quiz4_question18_option4: "Gorbaciov",
 
   // Q19
-  knowledge_quiz4_question19_it:
+  knowledge_quiz4_question19:
     "Qual è il nome del trattato che ha posto fine alla Prima Guerra Mondiale?",
-  knowledge_quiz4_question19_option1_it: "Trattato di Parigi",
-  knowledge_quiz4_question19_option2_it: "Trattato di Versailles",
-  knowledge_quiz4_question19_option3_it: "Patto di Yalta",
-  knowledge_quiz4_question19_option4_it: "Accordo di Potsdam",
+  knowledge_quiz4_question19_option1: "Trattato di Parigi",
+  knowledge_quiz4_question19_option2: "Trattato di Versailles",
+  knowledge_quiz4_question19_option3: "Patto di Yalta",
+  knowledge_quiz4_question19_option4: "Accordo di Potsdam",
 
   // Q20
-  knowledge_quiz4_question20_it:
+  knowledge_quiz4_question20:
     "Quale muro è caduto nel 1989, segnando la fine dell’era della Guerra Fredda?",
-  knowledge_quiz4_question20_option1_it: "Muro di Ferro",
-  knowledge_quiz4_question20_option2_it: "Muro Occidentale",
-  knowledge_quiz4_question20_option3_it: "Grande Muraglia",
-  knowledge_quiz4_question20_option4_it: "Muro di Berlino",
+  knowledge_quiz4_question20_option1: "Muro di Ferro",
+  knowledge_quiz4_question20_option2: "Muro Occidentale",
+  knowledge_quiz4_question20_option3: "Grande Muraglia",
+  knowledge_quiz4_question20_option4: "Muro di Berlino",
 
   // Knowledge Quiz 5
 
   // Q1
-  knowledge_quiz5_question1_it:
+  knowledge_quiz5_question1:
     "Quale pianeta è conosciuto come il Pianeta Rosso?",
-  knowledge_quiz5_question1_option1_it: "Mercurio",
-  knowledge_quiz5_question1_option2_it: "Venere",
-  knowledge_quiz5_question1_option3_it: "Giove",
-  knowledge_quiz5_question1_option4_it: "Marte",
+  knowledge_quiz5_question1_option1: "Mercurio",
+  knowledge_quiz5_question1_option2: "Venere",
+  knowledge_quiz5_question1_option3: "Giove",
+  knowledge_quiz5_question1_option4: "Marte",
 
   // Q2
-  knowledge_quiz5_question2_it:
+  knowledge_quiz5_question2:
     "Qual è il pianeta più grande del nostro sistema solare?",
-  knowledge_quiz5_question2_option1_it: "Giove",
-  knowledge_quiz5_question2_option2_it: "Terra",
-  knowledge_quiz5_question2_option3_it: "Saturno",
-  knowledge_quiz5_question2_option4_it: "Nettuno",
+  knowledge_quiz5_question2_option1: "Giove",
+  knowledge_quiz5_question2_option2: "Terra",
+  knowledge_quiz5_question2_option3: "Saturno",
+  knowledge_quiz5_question2_option4: "Nettuno",
 
   // Q3
-  knowledge_quiz5_question3_it: "Quanti pianeti ci sono nel sistema solare?",
-  knowledge_quiz5_question3_option1_it: "7",
-  knowledge_quiz5_question3_option2_it: "9",
-  knowledge_quiz5_question3_option3_it: "8",
-  knowledge_quiz5_question3_option4_it: "10",
+  knowledge_quiz5_question3: "Quanti pianeti ci sono nel sistema solare?",
+  knowledge_quiz5_question3_option1: "7",
+  knowledge_quiz5_question3_option2: "9",
+  knowledge_quiz5_question3_option3: "8",
+  knowledge_quiz5_question3_option4: "10",
 
   // Q4
-  knowledge_quiz5_question4_it: "Quale pianeta ha il maggior numero di lune?",
-  knowledge_quiz5_question4_option1_it: "Urano",
-  knowledge_quiz5_question4_option2_it: "Marte",
-  knowledge_quiz5_question4_option3_it: "Giove",
-  knowledge_quiz5_question4_option4_it: "Saturno",
+  knowledge_quiz5_question4: "Quale pianeta ha il maggior numero di lune?",
+  knowledge_quiz5_question4_option1: "Urano",
+  knowledge_quiz5_question4_option2: "Marte",
+  knowledge_quiz5_question4_option3: "Giove",
+  knowledge_quiz5_question4_option4: "Saturno",
 
   // Q5
-  knowledge_quiz5_question5_it: "Qual è il pianeta più vicino al Sole?",
-  knowledge_quiz5_question5_option1_it: "Mercurio",
-  knowledge_quiz5_question5_option2_it: "Terra",
-  knowledge_quiz5_question5_option3_it: "Marte",
-  knowledge_quiz5_question5_option4_it: "Venere",
+  knowledge_quiz5_question5: "Qual è il pianeta più vicino al Sole?",
+  knowledge_quiz5_question5_option1: "Mercurio",
+  knowledge_quiz5_question5_option2: "Terra",
+  knowledge_quiz5_question5_option3: "Marte",
+  knowledge_quiz5_question5_option4: "Venere",
 
   // Q6
-  knowledge_quiz5_question6_it: "Quale pianeta è noto per i suoi anelli?",
-  knowledge_quiz5_question6_option1_it: "Giove",
-  knowledge_quiz5_question6_option2_it: "Saturno",
-  knowledge_quiz5_question6_option3_it: "Nettuno",
-  knowledge_quiz5_question6_option4_it: "Urano",
+  knowledge_quiz5_question6: "Quale pianeta è noto per i suoi anelli?",
+  knowledge_quiz5_question6_option1: "Giove",
+  knowledge_quiz5_question6_option2: "Saturno",
+  knowledge_quiz5_question6_option3: "Nettuno",
+  knowledge_quiz5_question6_option4: "Urano",
 
   // Q7
-  knowledge_quiz5_question7_it: "In quale galassia si trova la Terra?",
-  knowledge_quiz5_question7_option1_it: "Via Lattea",
-  knowledge_quiz5_question7_option2_it: "Andromeda",
-  knowledge_quiz5_question7_option3_it: "Whirlpool",
-  knowledge_quiz5_question7_option4_it: "Triangulum",
+  knowledge_quiz5_question7: "In quale galassia si trova la Terra?",
+  knowledge_quiz5_question7_option1: "Via Lattea",
+  knowledge_quiz5_question7_option2: "Andromeda",
+  knowledge_quiz5_question7_option3: "Whirlpool",
+  knowledge_quiz5_question7_option4: "Triangulum",
 
   // Q8
-  knowledge_quiz5_question8_it: "Qual è il nome della luna della Terra?",
-  knowledge_quiz5_question8_option1_it: "La Luna",
-  knowledge_quiz5_question8_option2_it: "Luna",
-  knowledge_quiz5_question8_option3_it: "Selene",
-  knowledge_quiz5_question8_option4_it: "Phobos",
+  knowledge_quiz5_question8: "Qual è il nome della luna della Terra?",
+  knowledge_quiz5_question8_option1: "La Luna",
+  knowledge_quiz5_question8_option2: "Luna",
+  knowledge_quiz5_question8_option3: "Selene",
+  knowledge_quiz5_question8_option4: "Phobos",
 
   // Q9
-  knowledge_quiz5_question9_it:
+  knowledge_quiz5_question9:
     "Quale pianeta ha un giorno più lungo del suo anno?",
-  knowledge_quiz5_question9_option1_it: "Mercurio",
-  knowledge_quiz5_question9_option2_it: "Giove",
-  knowledge_quiz5_question9_option3_it: "Marte",
-  knowledge_quiz5_question9_option4_it: "Venere",
+  knowledge_quiz5_question9_option1: "Mercurio",
+  knowledge_quiz5_question9_option2: "Giove",
+  knowledge_quiz5_question9_option3: "Marte",
+  knowledge_quiz5_question9_option4: "Venere",
 
   // Q10
-  knowledge_quiz5_question10_it:
+  knowledge_quiz5_question10:
     "Qual è il pianeta più freddo del sistema solare?",
-  knowledge_quiz5_question10_option1_it: "Saturno",
-  knowledge_quiz5_question10_option2_it: "Nettuno",
-  knowledge_quiz5_question10_option3_it: "Urano",
-  knowledge_quiz5_question10_option4_it: "Plutone",
+  knowledge_quiz5_question10_option1: "Saturno",
+  knowledge_quiz5_question10_option2: "Nettuno",
+  knowledge_quiz5_question10_option3: "Urano",
+  knowledge_quiz5_question10_option4: "Plutone",
 
   // Q11
-  knowledge_quiz5_question11_it: "Quale pianeta ha la gravità più forte?",
-  knowledge_quiz5_question11_option1_it: "Terra",
-  knowledge_quiz5_question11_option2_it: "Giove",
-  knowledge_quiz5_question11_option3_it: "Saturno",
-  knowledge_quiz5_question11_option4_it: "Nettuno",
+  knowledge_quiz5_question11: "Quale pianeta ha la gravità più forte?",
+  knowledge_quiz5_question11_option1: "Terra",
+  knowledge_quiz5_question11_option2: "Giove",
+  knowledge_quiz5_question11_option3: "Saturno",
+  knowledge_quiz5_question11_option4: "Nettuno",
 
   // Q12
-  knowledge_quiz5_question12_it: "Cos'è un buco nero?",
-  knowledge_quiz5_question12_option1_it: "Un pianeta",
-  knowledge_quiz5_question12_option2_it: "Un tipo di luna",
-  knowledge_quiz5_question12_option3_it: "Un tunnel spazio-temporale",
-  knowledge_quiz5_question12_option4_it: "Una stella collassata",
+  knowledge_quiz5_question12: "Cos'è un buco nero?",
+  knowledge_quiz5_question12_option1: "Un pianeta",
+  knowledge_quiz5_question12_option2: "Un tipo di luna",
+  knowledge_quiz5_question12_option3: "Un tunnel spazio-temporale",
+  knowledge_quiz5_question12_option4: "Una stella collassata",
 
   // Q13
-  knowledge_quiz5_question13_it: "Quale pianeta è inclinato sul proprio asse?",
-  knowledge_quiz5_question13_option1_it: "Giove",
-  knowledge_quiz5_question13_option2_it: "Urano",
-  knowledge_quiz5_question13_option3_it: "Nettuno",
-  knowledge_quiz5_question13_option4_it: "Marte",
+  knowledge_quiz5_question13: "Quale pianeta è inclinato sul proprio asse?",
+  knowledge_quiz5_question13_option1: "Giove",
+  knowledge_quiz5_question13_option2: "Urano",
+  knowledge_quiz5_question13_option3: "Nettuno",
+  knowledge_quiz5_question13_option4: "Marte",
 
   // Q14
-  knowledge_quiz5_question14_it:
+  knowledge_quiz5_question14:
     "Qual è stato il primo paese a mandare un uomo nello spazio?",
-  knowledge_quiz5_question14_option1_it: "Germania",
-  knowledge_quiz5_question14_option2_it: "Stati Uniti",
-  knowledge_quiz5_question14_option3_it: "Cina",
-  knowledge_quiz5_question14_option4_it: "Unione Sovietica",
+  knowledge_quiz5_question14_option1: "Germania",
+  knowledge_quiz5_question14_option2: "Stati Uniti",
+  knowledge_quiz5_question14_option3: "Cina",
+  knowledge_quiz5_question14_option4: "Unione Sovietica",
 
   // Q15
-  knowledge_quiz5_question15_it:
-    "Chi è stato il primo essere umano nello spazio?",
-  knowledge_quiz5_question15_option1_it: "Neil Armstrong",
-  knowledge_quiz5_question15_option2_it: "Buzz Aldrin",
-  knowledge_quiz5_question15_option3_it: "Yuri Gagarin",
-  knowledge_quiz5_question15_option4_it: "Michael Collins",
+  knowledge_quiz5_question15: "Chi è stato il primo essere umano nello spazio?",
+  knowledge_quiz5_question15_option1: "Neil Armstrong",
+  knowledge_quiz5_question15_option2: "Buzz Aldrin",
+  knowledge_quiz5_question15_option3: "Yuri Gagarin",
+  knowledge_quiz5_question15_option4: "Michael Collins",
 
   // Q16
-  knowledge_quiz5_question16_it: "Qual è il pianeta più lontano dal Sole?",
-  knowledge_quiz5_question16_option1_it: "Plutone",
-  knowledge_quiz5_question16_option2_it: "Nettuno",
-  knowledge_quiz5_question16_option3_it: "Saturno",
-  knowledge_quiz5_question16_option4_it: "Urano",
+  knowledge_quiz5_question16: "Qual è il pianeta più lontano dal Sole?",
+  knowledge_quiz5_question16_option1: "Plutone",
+  knowledge_quiz5_question16_option2: "Nettuno",
+  knowledge_quiz5_question16_option3: "Saturno",
+  knowledge_quiz5_question16_option4: "Urano",
 
   // Q17
-  knowledge_quiz5_question17_it:
+  knowledge_quiz5_question17:
     "Qual è il nome del più famoso telescopio spaziale della NASA?",
-  knowledge_quiz5_question17_option1_it: "Spitzer",
-  knowledge_quiz5_question17_option2_it: "Hubble",
-  knowledge_quiz5_question17_option3_it: "James Webb",
-  knowledge_quiz5_question17_option4_it: "Kepler",
+  knowledge_quiz5_question17_option1: "Spitzer",
+  knowledge_quiz5_question17_option2: "Hubble",
+  knowledge_quiz5_question17_option3: "James Webb",
+  knowledge_quiz5_question17_option4: "Kepler",
 
   // Q18
-  knowledge_quiz5_question18_it:
+  knowledge_quiz5_question18:
     "Quale pianeta è conosciuto come la 'Stella della Sera'?",
-  knowledge_quiz5_question18_option1_it: "Saturno",
-  knowledge_quiz5_question18_option2_it: "Marte",
-  knowledge_quiz5_question18_option3_it: "Venere",
-  knowledge_quiz5_question18_option4_it: "Giove",
+  knowledge_quiz5_question18_option1: "Saturno",
+  knowledge_quiz5_question18_option2: "Marte",
+  knowledge_quiz5_question18_option3: "Venere",
+  knowledge_quiz5_question18_option4: "Giove",
 
   // Q19
-  knowledge_quiz5_question19_it: "Cos'è un anno luce?",
-  knowledge_quiz5_question19_option1_it: "Un anno con 366 giorni",
-  knowledge_quiz5_question19_option2_it: "La velocità della luce",
-  knowledge_quiz5_question19_option3_it: "Un anno su Mercurio",
-  knowledge_quiz5_question19_option4_it: "Una misura di distanza",
+  knowledge_quiz5_question19: "Cos'è un anno luce?",
+  knowledge_quiz5_question19_option1: "Un anno con 366 giorni",
+  knowledge_quiz5_question19_option2: "La velocità della luce",
+  knowledge_quiz5_question19_option3: "Un anno su Mercurio",
+  knowledge_quiz5_question19_option4: "Una misura di distanza",
 
   // Q20
-  knowledge_quiz5_question20_it: "Quale pianeta ha la rotazione più veloce?",
-  knowledge_quiz5_question20_option1_it: "Terra",
-  knowledge_quiz5_question20_option2_it: "Saturno",
-  knowledge_quiz5_question20_option3_it: "Giove",
-  knowledge_quiz5_question20_option4_it: "Marte",
+  knowledge_quiz5_question20: "Quale pianeta ha la rotazione più veloce?",
+  knowledge_quiz5_question20_option1: "Terra",
+  knowledge_quiz5_question20_option2: "Saturno",
+  knowledge_quiz5_question20_option3: "Giove",
+  knowledge_quiz5_question20_option4: "Marte",
+
+  // Knowledge Quiz 6
+  // Q1
+  knowledge_quiz6_question1: "Which sentence is grammatically correct?",
+  knowledge_quiz6_question1_option1: "She goes to school.",
+  knowledge_quiz6_question1_option2: "She going to school.",
+  knowledge_quiz6_question1_option3: "She go to school.",
+  knowledge_quiz6_question1_option4: "She gone to school.",
+
+  // Q2
+  knowledge_quiz6_question2: "What is the past tense of 'run'?",
+  knowledge_quiz6_question2_option1: "ran",
+  knowledge_quiz6_question2_option2: "runned",
+  knowledge_quiz6_question2_option3: "running",
+  knowledge_quiz6_question2_option4: "run",
+
+  // Q3
+  knowledge_quiz6_question3:
+    "Choose the correct article: ___ apple a day keeps the doctor away.",
+  knowledge_quiz6_question3_option1: "The",
+  knowledge_quiz6_question3_option2: "An",
+  knowledge_quiz6_question3_option3: "A",
+  knowledge_quiz6_question3_option4: "No article",
+
+  // Q4
+  knowledge_quiz6_question4: "Which word is an adjective?",
+  knowledge_quiz6_question4_option1: "Run",
+  knowledge_quiz6_question4_option2: "Beautiful",
+  knowledge_quiz6_question4_option3: "Quickly",
+  knowledge_quiz6_question4_option4: "Happily",
+
+  // Q5
+  knowledge_quiz6_question5: "What is the plural of 'child'?",
+  knowledge_quiz6_question5_option1: "Childer",
+  knowledge_quiz6_question5_option2: "Children",
+  knowledge_quiz6_question5_option3: "Childes",
+  knowledge_quiz6_question5_option4: "Childs",
+
+  // Q6
+  knowledge_quiz6_question6: "Choose the correct sentence:",
+  knowledge_quiz6_question6_option1: "He doesn’t likes coffee.",
+  knowledge_quiz6_question6_option2: "He don’t like coffee.",
+  knowledge_quiz6_question6_option3: "He doesn’t like coffee.",
+  knowledge_quiz6_question6_option4: "He doesn’t like coffees.",
+
+  // Q7
+  knowledge_quiz6_question7: "Which word is a preposition?",
+  knowledge_quiz6_question7_option1: "Quick",
+  knowledge_quiz6_question7_option2: "Beautiful",
+  knowledge_quiz6_question7_option3: "Running",
+  knowledge_quiz6_question7_option4: "Under",
+
+  // Q8
+  knowledge_quiz6_question8:
+    "Complete the sentence: I have lived here ___ 2015.",
+  knowledge_quiz6_question8_option1: "in",
+  knowledge_quiz6_question8_option2: "since",
+  knowledge_quiz6_question8_option3: "for",
+  knowledge_quiz6_question8_option4: "at",
+
+  // Q9
+  knowledge_quiz6_question9: "What’s the superlative form of 'good'?",
+  knowledge_quiz6_question9_option1: "Goodest",
+  knowledge_quiz6_question9_option2: "Better",
+  knowledge_quiz6_question9_option3: "Best",
+  knowledge_quiz6_question9_option4: "More good",
+
+  // Q10
+  knowledge_quiz6_question10: "What type of word is 'quickly'?",
+  knowledge_quiz6_question10_option1: "Adverb",
+  knowledge_quiz6_question10_option2: "Noun",
+  knowledge_quiz6_question10_option3: "Verb",
+  knowledge_quiz6_question10_option4: "Adjective",
+
+  // Q11
+  knowledge_quiz6_question11: "Choose the correct form: 'She ___ playing now.'",
+  knowledge_quiz6_question11_option1: "was",
+  knowledge_quiz6_question11_option2: "be",
+  knowledge_quiz6_question11_option3: "were",
+  knowledge_quiz6_question11_option4: "is",
+
+  // Q12
+  knowledge_quiz6_question12:
+    "Choose the correct comparative form: 'This book is ___ than that one.'",
+  knowledge_quiz6_question12_option1: "better",
+  knowledge_quiz6_question12_option2: "best",
+  knowledge_quiz6_question12_option3: "good",
+  knowledge_quiz6_question12_option4: "more good",
+
+  // Q13
+  knowledge_quiz6_question13:
+    "Fill in the blank: I’m interested ___ learning Spanish.",
+  knowledge_quiz6_question13_option1: "with",
+  knowledge_quiz6_question13_option2: "for",
+  knowledge_quiz6_question13_option3: "in",
+  knowledge_quiz6_question13_option4: "at",
+
+  // Q14
+  knowledge_quiz6_question14:
+    "Which word completes the sentence? 'She has ___ her homework.'",
+  knowledge_quiz6_question14_option1: "did",
+  knowledge_quiz6_question14_option2: "done",
+  knowledge_quiz6_question14_option3: "do",
+  knowledge_quiz6_question14_option4: "doing",
+
+  // Q15
+  knowledge_quiz6_question15: "What is the opposite of 'always'?",
+  knowledge_quiz6_question15_option1: "Often",
+  knowledge_quiz6_question15_option2: "Usually",
+  knowledge_quiz6_question15_option3: "Sometimes",
+  knowledge_quiz6_question15_option4: "Never",
+
+  // Q16
+  knowledge_quiz6_question16: "Which word is a verb?",
+  knowledge_quiz6_question16_option1: "Happy",
+  knowledge_quiz6_question16_option2: "Eat",
+  knowledge_quiz6_question16_option3: "Hungry",
+  knowledge_quiz6_question16_option4: "Slow",
 
   //Psychological Quiz 1
   personality_quiz12_question1: "Quale attività ti sembra più interessante?",
@@ -1622,4 +1733,8 @@ export const it = {
   personality_quiz12_question15_option1: "Penso in immagini ed emozioni",
   personality_quiz12_question15_option2: "Analizzo schemi e logica",
   personality_quiz12_question15_option3: "Collego emozioni a una struttura",
+
+  quizlist_psych_disabled_title: "In arrivo!",
+  quizlist_psych_disabled_message:
+    "I quiz psicologici sono temporaneamente disabilitati. Per favore, scegli un'altra categoria per ora.",
 };

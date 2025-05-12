@@ -21,7 +21,7 @@ export const en = {
   // QuizList
   quizlist_title: "Choose a quiz, {{name}}!",
   quizlist_subtitle:
-    "We've picked out some awesome challenges for you. Let’s dive in! ✨",
+    "We've picked out some awesome challenges for you. Let's dive in! ✨",
   quizlist_questionCount: "{{count}} questions",
   quizlist_minutes: "{{count}} minutes",
 
@@ -35,16 +35,16 @@ export const en = {
   quiz_title_7: "Which Harry Potter character are you?",
   quiz_title_8: "Which Disney character matches your personality?",
   quiz_title_9: "Which Marvel superhero are you?",
-  quiz_title_10: "What’s your ideal vacation?",
+  quiz_title_10: "What's your ideal vacation?",
   quiz_title_11: "Which Netflix character would you be?",
   quiz_title_12: "Are you more logical or creative?",
-  quiz_title_13: "What’s your mental age?",
+  quiz_title_13: "What's your mental age?",
   quiz_title_14: "How empathetic are you?",
   quiz_title_15: "Are you more introverted or extroverted?",
   quiz_title_16: "What kind of leader are you?",
-  quiz_title_17: "What’s your communication style?",
+  quiz_title_17: "What's your communication style?",
   quiz_title_18: "How do you react under stress?",
-  quiz_title_19: "What’s your love language?",
+  quiz_title_19: "What's your love language?",
 
   // Quiz Page
   quiz_header: "Quiz Time, {{name}}!",
@@ -56,7 +56,7 @@ export const en = {
   // Entertainment Component
   timeTaken: "Time taken",
   thanks: "Thanks for playing",
-  entertainment_label_7: "You’re most like",
+  entertainment_label_7: "You're most like",
   entertainment_suffix_7: "from Harry Potter!",
   entertainment_label_8: "",
   entertainment_suffix_8: "is your Disney twin!",
@@ -64,17 +64,17 @@ export const en = {
   entertainment_suffix_9: "!",
   entertainment_label_10: "Your dream vacation vibe is:",
   entertainment_suffix_10: "!",
-  entertainment_label_11: "If you lived on Netflix, you’d be",
+  entertainment_label_11: "If you lived on Netflix, you'd be",
   entertainment_suffix_11: "!",
 
   // Psychological Component
-  psych_title_12: "You’re more",
-  psych_message_12: "Logical or creative? You’ve found your dominant side!",
+  psych_title_12: "You're more",
+  psych_message_12: "Logical or creative? You've found your dominant side!",
   psych_title_13: "Your mental age is",
   psych_message_13: "Age is just a number, but insight is timeless.",
   psych_title_14: "You are deeply",
   psych_message_14: "Empathy is your superpower 💖",
-  psych_title_15: "You’re more",
+  psych_title_15: "You're more",
   psych_message_15: "Knowing yourself is a key to connection.",
   psych_title_16: "Your leadership style is",
   psych_message_16: "Great leaders know their strengths.",
@@ -89,10 +89,10 @@ export const en = {
 
   // Knowledge Component
   yourScore_zero: "You did not score this time, {{name}}!",
-  yourScore_partial: "You’ve completed the quiz, {{name}}!",
+  yourScore_partial: "You've completed the quiz, {{name}}!",
   yourScore_full: "Outstanding, {{name}}!",
   tryAgain: "Try again and keep learning 🚀",
-  greatJob: "Great job! You’re one step smarter today 🧠✨",
+  greatJob: "Great job! You're one step smarter today 🧠✨",
   perfectScore: "Perfect score! You nailed it 💯🔥",
   yourScore: "Score: {{score}} / {{total}}",
   answerReview: "Review your answers:",
@@ -142,7 +142,7 @@ export const en = {
   personality_quiz1_question6_option3: "Gryffindor",
   personality_quiz1_question6_option4: "Hufflepuff",
   // Q7
-  personality_quiz1_question7: "What’s your biggest flaw?",
+  personality_quiz1_question7: "What's your biggest flaw?",
   personality_quiz1_question7_option1: "Stubbornness",
   personality_quiz1_question7_option2: "Insecurity",
   personality_quiz1_question7_option3: "Impulsiveness",
@@ -154,7 +154,7 @@ export const en = {
   personality_quiz1_question8_option3: "Pumpkin Juice",
   personality_quiz1_question8_option4: "Gillywater",
   // Q9
-  personality_quiz1_question9: "In a group project, you’re the one who...",
+  personality_quiz1_question9: "In a group project, you're the one who...",
   personality_quiz1_question9_option1: "Organizes everything",
   personality_quiz1_question9_option2: "Goes with the flow",
   personality_quiz1_question9_option3: "Takes the lead",
@@ -178,7 +178,7 @@ export const en = {
   personality_quiz1_question12_option3: "Sectumsempra",
   personality_quiz1_question12_option4: "Expelliarmus",
   // Q13
-  personality_quiz1_question13: "You’re most likely to be found...",
+  personality_quiz1_question13: "You're most likely to be found...",
   personality_quiz1_question13_option1: "Eating in the Great Hall",
   personality_quiz1_question13_option2: "Plotting in the common room",
   personality_quiz1_question13_option3: "Reading in the library",
@@ -188,7 +188,7 @@ export const en = {
   personality_quiz1_question14_option1: "Invisibility Cloak",
   personality_quiz1_question14_option2: "Time Turner",
   personality_quiz1_question14_option3: "Elder Wand",
-  personality_quiz1_question14_option4: "Marauder’s Map",
+  personality_quiz1_question14_option4: "Marauder's Map",
   // Q15
   personality_quiz1_question15: "Your friend is in trouble. You...",
   personality_quiz1_question15_option1: "Run to help immediately",
@@ -196,7 +196,7 @@ export const en = {
   personality_quiz1_question15_option3: "Come up with a smart plan",
   personality_quiz1_question15_option4: "Support them emotionally",
   // Q16
-  personality_quiz1_question16: "What’s your Hogwarts aesthetic?",
+  personality_quiz1_question16: "What's your Hogwarts aesthetic?",
   personality_quiz1_question16_option1: "Laughter and snacks",
   personality_quiz1_question16_option2: "Books and scrolls",
   personality_quiz1_question16_option3: "Dark corridors",
@@ -372,7 +372,7 @@ export const en = {
   personality_quiz3_question1_option4: "With quick thinking and humor",
 
   // Q2
-  personality_quiz3_question2: "What’s your biggest strength?",
+  personality_quiz3_question2: "What's your biggest strength?",
   personality_quiz3_question2_option1: "Power",
   personality_quiz3_question2_option2: "Intelligence",
   personality_quiz3_question2_option3: "Precision",
@@ -406,7 +406,7 @@ export const en = {
     "With great power comes great responsibility",
   personality_quiz3_question6_option3:
     "Sometimes you gotta run before you can walk",
-  personality_quiz3_question6_option4: "I can’t control their fear, only mine",
+  personality_quiz3_question6_option4: "I can't control their fear, only mine",
 
   // Q7
   personality_quiz3_question7: "Your biggest fear?",
@@ -472,7 +472,7 @@ export const en = {
   personality_quiz3_question15_option4: "Friendship",
 
   // Q16
-  personality_quiz3_question16: "What’s your vibe?",
+  personality_quiz3_question16: "What's your vibe?",
   personality_quiz3_question16_option1: "Witty and awkward",
   personality_quiz3_question16_option2: "Quiet and sharp",
   personality_quiz3_question16_option3: "Calm but explosive",
@@ -486,7 +486,7 @@ export const en = {
   personality_quiz3_question17_option4: "Doing the right thing",
 
   // Q18
-  personality_quiz3_question18: "If you had a superpower, it’d be...",
+  personality_quiz3_question18: "If you had a superpower, it'd be...",
   personality_quiz3_question18_option1: "Technology and flight",
   personality_quiz3_question18_option2: "Agility and senses",
   personality_quiz3_question18_option3: "Combat mastery",
@@ -586,7 +586,7 @@ export const en = {
   personality_quiz4_question13_option3: "Cliff views and trails",
 
   // Q14
-  personality_quiz4_question14: "Souvenir you’d bring:",
+  personality_quiz4_question14: "Souvenir you'd bring:",
   personality_quiz4_question14_option1: "Rock or hiking badge",
   personality_quiz4_question14_option2: "Postcards and paintings",
   personality_quiz4_question14_option3: "Seashells or beach towel",
@@ -700,7 +700,7 @@ export const en = {
   personality_quiz5_question10_option4: "I do everything for love",
 
   // Q11
-  personality_quiz5_question11: "You’re most likely to win a...",
+  personality_quiz5_question11: "You're most likely to win a...",
   personality_quiz5_question11_option1: "Fight with a monster",
   personality_quiz5_question11_option2: "Debate or manipulation game",
   personality_quiz5_question11_option3: "High-stakes tournament",
@@ -708,7 +708,7 @@ export const en = {
 
   // Q12
   personality_quiz5_question12: "Choose a companion:",
-  personality_quiz5_question12_option1: "Someone you’re secretly watching",
+  personality_quiz5_question12_option1: "Someone you're secretly watching",
   personality_quiz5_question12_option2: "A loyal best friend",
   personality_quiz5_question12_option3: "A pet scorpion",
   personality_quiz5_question12_option4: "No one – I work alone",
@@ -766,151 +766,130 @@ export const en = {
   // Knowledge Quiz 1
 
   // Q1
-  knowledge_quiz1_question1: "Which country does the city of Prague belong to?",
-  knowledge_quiz1_question1_option1: "Austria",
-  knowledge_quiz1_question1_option2: "Poland",
-  knowledge_quiz1_question1_option3: "Czech Republic",
-  knowledge_quiz1_question1_option4: "Slovakia",
+  knowledge_quiz1_question1: "What is the capital of France?",
+  knowledge_quiz1_question1_option1: "London",
+  knowledge_quiz1_question1_option2: "Berlin",
+  knowledge_quiz1_question1_option3: "Paris",
+  knowledge_quiz1_question1_option4: "Madrid",
 
-  // Q2
-  knowledge_quiz1_question2: "Which sea borders Greece to the west?",
-  knowledge_quiz1_question2_option1: "Black Sea",
-  knowledge_quiz1_question2_option2: "Baltic Sea",
-  knowledge_quiz1_question2_option3: "Ionian Sea",
-  knowledge_quiz1_question2_option4: "Adriatic Sea",
+  knowledge_quiz1_question2:
+    "Which country is known as the Land of Fire and Ice?",
+  knowledge_quiz1_question2_option1: "Norway",
+  knowledge_quiz1_question2_option2: "Sweden",
+  knowledge_quiz1_question2_option3: "Iceland",
+  knowledge_quiz1_question2_option4: "Finland",
 
-  // Q3
-  knowledge_quiz1_question3:
-    "Which of the following is NOT part of Scandinavia?",
-  knowledge_quiz1_question3_option1: "Norway",
-  knowledge_quiz1_question3_option2: "Sweden",
-  knowledge_quiz1_question3_option3: "Germany",
-  knowledge_quiz1_question3_option4: "Denmark",
+  knowledge_quiz1_question3: "What is the largest country in Europe?",
+  knowledge_quiz1_question3_option1: "Germany",
+  knowledge_quiz1_question3_option2: "France",
+  knowledge_quiz1_question3_option3: "Ukraine",
+  knowledge_quiz1_question3_option4: "Spain",
 
-  // Q4
-  knowledge_quiz1_question4: "Which country is Budapest the capital of?",
-  knowledge_quiz1_question4_option1: "Hungary",
-  knowledge_quiz1_question4_option2: "Romania",
-  knowledge_quiz1_question4_option3: "Austria",
-  knowledge_quiz1_question4_option4: "Bulgaria",
+  knowledge_quiz1_question4: "Which European country has the shape of a boot?",
+  knowledge_quiz1_question4_option1: "Italy",
+  knowledge_quiz1_question4_option2: "Greece",
+  knowledge_quiz1_question4_option3: "Portugal",
+  knowledge_quiz1_question4_option4: "Spain",
 
-  // Q5
-  knowledge_quiz1_question5:
-    "The Danube River flows through how many countries?",
-  knowledge_quiz1_question5_option1: "12",
-  knowledge_quiz1_question5_option2: "8",
-  knowledge_quiz1_question5_option3: "6",
-  knowledge_quiz1_question5_option4: "10",
+  knowledge_quiz1_question5: "What is the capital of Greece?",
+  knowledge_quiz1_question5_option1: "Thessaloniki",
+  knowledge_quiz1_question5_option2: "Patras",
+  knowledge_quiz1_question5_option3: "Heraklion",
+  knowledge_quiz1_question5_option4: "Athens",
 
-  // Q6
-  knowledge_quiz1_question6:
-    "Which country has the northernmost point in Europe?",
+  knowledge_quiz1_question6: "Which country is home to the fjords?",
   knowledge_quiz1_question6_option1: "Sweden",
   knowledge_quiz1_question6_option2: "Finland",
-  knowledge_quiz1_question6_option3: "Iceland",
+  knowledge_quiz1_question6_option3: "Denmark",
   knowledge_quiz1_question6_option4: "Norway",
 
-  // Q7
   knowledge_quiz1_question7: "What is the capital of Portugal?",
   knowledge_quiz1_question7_option1: "Lisbon",
-  knowledge_quiz1_question7_option2: "Madrid",
-  knowledge_quiz1_question7_option3: "Porto",
-  knowledge_quiz1_question7_option4: "Barcelona",
+  knowledge_quiz1_question7_option2: "Porto",
+  knowledge_quiz1_question7_option3: "Faro",
+  knowledge_quiz1_question7_option4: "Coimbra",
 
-  // Q8
   knowledge_quiz1_question8:
-    "Which country shares a border with both France and Poland?",
-  knowledge_quiz1_question8_option1: "Austria",
-  knowledge_quiz1_question8_option2: "Germany",
-  knowledge_quiz1_question8_option3: "Czech Republic",
-  knowledge_quiz1_question8_option4: "Belgium",
+    "Which country is known as the Land of a Thousand Lakes?",
+  knowledge_quiz1_question8_option1: "Sweden",
+  knowledge_quiz1_question8_option2: "Finland",
+  knowledge_quiz1_question8_option3: "Norway",
+  knowledge_quiz1_question8_option4: "Denmark",
 
-  // Q9
-  knowledge_quiz1_question9:
-    "What is the largest island in the Mediterranean Sea?",
-  knowledge_quiz1_question9_option1: "Sardinia",
-  knowledge_quiz1_question9_option2: "Sicily",
-  knowledge_quiz1_question9_option3: "Crete",
-  knowledge_quiz1_question9_option4: "Corsica",
+  knowledge_quiz1_question9: "What is the capital of Hungary?",
+  knowledge_quiz1_question9_option1: "Debrecen",
+  knowledge_quiz1_question9_option2: "Budapest",
+  knowledge_quiz1_question9_option3: "Szeged",
+  knowledge_quiz1_question9_option4: "Miskolc",
 
-  // Q10
-  knowledge_quiz1_question10: "Which country is the city of Bruges located in?",
-  knowledge_quiz1_question10_option1: "France",
+  knowledge_quiz1_question10: "Which country is home to the Matterhorn?",
+  knowledge_quiz1_question10_option1: "Austria",
   knowledge_quiz1_question10_option2: "Germany",
-  knowledge_quiz1_question10_option3: "Belgium",
-  knowledge_quiz1_question10_option4: "Netherlands",
+  knowledge_quiz1_question10_option3: "Switzerland",
+  knowledge_quiz1_question10_option4: "Italy",
 
-  // Q11
-  knowledge_quiz1_question11: "Which country does Transylvania belong to?",
-  knowledge_quiz1_question11_option1: "Serbia",
-  knowledge_quiz1_question11_option2: "Ukraine",
-  knowledge_quiz1_question11_option3: "Hungary",
-  knowledge_quiz1_question11_option4: "Romania",
+  knowledge_quiz1_question11: "What is the capital of Poland?",
+  knowledge_quiz1_question11_option1: "Krakow",
+  knowledge_quiz1_question11_option2: "Wroclaw",
+  knowledge_quiz1_question11_option3: "Gdansk",
+  knowledge_quiz1_question11_option4: "Warsaw",
 
-  // Q12
-  knowledge_quiz1_question12: "What is the capital of Iceland?",
-  knowledge_quiz1_question12_option1: "Oslo",
-  knowledge_quiz1_question12_option2: "Reykjavik",
-  knowledge_quiz1_question12_option3: "Helsinki",
-  knowledge_quiz1_question12_option4: "Stockholm",
+  knowledge_quiz1_question12: "Which country is known as the Land of Fire?",
+  knowledge_quiz1_question12_option1: "Azerbaijan",
+  knowledge_quiz1_question12_option2: "Georgia",
+  knowledge_quiz1_question12_option3: "Armenia",
+  knowledge_quiz1_question12_option4: "Turkey",
 
-  // Q13
-  knowledge_quiz1_question13: "Which country has the most volcanoes in Europe?",
-  knowledge_quiz1_question13_option1: "Iceland",
-  knowledge_quiz1_question13_option2: "Spain",
-  knowledge_quiz1_question13_option3: "Italy",
-  knowledge_quiz1_question13_option4: "Greece",
+  knowledge_quiz1_question13: "What is the capital of Croatia?",
+  knowledge_quiz1_question13_option1: "Zagreb",
+  knowledge_quiz1_question13_option2: "Split",
+  knowledge_quiz1_question13_option3: "Rijeka",
+  knowledge_quiz1_question13_option4: "Osijek",
 
-  // Q14
-  knowledge_quiz1_question14: "Mount Elbrus is located in which country?",
-  knowledge_quiz1_question14_option1: "Georgia",
-  knowledge_quiz1_question14_option2: "Russia",
-  knowledge_quiz1_question14_option3: "Turkey",
-  knowledge_quiz1_question14_option4: "Ukraine",
+  knowledge_quiz1_question14: "Which country is home to the Danube Delta?",
+  knowledge_quiz1_question14_option1: "Bulgaria",
+  knowledge_quiz1_question14_option2: "Romania",
+  knowledge_quiz1_question14_option3: "Serbia",
+  knowledge_quiz1_question14_option4: "Hungary",
 
-  // Q15
-  knowledge_quiz1_question15:
-    "What sea separates Sweden and the Baltic states?",
-  knowledge_quiz1_question15_option1: "Barents Sea",
-  knowledge_quiz1_question15_option2: "Baltic Sea",
-  knowledge_quiz1_question15_option3: "Norwegian Sea",
-  knowledge_quiz1_question15_option4: "North Sea",
+  knowledge_quiz1_question15: "What is the capital of Slovakia?",
+  knowledge_quiz1_question15_option1: "Bratislava",
+  knowledge_quiz1_question15_option2: "Kosice",
+  knowledge_quiz1_question15_option3: "Nitra",
+  knowledge_quiz1_question15_option4: "Zilina",
 
-  // Q16
-  knowledge_quiz1_question16: "Which European country is famous for fjords?",
-  knowledge_quiz1_question16_option1: "Denmark",
-  knowledge_quiz1_question16_option2: "Norway",
-  knowledge_quiz1_question16_option3: "Sweden",
-  knowledge_quiz1_question16_option4: "Finland",
+  knowledge_quiz1_question16:
+    "Which country is known as the Land of the Rising Sun?",
+  knowledge_quiz1_question16_option1: "Japan",
+  knowledge_quiz1_question16_option2: "China",
+  knowledge_quiz1_question16_option3: "Korea",
+  knowledge_quiz1_question16_option4: "Vietnam",
 
-  // Q17
-  knowledge_quiz1_question17: "Which country is home to the city of Kraków?",
-  knowledge_quiz1_question17_option1: "Slovakia",
-  knowledge_quiz1_question17_option2: "Czech Republic",
-  knowledge_quiz1_question17_option3: "Hungary",
-  knowledge_quiz1_question17_option4: "Poland",
+  knowledge_quiz1_question17: "What is the capital of Estonia?",
+  knowledge_quiz1_question17_option1: "Tartu",
+  knowledge_quiz1_question17_option2: "Parnu",
+  knowledge_quiz1_question17_option3: "Narva",
+  knowledge_quiz1_question17_option4: "Tallinn",
 
-  // Q18
-  knowledge_quiz1_question18: "Andorra is located between which two countries?",
-  knowledge_quiz1_question18_option1: "France and Spain",
-  knowledge_quiz1_question18_option2: "Austria and Germany",
-  knowledge_quiz1_question18_option3: "Spain and Portugal",
-  knowledge_quiz1_question18_option4: "Italy and Switzerland",
+  knowledge_quiz1_question18:
+    "Which country is home to the Carpathian Mountains?",
+  knowledge_quiz1_question18_option1: "Romania",
+  knowledge_quiz1_question18_option2: "Bulgaria",
+  knowledge_quiz1_question18_option3: "Serbia",
+  knowledge_quiz1_question18_option4: "Hungary",
 
-  // Q19
-  knowledge_quiz1_question19:
-    "Which country has the longest coastline in Europe?",
-  knowledge_quiz1_question19_option1: "Italy",
-  knowledge_quiz1_question19_option2: "Greece",
-  knowledge_quiz1_question19_option3: "Norway",
-  knowledge_quiz1_question19_option4: "United Kingdom",
+  knowledge_quiz1_question19: "What is the capital of Latvia?",
+  knowledge_quiz1_question19_option1: "Daugavpils",
+  knowledge_quiz1_question19_option2: "Liepaja",
+  knowledge_quiz1_question19_option3: "Jelgava",
+  knowledge_quiz1_question19_option4: "Riga",
 
-  // Q20
-  knowledge_quiz1_question20: "What is the smallest country in Europe by area?",
-  knowledge_quiz1_question20_option1: "Vatican City",
-  knowledge_quiz1_question20_option2: "Liechtenstein",
-  knowledge_quiz1_question20_option3: "San Marino",
-  knowledge_quiz1_question20_option4: "Monaco",
+  knowledge_quiz1_question20:
+    "Which country is known as the Land of the Midnight Sun?",
+  knowledge_quiz1_question20_option1: "Norway",
+  knowledge_quiz1_question20_option2: "Sweden",
+  knowledge_quiz1_question20_option3: "Finland",
+  knowledge_quiz1_question20_option4: "Iceland",
 
   // Knowledge Quiz 2
 
@@ -1128,7 +1107,7 @@ export const en = {
   knowledge_quiz3_question10_option4: "Tesla",
 
   // Q11
-  knowledge_quiz3_question11: "What’s the capital of Australia?",
+  knowledge_quiz3_question11: "What's the capital of Australia?",
   knowledge_quiz3_question11_option1: "Canberra",
   knowledge_quiz3_question11_option2: "Sydney",
   knowledge_quiz3_question11_option3: "Brisbane",
@@ -1165,7 +1144,7 @@ export const en = {
   knowledge_quiz3_question15_option4: "Spanish",
 
   // Q16
-  knowledge_quiz3_question16: "What’s the tallest mountain on Earth?",
+  knowledge_quiz3_question16: "What's the tallest mountain on Earth?",
   knowledge_quiz3_question16_option1: "K2",
   knowledge_quiz3_question16_option2: "Makalu",
   knowledge_quiz3_question16_option3: "Kangchenjunga",
@@ -1406,7 +1385,7 @@ export const en = {
   knowledge_quiz5_question7_option4: "Triangulum",
 
   // Q8
-  knowledge_quiz5_question8: "What is the name of Earth’s moon?",
+  knowledge_quiz5_question8: "What is the name of Earth's moon?",
   knowledge_quiz5_question8_option1: "The Moon",
   knowledge_quiz5_question8_option2: "Luna",
   knowledge_quiz5_question8_option3: "Selene",
@@ -1499,6 +1478,124 @@ export const en = {
   knowledge_quiz5_question20_option3: "Jupiter",
   knowledge_quiz5_question20_option4: "Mars",
 
+  // Knowledge Quiz 6
+  // Q1
+  knowledge_quiz6_question1: "Which sentence is grammatically correct?",
+  knowledge_quiz6_question1_option1: "She goes to school.",
+  knowledge_quiz6_question1_option2: "She going to school.",
+  knowledge_quiz6_question1_option3: "She go to school.",
+  knowledge_quiz6_question1_option4: "She gone to school.",
+
+  // Q2
+  knowledge_quiz6_question2: "What is the past tense of 'run'?",
+  knowledge_quiz6_question2_option1: "ran",
+  knowledge_quiz6_question2_option2: "runned",
+  knowledge_quiz6_question2_option3: "running",
+  knowledge_quiz6_question2_option4: "run",
+
+  // Q3
+  knowledge_quiz6_question3:
+    "Choose the correct article: ___ apple a day keeps the doctor away.",
+  knowledge_quiz6_question3_option1: "The",
+  knowledge_quiz6_question3_option2: "An",
+  knowledge_quiz6_question3_option3: "A",
+  knowledge_quiz6_question3_option4: "No article",
+
+  // Q4
+  knowledge_quiz6_question4: "Which word is an adjective?",
+  knowledge_quiz6_question4_option1: "Run",
+  knowledge_quiz6_question4_option2: "Beautiful",
+  knowledge_quiz6_question4_option3: "Quickly",
+  knowledge_quiz6_question4_option4: "Happily",
+
+  // Q5
+  knowledge_quiz6_question5: "What is the plural of 'child'?",
+  knowledge_quiz6_question5_option1: "Childer",
+  knowledge_quiz6_question5_option2: "Children",
+  knowledge_quiz6_question5_option3: "Childes",
+  knowledge_quiz6_question5_option4: "Childs",
+
+  // Q6
+  knowledge_quiz6_question6: "Choose the correct sentence:",
+  knowledge_quiz6_question6_option1: "He doesn’t likes coffee.",
+  knowledge_quiz6_question6_option2: "He don’t like coffee.",
+  knowledge_quiz6_question6_option3: "He doesn’t like coffee.",
+  knowledge_quiz6_question6_option4: "He doesn’t like coffees.",
+
+  // Q7
+  knowledge_quiz6_question7: "Which word is a preposition?",
+  knowledge_quiz6_question7_option1: "Quick",
+  knowledge_quiz6_question7_option2: "Beautiful",
+  knowledge_quiz6_question7_option3: "Running",
+  knowledge_quiz6_question7_option4: "Under",
+
+  // Q8
+  knowledge_quiz6_question8:
+    "Complete the sentence: I have lived here ___ 2015.",
+  knowledge_quiz6_question8_option1: "in",
+  knowledge_quiz6_question8_option2: "since",
+  knowledge_quiz6_question8_option3: "for",
+  knowledge_quiz6_question8_option4: "at",
+
+  // Q9
+  knowledge_quiz6_question9: "What’s the superlative form of 'good'?",
+  knowledge_quiz6_question9_option1: "Goodest",
+  knowledge_quiz6_question9_option2: "Better",
+  knowledge_quiz6_question9_option3: "Best",
+  knowledge_quiz6_question9_option4: "More good",
+
+  // Q10
+  knowledge_quiz6_question10: "What type of word is 'quickly'?",
+  knowledge_quiz6_question10_option1: "Adverb",
+  knowledge_quiz6_question10_option2: "Noun",
+  knowledge_quiz6_question10_option3: "Verb",
+  knowledge_quiz6_question10_option4: "Adjective",
+
+  // Q11
+  knowledge_quiz6_question11: "Choose the correct form: 'She ___ playing now.'",
+  knowledge_quiz6_question11_option1: "was",
+  knowledge_quiz6_question11_option2: "be",
+  knowledge_quiz6_question11_option3: "were",
+  knowledge_quiz6_question11_option4: "is",
+
+  // Q12
+  knowledge_quiz6_question12:
+    "Choose the correct comparative form: 'This book is ___ than that one.'",
+  knowledge_quiz6_question12_option1: "better",
+  knowledge_quiz6_question12_option2: "best",
+  knowledge_quiz6_question12_option3: "good",
+  knowledge_quiz6_question12_option4: "more good",
+
+  // Q13
+  knowledge_quiz6_question13:
+    "Fill in the blank: I’m interested ___ learning Spanish.",
+  knowledge_quiz6_question13_option1: "with",
+  knowledge_quiz6_question13_option2: "for",
+  knowledge_quiz6_question13_option3: "in",
+  knowledge_quiz6_question13_option4: "at",
+
+  // Q14
+  knowledge_quiz6_question14:
+    "Which word completes the sentence? 'She has ___ her homework.'",
+  knowledge_quiz6_question14_option1: "did",
+  knowledge_quiz6_question14_option2: "done",
+  knowledge_quiz6_question14_option3: "do",
+  knowledge_quiz6_question14_option4: "doing",
+
+  // Q15
+  knowledge_quiz6_question15: "What is the opposite of 'always'?",
+  knowledge_quiz6_question15_option1: "Often",
+  knowledge_quiz6_question15_option2: "Usually",
+  knowledge_quiz6_question15_option3: "Sometimes",
+  knowledge_quiz6_question15_option4: "Never",
+
+  // Q16
+  knowledge_quiz6_question16: "Which word is a verb?",
+  knowledge_quiz6_question16_option1: "Happy",
+  knowledge_quiz6_question16_option2: "Eat",
+  knowledge_quiz6_question16_option3: "Hungry",
+  knowledge_quiz6_question16_option4: "Slow",
+
   //Psychological Quiz 1
   personality_quiz12_question1: "Which activity sounds more appealing?",
   personality_quiz12_question1_option1: "Designing a character from scratch",
@@ -1522,11 +1619,10 @@ export const en = {
 
   personality_quiz12_question5: "Pick a quote that resonates with you:",
   personality_quiz12_question5_option1:
-    "“Creativity is intelligence having fun.”",
-  personality_quiz12_question5_option2:
-    "“Everything should make logical sense.”",
+    "Creativity is intelligence having fun.",
+  personality_quiz12_question5_option2: "Everything should make logical sense.",
   personality_quiz12_question5_option3:
-    "“Balance is not something you find, it’s something you create.”",
+    "Balance is not something you find, it's something you create.",
 
   personality_quiz12_question6: "What would you do with a blank notebook?",
   personality_quiz12_question6_option1: "Start a visual journal",
@@ -1541,7 +1637,7 @@ export const en = {
     "Tasks with no clear direction or feedback",
 
   personality_quiz12_question8:
-    "You're given a new app to test. What’s the first thing you do?",
+    "You're given a new app to test. What's the first thing you do?",
   personality_quiz12_question8_option1: "Explore the design and experience",
   personality_quiz12_question8_option2: "Look for bugs and logic errors",
   personality_quiz12_question8_option3: "Compare structure, logic, and flow",
@@ -1589,4 +1685,8 @@ export const en = {
   personality_quiz12_question15_option1: "I think in visuals and emotions",
   personality_quiz12_question15_option2: "I analyze patterns and logic",
   personality_quiz12_question15_option3: "I connect feelings with structure",
+
+  quizlist_psych_disabled_title: "Coming Soon!",
+  quizlist_psych_disabled_message:
+    "Psychological quizzes are temporarily disabled. Please choose another category for now.",
 };

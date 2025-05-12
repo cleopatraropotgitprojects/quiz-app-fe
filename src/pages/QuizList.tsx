@@ -17,7 +17,7 @@ const quizzesByCategory: Record<
     { id: 3, title: "quiz_title_3", icon: "🧠", questions: 20, minutes: 8 },
     { id: 4, title: "quiz_title_4", icon: "📜", questions: 20, minutes: 10 },
     { id: 5, title: "quiz_title_5", icon: "🪐", questions: 20, minutes: 10 },
-    { id: 6, title: "quiz_title_6", icon: "📘", questions: 20, minutes: 9 },
+    { id: 6, title: "quiz_title_6", icon: "📘", questions: 17, minutes: 6 },
   ],
   personality: [
     { id: 7, title: "quiz_title_7", icon: "🧙‍♂️", questions: 20, minutes: 8 },
@@ -51,14 +51,31 @@ const QuizList = () => {
   const name = location.state?.name || "";
   const { t } = useLanguage();
 
+  // ✅ If psychological is selected, show "coming soon" screen
+  if (category === "psychological") {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-pink-100 via-yellow-100 to-blue-100 px-6 py-10 text-center">
+        <h1 className="text-4xl font-bold text-gray-700 mb-4">
+          {t("quizlist_psych_disabled_title")}
+        </h1>
+        <p className="text-md text-gray-600 max-w-xl mb-6">
+          {t("quizlist_psych_disabled_message")}
+        </p>
+        <button
+          onClick={() => navigate("/select-quiz")}
+          className="px-6 py-3 bg-gradient-to-r from-indigo-500 to-pink-500 text-white font-semibold rounded-xl shadow-md hover:shadow-lg hover:brightness-110 transition"
+        >
+          {t("quiz_back")}
+        </button>
+      </div>
+    );
+  }
+
   const quizzes = quizzesByCategory[category || ""] || [];
 
   const handleQuizSelect = (quizId: number) => {
     navigate(`/quiz/${quizId}`, { state: { name } });
   };
-
-  const pluralize = (count: number, singular: string, plural: string) =>
-    count === 1 ? singular : plural;
 
   return (
     <div className="flex flex-col items-center min-h-screen bg-gradient-to-br from-pink-100 via-yellow-100 to-blue-100 px-6 py-10">

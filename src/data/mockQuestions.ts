@@ -1136,59 +1136,93 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
   // English grammar test
   6: [
     {
-      questionKey: "Which sentence is grammatically correct?",
+      questionKey: "knowledge_quiz6_question1",
       options: [
-        "She goes to school.",
-        "She going to school.",
-        "She go to school.",
-        "She gone to school.",
+        "knowledge_quiz6_question1_option1",
+        "knowledge_quiz6_question1_option2",
+        "knowledge_quiz6_question1_option3",
+        "knowledge_quiz6_question1_option4",
       ],
       correct: 0,
     },
     {
-      questionKey: "What is the past tense of 'run'?",
-      options: ["ran", "runned", "running", "run"],
+      questionKey: "knowledge_quiz6_question2",
+      options: [
+        "knowledge_quiz6_question2_option1",
+        "knowledge_quiz6_question2_option2",
+        "knowledge_quiz6_question2_option3",
+        "knowledge_quiz6_question2_option4",
+      ],
       correct: 0,
     },
     {
-      questionKey:
-        "Choose the correct article: ___ apple a day keeps the doctor away.",
-      options: ["The", "An", "A", "No article"],
-      correct: 1,
-    },
-    {
-      questionKey: "Which word is an adjective?",
-      options: ["Run", "Beautiful", "Quickly", "Happily"],
-      correct: 1,
-    },
-    {
-      questionKey: "What is the plural of 'child'?",
-      options: ["Childer", "Children", "Childes", "Childs"],
-      correct: 1,
-    },
-    {
-      questionKey: "Choose the correct sentence:",
+      questionKey: "knowledge_quiz6_question3",
       options: [
-        "He doesn’t likes coffee.",
-        "He don’t like coffee.",
-        "He doesn’t like coffee.",
-        "He doesn’t like coffees.",
+        "knowledge_quiz6_question3_option1",
+        "knowledge_quiz6_question3_option2",
+        "knowledge_quiz6_question3_option3",
+        "knowledge_quiz6_question3_option4",
+      ],
+      correct: 1,
+    },
+    {
+      questionKey: "knowledge_quiz6_question4",
+      options: [
+        "knowledge_quiz6_question4_option1",
+        "knowledge_quiz6_question4_option2",
+        "knowledge_quiz6_question4_option3",
+        "knowledge_quiz6_question4_option4",
+      ],
+      correct: 1,
+    },
+    {
+      questionKey: "knowledge_quiz6_question5",
+      options: [
+        "knowledge_quiz6_question5_option1",
+        "knowledge_quiz6_question5_option2",
+        "knowledge_quiz6_question5_option3",
+        "knowledge_quiz6_question5_option4",
+      ],
+      correct: 1,
+    },
+    {
+      questionKey: "knowledge_quiz6_question6",
+      options: [
+        "knowledge_quiz6_question6_option1",
+        "knowledge_quiz6_question6_option2",
+        "knowledge_quiz6_question6_option3",
+        "knowledge_quiz6_question6_option4",
       ],
       correct: 2,
     },
     {
-      questionKey: "Which word is a preposition?",
-      options: ["Quick", "Beautiful", "Running", "Under"],
+      questionKey: "knowledge_quiz6_question7",
+      options: [
+        "knowledge_quiz6_question7_option1",
+        "knowledge_quiz6_question7_option2",
+        "knowledge_quiz6_question7_option3",
+        "knowledge_quiz6_question7_option4",
+      ],
       correct: 3,
     },
     {
-      questionKey: "Complete the sentence: I have lived here ___ 2015.",
-      options: ["in", "since", "for", "at"],
+      questionKey: "knowledge_quiz6_question8",
+      options: [
+        "knowledge_quiz6_question8_option1",
+        "knowledge_quiz6_question8_option2",
+        "knowledge_quiz6_question8_option3",
+        "knowledge_quiz6_question8_option4",
+      ],
       correct: 1,
     },
     {
-      questionKey: "What’s the superlative form of 'good'?",
-      options: ["Goodest", "Better", "Best", "More good"],
+      questionKey: "knowledge_quiz6_question9",
+      options: [
+        "knowledge_quiz6_question9_option1",
+        "knowledge_quiz6_question9_option2",
+        "knowledge_quiz6_question9_option3",
+        "knowledge_quiz6_question9_option4",
+      ],
       correct: 2,
     },
     {
@@ -1202,60 +1236,73 @@ export const mockQuestions: Record<number, QuizQuestion[]> = {
       correct: 2,
     },
     {
-      questionKey: "What type of word is 'quickly'?",
-      options: ["Adverb", "Noun", "Verb", "Adjective"],
+      questionKey: "knowledge_quiz6_question10",
+      options: [
+        "knowledge_quiz6_question10_option1",
+        "knowledge_quiz6_question10_option2",
+        "knowledge_quiz6_question10_option3",
+        "knowledge_quiz6_question10_option4",
+      ],
       correct: 0,
     },
     {
-      questionKey: "Identify the conjunction: 'I like tea **and** coffee.'",
-      options: ["Like", "Tea", "Coffee", "And"],
-      correct: 3,
-    },
-    {
-      questionKey: "Choose the correct form: 'She ___ playing now.'",
-      options: ["was", "be", "were", "is"],
-      correct: 3,
-    },
-    {
-      questionKey: "Which sentence is correct?",
+      questionKey: "knowledge_quiz6_question11",
       options: [
-        "They has finished.",
-        "They have finish.",
-        "They have finished.",
-        "They has finish.",
+        "knowledge_quiz6_question11_option1",
+        "knowledge_quiz6_question11_option2",
+        "knowledge_quiz6_question11_option3",
+        "knowledge_quiz6_question11_option4",
+      ],
+      correct: 3,
+    },
+    {
+      questionKey: "knowledge_quiz6_question12",
+      options: [
+        "knowledge_quiz6_question12_option1",
+        "knowledge_quiz6_question12_option2",
+        "knowledge_quiz6_question12_option3",
+        "knowledge_quiz6_question12_option4",
+      ],
+      correct: 0,
+    },
+    {
+      questionKey: "knowledge_quiz6_question13",
+      options: [
+        "knowledge_quiz6_question13_option1",
+        "knowledge_quiz6_question13_option2",
+        "knowledge_quiz6_question13_option3",
+        "knowledge_quiz6_question13_option4",
       ],
       correct: 2,
     },
     {
-      questionKey: "Which one is a noun?",
-      options: ["Apple", "Run", "Quickly", "Happy"],
-      correct: 0,
-    },
-    {
-      questionKey:
-        "Choose the correct comparative form: 'This book is ___ than that one.'",
-      options: ["better", "best", "good", "more good"],
-      correct: 0,
-    },
-    {
-      questionKey: "Fill in the blank: I’m interested ___ learning Spanish.",
-      options: ["with", "for", "in", "at"],
-      correct: 2,
-    },
-    {
-      questionKey:
-        "Which word completes the sentence? 'She has ___ her homework.'",
-      options: ["did", "done", "do", "doing"],
+      questionKey: "knowledge_quiz6_question14",
+      options: [
+        "knowledge_quiz6_question14_option1",
+        "knowledge_quiz6_question14_option2",
+        "knowledge_quiz6_question14_option3",
+        "knowledge_quiz6_question14_option4",
+      ],
       correct: 1,
     },
     {
-      questionKey: "What is the opposite of 'always'?",
-      options: ["Often", "Usually", "Sometimes", "Never"],
+      questionKey: "knowledge_quiz6_question15",
+      options: [
+        "knowledge_quiz6_question15_option1",
+        "knowledge_quiz6_question15_option2",
+        "knowledge_quiz6_question15_option3",
+        "knowledge_quiz6_question15_option4",
+      ],
       correct: 3,
     },
     {
-      questionKey: "Which word is a verb?",
-      options: ["Happy", "Eat", "Hungry", "Slow"],
+      questionKey: "knowledge_quiz6_question16",
+      options: [
+        "knowledge_quiz6_question16_option1",
+        "knowledge_quiz6_question16_option2",
+        "knowledge_quiz6_question16_option3",
+        "knowledge_quiz6_question16_option4",
+      ],
       correct: 1,
     },
   ],

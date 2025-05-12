@@ -257,7 +257,7 @@ const Quiz = () => {
                     }`}
                   >
                     {typeof option === "string"
-                      ? option
+                      ? t(option as any)
                       : option.key
                         ? t(option.key as any)
                         : (option as any).text}
