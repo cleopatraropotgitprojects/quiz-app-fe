@@ -7,13 +7,16 @@ import { it } from "../i18n/it";
 
 const languages = { en, ro, it, fr, ru };
 
-type Lang = "en" | "ro" | "it" | "fr" | "ru";
+export type Lang = "en" | "ro" | "it" | "fr" | "ru";
 type Dictionary = typeof en;
 
 const LanguageContext = createContext<{
   lang: Lang;
   setLang: (lang: Lang) => void;
-  t: (key: keyof Dictionary | string, vars?: Record<string, string | number>) => string;
+  t: (
+    key: keyof Dictionary | string,
+    vars?: Record<string, string | number>,
+  ) => string;
 }>({
   lang: "en",
   setLang: () => {},
@@ -25,7 +28,16 @@ export const LanguageProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLangState] = useState<Lang>(() => {
+    // Încearcă să citească din localStorage la montare
+    const saved = localStorage.getItem("lang") as Lang | null;
+    return saved && languages[saved] ? saved : "en";
+  });
+
+  const setLang = (newLang: Lang) => {
+    setLangState(newLang);
+    localStorage.setItem("lang", newLang);
+  };
 
   const t = (
     key: keyof Dictionary | string,

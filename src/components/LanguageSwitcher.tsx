@@ -1,15 +1,22 @@
-import { useLanguage } from "../contexts/LanguageContext";
+import { Lang, useLanguage } from "../contexts/LanguageContext";
 import { ChevronDown } from "lucide-react";
+import React from "react";
 
 export function LanguageSwitcher() {
   const { lang, setLang } = useLanguage();
+
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const newLang = e.target.value as Lang;
+    setLang(newLang);
+    localStorage.setItem("lang", newLang);
+  };
 
   return (
     <div className="absolute top-4 right-4 z-50">
       <div className="relative inline-block">
         <select
           value={lang}
-          onChange={(e) => setLang(e.target.value as any)}
+          onChange={handleChange}
           className="appearance-none pl-3 pr-8 py-2 text-sm font-medium bg-white text-gray-800 border border-gray-200 rounded-full shadow-md focus:outline-none focus:ring-0 transition duration-200"
         >
           <option value="en">🇬🇧 EN</option>
