@@ -4,11 +4,14 @@ import { mockQuestions } from "../data/mockQuestions";
 import KnowledgeResult from "../components/results/knowledge/KnowledgeResult";
 import PsychologicalResult from "../components/results/psychological/PsychologicalResult";
 import EntertainmentResult from "../components/results/entertainment/EntertainmentResult";
+import { useLanguage } from "../contexts/LanguageContext";
+import { en } from "../i18n/en";
 
 const Quiz = () => {
   const { id } = useParams();
   const quizId = Number(id);
   const location = useLocation();
+  const { t } = useLanguage();
   const name =
     location.state?.name || localStorage.getItem("quizPlayerName") || "Player";
 
@@ -19,16 +22,30 @@ const Quiz = () => {
   const [score, setScore] = useState(0);
   const [scoreMap, setScoreMap] = useState<Record<string, number>>({});
   const [finished, setFinished] = useState(false);
+  const [secondsElapsed, setSecondsElapsed] = useState(0);
+  const [selectedAnswers, setSelectedAnswers] = useState<number[]>([]);
 
   // Reset state when quiz ID changes
   useEffect(() => {
     setCurrentIndex(0);
     setSelectedOption(null);
     setSelectedOptions([]);
+    setSelectedAnswers([]);
     setScore(0);
     setScoreMap({});
     setFinished(false);
+    setSecondsElapsed(0);
   }, [quizId]);
+
+  useEffect(() => {
+    if (finished) return;
+
+    const timer = setInterval(() => {
+      setSecondsElapsed((prev) => prev + 1);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [finished]);
 
   const currentQuestion = questions[currentIndex];
 
@@ -91,17 +108,22 @@ const Quiz = () => {
 
   const handleNext = () => {
     if (quizType === "knowledge") {
-      const knowledgeQuestion = currentQuestion as { correct: number };
-      if (
-        selectedOption !== null &&
-        selectedOption === knowledgeQuestion.correct
-      ) {
-        setScore((prev) => prev + 1);
+      if (selectedOption !== null) {
+        setSelectedAnswers((prev) => [...prev, selectedOption]);
+
+        const knowledgeQuestion = currentQuestion as { correct: number };
+        if (selectedOption === knowledgeQuestion.correct) {
+          setScore((prev) => prev + 1);
+        }
+      } else {
+        setSelectedAnswers((prev) => [...prev, -1]);
       }
-    } else if (quizType === "personality") {
+    }
+
+    if (quizType === "personality") {
       if (selectedOption !== null) {
         const option = currentQuestion.options[selectedOption] as {
-          text: string;
+          key: string;
           scores: Record<string, number>;
         };
         const selectedScores = option.scores;
@@ -112,10 +134,12 @@ const Quiz = () => {
           }));
         }
       }
-    } else if (quizType === "psychological") {
+    }
+
+    if (quizType === "psychological") {
       selectedOptions.forEach((index) => {
         const option = currentQuestion.options[index] as {
-          text: string;
+          key: string;
           traits: Record<string, number>;
         };
         const traits = option.traits;
@@ -139,14 +163,43 @@ const Quiz = () => {
 
   const progress = ((currentIndex + Number(finished)) / questions.length) * 100;
 
+  const formatTime = (totalSeconds: number) => {
+    const minutes = Math.floor(totalSeconds / 60);
+    const seconds = totalSeconds % 60;
+    return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  };
+
+  const finalTime = formatTime(secondsElapsed);
+
+  const quizTitleKey = `quiz_title_${quizId}` as
+    | "quiz_title_1"
+    | "quiz_title_2"
+    | "quiz_title_3"
+    | "quiz_title_4"
+    | "quiz_title_5"
+    | "quiz_title_6"
+    | "quiz_title_7"
+    | "quiz_title_8"
+    | "quiz_title_9"
+    | "quiz_title_10"
+    | "quiz_title_11"
+    | "quiz_title_12"
+    | "quiz_title_13"
+    | "quiz_title_14"
+    | "quiz_title_15"
+    | "quiz_title_16"
+    | "quiz_title_17"
+    | "quiz_title_18"
+    | "quiz_title_19";
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-100 via-yellow-100 to-blue-100 px-6 py-10 flex flex-col items-center">
       <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-pink-500 to-yellow-500 mb-6 text-center drop-shadow">
-        Quiz Time, {name}!
+        {t("quiz_header", { name })}
       </h1>
 
       <h2 className="text-xl font-semibold text-indigo-700 mb-4 text-center">
-        {quizTitle}
+        {t(quizTitleKey)}
       </h2>
 
       <div className="w-full max-w-2xl bg-white p-6 rounded-3xl shadow-lg text-center">
@@ -158,13 +211,22 @@ const Quiz = () => {
                 style={{ width: `${progress}%` }}
               ></div>
             </div>
+            <div className="text-sm text-gray-600 font-semibold mb-2 flex justify-end gap-1">
+              {t("quiz_timeElapsed")}
+              <span className="font-mono">{formatTime(secondsElapsed)}</span>
+            </div>
 
             <p className="text-gray-700 mb-4 font-semibold">
-              Question {currentIndex + 1} of {questions.length}
+              {t("quiz_questionProgress", {
+                current: currentIndex + 1,
+                total: questions.length,
+              })}
             </p>
 
             <h2 className="text-xl font-bold mb-6">
-              {currentQuestion.question}
+              <h2 className="text-xl font-bold mb-6">
+                {t(currentQuestion.questionKey as any)}
+              </h2>
             </h2>
 
             <div className="grid gap-4 mb-6">
@@ -194,7 +256,11 @@ const Quiz = () => {
                         : "bg-white border-gray-300 hover:border-indigo-400"
                     }`}
                   >
-                    {typeof option === "string" ? option : option.text}
+                    {typeof option === "string"
+                      ? t(option as any)
+                      : option.key
+                        ? t(option.key as any)
+                        : (option as any).text}
                   </button>
                 );
               })}
@@ -217,7 +283,7 @@ const Quiz = () => {
                   : "bg-gradient-to-r from-pink-500 to-indigo-500 hover:brightness-110"
               }`}
             >
-              Next
+              {t("quiz_next")}
             </button>
           </>
         ) : (
@@ -227,6 +293,18 @@ const Quiz = () => {
                 score={score}
                 total={questions.length}
                 name={name}
+                time={finalTime}
+                questions={questions.map(q => {
+                  if (q.type === "knowledge") {
+                    return {
+                      question: t(q.questionKey),
+                      options: q.options.map(opt => t(opt)),
+                      correct: q.correct
+                    };
+                  }
+                  throw new Error("Invalid question type for knowledge quiz");
+                })}
+                selectedAnswers={selectedAnswers}
               />
             ) : (
               <></>
@@ -236,6 +314,7 @@ const Quiz = () => {
                 quizId={quizId}
                 name={name}
                 topTrait={topCharacter || "?"}
+                time={finalTime}
               />
             ) : (
               <></>
@@ -245,6 +324,7 @@ const Quiz = () => {
                 quizId={quizId}
                 topCharacter={topCharacter || "Unknown"}
                 name={name}
+                time={finalTime}
               />
             ) : (
               <></>
@@ -254,7 +334,7 @@ const Quiz = () => {
               onClick={() => (window.location.href = "/select-quiz")}
               className="mt-4 bg-gradient-to-r from-pink-500 to-indigo-500 text-white px-6 py-2 rounded-full text-sm font-semibold hover:brightness-110 transition flex items-center gap-2"
             >
-              🔁 Back to Quiz Categories
+              {t("quiz_back")}
             </button>
           </div>
         )}
