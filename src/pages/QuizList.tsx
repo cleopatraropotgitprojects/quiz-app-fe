@@ -52,7 +52,7 @@ const QuizList = () => {
   const { t } = useLanguage();
 
   // ✅ If psychological is selected, show "coming soon" screen
-  if (category === "psychological") {
+  if (category === "psychological" || category === "personality") {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-pink-100 via-yellow-100 to-blue-100 px-6 py-10 text-center">
         <h1 className="text-4xl font-bold text-gray-700 mb-4">
